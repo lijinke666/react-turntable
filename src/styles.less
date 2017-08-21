@@ -1,0 +1,46 @@
+@primary-color: #31c27c; 
+@warning-color: #ffbf00; 
+@error-color: #f04134; 
+@success-color: #00a854; 
+@default-color: #d9d9d9; 
+@disabled-color:#f7f7f7;
+@info-color:#49a9ee;
+@loading-color:darken(@info-color,10%);
+@bg-color:#f7f8fa;  
+@text-color:rgba(0,0,0,.65);
+.clearfix(){
+  &::before,&::after{
+    clear:both;
+    content:"";
+    display: table;
+    zoom: 1;
+  }
+}
+.react-turntable-section{
+    @btn-width:50px;
+    @btn-height:@btn-width;
+    position: relative;
+    &-canvas{
+        display: block;
+        margin:0 auto;
+        pointer-events: none;
+    }
+    &-btn{
+        width:@btn-width;
+        height:@btn-height;
+        line-height: @btn-height;
+        border-radius: 50%;
+        border:2px solid #fff;
+        color:#fff;
+        background: #00a854;
+        text-align: center;
+        font-size:16px;
+        font-weight: bold;
+        position: absolute;
+        left:0;
+        right:0;
+        top:0;
+        bottom:0;
+        margin:0 auto;
+    }
+}

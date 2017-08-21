@@ -1,0 +1,15 @@
+{
+  "presets": [         
+    [
+      "es2015",
+      {
+        "modules": false
+      }
+    ],
+    "react"
+  ],
+  "plugins": [
+    "transform-object-rest-spread",    //类的静态属性  不会被继承  static defaultProps
+    "transform-class-properties"     //可以写类属性 test = ()=>{}
+  ]
+}
