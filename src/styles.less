@@ -1,13 +1,4 @@
-@primary-color: #31c27c; 
-@warning-color: #ffbf00; 
-@error-color: #f04134; 
-@success-color: #00a854; 
-@default-color: #d9d9d9; 
-@disabled-color:#f7f7f7;
-@info-color:#49a9ee;
-@loading-color:darken(@info-color,10%);
-@bg-color:#f7f8fa;  
-@text-color:rgba(0,0,0,.65);
+@click-btn-color: #F9CDAD; 
 .clearfix(){
   &::before,&::after{
     clear:both;
@@ -20,9 +11,9 @@
     @btn-width:70px;
     @btn-height:@btn-width;
     position: relative;
+    .clearfix();
     &-canvas{
         display: block;
-        margin:0 auto;
         pointer-events: none;
     }
     &-btn{
@@ -30,9 +21,10 @@
         height:@btn-height;
         line-height: @btn-height;
         border-radius: 50%;
+        box-shadow: 0 0 5px rgba(0,0,0,.1);
         border:2px solid #fff;
         color:#fff;
-        background: #00a854;
+        background: @click-btn-color;
         text-align: center;
         font-size:16px;
         font-weight: bold;
@@ -41,6 +33,18 @@
         right:0;
         top:0;
         bottom:0;
-        margin:0;
+        margin:auto;
+        cursor: pointer;
+        z-index: 2;
+        &::before{
+            content:"";
+            position: absolute;
+            border:20px solid transparent;
+            border-bottom-color:@click-btn-color;
+            left:50%;
+            margin-left:-20px;
+            top:-30px;
+            z-index: 1;
+        }
     }
 }

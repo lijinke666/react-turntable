@@ -4,12 +4,33 @@ import Message from "rc-message"
 
 import ReactTurntable from "../src"
 
-const prizes = ['杜蕾斯', '涛涛', '香蕉', 'iphone 6s', 'iphone 6s plus', '优惠券','避孕套','飞机杯']
+const styles = {
+    justifyContent:"center",
+    alignContent:"center",
+    display:"flex"
+}
+const prizes = [
+    'Durex', 'MI', 'Meizu', 
+    'iphone 6s', 'iphone 6s plus', 'Chafingdish',
+    'WeiLong','masturbation cup'
+]
 
 const options = {
-    speed : 10,                  //旋转速度
-    duration:3000,               //旋转时间
     prizes,
+    width: 500,
+    height: 500,
+    primaryColor: "#83AF9B",
+    secondaryColor: "#C8C8A9",
+    fontStyle:{
+        color:"#fff",
+        size:"14px",
+        fontVertical:true,
+        fontWeight:"bold",
+        fontFamily:"Microsoft YaHei"
+    },
+    speed : 1000,                  
+    duration:5000,               
+    clickText:"Start",
     onComplete(prize){
         Message.success({
             content:prize
@@ -17,7 +38,9 @@ const options = {
     }
 }
 const Demo = () => (
-    <ReactTurntable {...options}/>
+    <div style={styles}>
+        <ReactTurntable {...options}/>
+    </div>
 )
 ReactDOM.render(
     <Demo />,

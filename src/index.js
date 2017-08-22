@@ -8,6 +8,7 @@ import "./styles.less"
 
 export default class ReactTurntable extends PureComponent {
     state = {
+        isRotate: false,
         startRotate: 0
     }
     constructor(props) {
@@ -19,29 +20,49 @@ export default class ReactTurntable extends PureComponent {
     static defaultProps = {
         width: 500,
         height: 500,
-        speed: 10,                  //旋转速度
+        speed: 1000,                  //旋转速度
         duration: 5000,               //旋转时间
         prizes: [],
-        clickText:"Click",
-        primaryColor:"#396",
-        secondaryColor:"#fafafa"
+        clickEle: "",
+        clickText: "Click",
+        primaryColor: "#83AF9B",
+        secondaryColor: "#C8C8A9",
+        fontStyle: {
+            color: "#fff",
+            size: "14px",
+            fontWeight: "bold",
+            fontVertical: false,
+            fontFamily: "Microsoft YaHei"
+        }
     }
     static propTypes = {
         width: PropTypes.number.isRequired,
         height: PropTypes.number.isRequired,
         prizes: PropTypes.array.isRequired,
-        clickText:PropTypes.string.isRequired,
+        clickText: PropTypes.oneOfType([
+            PropTypes.string,
+            PropTypes.object
+        ]),
+        primaryColor: PropTypes.string,
+        secondaryColor: PropTypes.string,
         speed: PropTypes.number,
         duration: PropTypes.number,
-        onComplete: PropTypes.func
+        onComplete: PropTypes.func,
+        fontVertical: PropTypes.bool,
+        fontStyle: PropTypes.object
     }
     render() {
-        const {clickText,width,height} = this.props
-        const styles = {width,height}
+        const { clickText, width, height } = this.props
+        const styles = { width, height }
         return (
             <div className="react-turntable-section" key="react-turntable-section" style={styles}>
                 <canvas id="react-turntable-section-canvas" ref={(node) => this.canvas = node} />
-                <div className="react-turntable-section-btn">{clickText}</div>
+                {
+                    Object.is(typeof clickText, 'object')
+                        ? <div onClick={this.onStartRotate}>{clickText}</div>
+                        : <div className="react-turntable-section-btn" onClick={this.onStartRotate}>{clickText}</div>
+                }
+
             </div>
         )
     }
@@ -53,8 +74,9 @@ export default class ReactTurntable extends PureComponent {
         this.rotateTime += 20
         if (this.rotateTime >= this.rotateAllTime) {
             const prize = this.getSelectedPrize()
+            this.setState({ isRotate: false })
             this.props.onComplete && this.props.onComplete(prize)
-            return 
+            return
         }
         let _rotateChange = (
             this.rotateChange - this.easeOut(this.rotateTime, 0, this.rotateChange, this.rotateAllTime)
@@ -79,12 +101,25 @@ export default class ReactTurntable extends PureComponent {
     drawTurntable() {
         const ctx = this.ctx
         ctx.clearRect(0, 0, this.canvas.width, this.canvas.height)
+        const {
+            primaryColor,
+            secondaryColor,
+            fontStyle: {
+                fontVertical,
+                fontWeight,
+                fontFamily,
+                size,
+                color,
+            }
+         } = this.props
 
         for (let [i, prize] of this.prizes.entries()) {
             const _currentStartRotate = this.startRotate + this.awardRotate * i
             const _currentEndRotate = _currentStartRotate + this.awardRotate
             this.ctx.save()
-            i % 2 === 0 ? ctx.fillStyle = "#396" : ctx.fillStyle = "#fafafa"
+            i % 2 === 0
+                ? ctx.fillStyle = primaryColor
+                : ctx.fillStyle = secondaryColor
             ctx.beginPath()
             ctx.arc(this.centerX, this.centerY, this.R, _currentStartRotate, _currentEndRotate, false)
             ctx.arc(this.centerX, this.centerY, this.INSERT_R, _currentEndRotate, _currentStartRotate, true)
@@ -94,8 +129,8 @@ export default class ReactTurntable extends PureComponent {
 
             ctx.save()
             ctx.beginPath()
-            ctx.font = 'bold 16px Microsoft YaHei'
-            ctx.fillStyle = '#FFF'
+            ctx.font = `${fontWeight} ${/.*px$/.test(size) ? size : size + 'px'} ${fontFamily}`
+            ctx.fillStyle = color
             ctx.textBaseline = "middle"
             const currentX = Math.cos(_currentStartRotate + this.awardRotate / 2) * this.TEXT_R
             const currentY = Math.sin(_currentStartRotate + this.awardRotate / 2) * this.TEXT_R
@@ -108,11 +143,12 @@ export default class ReactTurntable extends PureComponent {
 
             const maxFontWidth = currentY / (this.TEXT_R / 2)
             const { width: fontWidth } = ctx.measureText(prize)
-            console.log(fontWidth, maxFontWidth);
-            //让文字竖直排列
-            // ctx.translate(-10,30)
-            // ctx.rotate(90/180*Math.PI)
-            //ctx.measureText 获取文字的宽度  这里获取文字宽度的一半 已达到对齐的效果
+
+            if (fontVertical === true) {
+                ctx.translate(0, Math.min(fontWidth, 25))
+                ctx.rotate(90 / 180 * Math.PI)
+            }
+
             ctx.fillText(prize, -fontWidth / 2, 0)
 
             ctx.closePath()
@@ -148,10 +184,23 @@ export default class ReactTurntable extends PureComponent {
         console.log(nextProps);
     }
     componentWillMount() {
-        if (this.props.prizes.length < 1) throw new Error('options prizes It needs to be an array!')
+        if (this.props.prizes.length < 2) throw new Error('options prizes It needs to be an array , Not less than two')
     }
     componentWillUnmount() {
         this.destroyContext()
+    }
+    onStartRotate = () => {
+        const {           
+            speed,
+            duration,
+        } = this.props
+        if (this.state.isRotate) return
+        this.setState({ isRotate: true }, () => {
+            this.rotateTime = 0
+            this.rotateAllTime = Math.random() * 5 + duration
+            this.rotateChange = Math.random() * 10 + speed / 100
+            this.rotateTurntable()
+        })
     }
     componentDidMount() {
         this.compatibilityFrame()
@@ -160,7 +209,8 @@ export default class ReactTurntable extends PureComponent {
             height,
             speed,
             duration,
-            prizes
+            prizes,
+            clickText
         } = this.props
         this.prizes = prizes
         this.startRotate = 0
@@ -182,11 +232,5 @@ export default class ReactTurntable extends PureComponent {
         this.INSERT_R = 0
         this.drawTurntable()
 
-        document.body.addEventListener('click', () => {
-            this.rotateTime = 0
-            this.rotateAllTime = Math.random() * 5 + duration
-            this.rotateChange = Math.random() * 10 + speed
-            this.rotateTurntable()
-        })
     }
 }
