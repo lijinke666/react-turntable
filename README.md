@@ -124,7 +124,7 @@ ReactDOM.render(
        - `Default` : `14`
 
     - fontStyle.fontVertical 
-       - `Desc` : `The text is arranged vertically of the turntable`
+       - `Desc` : `The text is arranged vertically of the turntable (If the text is very long, you can set the options 'true')`
        - `Type` : `boolean`
        - `Default` : `false`
 

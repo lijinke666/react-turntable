@@ -24,12 +24,12 @@ const options = {
     fontStyle:{
         color:"#fff",
         size:"14px",
-        fontVertical:true,
+        fontVertical:false,
         fontWeight:"bold",
         fontFamily:"Microsoft YaHei"
     },
     speed : 1000,                  
-    duration:5000,               
+    duration:6000,               
     clickText:"Start",
     onComplete(prize){
         Message.success({
