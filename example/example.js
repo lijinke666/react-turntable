@@ -2,7 +2,7 @@ import React from "react"
 import ReactDOM from "react-dom"
 import Message from "rc-message"
 
-import ReactTurntable from "../src"
+import ReactTurntable from "react-turntable"
 
 const styles = {
     justifyContent:"center",
