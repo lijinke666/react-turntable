@@ -2,6 +2,9 @@
 # react-turntable
 A React HTML5 Turntable component 
 
+## Screenshots
+![example](https://github.com/lijinke666/react-turntable/blob/master/example.png)
+
 ## Installation
 ```
 npm install react-turntable --save
