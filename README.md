@@ -15,11 +15,14 @@ npm install react-turntable --save
 ## Example
 ### [Live Demo](https://lijinke666.github.io/react-turntable/)
 
+
+## Development
 ```
 git clone https://github.com/lijinke666/react-turnatable
-```
- - `yarn` of `npm install`
- - `npm run demo`   run example
+yarn or npm install
+npm start
+
+ ```
 
 
 ## Usage
