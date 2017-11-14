@@ -1,9 +1,6 @@
 import React from "react"
-import ReactDOM from "react-dom"
-import Message from "rc-message"
-
-import ReactTurntable from "../src"
-import "../src/index.less"
+import ReactTurnTable from "../src"
+import renderer from "react-test-renderer"
 
 const styles = {
     justifyContent:"center",
@@ -16,7 +13,7 @@ const prizes = [
     'WeiLong','masturbation cup'
 ]
 
-const options = {
+const _testProps_ = {
     prizes,
     width: 500,
     height: 500,
@@ -33,17 +30,16 @@ const options = {
     duration:6000,               
     clickText:"Start",
     onComplete(prize){
-        Message.success({
-            content:prize
-        })
+        console.log(prize);
     }
 }
-const Demo = () => (
-    <div style={styles}>
-        <ReactTurntable {...options}/>
-    </div>
-)
-ReactDOM.render(
-    <Demo />,
-    document.getElementById('root')
-)
+
+describe('test ReactTurnTable',()=>{
+    it('test',()=>{
+        const component = renderer.create(
+            <ReactTurnTable {..._testProps_}/>
+        )
+        const {type} = component.toJSON()
+        expect(type).toEqual('canvas')
+    })
+})

@@ -20,6 +20,13 @@ module.exports = {
                 }]
             },
             {
+                test: /\.css$/,
+                use: [
+                    { loader: "style-loader" },          //loader 倒序执行  先执行 less-laoder
+                    { loader: "css-loader", options: { minimize: false, sourceMap: true } },
+                ]
+            },
+            {
                 test: /\.less$/,
                 use: [
                     { loader: "style-loader" },

@@ -63,12 +63,15 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 91);
+/******/ 	return __webpack_require__(__webpack_require__.s = 93);
 /******/ })
 /************************************************************************/
 /******/ ([
 /* 0 */
-/***/ (function(module, exports) {
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
 
 // shim for using process in browser
 var process = module.exports = {};
@@ -255,6 +258,45 @@ process.chdir = function (dir) {
 process.umask = function () {
     return 0;
 };
+;
+
+var _temp = function () {
+    if (typeof __REACT_HOT_LOADER__ === 'undefined') {
+        return;
+    }
+
+    __REACT_HOT_LOADER__.register(process, 'process', 'd:/webStudy/React-Turntable/node_modules/._process@0.11.10@process/browser.js');
+
+    __REACT_HOT_LOADER__.register(cachedSetTimeout, 'cachedSetTimeout', 'd:/webStudy/React-Turntable/node_modules/._process@0.11.10@process/browser.js');
+
+    __REACT_HOT_LOADER__.register(cachedClearTimeout, 'cachedClearTimeout', 'd:/webStudy/React-Turntable/node_modules/._process@0.11.10@process/browser.js');
+
+    __REACT_HOT_LOADER__.register(defaultSetTimout, 'defaultSetTimout', 'd:/webStudy/React-Turntable/node_modules/._process@0.11.10@process/browser.js');
+
+    __REACT_HOT_LOADER__.register(defaultClearTimeout, 'defaultClearTimeout', 'd:/webStudy/React-Turntable/node_modules/._process@0.11.10@process/browser.js');
+
+    __REACT_HOT_LOADER__.register(runTimeout, 'runTimeout', 'd:/webStudy/React-Turntable/node_modules/._process@0.11.10@process/browser.js');
+
+    __REACT_HOT_LOADER__.register(runClearTimeout, 'runClearTimeout', 'd:/webStudy/React-Turntable/node_modules/._process@0.11.10@process/browser.js');
+
+    __REACT_HOT_LOADER__.register(queue, 'queue', 'd:/webStudy/React-Turntable/node_modules/._process@0.11.10@process/browser.js');
+
+    __REACT_HOT_LOADER__.register(draining, 'draining', 'd:/webStudy/React-Turntable/node_modules/._process@0.11.10@process/browser.js');
+
+    __REACT_HOT_LOADER__.register(currentQueue, 'currentQueue', 'd:/webStudy/React-Turntable/node_modules/._process@0.11.10@process/browser.js');
+
+    __REACT_HOT_LOADER__.register(queueIndex, 'queueIndex', 'd:/webStudy/React-Turntable/node_modules/._process@0.11.10@process/browser.js');
+
+    __REACT_HOT_LOADER__.register(cleanUpNextTick, 'cleanUpNextTick', 'd:/webStudy/React-Turntable/node_modules/._process@0.11.10@process/browser.js');
+
+    __REACT_HOT_LOADER__.register(drainQueue, 'drainQueue', 'd:/webStudy/React-Turntable/node_modules/._process@0.11.10@process/browser.js');
+
+    __REACT_HOT_LOADER__.register(Item, 'Item', 'd:/webStudy/React-Turntable/node_modules/._process@0.11.10@process/browser.js');
+
+    __REACT_HOT_LOADER__.register(noop, 'noop', 'd:/webStudy/React-Turntable/node_modules/._process@0.11.10@process/browser.js');
+}();
+
+;
 
 /***/ }),
 /* 1 */
@@ -263,11 +305,9 @@ process.umask = function () {
 "use strict";
 /* WEBPACK VAR INJECTION */(function(process) {/**
  * Copyright (c) 2013-present, Facebook, Inc.
- * All rights reserved.
  *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
  *
  */
 
@@ -316,6 +356,19 @@ function invariant(condition, format, a, b, c, d, e, f) {
 }
 
 module.exports = invariant;
+;
+
+var _temp = function () {
+  if (typeof __REACT_HOT_LOADER__ === 'undefined') {
+    return;
+  }
+
+  __REACT_HOT_LOADER__.register(validateFormat, 'validateFormat', 'd:/webStudy/React-Turntable/node_modules/._fbjs@0.8.16@fbjs/lib/invariant.js');
+
+  __REACT_HOT_LOADER__.register(invariant, 'invariant', 'd:/webStudy/React-Turntable/node_modules/._fbjs@0.8.16@fbjs/lib/invariant.js');
+}();
+
+;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
@@ -324,18 +377,16 @@ module.exports = invariant;
 
 "use strict";
 /* WEBPACK VAR INJECTION */(function(process) {/**
- * Copyright 2014-2015, Facebook, Inc.
- * All rights reserved.
+ * Copyright (c) 2014-present, Facebook, Inc.
  *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
  *
  */
 
 
 
-var emptyFunction = __webpack_require__(7);
+var emptyFunction = __webpack_require__(8);
 
 /**
  * Similar to invariant but only logs a warning if the condition is not met.
@@ -387,6 +438,19 @@ if (process.env.NODE_ENV !== 'production') {
 }
 
 module.exports = warning;
+;
+
+var _temp = function () {
+  if (typeof __REACT_HOT_LOADER__ === 'undefined') {
+    return;
+  }
+
+  __REACT_HOT_LOADER__.register(warning, 'warning', 'd:/webStudy/React-Turntable/node_modules/._fbjs@0.8.16@fbjs/lib/warning.js');
+
+  __REACT_HOT_LOADER__.register(printWarning, 'printWarning', 'd:/webStudy/React-Turntable/node_modules/._fbjs@0.8.16@fbjs/lib/warning.js');
+}();
+
+;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
@@ -396,11 +460,9 @@ module.exports = warning;
 "use strict";
 /**
  * Copyright (c) 2013-present, Facebook, Inc.
- * All rights reserved.
  *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
  *
  * 
  */
@@ -432,6 +494,17 @@ function reactProdInvariant(code) {
 }
 
 module.exports = reactProdInvariant;
+;
+
+var _temp = function () {
+  if (typeof __REACT_HOT_LOADER__ === 'undefined') {
+    return;
+  }
+
+  __REACT_HOT_LOADER__.register(reactProdInvariant, 'reactProdInvariant', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/reactProdInvariant.js');
+}();
+
+;
 
 /***/ }),
 /* 4 */
@@ -528,6 +601,25 @@ module.exports = shouldUseNative() ? Object.assign : function (target, source) {
 
 	return to;
 };
+;
+
+var _temp = function () {
+	if (typeof __REACT_HOT_LOADER__ === 'undefined') {
+		return;
+	}
+
+	__REACT_HOT_LOADER__.register(getOwnPropertySymbols, 'getOwnPropertySymbols', 'd:/webStudy/React-Turntable/node_modules/._object-assign@4.1.1@object-assign/index.js');
+
+	__REACT_HOT_LOADER__.register(hasOwnProperty, 'hasOwnProperty', 'd:/webStudy/React-Turntable/node_modules/._object-assign@4.1.1@object-assign/index.js');
+
+	__REACT_HOT_LOADER__.register(propIsEnumerable, 'propIsEnumerable', 'd:/webStudy/React-Turntable/node_modules/._object-assign@4.1.1@object-assign/index.js');
+
+	__REACT_HOT_LOADER__.register(toObject, 'toObject', 'd:/webStudy/React-Turntable/node_modules/._object-assign@4.1.1@object-assign/index.js');
+
+	__REACT_HOT_LOADER__.register(shouldUseNative, 'shouldUseNative', 'd:/webStudy/React-Turntable/node_modules/._object-assign@4.1.1@object-assign/index.js');
+}();
+
+;
 
 /***/ }),
 /* 5 */
@@ -535,12 +627,10 @@ module.exports = shouldUseNative() ? Object.assign : function (target, source) {
 
 "use strict";
 /* WEBPACK VAR INJECTION */(function(process) {/**
- * Copyright 2013-present, Facebook, Inc.
- * All rights reserved.
+ * Copyright (c) 2013-present, Facebook, Inc.
  *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
  *
  */
 
@@ -549,7 +639,7 @@ module.exports = shouldUseNative() ? Object.assign : function (target, source) {
 var _prodInvariant = __webpack_require__(3);
 
 var DOMProperty = __webpack_require__(14);
-var ReactDOMComponentFlags = __webpack_require__(64);
+var ReactDOMComponentFlags = __webpack_require__(65);
 
 var invariant = __webpack_require__(1);
 
@@ -728,6 +818,39 @@ var ReactDOMComponentTree = {
 };
 
 module.exports = ReactDOMComponentTree;
+;
+
+var _temp = function () {
+  if (typeof __REACT_HOT_LOADER__ === 'undefined') {
+    return;
+  }
+
+  __REACT_HOT_LOADER__.register(ATTR_NAME, 'ATTR_NAME', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/ReactDOMComponentTree.js');
+
+  __REACT_HOT_LOADER__.register(Flags, 'Flags', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/ReactDOMComponentTree.js');
+
+  __REACT_HOT_LOADER__.register(internalInstanceKey, 'internalInstanceKey', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/ReactDOMComponentTree.js');
+
+  __REACT_HOT_LOADER__.register(shouldPrecacheNode, 'shouldPrecacheNode', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/ReactDOMComponentTree.js');
+
+  __REACT_HOT_LOADER__.register(getRenderedHostOrTextFromComponent, 'getRenderedHostOrTextFromComponent', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/ReactDOMComponentTree.js');
+
+  __REACT_HOT_LOADER__.register(precacheNode, 'precacheNode', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/ReactDOMComponentTree.js');
+
+  __REACT_HOT_LOADER__.register(uncacheNode, 'uncacheNode', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/ReactDOMComponentTree.js');
+
+  __REACT_HOT_LOADER__.register(precacheChildNodes, 'precacheChildNodes', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/ReactDOMComponentTree.js');
+
+  __REACT_HOT_LOADER__.register(getClosestInstanceFromNode, 'getClosestInstanceFromNode', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/ReactDOMComponentTree.js');
+
+  __REACT_HOT_LOADER__.register(getInstanceFromNode, 'getInstanceFromNode', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/ReactDOMComponentTree.js');
+
+  __REACT_HOT_LOADER__.register(getNodeFromInstance, 'getNodeFromInstance', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/ReactDOMComponentTree.js');
+
+  __REACT_HOT_LOADER__.register(ReactDOMComponentTree, 'ReactDOMComponentTree', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/ReactDOMComponentTree.js');
+}();
+
+;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
@@ -737,11 +860,9 @@ module.exports = ReactDOMComponentTree;
 "use strict";
 /**
  * Copyright (c) 2013-present, Facebook, Inc.
- * All rights reserved.
  *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
  *
  */
 
@@ -770,63 +891,30 @@ var ExecutionEnvironment = {
 };
 
 module.exports = ExecutionEnvironment;
+;
+
+var _temp = function () {
+  if (typeof __REACT_HOT_LOADER__ === 'undefined') {
+    return;
+  }
+
+  __REACT_HOT_LOADER__.register(canUseDOM, 'canUseDOM', 'd:/webStudy/React-Turntable/node_modules/._fbjs@0.8.16@fbjs/lib/ExecutionEnvironment.js');
+
+  __REACT_HOT_LOADER__.register(ExecutionEnvironment, 'ExecutionEnvironment', 'd:/webStudy/React-Turntable/node_modules/._fbjs@0.8.16@fbjs/lib/ExecutionEnvironment.js');
+}();
+
+;
 
 /***/ }),
 /* 7 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-
-
-/**
- * Copyright (c) 2013-present, Facebook, Inc.
- * All rights reserved.
- *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
- *
- * 
- */
-
-function makeEmptyFunction(arg) {
-  return function () {
-    return arg;
-  };
-}
-
-/**
- * This function accepts and discards inputs; it has no side effects. This is
- * primarily useful idiomatically for overridable function endpoints which
- * always need to be callable, since JS lacks a null-call idiom ala Cocoa.
- */
-var emptyFunction = function emptyFunction() {};
-
-emptyFunction.thatReturns = makeEmptyFunction;
-emptyFunction.thatReturnsFalse = makeEmptyFunction(false);
-emptyFunction.thatReturnsTrue = makeEmptyFunction(true);
-emptyFunction.thatReturnsNull = makeEmptyFunction(null);
-emptyFunction.thatReturnsThis = function () {
-  return this;
-};
-emptyFunction.thatReturnsArgument = function (arg) {
-  return arg;
-};
-
-module.exports = emptyFunction;
-
-/***/ }),
-/* 8 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
 /* WEBPACK VAR INJECTION */(function(process) {/**
- * Copyright 2016-present, Facebook, Inc.
- * All rights reserved.
+ * Copyright (c) 2016-present, Facebook, Inc.
  *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
  *
  * 
  */
@@ -1199,7 +1287,113 @@ var ReactComponentTreeHook = {
 };
 
 module.exports = ReactComponentTreeHook;
+;
+
+var _temp = function () {
+  if (typeof __REACT_HOT_LOADER__ === 'undefined') {
+    return;
+  }
+
+  __REACT_HOT_LOADER__.register(isNative, 'isNative', 'd:/webStudy/React-Turntable/node_modules/._react@15.6.2@react/lib/ReactComponentTreeHook.js');
+
+  __REACT_HOT_LOADER__.register(canUseCollections, 'canUseCollections', 'd:/webStudy/React-Turntable/node_modules/._react@15.6.2@react/lib/ReactComponentTreeHook.js');
+
+  __REACT_HOT_LOADER__.register(setItem, 'setItem', 'd:/webStudy/React-Turntable/node_modules/._react@15.6.2@react/lib/ReactComponentTreeHook.js');
+
+  __REACT_HOT_LOADER__.register(getItem, 'getItem', 'd:/webStudy/React-Turntable/node_modules/._react@15.6.2@react/lib/ReactComponentTreeHook.js');
+
+  __REACT_HOT_LOADER__.register(removeItem, 'removeItem', 'd:/webStudy/React-Turntable/node_modules/._react@15.6.2@react/lib/ReactComponentTreeHook.js');
+
+  __REACT_HOT_LOADER__.register(getItemIDs, 'getItemIDs', 'd:/webStudy/React-Turntable/node_modules/._react@15.6.2@react/lib/ReactComponentTreeHook.js');
+
+  __REACT_HOT_LOADER__.register(addRoot, 'addRoot', 'd:/webStudy/React-Turntable/node_modules/._react@15.6.2@react/lib/ReactComponentTreeHook.js');
+
+  __REACT_HOT_LOADER__.register(removeRoot, 'removeRoot', 'd:/webStudy/React-Turntable/node_modules/._react@15.6.2@react/lib/ReactComponentTreeHook.js');
+
+  __REACT_HOT_LOADER__.register(getRootIDs, 'getRootIDs', 'd:/webStudy/React-Turntable/node_modules/._react@15.6.2@react/lib/ReactComponentTreeHook.js');
+
+  __REACT_HOT_LOADER__.register(itemMap, 'itemMap', 'd:/webStudy/React-Turntable/node_modules/._react@15.6.2@react/lib/ReactComponentTreeHook.js');
+
+  __REACT_HOT_LOADER__.register(rootIDSet, 'rootIDSet', 'd:/webStudy/React-Turntable/node_modules/._react@15.6.2@react/lib/ReactComponentTreeHook.js');
+
+  __REACT_HOT_LOADER__.register(itemByKey, 'itemByKey', 'd:/webStudy/React-Turntable/node_modules/._react@15.6.2@react/lib/ReactComponentTreeHook.js');
+
+  __REACT_HOT_LOADER__.register(rootByKey, 'rootByKey', 'd:/webStudy/React-Turntable/node_modules/._react@15.6.2@react/lib/ReactComponentTreeHook.js');
+
+  __REACT_HOT_LOADER__.register(getKeyFromID, 'getKeyFromID', 'd:/webStudy/React-Turntable/node_modules/._react@15.6.2@react/lib/ReactComponentTreeHook.js');
+
+  __REACT_HOT_LOADER__.register(getIDFromKey, 'getIDFromKey', 'd:/webStudy/React-Turntable/node_modules/._react@15.6.2@react/lib/ReactComponentTreeHook.js');
+
+  __REACT_HOT_LOADER__.register(unmountedIDs, 'unmountedIDs', 'd:/webStudy/React-Turntable/node_modules/._react@15.6.2@react/lib/ReactComponentTreeHook.js');
+
+  __REACT_HOT_LOADER__.register(purgeDeep, 'purgeDeep', 'd:/webStudy/React-Turntable/node_modules/._react@15.6.2@react/lib/ReactComponentTreeHook.js');
+
+  __REACT_HOT_LOADER__.register(describeComponentFrame, 'describeComponentFrame', 'd:/webStudy/React-Turntable/node_modules/._react@15.6.2@react/lib/ReactComponentTreeHook.js');
+
+  __REACT_HOT_LOADER__.register(_getDisplayName, 'getDisplayName', 'd:/webStudy/React-Turntable/node_modules/._react@15.6.2@react/lib/ReactComponentTreeHook.js');
+
+  __REACT_HOT_LOADER__.register(describeID, 'describeID', 'd:/webStudy/React-Turntable/node_modules/._react@15.6.2@react/lib/ReactComponentTreeHook.js');
+
+  __REACT_HOT_LOADER__.register(ReactComponentTreeHook, 'ReactComponentTreeHook', 'd:/webStudy/React-Turntable/node_modules/._react@15.6.2@react/lib/ReactComponentTreeHook.js');
+}();
+
+;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
+
+/***/ }),
+/* 8 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+/**
+ * Copyright (c) 2013-present, Facebook, Inc.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ *
+ * 
+ */
+
+function makeEmptyFunction(arg) {
+  return function () {
+    return arg;
+  };
+}
+
+/**
+ * This function accepts and discards inputs; it has no side effects. This is
+ * primarily useful idiomatically for overridable function endpoints which
+ * always need to be callable, since JS lacks a null-call idiom ala Cocoa.
+ */
+var emptyFunction = function emptyFunction() {};
+
+emptyFunction.thatReturns = makeEmptyFunction;
+emptyFunction.thatReturnsFalse = makeEmptyFunction(false);
+emptyFunction.thatReturnsTrue = makeEmptyFunction(true);
+emptyFunction.thatReturnsNull = makeEmptyFunction(null);
+emptyFunction.thatReturnsThis = function () {
+  return this;
+};
+emptyFunction.thatReturnsArgument = function (arg) {
+  return arg;
+};
+
+module.exports = emptyFunction;
+;
+
+var _temp = function () {
+  if (typeof __REACT_HOT_LOADER__ === 'undefined') {
+    return;
+  }
+
+  __REACT_HOT_LOADER__.register(makeEmptyFunction, "makeEmptyFunction", "d:/webStudy/React-Turntable/node_modules/._fbjs@0.8.16@fbjs/lib/emptyFunction.js");
+
+  __REACT_HOT_LOADER__.register(emptyFunction, "emptyFunction", "d:/webStudy/React-Turntable/node_modules/._fbjs@0.8.16@fbjs/lib/emptyFunction.js");
+}();
+
+;
 
 /***/ }),
 /* 9 */
@@ -1207,12 +1401,10 @@ module.exports = ReactComponentTreeHook;
 
 "use strict";
 /* WEBPACK VAR INJECTION */(function(process) {/**
- * Copyright 2016-present, Facebook, Inc.
- * All rights reserved.
+ * Copyright (c) 2016-present, Facebook, Inc.
  *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
  *
  * 
  */
@@ -1224,11 +1416,22 @@ module.exports = ReactComponentTreeHook;
 var debugTool = null;
 
 if (process.env.NODE_ENV !== 'production') {
-  var ReactDebugTool = __webpack_require__(142);
+  var ReactDebugTool = __webpack_require__(140);
   debugTool = ReactDebugTool;
 }
 
 module.exports = { debugTool: debugTool };
+;
+
+var _temp = function () {
+  if (typeof __REACT_HOT_LOADER__ === 'undefined') {
+    return;
+  }
+
+  __REACT_HOT_LOADER__.register(debugTool, 'debugTool', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/ReactInstrumentation.js');
+}();
+
+;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
@@ -1239,6 +1442,15 @@ module.exports = { debugTool: debugTool };
 
 
 module.exports = __webpack_require__(19);
+;
+
+var _temp = function () {
+  if (typeof __REACT_HOT_LOADER__ === 'undefined') {
+    return;
+  }
+}();
+
+;
 
 /***/ }),
 /* 11 */
@@ -1246,12 +1458,10 @@ module.exports = __webpack_require__(19);
 
 "use strict";
 /* WEBPACK VAR INJECTION */(function(process) {/**
- * Copyright 2013-present, Facebook, Inc.
- * All rights reserved.
+ * Copyright (c) 2013-present, Facebook, Inc.
  *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
  *
  */
 
@@ -1260,9 +1470,9 @@ module.exports = __webpack_require__(19);
 var _prodInvariant = __webpack_require__(3),
     _assign = __webpack_require__(4);
 
-var CallbackQueue = __webpack_require__(62);
+var CallbackQueue = __webpack_require__(63);
 var PooledClass = __webpack_require__(15);
-var ReactFeatureFlags = __webpack_require__(67);
+var ReactFeatureFlags = __webpack_require__(68);
 var ReactReconciler = __webpack_require__(18);
 var Transaction = __webpack_require__(31);
 
@@ -1459,7 +1669,7 @@ function enqueueUpdate(component) {
  * if no updates are currently being performed.
  */
 function asap(callback, context) {
-  !batchingStrategy.isBatchingUpdates ? process.env.NODE_ENV !== 'production' ? invariant(false, 'ReactUpdates.asap: Can\'t enqueue an asap callback in a context whereupdates are not being batched.') : _prodInvariant('125') : void 0;
+  invariant(batchingStrategy.isBatchingUpdates, "ReactUpdates.asap: Can't enqueue an asap callback in a context where" + 'updates are not being batched.');
   asapCallbackQueue.enqueue(callback, context);
   asapEnqueued = true;
 }
@@ -1495,6 +1705,51 @@ var ReactUpdates = {
 };
 
 module.exports = ReactUpdates;
+;
+
+var _temp = function () {
+  if (typeof __REACT_HOT_LOADER__ === 'undefined') {
+    return;
+  }
+
+  __REACT_HOT_LOADER__.register(dirtyComponents, 'dirtyComponents', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/ReactUpdates.js');
+
+  __REACT_HOT_LOADER__.register(updateBatchNumber, 'updateBatchNumber', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/ReactUpdates.js');
+
+  __REACT_HOT_LOADER__.register(asapCallbackQueue, 'asapCallbackQueue', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/ReactUpdates.js');
+
+  __REACT_HOT_LOADER__.register(asapEnqueued, 'asapEnqueued', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/ReactUpdates.js');
+
+  __REACT_HOT_LOADER__.register(batchingStrategy, 'batchingStrategy', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/ReactUpdates.js');
+
+  __REACT_HOT_LOADER__.register(ensureInjected, 'ensureInjected', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/ReactUpdates.js');
+
+  __REACT_HOT_LOADER__.register(NESTED_UPDATES, 'NESTED_UPDATES', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/ReactUpdates.js');
+
+  __REACT_HOT_LOADER__.register(UPDATE_QUEUEING, 'UPDATE_QUEUEING', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/ReactUpdates.js');
+
+  __REACT_HOT_LOADER__.register(TRANSACTION_WRAPPERS, 'TRANSACTION_WRAPPERS', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/ReactUpdates.js');
+
+  __REACT_HOT_LOADER__.register(ReactUpdatesFlushTransaction, 'ReactUpdatesFlushTransaction', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/ReactUpdates.js');
+
+  __REACT_HOT_LOADER__.register(batchedUpdates, 'batchedUpdates', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/ReactUpdates.js');
+
+  __REACT_HOT_LOADER__.register(mountOrderComparator, 'mountOrderComparator', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/ReactUpdates.js');
+
+  __REACT_HOT_LOADER__.register(runBatchedUpdates, 'runBatchedUpdates', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/ReactUpdates.js');
+
+  __REACT_HOT_LOADER__.register(flushBatchedUpdates, 'flushBatchedUpdates', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/ReactUpdates.js');
+
+  __REACT_HOT_LOADER__.register(enqueueUpdate, 'enqueueUpdate', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/ReactUpdates.js');
+
+  __REACT_HOT_LOADER__.register(asap, 'asap', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/ReactUpdates.js');
+
+  __REACT_HOT_LOADER__.register(ReactUpdatesInjection, 'ReactUpdatesInjection', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/ReactUpdates.js');
+
+  __REACT_HOT_LOADER__.register(ReactUpdates, 'ReactUpdates', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/ReactUpdates.js');
+}();
+
+;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
@@ -1503,12 +1758,10 @@ module.exports = ReactUpdates;
 
 "use strict";
 /**
- * Copyright 2013-present, Facebook, Inc.
- * All rights reserved.
+ * Copyright (c) 2013-present, Facebook, Inc.
  *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
  *
  * 
  */
@@ -1531,6 +1784,17 @@ var ReactCurrentOwner = {
 };
 
 module.exports = ReactCurrentOwner;
+;
+
+var _temp = function () {
+  if (typeof __REACT_HOT_LOADER__ === 'undefined') {
+    return;
+  }
+
+  __REACT_HOT_LOADER__.register(ReactCurrentOwner, 'ReactCurrentOwner', 'd:/webStudy/React-Turntable/node_modules/._react@15.6.2@react/lib/ReactCurrentOwner.js');
+}();
+
+;
 
 /***/ }),
 /* 13 */
@@ -1538,12 +1802,10 @@ module.exports = ReactCurrentOwner;
 
 "use strict";
 /* WEBPACK VAR INJECTION */(function(process) {/**
- * Copyright 2013-present, Facebook, Inc.
- * All rights reserved.
+ * Copyright (c) 2013-present, Facebook, Inc.
  *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
  *
  */
 
@@ -1553,7 +1815,7 @@ var _assign = __webpack_require__(4);
 
 var PooledClass = __webpack_require__(15);
 
-var emptyFunction = __webpack_require__(7);
+var emptyFunction = __webpack_require__(8);
 var warning = __webpack_require__(2);
 
 var didWarnForAddedNewProperty = false;
@@ -1719,6 +1981,33 @@ _assign(SyntheticEvent.prototype, {
 
 SyntheticEvent.Interface = EventInterface;
 
+/**
+ * Helper to reduce boilerplate when creating subclasses.
+ *
+ * @param {function} Class
+ * @param {?object} Interface
+ */
+SyntheticEvent.augmentClass = function (Class, Interface) {
+  var Super = this;
+
+  var E = function E() {};
+  E.prototype = Super.prototype;
+  var prototype = new E();
+
+  _assign(prototype, Class.prototype);
+  Class.prototype = prototype;
+  Class.prototype.constructor = Class;
+
+  Class.Interface = _assign({}, Super.Interface, Interface);
+  Class.augmentClass = Super.augmentClass;
+
+  PooledClass.addPoolingTo(Class, PooledClass.fourArgumentPooler);
+};
+
+/** Proxying after everything set on SyntheticEvent
+  * to resolve Proxy issue on some WebKit browsers
+  * in which some Event properties are set to undefined (GH#10010)
+  */
 if (process.env.NODE_ENV !== 'production') {
   if (isProxySupported) {
     /*eslint-disable no-func-assign */
@@ -1742,28 +2031,6 @@ if (process.env.NODE_ENV !== 'production') {
     /*eslint-enable no-func-assign */
   }
 }
-/**
- * Helper to reduce boilerplate when creating subclasses.
- *
- * @param {function} Class
- * @param {?object} Interface
- */
-SyntheticEvent.augmentClass = function (Class, Interface) {
-  var Super = this;
-
-  var E = function E() {};
-  E.prototype = Super.prototype;
-  var prototype = new E();
-
-  _assign(prototype, Class.prototype);
-  Class.prototype = prototype;
-  Class.prototype.constructor = Class;
-
-  Class.Interface = _assign({}, Super.Interface, Interface);
-  Class.augmentClass = Super.augmentClass;
-
-  PooledClass.addPoolingTo(Class, PooledClass.fourArgumentPooler);
-};
 
 PooledClass.addPoolingTo(SyntheticEvent, PooledClass.fourArgumentPooler);
 
@@ -1802,6 +2069,27 @@ function getPooledWarningPropertyDefinition(propName, getVal) {
     process.env.NODE_ENV !== 'production' ? warning(warningCondition, "This synthetic event is reused for performance reasons. If you're seeing this, " + "you're %s `%s` on a released/nullified synthetic event. %s. " + 'If you must keep the original synthetic event around, use event.persist(). ' + 'See https://fb.me/react-event-pooling for more information.', action, propName, result) : void 0;
   }
 }
+;
+
+var _temp = function () {
+  if (typeof __REACT_HOT_LOADER__ === 'undefined') {
+    return;
+  }
+
+  __REACT_HOT_LOADER__.register(didWarnForAddedNewProperty, 'didWarnForAddedNewProperty', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/SyntheticEvent.js');
+
+  __REACT_HOT_LOADER__.register(isProxySupported, 'isProxySupported', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/SyntheticEvent.js');
+
+  __REACT_HOT_LOADER__.register(shouldBeReleasedProperties, 'shouldBeReleasedProperties', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/SyntheticEvent.js');
+
+  __REACT_HOT_LOADER__.register(EventInterface, 'EventInterface', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/SyntheticEvent.js');
+
+  __REACT_HOT_LOADER__.register(SyntheticEvent, 'SyntheticEvent', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/SyntheticEvent.js');
+
+  __REACT_HOT_LOADER__.register(getPooledWarningPropertyDefinition, 'getPooledWarningPropertyDefinition', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/SyntheticEvent.js');
+}();
+
+;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
@@ -1810,12 +2098,10 @@ function getPooledWarningPropertyDefinition(propName, getVal) {
 
 "use strict";
 /* WEBPACK VAR INJECTION */(function(process) {/**
- * Copyright 2013-present, Facebook, Inc.
- * All rights reserved.
+ * Copyright (c) 2013-present, Facebook, Inc.
  *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
  *
  */
 
@@ -2017,6 +2303,23 @@ var DOMProperty = {
 };
 
 module.exports = DOMProperty;
+;
+
+var _temp = function () {
+  if (typeof __REACT_HOT_LOADER__ === 'undefined') {
+    return;
+  }
+
+  __REACT_HOT_LOADER__.register(checkMask, 'checkMask', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/DOMProperty.js');
+
+  __REACT_HOT_LOADER__.register(DOMPropertyInjection, 'DOMPropertyInjection', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/DOMProperty.js');
+
+  __REACT_HOT_LOADER__.register(ATTRIBUTE_NAME_START_CHAR, 'ATTRIBUTE_NAME_START_CHAR', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/DOMProperty.js');
+
+  __REACT_HOT_LOADER__.register(DOMProperty, 'DOMProperty', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/DOMProperty.js');
+}();
+
+;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
@@ -2025,12 +2328,10 @@ module.exports = DOMProperty;
 
 "use strict";
 /* WEBPACK VAR INJECTION */(function(process) {/**
- * Copyright 2013-present, Facebook, Inc.
- * All rights reserved.
+ * Copyright (c) 2013-present, Facebook, Inc.
  *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
  *
  * 
  */
@@ -2135,6 +2436,33 @@ var PooledClass = {
 };
 
 module.exports = PooledClass;
+;
+
+var _temp = function () {
+  if (typeof __REACT_HOT_LOADER__ === 'undefined') {
+    return;
+  }
+
+  __REACT_HOT_LOADER__.register(oneArgumentPooler, 'oneArgumentPooler', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/PooledClass.js');
+
+  __REACT_HOT_LOADER__.register(twoArgumentPooler, 'twoArgumentPooler', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/PooledClass.js');
+
+  __REACT_HOT_LOADER__.register(threeArgumentPooler, 'threeArgumentPooler', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/PooledClass.js');
+
+  __REACT_HOT_LOADER__.register(fourArgumentPooler, 'fourArgumentPooler', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/PooledClass.js');
+
+  __REACT_HOT_LOADER__.register(standardReleaser, 'standardReleaser', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/PooledClass.js');
+
+  __REACT_HOT_LOADER__.register(DEFAULT_POOL_SIZE, 'DEFAULT_POOL_SIZE', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/PooledClass.js');
+
+  __REACT_HOT_LOADER__.register(DEFAULT_POOLER, 'DEFAULT_POOLER', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/PooledClass.js');
+
+  __REACT_HOT_LOADER__.register(addPoolingTo, 'addPoolingTo', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/PooledClass.js');
+
+  __REACT_HOT_LOADER__.register(PooledClass, 'PooledClass', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/PooledClass.js');
+}();
+
+;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
@@ -2143,12 +2471,10 @@ module.exports = PooledClass;
 
 "use strict";
 /* WEBPACK VAR INJECTION */(function(process) {/**
- * Copyright 2014-present, Facebook, Inc.
- * All rights reserved.
+ * Copyright (c) 2014-present, Facebook, Inc.
  *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
  *
  */
 
@@ -2164,7 +2490,7 @@ var warning = __webpack_require__(2);
 var canDefineProperty = __webpack_require__(34);
 var hasOwnProperty = Object.prototype.hasOwnProperty;
 
-var REACT_ELEMENT_TYPE = __webpack_require__(84);
+var REACT_ELEMENT_TYPE = __webpack_require__(85);
 
 var RESERVED_PROPS = {
   key: true,
@@ -2484,6 +2810,33 @@ ReactElement.isValidElement = function (object) {
 };
 
 module.exports = ReactElement;
+;
+
+var _temp = function () {
+  if (typeof __REACT_HOT_LOADER__ === 'undefined') {
+    return;
+  }
+
+  __REACT_HOT_LOADER__.register(hasOwnProperty, 'hasOwnProperty', 'd:/webStudy/React-Turntable/node_modules/._react@15.6.2@react/lib/ReactElement.js');
+
+  __REACT_HOT_LOADER__.register(RESERVED_PROPS, 'RESERVED_PROPS', 'd:/webStudy/React-Turntable/node_modules/._react@15.6.2@react/lib/ReactElement.js');
+
+  __REACT_HOT_LOADER__.register(specialPropKeyWarningShown, 'specialPropKeyWarningShown', 'd:/webStudy/React-Turntable/node_modules/._react@15.6.2@react/lib/ReactElement.js');
+
+  __REACT_HOT_LOADER__.register(specialPropRefWarningShown, 'specialPropRefWarningShown', 'd:/webStudy/React-Turntable/node_modules/._react@15.6.2@react/lib/ReactElement.js');
+
+  __REACT_HOT_LOADER__.register(hasValidRef, 'hasValidRef', 'd:/webStudy/React-Turntable/node_modules/._react@15.6.2@react/lib/ReactElement.js');
+
+  __REACT_HOT_LOADER__.register(hasValidKey, 'hasValidKey', 'd:/webStudy/React-Turntable/node_modules/._react@15.6.2@react/lib/ReactElement.js');
+
+  __REACT_HOT_LOADER__.register(defineKeyPropWarningGetter, 'defineKeyPropWarningGetter', 'd:/webStudy/React-Turntable/node_modules/._react@15.6.2@react/lib/ReactElement.js');
+
+  __REACT_HOT_LOADER__.register(defineRefPropWarningGetter, 'defineRefPropWarningGetter', 'd:/webStudy/React-Turntable/node_modules/._react@15.6.2@react/lib/ReactElement.js');
+
+  __REACT_HOT_LOADER__.register(ReactElement, 'ReactElement', 'd:/webStudy/React-Turntable/node_modules/._react@15.6.2@react/lib/ReactElement.js');
+}();
+
+;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
@@ -2492,22 +2845,20 @@ module.exports = ReactElement;
 
 "use strict";
 /**
- * Copyright 2015-present, Facebook, Inc.
- * All rights reserved.
+ * Copyright (c) 2015-present, Facebook, Inc.
  *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
  *
  */
 
 
 
-var DOMNamespaces = __webpack_require__(39);
+var DOMNamespaces = __webpack_require__(40);
 var setInnerHTML = __webpack_require__(33);
 
-var createMicrosoftUnsafeLocalFunction = __webpack_require__(46);
-var setTextContent = __webpack_require__(81);
+var createMicrosoftUnsafeLocalFunction = __webpack_require__(47);
+var setTextContent = __webpack_require__(82);
 
 var ELEMENT_NODE_TYPE = 1;
 var DOCUMENT_FRAGMENT_NODE_TYPE = 11;
@@ -2608,6 +2959,37 @@ DOMLazyTree.queueHTML = queueHTML;
 DOMLazyTree.queueText = queueText;
 
 module.exports = DOMLazyTree;
+;
+
+var _temp = function () {
+  if (typeof __REACT_HOT_LOADER__ === 'undefined') {
+    return;
+  }
+
+  __REACT_HOT_LOADER__.register(ELEMENT_NODE_TYPE, 'ELEMENT_NODE_TYPE', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/DOMLazyTree.js');
+
+  __REACT_HOT_LOADER__.register(DOCUMENT_FRAGMENT_NODE_TYPE, 'DOCUMENT_FRAGMENT_NODE_TYPE', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/DOMLazyTree.js');
+
+  __REACT_HOT_LOADER__.register(enableLazy, 'enableLazy', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/DOMLazyTree.js');
+
+  __REACT_HOT_LOADER__.register(insertTreeChildren, 'insertTreeChildren', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/DOMLazyTree.js');
+
+  __REACT_HOT_LOADER__.register(insertTreeBefore, 'insertTreeBefore', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/DOMLazyTree.js');
+
+  __REACT_HOT_LOADER__.register(replaceChildWithTree, 'replaceChildWithTree', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/DOMLazyTree.js');
+
+  __REACT_HOT_LOADER__.register(queueChild, 'queueChild', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/DOMLazyTree.js');
+
+  __REACT_HOT_LOADER__.register(queueHTML, 'queueHTML', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/DOMLazyTree.js');
+
+  __REACT_HOT_LOADER__.register(queueText, 'queueText', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/DOMLazyTree.js');
+
+  __REACT_HOT_LOADER__.register(toString, 'toString', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/DOMLazyTree.js');
+
+  __REACT_HOT_LOADER__.register(DOMLazyTree, 'DOMLazyTree', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/DOMLazyTree.js');
+}();
+
+;
 
 /***/ }),
 /* 18 */
@@ -2615,18 +2997,16 @@ module.exports = DOMLazyTree;
 
 "use strict";
 /* WEBPACK VAR INJECTION */(function(process) {/**
- * Copyright 2013-present, Facebook, Inc.
- * All rights reserved.
+ * Copyright (c) 2013-present, Facebook, Inc.
  *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
  *
  */
 
 
 
-var ReactRef = __webpack_require__(156);
+var ReactRef = __webpack_require__(154);
 var ReactInstrumentation = __webpack_require__(9);
 
 var warning = __webpack_require__(2);
@@ -2779,6 +3159,19 @@ var ReactReconciler = {
 };
 
 module.exports = ReactReconciler;
+;
+
+var _temp = function () {
+  if (typeof __REACT_HOT_LOADER__ === 'undefined') {
+    return;
+  }
+
+  __REACT_HOT_LOADER__.register(attachRefs, 'attachRefs', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/ReactReconciler.js');
+
+  __REACT_HOT_LOADER__.register(ReactReconciler, 'ReactReconciler', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/ReactReconciler.js');
+}();
+
+;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
@@ -2787,12 +3180,10 @@ module.exports = ReactReconciler;
 
 "use strict";
 /* WEBPACK VAR INJECTION */(function(process) {/**
- * Copyright 2013-present, Facebook, Inc.
- * All rights reserved.
+ * Copyright (c) 2013-present, Facebook, Inc.
  *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
  *
  */
 
@@ -2800,24 +3191,24 @@ module.exports = ReactReconciler;
 
 var _assign = __webpack_require__(4);
 
-var ReactBaseClasses = __webpack_require__(83);
-var ReactChildren = __webpack_require__(191);
-var ReactDOMFactories = __webpack_require__(192);
+var ReactBaseClasses = __webpack_require__(84);
+var ReactChildren = __webpack_require__(189);
+var ReactDOMFactories = __webpack_require__(190);
 var ReactElement = __webpack_require__(16);
-var ReactPropTypes = __webpack_require__(194);
-var ReactVersion = __webpack_require__(196);
+var ReactPropTypes = __webpack_require__(192);
+var ReactVersion = __webpack_require__(194);
 
-var createReactClass = __webpack_require__(198);
-var onlyChild = __webpack_require__(200);
+var createReactClass = __webpack_require__(196);
+var onlyChild = __webpack_require__(198);
 
 var createElement = ReactElement.createElement;
 var createFactory = ReactElement.createFactory;
 var cloneElement = ReactElement.cloneElement;
 
 if (process.env.NODE_ENV !== 'production') {
-  var lowPriorityWarning = __webpack_require__(53);
+  var lowPriorityWarning = __webpack_require__(54);
   var canDefineProperty = __webpack_require__(34);
-  var ReactElementValidator = __webpack_require__(85);
+  var ReactElementValidator = __webpack_require__(86);
   var didWarnPropTypesDeprecated = false;
   createElement = ReactElementValidator.createElement;
   createFactory = ReactElementValidator.createFactory;
@@ -2917,6 +3308,37 @@ if (process.env.NODE_ENV !== 'production') {
 }
 
 module.exports = React;
+;
+
+var _temp = function () {
+  if (typeof __REACT_HOT_LOADER__ === 'undefined') {
+    return;
+  }
+
+  __REACT_HOT_LOADER__.register(createElement, 'createElement', 'd:/webStudy/React-Turntable/node_modules/._react@15.6.2@react/lib/React.js');
+
+  __REACT_HOT_LOADER__.register(createFactory, 'createFactory', 'd:/webStudy/React-Turntable/node_modules/._react@15.6.2@react/lib/React.js');
+
+  __REACT_HOT_LOADER__.register(cloneElement, 'cloneElement', 'd:/webStudy/React-Turntable/node_modules/._react@15.6.2@react/lib/React.js');
+
+  __REACT_HOT_LOADER__.register(didWarnPropTypesDeprecated, 'didWarnPropTypesDeprecated', 'd:/webStudy/React-Turntable/node_modules/._react@15.6.2@react/lib/React.js');
+
+  __REACT_HOT_LOADER__.register(__spread, '__spread', 'd:/webStudy/React-Turntable/node_modules/._react@15.6.2@react/lib/React.js');
+
+  __REACT_HOT_LOADER__.register(createMixin, 'createMixin', 'd:/webStudy/React-Turntable/node_modules/._react@15.6.2@react/lib/React.js');
+
+  __REACT_HOT_LOADER__.register(warnedForSpread, 'warnedForSpread', 'd:/webStudy/React-Turntable/node_modules/._react@15.6.2@react/lib/React.js');
+
+  __REACT_HOT_LOADER__.register(warnedForCreateMixin, 'warnedForCreateMixin', 'd:/webStudy/React-Turntable/node_modules/._react@15.6.2@react/lib/React.js');
+
+  __REACT_HOT_LOADER__.register(React, 'React', 'd:/webStudy/React-Turntable/node_modules/._react@15.6.2@react/lib/React.js');
+
+  __REACT_HOT_LOADER__.register(warnedForCreateClass, 'warnedForCreateClass', 'd:/webStudy/React-Turntable/node_modules/._react@15.6.2@react/lib/React.js');
+
+  __REACT_HOT_LOADER__.register(warnedForFactories, 'warnedForFactories', 'd:/webStudy/React-Turntable/node_modules/._react@15.6.2@react/lib/React.js');
+}();
+
+;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
@@ -2926,11 +3348,9 @@ module.exports = React;
 "use strict";
 /**
  * Copyright (c) 2013-present, Facebook, Inc.
- * All rights reserved.
  *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
  *
  * 
  */
@@ -2962,6 +3382,17 @@ function reactProdInvariant(code) {
 }
 
 module.exports = reactProdInvariant;
+;
+
+var _temp = function () {
+  if (typeof __REACT_HOT_LOADER__ === 'undefined') {
+    return;
+  }
+
+  __REACT_HOT_LOADER__.register(reactProdInvariant, 'reactProdInvariant', 'd:/webStudy/React-Turntable/node_modules/._react@15.6.2@react/lib/reactProdInvariant.js');
+}();
+
+;
 
 /***/ }),
 /* 21 */
@@ -2969,12 +3400,10 @@ module.exports = reactProdInvariant;
 
 "use strict";
 /* WEBPACK VAR INJECTION */(function(process) {/**
- * Copyright 2013-present, Facebook, Inc.
- * All rights reserved.
+ * Copyright (c) 2013-present, Facebook, Inc.
  *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
  *
  */
 
@@ -2985,11 +3414,11 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
 var _prodInvariant = __webpack_require__(3);
 
 var EventPluginRegistry = __webpack_require__(28);
-var EventPluginUtils = __webpack_require__(40);
-var ReactErrorUtils = __webpack_require__(44);
+var EventPluginUtils = __webpack_require__(41);
+var ReactErrorUtils = __webpack_require__(45);
 
-var accumulateInto = __webpack_require__(74);
-var forEachAccumulated = __webpack_require__(75);
+var accumulateInto = __webpack_require__(75);
+var forEachAccumulated = __webpack_require__(76);
 var invariant = __webpack_require__(1);
 
 /**
@@ -3243,6 +3672,33 @@ var EventPluginHub = {
 };
 
 module.exports = EventPluginHub;
+;
+
+var _temp = function () {
+  if (typeof __REACT_HOT_LOADER__ === 'undefined') {
+    return;
+  }
+
+  __REACT_HOT_LOADER__.register(listenerBank, 'listenerBank', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/EventPluginHub.js');
+
+  __REACT_HOT_LOADER__.register(eventQueue, 'eventQueue', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/EventPluginHub.js');
+
+  __REACT_HOT_LOADER__.register(executeDispatchesAndRelease, 'executeDispatchesAndRelease', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/EventPluginHub.js');
+
+  __REACT_HOT_LOADER__.register(executeDispatchesAndReleaseSimulated, 'executeDispatchesAndReleaseSimulated', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/EventPluginHub.js');
+
+  __REACT_HOT_LOADER__.register(executeDispatchesAndReleaseTopLevel, 'executeDispatchesAndReleaseTopLevel', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/EventPluginHub.js');
+
+  __REACT_HOT_LOADER__.register(getDictionaryKey, 'getDictionaryKey', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/EventPluginHub.js');
+
+  __REACT_HOT_LOADER__.register(isInteractive, 'isInteractive', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/EventPluginHub.js');
+
+  __REACT_HOT_LOADER__.register(shouldPreventMouseEvent, 'shouldPreventMouseEvent', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/EventPluginHub.js');
+
+  __REACT_HOT_LOADER__.register(EventPluginHub, 'EventPluginHub', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/EventPluginHub.js');
+}();
+
+;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
@@ -3251,22 +3707,20 @@ module.exports = EventPluginHub;
 
 "use strict";
 /* WEBPACK VAR INJECTION */(function(process) {/**
- * Copyright 2013-present, Facebook, Inc.
- * All rights reserved.
+ * Copyright (c) 2013-present, Facebook, Inc.
  *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
  *
  */
 
 
 
 var EventPluginHub = __webpack_require__(21);
-var EventPluginUtils = __webpack_require__(40);
+var EventPluginUtils = __webpack_require__(41);
 
-var accumulateInto = __webpack_require__(74);
-var forEachAccumulated = __webpack_require__(75);
+var accumulateInto = __webpack_require__(75);
+var forEachAccumulated = __webpack_require__(76);
 var warning = __webpack_require__(2);
 
 var getListener = EventPluginHub.getListener;
@@ -3383,6 +3837,39 @@ var EventPropagators = {
 };
 
 module.exports = EventPropagators;
+;
+
+var _temp = function () {
+  if (typeof __REACT_HOT_LOADER__ === 'undefined') {
+    return;
+  }
+
+  __REACT_HOT_LOADER__.register(getListener, 'getListener', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/EventPropagators.js');
+
+  __REACT_HOT_LOADER__.register(listenerAtPhase, 'listenerAtPhase', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/EventPropagators.js');
+
+  __REACT_HOT_LOADER__.register(accumulateDirectionalDispatches, 'accumulateDirectionalDispatches', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/EventPropagators.js');
+
+  __REACT_HOT_LOADER__.register(accumulateTwoPhaseDispatchesSingle, 'accumulateTwoPhaseDispatchesSingle', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/EventPropagators.js');
+
+  __REACT_HOT_LOADER__.register(accumulateTwoPhaseDispatchesSingleSkipTarget, 'accumulateTwoPhaseDispatchesSingleSkipTarget', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/EventPropagators.js');
+
+  __REACT_HOT_LOADER__.register(accumulateDispatches, 'accumulateDispatches', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/EventPropagators.js');
+
+  __REACT_HOT_LOADER__.register(accumulateDirectDispatchesSingle, 'accumulateDirectDispatchesSingle', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/EventPropagators.js');
+
+  __REACT_HOT_LOADER__.register(accumulateTwoPhaseDispatches, 'accumulateTwoPhaseDispatches', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/EventPropagators.js');
+
+  __REACT_HOT_LOADER__.register(accumulateTwoPhaseDispatchesSkipTarget, 'accumulateTwoPhaseDispatchesSkipTarget', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/EventPropagators.js');
+
+  __REACT_HOT_LOADER__.register(accumulateEnterLeaveDispatches, 'accumulateEnterLeaveDispatches', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/EventPropagators.js');
+
+  __REACT_HOT_LOADER__.register(accumulateDirectDispatches, 'accumulateDirectDispatches', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/EventPropagators.js');
+
+  __REACT_HOT_LOADER__.register(EventPropagators, 'EventPropagators', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/EventPropagators.js');
+}();
+
+;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
@@ -3391,12 +3878,10 @@ module.exports = EventPropagators;
 
 "use strict";
 /**
- * Copyright 2013-present, Facebook, Inc.
- * All rights reserved.
+ * Copyright (c) 2013-present, Facebook, Inc.
  *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
  *
  */
 
@@ -3435,6 +3920,17 @@ var ReactInstanceMap = {
 };
 
 module.exports = ReactInstanceMap;
+;
+
+var _temp = function () {
+  if (typeof __REACT_HOT_LOADER__ === 'undefined') {
+    return;
+  }
+
+  __REACT_HOT_LOADER__.register(ReactInstanceMap, 'ReactInstanceMap', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/ReactInstanceMap.js');
+}();
+
+;
 
 /***/ }),
 /* 24 */
@@ -3442,12 +3938,10 @@ module.exports = ReactInstanceMap;
 
 "use strict";
 /**
- * Copyright 2013-present, Facebook, Inc.
- * All rights reserved.
+ * Copyright (c) 2013-present, Facebook, Inc.
  *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
  *
  */
 
@@ -3455,7 +3949,7 @@ module.exports = ReactInstanceMap;
 
 var SyntheticEvent = __webpack_require__(13);
 
-var getEventTarget = __webpack_require__(49);
+var getEventTarget = __webpack_require__(50);
 
 /**
  * @interface UIEvent
@@ -3499,6 +3993,19 @@ function SyntheticUIEvent(dispatchConfig, dispatchMarker, nativeEvent, nativeEve
 SyntheticEvent.augmentClass(SyntheticUIEvent, UIEventInterface);
 
 module.exports = SyntheticUIEvent;
+;
+
+var _temp = function () {
+  if (typeof __REACT_HOT_LOADER__ === 'undefined') {
+    return;
+  }
+
+  __REACT_HOT_LOADER__.register(UIEventInterface, 'UIEventInterface', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/SyntheticUIEvent.js');
+
+  __REACT_HOT_LOADER__.register(SyntheticUIEvent, 'SyntheticUIEvent', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/SyntheticUIEvent.js');
+}();
+
+;
 
 /***/ }),
 /* 25 */
@@ -3525,7 +4032,7 @@ var _react = __webpack_require__(10);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _propTypes = __webpack_require__(112);
+var _propTypes = __webpack_require__(61);
 
 var _propTypes2 = _interopRequireDefault(_propTypes);
 
@@ -3544,8 +4051,10 @@ var IconBase = function IconBase(_ref, _ref2) {
   var color = _ref.color;
   var size = _ref.size;
   var style = _ref.style;
+  var width = _ref.width;
+  var height = _ref.height;
 
-  var props = _objectWithoutProperties(_ref, ['children', 'color', 'size', 'style']);
+  var props = _objectWithoutProperties(_ref, ['children', 'color', 'size', 'style', 'width', 'height']);
 
   var _ref2$reactIconBase = _ref2.reactIconBase;
   var reactIconBase = _ref2$reactIconBase === undefined ? {} : _ref2$reactIconBase;
@@ -3555,8 +4064,8 @@ var IconBase = function IconBase(_ref, _ref2) {
     children: children,
     fill: 'currentColor',
     preserveAspectRatio: 'xMidYMid meet',
-    height: computedSize,
-    width: computedSize
+    height: height || computedSize,
+    width: width || computedSize
   }, reactIconBase, props, {
     style: _extends({
       verticalAlign: 'middle',
@@ -3568,6 +4077,8 @@ var IconBase = function IconBase(_ref, _ref2) {
 IconBase.propTypes = {
   color: _propTypes2.default.string,
   size: _propTypes2.default.oneOfType([_propTypes2.default.string, _propTypes2.default.number]),
+  width: _propTypes2.default.oneOfType([_propTypes2.default.string, _propTypes2.default.number]),
+  height: _propTypes2.default.oneOfType([_propTypes2.default.string, _propTypes2.default.number]),
   style: _propTypes2.default.object
 };
 
@@ -3577,6 +4088,27 @@ IconBase.contextTypes = {
 
 exports.default = IconBase;
 module.exports = exports['default'];
+;
+
+var _temp = function () {
+  if (typeof __REACT_HOT_LOADER__ === 'undefined') {
+    return;
+  }
+
+  __REACT_HOT_LOADER__.register(_extends, '_extends', 'd:/webStudy/React-Turntable/node_modules/._react-icon-base@2.1.0@react-icon-base/lib/index.js');
+
+  __REACT_HOT_LOADER__.register(_react2, '_react2', 'd:/webStudy/React-Turntable/node_modules/._react-icon-base@2.1.0@react-icon-base/lib/index.js');
+
+  __REACT_HOT_LOADER__.register(_propTypes2, '_propTypes2', 'd:/webStudy/React-Turntable/node_modules/._react-icon-base@2.1.0@react-icon-base/lib/index.js');
+
+  __REACT_HOT_LOADER__.register(_interopRequireDefault, '_interopRequireDefault', 'd:/webStudy/React-Turntable/node_modules/._react-icon-base@2.1.0@react-icon-base/lib/index.js');
+
+  __REACT_HOT_LOADER__.register(_objectWithoutProperties, '_objectWithoutProperties', 'd:/webStudy/React-Turntable/node_modules/._react-icon-base@2.1.0@react-icon-base/lib/index.js');
+
+  __REACT_HOT_LOADER__.register(IconBase, 'IconBase', 'd:/webStudy/React-Turntable/node_modules/._react-icon-base@2.1.0@react-icon-base/lib/index.js');
+}();
+
+;
 
 /***/ }),
 /* 26 */
@@ -3585,7 +4117,16 @@ module.exports = exports['default'];
 "use strict";
 
 
-module.exports = __webpack_require__(127);
+module.exports = __webpack_require__(125);
+;
+
+var _temp = function () {
+  if (typeof __REACT_HOT_LOADER__ === 'undefined') {
+    return;
+  }
+}();
+
+;
 
 /***/ }),
 /* 27 */
@@ -3594,11 +4135,9 @@ module.exports = __webpack_require__(127);
 "use strict";
 /* WEBPACK VAR INJECTION */(function(process) {/**
  * Copyright (c) 2013-present, Facebook, Inc.
- * All rights reserved.
  *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
  *
  */
 
@@ -3611,6 +4150,17 @@ if (process.env.NODE_ENV !== 'production') {
 }
 
 module.exports = emptyObject;
+;
+
+var _temp = function () {
+  if (typeof __REACT_HOT_LOADER__ === 'undefined') {
+    return;
+  }
+
+  __REACT_HOT_LOADER__.register(emptyObject, 'emptyObject', 'd:/webStudy/React-Turntable/node_modules/._fbjs@0.8.16@fbjs/lib/emptyObject.js');
+}();
+
+;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
@@ -3619,12 +4169,10 @@ module.exports = emptyObject;
 
 "use strict";
 /* WEBPACK VAR INJECTION */(function(process) {/**
- * Copyright 2013-present, Facebook, Inc.
- * All rights reserved.
+ * Copyright (c) 2013-present, Facebook, Inc.
  *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
  *
  * 
  */
@@ -3870,6 +4418,27 @@ var EventPluginRegistry = {
 };
 
 module.exports = EventPluginRegistry;
+;
+
+var _temp = function () {
+  if (typeof __REACT_HOT_LOADER__ === 'undefined') {
+    return;
+  }
+
+  __REACT_HOT_LOADER__.register(eventPluginOrder, 'eventPluginOrder', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/EventPluginRegistry.js');
+
+  __REACT_HOT_LOADER__.register(namesToPlugins, 'namesToPlugins', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/EventPluginRegistry.js');
+
+  __REACT_HOT_LOADER__.register(recomputePluginOrdering, 'recomputePluginOrdering', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/EventPluginRegistry.js');
+
+  __REACT_HOT_LOADER__.register(publishEventForPlugin, 'publishEventForPlugin', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/EventPluginRegistry.js');
+
+  __REACT_HOT_LOADER__.register(publishRegistrationName, 'publishRegistrationName', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/EventPluginRegistry.js');
+
+  __REACT_HOT_LOADER__.register(EventPluginRegistry, 'EventPluginRegistry', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/EventPluginRegistry.js');
+}();
+
+;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
@@ -3878,12 +4447,10 @@ module.exports = EventPluginRegistry;
 
 "use strict";
 /**
- * Copyright 2013-present, Facebook, Inc.
- * All rights reserved.
+ * Copyright (c) 2013-present, Facebook, Inc.
  *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
  *
  */
 
@@ -3892,11 +4459,11 @@ module.exports = EventPluginRegistry;
 var _assign = __webpack_require__(4);
 
 var EventPluginRegistry = __webpack_require__(28);
-var ReactEventEmitterMixin = __webpack_require__(146);
-var ViewportMetrics = __webpack_require__(73);
+var ReactEventEmitterMixin = __webpack_require__(144);
+var ViewportMetrics = __webpack_require__(74);
 
-var getVendorPrefixedEventName = __webpack_require__(181);
-var isEventSupported = __webpack_require__(50);
+var getVendorPrefixedEventName = __webpack_require__(179);
+var isEventSupported = __webpack_require__(51);
 
 /**
  * Summary of `ReactBrowserEventEmitter` event handling:
@@ -4200,6 +4767,31 @@ var ReactBrowserEventEmitter = _assign({}, ReactEventEmitterMixin, {
 });
 
 module.exports = ReactBrowserEventEmitter;
+;
+
+var _temp = function () {
+  if (typeof __REACT_HOT_LOADER__ === 'undefined') {
+    return;
+  }
+
+  __REACT_HOT_LOADER__.register(hasEventPageXY, 'hasEventPageXY', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/ReactBrowserEventEmitter.js');
+
+  __REACT_HOT_LOADER__.register(alreadyListeningTo, 'alreadyListeningTo', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/ReactBrowserEventEmitter.js');
+
+  __REACT_HOT_LOADER__.register(isMonitoringScrollValue, 'isMonitoringScrollValue', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/ReactBrowserEventEmitter.js');
+
+  __REACT_HOT_LOADER__.register(reactTopListenersCounter, 'reactTopListenersCounter', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/ReactBrowserEventEmitter.js');
+
+  __REACT_HOT_LOADER__.register(topEventMapping, 'topEventMapping', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/ReactBrowserEventEmitter.js');
+
+  __REACT_HOT_LOADER__.register(topListenersIDKey, 'topListenersIDKey', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/ReactBrowserEventEmitter.js');
+
+  __REACT_HOT_LOADER__.register(getListeningForDocument, 'getListeningForDocument', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/ReactBrowserEventEmitter.js');
+
+  __REACT_HOT_LOADER__.register(ReactBrowserEventEmitter, 'ReactBrowserEventEmitter', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/ReactBrowserEventEmitter.js');
+}();
+
+;
 
 /***/ }),
 /* 30 */
@@ -4207,21 +4799,19 @@ module.exports = ReactBrowserEventEmitter;
 
 "use strict";
 /**
- * Copyright 2013-present, Facebook, Inc.
- * All rights reserved.
+ * Copyright (c) 2013-present, Facebook, Inc.
  *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
  *
  */
 
 
 
 var SyntheticUIEvent = __webpack_require__(24);
-var ViewportMetrics = __webpack_require__(73);
+var ViewportMetrics = __webpack_require__(74);
 
-var getEventModifierState = __webpack_require__(48);
+var getEventModifierState = __webpack_require__(49);
 
 /**
  * @interface MouseEvent
@@ -4277,6 +4867,19 @@ function SyntheticMouseEvent(dispatchConfig, dispatchMarker, nativeEvent, native
 SyntheticUIEvent.augmentClass(SyntheticMouseEvent, MouseEventInterface);
 
 module.exports = SyntheticMouseEvent;
+;
+
+var _temp = function () {
+  if (typeof __REACT_HOT_LOADER__ === 'undefined') {
+    return;
+  }
+
+  __REACT_HOT_LOADER__.register(MouseEventInterface, 'MouseEventInterface', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/SyntheticMouseEvent.js');
+
+  __REACT_HOT_LOADER__.register(SyntheticMouseEvent, 'SyntheticMouseEvent', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/SyntheticMouseEvent.js');
+}();
+
+;
 
 /***/ }),
 /* 31 */
@@ -4284,12 +4887,10 @@ module.exports = SyntheticMouseEvent;
 
 "use strict";
 /* WEBPACK VAR INJECTION */(function(process) {/**
- * Copyright 2013-present, Facebook, Inc.
- * All rights reserved.
+ * Copyright (c) 2013-present, Facebook, Inc.
  *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
  *
  * 
  */
@@ -4510,6 +5111,19 @@ var TransactionImpl = {
 };
 
 module.exports = TransactionImpl;
+;
+
+var _temp = function () {
+  if (typeof __REACT_HOT_LOADER__ === 'undefined') {
+    return;
+  }
+
+  __REACT_HOT_LOADER__.register(OBSERVED_ERROR, 'OBSERVED_ERROR', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/Transaction.js');
+
+  __REACT_HOT_LOADER__.register(TransactionImpl, 'TransactionImpl', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/Transaction.js');
+}();
+
+;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
@@ -4518,12 +5132,10 @@ module.exports = TransactionImpl;
 
 "use strict";
 /**
- * Copyright 2016-present, Facebook, Inc.
- * All rights reserved.
+ * Copyright (c) 2016-present, Facebook, Inc.
  *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
  *
  * Based on the escape-html library, which is used under the MIT License below:
  *
@@ -4638,6 +5250,21 @@ function escapeTextContentForBrowser(text) {
 }
 
 module.exports = escapeTextContentForBrowser;
+;
+
+var _temp = function () {
+  if (typeof __REACT_HOT_LOADER__ === 'undefined') {
+    return;
+  }
+
+  __REACT_HOT_LOADER__.register(matchHtmlRegExp, 'matchHtmlRegExp', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/escapeTextContentForBrowser.js');
+
+  __REACT_HOT_LOADER__.register(escapeHtml, 'escapeHtml', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/escapeTextContentForBrowser.js');
+
+  __REACT_HOT_LOADER__.register(escapeTextContentForBrowser, 'escapeTextContentForBrowser', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/escapeTextContentForBrowser.js');
+}();
+
+;
 
 /***/ }),
 /* 33 */
@@ -4645,24 +5272,22 @@ module.exports = escapeTextContentForBrowser;
 
 "use strict";
 /**
- * Copyright 2013-present, Facebook, Inc.
- * All rights reserved.
+ * Copyright (c) 2013-present, Facebook, Inc.
  *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
  *
  */
 
 
 
 var ExecutionEnvironment = __webpack_require__(6);
-var DOMNamespaces = __webpack_require__(39);
+var DOMNamespaces = __webpack_require__(40);
 
 var WHITESPACE_TEST = /^[ \r\n\t\f]/;
 var NONVISIBLE_TEST = /<(!--|link|noscript|meta|script|style)[ \r\n\t\f\/>]/;
 
-var createMicrosoftUnsafeLocalFunction = __webpack_require__(46);
+var createMicrosoftUnsafeLocalFunction = __webpack_require__(47);
 
 // SVG temp container for IE lacking innerHTML
 var reusableSVGContainer;
@@ -4741,6 +5366,25 @@ if (ExecutionEnvironment.canUseDOM) {
 }
 
 module.exports = setInnerHTML;
+;
+
+var _temp = function () {
+  if (typeof __REACT_HOT_LOADER__ === 'undefined') {
+    return;
+  }
+
+  __REACT_HOT_LOADER__.register(WHITESPACE_TEST, 'WHITESPACE_TEST', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/setInnerHTML.js');
+
+  __REACT_HOT_LOADER__.register(NONVISIBLE_TEST, 'NONVISIBLE_TEST', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/setInnerHTML.js');
+
+  __REACT_HOT_LOADER__.register(reusableSVGContainer, 'reusableSVGContainer', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/setInnerHTML.js');
+
+  __REACT_HOT_LOADER__.register(setInnerHTML, 'setInnerHTML', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/setInnerHTML.js');
+
+  __REACT_HOT_LOADER__.register(testElement, 'testElement', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/setInnerHTML.js');
+}();
+
+;
 
 /***/ }),
 /* 34 */
@@ -4748,12 +5392,10 @@ module.exports = setInnerHTML;
 
 "use strict";
 /* WEBPACK VAR INJECTION */(function(process) {/**
- * Copyright 2013-present, Facebook, Inc.
- * All rights reserved.
+ * Copyright (c) 2013-present, Facebook, Inc.
  *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
  *
  * 
  */
@@ -4772,13 +5414,27 @@ if (process.env.NODE_ENV !== 'production') {
 }
 
 module.exports = canDefineProperty;
+;
+
+var _temp = function () {
+  if (typeof __REACT_HOT_LOADER__ === 'undefined') {
+    return;
+  }
+
+  __REACT_HOT_LOADER__.register(canDefineProperty, 'canDefineProperty', 'd:/webStudy/React-Turntable/node_modules/._react@15.6.2@react/lib/canDefineProperty.js');
+}();
+
+;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
 /* 35 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
+"use strict";
+var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;
+
+var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
 
 /*!
   Copyright (c) 2016 Jed Watson.
@@ -4819,7 +5475,7 @@ var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;var _typeof = ty
 
 	if (typeof module !== 'undefined' && module.exports) {
 		module.exports = classNames;
-	} else if ("function" === 'function' && _typeof(__webpack_require__(88)) === 'object' && __webpack_require__(88)) {
+	} else if ("function" === 'function' && _typeof(__webpack_require__(89)) === 'object' && __webpack_require__(89)) {
 		// register as 'classnames', consistent with npm package name
 		!(__WEBPACK_AMD_DEFINE_ARRAY__ = [], __WEBPACK_AMD_DEFINE_RESULT__ = function () {
 			return classNames;
@@ -4829,10 +5485,22 @@ var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;var _typeof = ty
 		window.classNames = classNames;
 	}
 })();
+;
+
+var _temp = function () {
+	if (typeof __REACT_HOT_LOADER__ === 'undefined') {
+		return;
+	}
+}();
+
+;
 
 /***/ }),
 /* 36 */
-/***/ (function(module, exports) {
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
 
 /*
 	MIT License http://www.opensource.org/licenses/mit-license.php
@@ -4882,6 +5550,15 @@ module.exports = function () {
 	};
 	return list;
 };
+;
+
+var _temp = function () {
+	if (typeof __REACT_HOT_LOADER__ === 'undefined') {
+		return;
+	}
+}();
+
+;
 
 /***/ }),
 /* 37 */
@@ -4890,11 +5567,9 @@ module.exports = function () {
 "use strict";
 /**
  * Copyright (c) 2013-present, Facebook, Inc.
- * All rights reserved.
  *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
  *
  * @typechecks
  * 
@@ -4957,32 +5632,74 @@ function shallowEqual(objA, objB) {
 }
 
 module.exports = shallowEqual;
+;
+
+var _temp = function () {
+  if (typeof __REACT_HOT_LOADER__ === 'undefined') {
+    return;
+  }
+
+  __REACT_HOT_LOADER__.register(hasOwnProperty, 'hasOwnProperty', 'd:/webStudy/React-Turntable/node_modules/._fbjs@0.8.16@fbjs/lib/shallowEqual.js');
+
+  __REACT_HOT_LOADER__.register(is, 'is', 'd:/webStudy/React-Turntable/node_modules/._fbjs@0.8.16@fbjs/lib/shallowEqual.js');
+
+  __REACT_HOT_LOADER__.register(shallowEqual, 'shallowEqual', 'd:/webStudy/React-Turntable/node_modules/._fbjs@0.8.16@fbjs/lib/shallowEqual.js');
+}();
+
+;
 
 /***/ }),
 /* 38 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* WEBPACK VAR INJECTION */(function(process) {/**
- * Copyright 2013-present, Facebook, Inc.
- * All rights reserved.
+/**
+ * Copyright (c) 2013-present, Facebook, Inc.
  *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */
+
+
+
+var ReactPropTypesSecret = 'SECRET_DO_NOT_PASS_THIS_OR_YOU_WILL_BE_FIRED';
+
+module.exports = ReactPropTypesSecret;
+;
+
+var _temp = function () {
+  if (typeof __REACT_HOT_LOADER__ === 'undefined') {
+    return;
+  }
+
+  __REACT_HOT_LOADER__.register(ReactPropTypesSecret, 'ReactPropTypesSecret', 'd:/webStudy/React-Turntable/node_modules/._prop-types@15.6.0@prop-types/lib/ReactPropTypesSecret.js');
+}();
+
+;
+
+/***/ }),
+/* 39 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+/* WEBPACK VAR INJECTION */(function(process) {/**
+ * Copyright (c) 2013-present, Facebook, Inc.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
  *
  */
 
 
 
 var DOMLazyTree = __webpack_require__(17);
-var Danger = __webpack_require__(119);
+var Danger = __webpack_require__(117);
 var ReactDOMComponentTree = __webpack_require__(5);
 var ReactInstrumentation = __webpack_require__(9);
 
-var createMicrosoftUnsafeLocalFunction = __webpack_require__(46);
+var createMicrosoftUnsafeLocalFunction = __webpack_require__(47);
 var setInnerHTML = __webpack_require__(33);
-var setTextContent = __webpack_require__(81);
+var setTextContent = __webpack_require__(82);
 
 function getNodeAfter(parentNode, node) {
   // Special case for text components, which return [open, close] comments
@@ -5188,20 +5905,47 @@ var DOMChildrenOperations = {
 };
 
 module.exports = DOMChildrenOperations;
+;
+
+var _temp = function () {
+  if (typeof __REACT_HOT_LOADER__ === 'undefined') {
+    return;
+  }
+
+  __REACT_HOT_LOADER__.register(getNodeAfter, 'getNodeAfter', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/DOMChildrenOperations.js');
+
+  __REACT_HOT_LOADER__.register(insertChildAt, 'insertChildAt', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/DOMChildrenOperations.js');
+
+  __REACT_HOT_LOADER__.register(insertLazyTreeChildAt, 'insertLazyTreeChildAt', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/DOMChildrenOperations.js');
+
+  __REACT_HOT_LOADER__.register(moveChild, 'moveChild', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/DOMChildrenOperations.js');
+
+  __REACT_HOT_LOADER__.register(removeChild, 'removeChild', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/DOMChildrenOperations.js');
+
+  __REACT_HOT_LOADER__.register(moveDelimitedText, 'moveDelimitedText', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/DOMChildrenOperations.js');
+
+  __REACT_HOT_LOADER__.register(removeDelimitedText, 'removeDelimitedText', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/DOMChildrenOperations.js');
+
+  __REACT_HOT_LOADER__.register(replaceDelimitedText, 'replaceDelimitedText', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/DOMChildrenOperations.js');
+
+  __REACT_HOT_LOADER__.register(dangerouslyReplaceNodeWithMarkup, 'dangerouslyReplaceNodeWithMarkup', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/DOMChildrenOperations.js');
+
+  __REACT_HOT_LOADER__.register(DOMChildrenOperations, 'DOMChildrenOperations', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/DOMChildrenOperations.js');
+}();
+
+;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 39 */
+/* 40 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 /**
- * Copyright 2013-present, Facebook, Inc.
- * All rights reserved.
+ * Copyright (c) 2013-present, Facebook, Inc.
  *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
  *
  */
 
@@ -5214,19 +5958,28 @@ var DOMNamespaces = {
 };
 
 module.exports = DOMNamespaces;
+;
+
+var _temp = function () {
+  if (typeof __REACT_HOT_LOADER__ === 'undefined') {
+    return;
+  }
+
+  __REACT_HOT_LOADER__.register(DOMNamespaces, 'DOMNamespaces', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/DOMNamespaces.js');
+}();
+
+;
 
 /***/ }),
-/* 40 */
+/* 41 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 /* WEBPACK VAR INJECTION */(function(process) {/**
- * Copyright 2013-present, Facebook, Inc.
- * All rights reserved.
+ * Copyright (c) 2013-present, Facebook, Inc.
  *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
  *
  */
 
@@ -5234,7 +5987,7 @@ module.exports = DOMNamespaces;
 
 var _prodInvariant = __webpack_require__(3);
 
-var ReactErrorUtils = __webpack_require__(44);
+var ReactErrorUtils = __webpack_require__(45);
 
 var invariant = __webpack_require__(1);
 var warning = __webpack_require__(2);
@@ -5445,20 +6198,55 @@ var EventPluginUtils = {
 };
 
 module.exports = EventPluginUtils;
+;
+
+var _temp = function () {
+  if (typeof __REACT_HOT_LOADER__ === 'undefined') {
+    return;
+  }
+
+  __REACT_HOT_LOADER__.register(ComponentTree, 'ComponentTree', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/EventPluginUtils.js');
+
+  __REACT_HOT_LOADER__.register(TreeTraversal, 'TreeTraversal', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/EventPluginUtils.js');
+
+  __REACT_HOT_LOADER__.register(injection, 'injection', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/EventPluginUtils.js');
+
+  __REACT_HOT_LOADER__.register(isEndish, 'isEndish', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/EventPluginUtils.js');
+
+  __REACT_HOT_LOADER__.register(isMoveish, 'isMoveish', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/EventPluginUtils.js');
+
+  __REACT_HOT_LOADER__.register(isStartish, 'isStartish', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/EventPluginUtils.js');
+
+  __REACT_HOT_LOADER__.register(validateEventDispatches, 'validateEventDispatches', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/EventPluginUtils.js');
+
+  __REACT_HOT_LOADER__.register(executeDispatch, 'executeDispatch', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/EventPluginUtils.js');
+
+  __REACT_HOT_LOADER__.register(executeDispatchesInOrder, 'executeDispatchesInOrder', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/EventPluginUtils.js');
+
+  __REACT_HOT_LOADER__.register(executeDispatchesInOrderStopAtTrueImpl, 'executeDispatchesInOrderStopAtTrueImpl', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/EventPluginUtils.js');
+
+  __REACT_HOT_LOADER__.register(executeDispatchesInOrderStopAtTrue, 'executeDispatchesInOrderStopAtTrue', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/EventPluginUtils.js');
+
+  __REACT_HOT_LOADER__.register(executeDirectDispatch, 'executeDirectDispatch', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/EventPluginUtils.js');
+
+  __REACT_HOT_LOADER__.register(hasDispatches, 'hasDispatches', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/EventPluginUtils.js');
+
+  __REACT_HOT_LOADER__.register(EventPluginUtils, 'EventPluginUtils', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/EventPluginUtils.js');
+}();
+
+;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 41 */
+/* 42 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 /**
- * Copyright 2013-present, Facebook, Inc.
- * All rights reserved.
+ * Copyright (c) 2013-present, Facebook, Inc.
  *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
  *
  * 
  */
@@ -5510,19 +6298,32 @@ var KeyEscapeUtils = {
 };
 
 module.exports = KeyEscapeUtils;
+;
+
+var _temp = function () {
+  if (typeof __REACT_HOT_LOADER__ === 'undefined') {
+    return;
+  }
+
+  __REACT_HOT_LOADER__.register(escape, 'escape', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/KeyEscapeUtils.js');
+
+  __REACT_HOT_LOADER__.register(unescape, 'unescape', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/KeyEscapeUtils.js');
+
+  __REACT_HOT_LOADER__.register(KeyEscapeUtils, 'KeyEscapeUtils', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/KeyEscapeUtils.js');
+}();
+
+;
 
 /***/ }),
-/* 42 */
+/* 43 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 /* WEBPACK VAR INJECTION */(function(process) {/**
- * Copyright 2013-present, Facebook, Inc.
- * All rights reserved.
+ * Copyright (c) 2013-present, Facebook, Inc.
  *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
  *
  */
 
@@ -5530,8 +6331,8 @@ module.exports = KeyEscapeUtils;
 
 var _prodInvariant = __webpack_require__(3);
 
-var ReactPropTypesSecret = __webpack_require__(72);
-var propTypesFactory = __webpack_require__(58);
+var ReactPropTypesSecret = __webpack_require__(73);
+var propTypesFactory = __webpack_require__(59);
 
 var React = __webpack_require__(19);
 var PropTypes = propTypesFactory(React.isValidElement);
@@ -5653,20 +6454,45 @@ var LinkedValueUtils = {
 };
 
 module.exports = LinkedValueUtils;
+;
+
+var _temp = function () {
+  if (typeof __REACT_HOT_LOADER__ === 'undefined') {
+    return;
+  }
+
+  __REACT_HOT_LOADER__.register(PropTypes, 'PropTypes', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/LinkedValueUtils.js');
+
+  __REACT_HOT_LOADER__.register(hasReadOnlyValue, 'hasReadOnlyValue', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/LinkedValueUtils.js');
+
+  __REACT_HOT_LOADER__.register(_assertSingleLink, '_assertSingleLink', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/LinkedValueUtils.js');
+
+  __REACT_HOT_LOADER__.register(_assertValueLink, '_assertValueLink', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/LinkedValueUtils.js');
+
+  __REACT_HOT_LOADER__.register(_assertCheckedLink, '_assertCheckedLink', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/LinkedValueUtils.js');
+
+  __REACT_HOT_LOADER__.register(propTypes, 'propTypes', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/LinkedValueUtils.js');
+
+  __REACT_HOT_LOADER__.register(loggedTypeFailures, 'loggedTypeFailures', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/LinkedValueUtils.js');
+
+  __REACT_HOT_LOADER__.register(getDeclarationErrorAddendum, 'getDeclarationErrorAddendum', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/LinkedValueUtils.js');
+
+  __REACT_HOT_LOADER__.register(LinkedValueUtils, 'LinkedValueUtils', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/LinkedValueUtils.js');
+}();
+
+;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 43 */
+/* 44 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 /* WEBPACK VAR INJECTION */(function(process) {/**
- * Copyright 2014-present, Facebook, Inc.
- * All rights reserved.
+ * Copyright (c) 2014-present, Facebook, Inc.
  *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
  *
  * 
  */
@@ -5703,20 +6529,31 @@ var ReactComponentEnvironment = {
 };
 
 module.exports = ReactComponentEnvironment;
+;
+
+var _temp = function () {
+  if (typeof __REACT_HOT_LOADER__ === 'undefined') {
+    return;
+  }
+
+  __REACT_HOT_LOADER__.register(injected, 'injected', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/ReactComponentEnvironment.js');
+
+  __REACT_HOT_LOADER__.register(ReactComponentEnvironment, 'ReactComponentEnvironment', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/ReactComponentEnvironment.js');
+}();
+
+;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 44 */
+/* 45 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 /* WEBPACK VAR INJECTION */(function(process) {/**
- * Copyright 2013-present, Facebook, Inc.
- * All rights reserved.
+ * Copyright (c) 2013-present, Facebook, Inc.
  *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
  *
  * 
  */
@@ -5773,7 +6610,9 @@ if (process.env.NODE_ENV !== 'production') {
   if (typeof window !== 'undefined' && typeof window.dispatchEvent === 'function' && typeof document !== 'undefined' && typeof document.createEvent === 'function') {
     var fakeNode = document.createElement('react');
     ReactErrorUtils.invokeGuardedCallback = function (name, func, a) {
-      var boundFunc = func.bind(null, a);
+      var boundFunc = function boundFunc() {
+        func(a);
+      };
       var evtType = 'react-' + name;
       fakeNode.addEventListener(evtType, boundFunc, false);
       var evt = document.createEvent('Event');
@@ -5785,20 +6624,35 @@ if (process.env.NODE_ENV !== 'production') {
 }
 
 module.exports = ReactErrorUtils;
+;
+
+var _temp = function () {
+  if (typeof __REACT_HOT_LOADER__ === 'undefined') {
+    return;
+  }
+
+  __REACT_HOT_LOADER__.register(caughtError, 'caughtError', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/ReactErrorUtils.js');
+
+  __REACT_HOT_LOADER__.register(invokeGuardedCallback, 'invokeGuardedCallback', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/ReactErrorUtils.js');
+
+  __REACT_HOT_LOADER__.register(ReactErrorUtils, 'ReactErrorUtils', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/ReactErrorUtils.js');
+
+  __REACT_HOT_LOADER__.register(fakeNode, 'fakeNode', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/ReactErrorUtils.js');
+}();
+
+;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 45 */
+/* 46 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 /* WEBPACK VAR INJECTION */(function(process) {/**
- * Copyright 2015-present, Facebook, Inc.
- * All rights reserved.
+ * Copyright (c) 2015-present, Facebook, Inc.
  *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
  *
  */
 
@@ -6027,20 +6881,35 @@ var ReactUpdateQueue = {
 };
 
 module.exports = ReactUpdateQueue;
+;
+
+var _temp = function () {
+  if (typeof __REACT_HOT_LOADER__ === 'undefined') {
+    return;
+  }
+
+  __REACT_HOT_LOADER__.register(enqueueUpdate, 'enqueueUpdate', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/ReactUpdateQueue.js');
+
+  __REACT_HOT_LOADER__.register(formatUnexpectedArgument, 'formatUnexpectedArgument', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/ReactUpdateQueue.js');
+
+  __REACT_HOT_LOADER__.register(getInternalInstanceReadyForUpdate, 'getInternalInstanceReadyForUpdate', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/ReactUpdateQueue.js');
+
+  __REACT_HOT_LOADER__.register(ReactUpdateQueue, 'ReactUpdateQueue', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/ReactUpdateQueue.js');
+}();
+
+;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 46 */
+/* 47 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 /**
- * Copyright 2013-present, Facebook, Inc.
- * All rights reserved.
+ * Copyright (c) 2013-present, Facebook, Inc.
  *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
  *
  */
 
@@ -6065,19 +6934,28 @@ var createMicrosoftUnsafeLocalFunction = function createMicrosoftUnsafeLocalFunc
 };
 
 module.exports = createMicrosoftUnsafeLocalFunction;
+;
+
+var _temp = function () {
+  if (typeof __REACT_HOT_LOADER__ === 'undefined') {
+    return;
+  }
+
+  __REACT_HOT_LOADER__.register(createMicrosoftUnsafeLocalFunction, 'createMicrosoftUnsafeLocalFunction', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/createMicrosoftUnsafeLocalFunction.js');
+}();
+
+;
 
 /***/ }),
-/* 47 */
+/* 48 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 /**
- * Copyright 2013-present, Facebook, Inc.
- * All rights reserved.
+ * Copyright (c) 2013-present, Facebook, Inc.
  *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
  *
  */
 
@@ -6120,19 +6998,28 @@ function getEventCharCode(nativeEvent) {
 }
 
 module.exports = getEventCharCode;
+;
+
+var _temp = function () {
+  if (typeof __REACT_HOT_LOADER__ === 'undefined') {
+    return;
+  }
+
+  __REACT_HOT_LOADER__.register(getEventCharCode, 'getEventCharCode', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/getEventCharCode.js');
+}();
+
+;
 
 /***/ }),
-/* 48 */
+/* 49 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 /**
- * Copyright 2013-present, Facebook, Inc.
- * All rights reserved.
+ * Copyright (c) 2013-present, Facebook, Inc.
  *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
  *
  */
 
@@ -6168,19 +7055,32 @@ function getEventModifierState(nativeEvent) {
 }
 
 module.exports = getEventModifierState;
+;
+
+var _temp = function () {
+  if (typeof __REACT_HOT_LOADER__ === 'undefined') {
+    return;
+  }
+
+  __REACT_HOT_LOADER__.register(modifierKeyToProp, 'modifierKeyToProp', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/getEventModifierState.js');
+
+  __REACT_HOT_LOADER__.register(modifierStateGetter, 'modifierStateGetter', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/getEventModifierState.js');
+
+  __REACT_HOT_LOADER__.register(getEventModifierState, 'getEventModifierState', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/getEventModifierState.js');
+}();
+
+;
 
 /***/ }),
-/* 49 */
+/* 50 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 /**
- * Copyright 2013-present, Facebook, Inc.
- * All rights reserved.
+ * Copyright (c) 2013-present, Facebook, Inc.
  *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
  *
  */
 
@@ -6208,19 +7108,28 @@ function getEventTarget(nativeEvent) {
 }
 
 module.exports = getEventTarget;
+;
+
+var _temp = function () {
+  if (typeof __REACT_HOT_LOADER__ === 'undefined') {
+    return;
+  }
+
+  __REACT_HOT_LOADER__.register(getEventTarget, 'getEventTarget', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/getEventTarget.js');
+}();
+
+;
 
 /***/ }),
-/* 50 */
+/* 51 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 /**
- * Copyright 2013-present, Facebook, Inc.
- * All rights reserved.
+ * Copyright (c) 2013-present, Facebook, Inc.
  *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
  *
  */
 
@@ -6273,19 +7182,30 @@ function isEventSupported(eventNameSuffix, capture) {
 }
 
 module.exports = isEventSupported;
+;
+
+var _temp = function () {
+  if (typeof __REACT_HOT_LOADER__ === 'undefined') {
+    return;
+  }
+
+  __REACT_HOT_LOADER__.register(useHasFeature, 'useHasFeature', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/isEventSupported.js');
+
+  __REACT_HOT_LOADER__.register(isEventSupported, 'isEventSupported', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/isEventSupported.js');
+}();
+
+;
 
 /***/ }),
-/* 51 */
+/* 52 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 /**
- * Copyright 2013-present, Facebook, Inc.
- * All rights reserved.
+ * Copyright (c) 2013-present, Facebook, Inc.
  *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
  *
  */
 
@@ -6322,19 +7242,28 @@ function shouldUpdateReactComponent(prevElement, nextElement) {
 }
 
 module.exports = shouldUpdateReactComponent;
+;
+
+var _temp = function () {
+  if (typeof __REACT_HOT_LOADER__ === 'undefined') {
+    return;
+  }
+
+  __REACT_HOT_LOADER__.register(shouldUpdateReactComponent, 'shouldUpdateReactComponent', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/shouldUpdateReactComponent.js');
+}();
+
+;
 
 /***/ }),
-/* 52 */
+/* 53 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 /* WEBPACK VAR INJECTION */(function(process) {/**
- * Copyright 2015-present, Facebook, Inc.
- * All rights reserved.
+ * Copyright (c) 2015-present, Facebook, Inc.
  *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
  *
  */
 
@@ -6342,7 +7271,7 @@ module.exports = shouldUpdateReactComponent;
 
 var _assign = __webpack_require__(4);
 
-var emptyFunction = __webpack_require__(7);
+var emptyFunction = __webpack_require__(8);
 var warning = __webpack_require__(2);
 
 var validateDOMNesting = emptyFunction;
@@ -6698,20 +7627,49 @@ if (process.env.NODE_ENV !== 'production') {
 }
 
 module.exports = validateDOMNesting;
+;
+
+var _temp = function () {
+  if (typeof __REACT_HOT_LOADER__ === 'undefined') {
+    return;
+  }
+
+  __REACT_HOT_LOADER__.register(validateDOMNesting, 'validateDOMNesting', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/validateDOMNesting.js');
+
+  __REACT_HOT_LOADER__.register(specialTags, 'specialTags', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/validateDOMNesting.js');
+
+  __REACT_HOT_LOADER__.register(inScopeTags, 'inScopeTags', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/validateDOMNesting.js');
+
+  __REACT_HOT_LOADER__.register(buttonScopeTags, 'buttonScopeTags', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/validateDOMNesting.js');
+
+  __REACT_HOT_LOADER__.register(impliedEndTags, 'impliedEndTags', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/validateDOMNesting.js');
+
+  __REACT_HOT_LOADER__.register(emptyAncestorInfo, 'emptyAncestorInfo', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/validateDOMNesting.js');
+
+  __REACT_HOT_LOADER__.register(updatedAncestorInfo, 'updatedAncestorInfo', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/validateDOMNesting.js');
+
+  __REACT_HOT_LOADER__.register(isTagValidWithParent, 'isTagValidWithParent', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/validateDOMNesting.js');
+
+  __REACT_HOT_LOADER__.register(findInvalidAncestorForTag, 'findInvalidAncestorForTag', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/validateDOMNesting.js');
+
+  __REACT_HOT_LOADER__.register(findOwnerStack, 'findOwnerStack', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/validateDOMNesting.js');
+
+  __REACT_HOT_LOADER__.register(didWarn, 'didWarn', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/validateDOMNesting.js');
+}();
+
+;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 53 */
+/* 54 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 /* WEBPACK VAR INJECTION */(function(process) {/**
- * Copyright 2014-2015, Facebook, Inc.
- * All rights reserved.
+ * Copyright (c) 2014-present, Facebook, Inc.
  *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
  *
  */
 
@@ -6769,10 +7727,23 @@ if (process.env.NODE_ENV !== 'production') {
 }
 
 module.exports = lowPriorityWarning;
+;
+
+var _temp = function () {
+  if (typeof __REACT_HOT_LOADER__ === 'undefined') {
+    return;
+  }
+
+  __REACT_HOT_LOADER__.register(lowPriorityWarning, 'lowPriorityWarning', 'd:/webStudy/React-Turntable/node_modules/._react@15.6.2@react/lib/lowPriorityWarning.js');
+
+  __REACT_HOT_LOADER__.register(printWarning, 'printWarning', 'd:/webStudy/React-Turntable/node_modules/._react@15.6.2@react/lib/lowPriorityWarning.js');
+}();
+
+;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 54 */
+/* 55 */
 /***/ (function(module, exports) {
 
 /*
@@ -7024,7 +7995,7 @@ function updateLink(linkElement, obj) {
 
 
 /***/ }),
-/* 55 */
+/* 56 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -7032,16 +8003,14 @@ function updateLink(linkElement, obj) {
 
 /**
  * Copyright (c) 2013-present, Facebook, Inc.
- * All rights reserved.
  *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
  *
  * @typechecks
  */
 
-var emptyFunction = __webpack_require__(7);
+var emptyFunction = __webpack_require__(8);
 
 /**
  * Upstream version of event listener. Does not take into account specific
@@ -7104,20 +8073,29 @@ var EventListener = {
 };
 
 module.exports = EventListener;
+;
+
+var _temp = function () {
+  if (typeof __REACT_HOT_LOADER__ === 'undefined') {
+    return;
+  }
+
+  __REACT_HOT_LOADER__.register(EventListener, 'EventListener', 'd:/webStudy/React-Turntable/node_modules/._fbjs@0.8.16@fbjs/lib/EventListener.js');
+}();
+
+;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 56 */
+/* 57 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 /**
  * Copyright (c) 2013-present, Facebook, Inc.
- * All rights reserved.
  *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
  *
  */
 
@@ -7137,9 +8115,20 @@ function focusNode(node) {
 }
 
 module.exports = focusNode;
+;
+
+var _temp = function () {
+  if (typeof __REACT_HOT_LOADER__ === 'undefined') {
+    return;
+  }
+
+  __REACT_HOT_LOADER__.register(focusNode, 'focusNode', 'd:/webStudy/React-Turntable/node_modules/._fbjs@0.8.16@fbjs/lib/focusNode.js');
+}();
+
+;
 
 /***/ }),
-/* 57 */
+/* 58 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -7147,11 +8136,9 @@ module.exports = focusNode;
 
 /**
  * Copyright (c) 2013-present, Facebook, Inc.
- * All rights reserved.
  *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
  *
  * @typechecks
  */
@@ -7182,19 +8169,28 @@ function getActiveElement(doc) /*?DOMElement*/{
 }
 
 module.exports = getActiveElement;
+;
+
+var _temp = function () {
+  if (typeof __REACT_HOT_LOADER__ === 'undefined') {
+    return;
+  }
+
+  __REACT_HOT_LOADER__.register(getActiveElement, 'getActiveElement', 'd:/webStudy/React-Turntable/node_modules/._fbjs@0.8.16@fbjs/lib/getActiveElement.js');
+}();
+
+;
 
 /***/ }),
-/* 58 */
+/* 59 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 /**
- * Copyright 2013-present, Facebook, Inc.
- * All rights reserved.
+ * Copyright (c) 2013-present, Facebook, Inc.
  *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
  */
 
 
@@ -7204,65 +8200,615 @@ module.exports = getActiveElement;
 // However if one is migrating to the `prop-types` npm library, they will go through the
 // `index.js` entry point, and it will branch depending on the environment.
 
-var factory = __webpack_require__(108);
+var factory = __webpack_require__(60);
 module.exports = function (isValidElement) {
   // It is still allowed in 15.5.
   var throwOnDirectAccess = false;
   return factory(isValidElement, throwOnDirectAccess);
 };
+;
 
-/***/ }),
-/* 59 */
-/***/ (function(module, exports, __webpack_require__) {
+var _temp = function () {
+  if (typeof __REACT_HOT_LOADER__ === 'undefined') {
+    return;
+  }
+}();
 
-"use strict";
-/**
- * Copyright 2013-present, Facebook, Inc.
- * All rights reserved.
- *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
- */
-
-
-
-var ReactPropTypesSecret = 'SECRET_DO_NOT_PASS_THIS_OR_YOU_WILL_BE_FIRED';
-
-module.exports = ReactPropTypesSecret;
+;
 
 /***/ }),
 /* 60 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/**
- * Copyright 2013-present, Facebook, Inc.
- * All rights reserved.
+/* WEBPACK VAR INJECTION */(function(process) {/**
+ * Copyright (c) 2013-present, Facebook, Inc.
  *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
  */
 
 
 
-var ReactPropTypesSecret = 'SECRET_DO_NOT_PASS_THIS_OR_YOU_WILL_BE_FIRED';
+var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
 
-module.exports = ReactPropTypesSecret;
+var emptyFunction = __webpack_require__(8);
+var invariant = __webpack_require__(1);
+var warning = __webpack_require__(2);
+var assign = __webpack_require__(4);
+
+var ReactPropTypesSecret = __webpack_require__(38);
+var checkPropTypes = __webpack_require__(109);
+
+module.exports = function (isValidElement, throwOnDirectAccess) {
+  /* global Symbol */
+  var ITERATOR_SYMBOL = typeof Symbol === 'function' && Symbol.iterator;
+  var FAUX_ITERATOR_SYMBOL = '@@iterator'; // Before Symbol spec.
+
+  /**
+   * Returns the iterator method function contained on the iterable object.
+   *
+   * Be sure to invoke the function with the iterable as context:
+   *
+   *     var iteratorFn = getIteratorFn(myIterable);
+   *     if (iteratorFn) {
+   *       var iterator = iteratorFn.call(myIterable);
+   *       ...
+   *     }
+   *
+   * @param {?object} maybeIterable
+   * @return {?function}
+   */
+  function getIteratorFn(maybeIterable) {
+    var iteratorFn = maybeIterable && (ITERATOR_SYMBOL && maybeIterable[ITERATOR_SYMBOL] || maybeIterable[FAUX_ITERATOR_SYMBOL]);
+    if (typeof iteratorFn === 'function') {
+      return iteratorFn;
+    }
+  }
+
+  /**
+   * Collection of methods that allow declaration and validation of props that are
+   * supplied to React components. Example usage:
+   *
+   *   var Props = require('ReactPropTypes');
+   *   var MyArticle = React.createClass({
+   *     propTypes: {
+   *       // An optional string prop named "description".
+   *       description: Props.string,
+   *
+   *       // A required enum prop named "category".
+   *       category: Props.oneOf(['News','Photos']).isRequired,
+   *
+   *       // A prop named "dialog" that requires an instance of Dialog.
+   *       dialog: Props.instanceOf(Dialog).isRequired
+   *     },
+   *     render: function() { ... }
+   *   });
+   *
+   * A more formal specification of how these methods are used:
+   *
+   *   type := array|bool|func|object|number|string|oneOf([...])|instanceOf(...)
+   *   decl := ReactPropTypes.{type}(.isRequired)?
+   *
+   * Each and every declaration produces a function with the same signature. This
+   * allows the creation of custom validation functions. For example:
+   *
+   *  var MyLink = React.createClass({
+   *    propTypes: {
+   *      // An optional string or URI prop named "href".
+   *      href: function(props, propName, componentName) {
+   *        var propValue = props[propName];
+   *        if (propValue != null && typeof propValue !== 'string' &&
+   *            !(propValue instanceof URI)) {
+   *          return new Error(
+   *            'Expected a string or an URI for ' + propName + ' in ' +
+   *            componentName
+   *          );
+   *        }
+   *      }
+   *    },
+   *    render: function() {...}
+   *  });
+   *
+   * @internal
+   */
+
+  var ANONYMOUS = '<<anonymous>>';
+
+  // Important!
+  // Keep this list in sync with production version in `./factoryWithThrowingShims.js`.
+  var ReactPropTypes = {
+    array: createPrimitiveTypeChecker('array'),
+    bool: createPrimitiveTypeChecker('boolean'),
+    func: createPrimitiveTypeChecker('function'),
+    number: createPrimitiveTypeChecker('number'),
+    object: createPrimitiveTypeChecker('object'),
+    string: createPrimitiveTypeChecker('string'),
+    symbol: createPrimitiveTypeChecker('symbol'),
+
+    any: createAnyTypeChecker(),
+    arrayOf: createArrayOfTypeChecker,
+    element: createElementTypeChecker(),
+    instanceOf: createInstanceTypeChecker,
+    node: createNodeChecker(),
+    objectOf: createObjectOfTypeChecker,
+    oneOf: createEnumTypeChecker,
+    oneOfType: createUnionTypeChecker,
+    shape: createShapeTypeChecker,
+    exact: createStrictShapeTypeChecker
+  };
+
+  /**
+   * inlined Object.is polyfill to avoid requiring consumers ship their own
+   * https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/is
+   */
+  /*eslint-disable no-self-compare*/
+  function is(x, y) {
+    // SameValue algorithm
+    if (x === y) {
+      // Steps 1-5, 7-10
+      // Steps 6.b-6.e: +0 != -0
+      return x !== 0 || 1 / x === 1 / y;
+    } else {
+      // Step 6.a: NaN == NaN
+      return x !== x && y !== y;
+    }
+  }
+  /*eslint-enable no-self-compare*/
+
+  /**
+   * We use an Error-like object for backward compatibility as people may call
+   * PropTypes directly and inspect their output. However, we don't use real
+   * Errors anymore. We don't inspect their stack anyway, and creating them
+   * is prohibitively expensive if they are created too often, such as what
+   * happens in oneOfType() for any type before the one that matched.
+   */
+  function PropTypeError(message) {
+    this.message = message;
+    this.stack = '';
+  }
+  // Make `instanceof Error` still work for returned errors.
+  PropTypeError.prototype = Error.prototype;
+
+  function createChainableTypeChecker(validate) {
+    if (process.env.NODE_ENV !== 'production') {
+      var manualPropTypeCallCache = {};
+      var manualPropTypeWarningCount = 0;
+    }
+    function checkType(isRequired, props, propName, componentName, location, propFullName, secret) {
+      componentName = componentName || ANONYMOUS;
+      propFullName = propFullName || propName;
+
+      if (secret !== ReactPropTypesSecret) {
+        if (throwOnDirectAccess) {
+          // New behavior only for users of `prop-types` package
+          invariant(false, 'Calling PropTypes validators directly is not supported by the `prop-types` package. ' + 'Use `PropTypes.checkPropTypes()` to call them. ' + 'Read more at http://fb.me/use-check-prop-types');
+        } else if (process.env.NODE_ENV !== 'production' && typeof console !== 'undefined') {
+          // Old behavior for people using React.PropTypes
+          var cacheKey = componentName + ':' + propName;
+          if (!manualPropTypeCallCache[cacheKey] &&
+          // Avoid spamming the console because they are often not actionable except for lib authors
+          manualPropTypeWarningCount < 3) {
+            warning(false, 'You are manually calling a React.PropTypes validation ' + 'function for the `%s` prop on `%s`. This is deprecated ' + 'and will throw in the standalone `prop-types` package. ' + 'You may be seeing this warning due to a third-party PropTypes ' + 'library. See https://fb.me/react-warning-dont-call-proptypes ' + 'for details.', propFullName, componentName);
+            manualPropTypeCallCache[cacheKey] = true;
+            manualPropTypeWarningCount++;
+          }
+        }
+      }
+      if (props[propName] == null) {
+        if (isRequired) {
+          if (props[propName] === null) {
+            return new PropTypeError('The ' + location + ' `' + propFullName + '` is marked as required ' + ('in `' + componentName + '`, but its value is `null`.'));
+          }
+          return new PropTypeError('The ' + location + ' `' + propFullName + '` is marked as required in ' + ('`' + componentName + '`, but its value is `undefined`.'));
+        }
+        return null;
+      } else {
+        return validate(props, propName, componentName, location, propFullName);
+      }
+    }
+
+    var chainedCheckType = checkType.bind(null, false);
+    chainedCheckType.isRequired = checkType.bind(null, true);
+
+    return chainedCheckType;
+  }
+
+  function createPrimitiveTypeChecker(expectedType) {
+    function validate(props, propName, componentName, location, propFullName, secret) {
+      var propValue = props[propName];
+      var propType = getPropType(propValue);
+      if (propType !== expectedType) {
+        // `propValue` being instance of, say, date/regexp, pass the 'object'
+        // check, but we can offer a more precise error message here rather than
+        // 'of type `object`'.
+        var preciseType = getPreciseType(propValue);
+
+        return new PropTypeError('Invalid ' + location + ' `' + propFullName + '` of type ' + ('`' + preciseType + '` supplied to `' + componentName + '`, expected ') + ('`' + expectedType + '`.'));
+      }
+      return null;
+    }
+    return createChainableTypeChecker(validate);
+  }
+
+  function createAnyTypeChecker() {
+    return createChainableTypeChecker(emptyFunction.thatReturnsNull);
+  }
+
+  function createArrayOfTypeChecker(typeChecker) {
+    function validate(props, propName, componentName, location, propFullName) {
+      if (typeof typeChecker !== 'function') {
+        return new PropTypeError('Property `' + propFullName + '` of component `' + componentName + '` has invalid PropType notation inside arrayOf.');
+      }
+      var propValue = props[propName];
+      if (!Array.isArray(propValue)) {
+        var propType = getPropType(propValue);
+        return new PropTypeError('Invalid ' + location + ' `' + propFullName + '` of type ' + ('`' + propType + '` supplied to `' + componentName + '`, expected an array.'));
+      }
+      for (var i = 0; i < propValue.length; i++) {
+        var error = typeChecker(propValue, i, componentName, location, propFullName + '[' + i + ']', ReactPropTypesSecret);
+        if (error instanceof Error) {
+          return error;
+        }
+      }
+      return null;
+    }
+    return createChainableTypeChecker(validate);
+  }
+
+  function createElementTypeChecker() {
+    function validate(props, propName, componentName, location, propFullName) {
+      var propValue = props[propName];
+      if (!isValidElement(propValue)) {
+        var propType = getPropType(propValue);
+        return new PropTypeError('Invalid ' + location + ' `' + propFullName + '` of type ' + ('`' + propType + '` supplied to `' + componentName + '`, expected a single ReactElement.'));
+      }
+      return null;
+    }
+    return createChainableTypeChecker(validate);
+  }
+
+  function createInstanceTypeChecker(expectedClass) {
+    function validate(props, propName, componentName, location, propFullName) {
+      if (!(props[propName] instanceof expectedClass)) {
+        var expectedClassName = expectedClass.name || ANONYMOUS;
+        var actualClassName = getClassName(props[propName]);
+        return new PropTypeError('Invalid ' + location + ' `' + propFullName + '` of type ' + ('`' + actualClassName + '` supplied to `' + componentName + '`, expected ') + ('instance of `' + expectedClassName + '`.'));
+      }
+      return null;
+    }
+    return createChainableTypeChecker(validate);
+  }
+
+  function createEnumTypeChecker(expectedValues) {
+    if (!Array.isArray(expectedValues)) {
+      process.env.NODE_ENV !== 'production' ? warning(false, 'Invalid argument supplied to oneOf, expected an instance of array.') : void 0;
+      return emptyFunction.thatReturnsNull;
+    }
+
+    function validate(props, propName, componentName, location, propFullName) {
+      var propValue = props[propName];
+      for (var i = 0; i < expectedValues.length; i++) {
+        if (is(propValue, expectedValues[i])) {
+          return null;
+        }
+      }
+
+      var valuesString = JSON.stringify(expectedValues);
+      return new PropTypeError('Invalid ' + location + ' `' + propFullName + '` of value `' + propValue + '` ' + ('supplied to `' + componentName + '`, expected one of ' + valuesString + '.'));
+    }
+    return createChainableTypeChecker(validate);
+  }
+
+  function createObjectOfTypeChecker(typeChecker) {
+    function validate(props, propName, componentName, location, propFullName) {
+      if (typeof typeChecker !== 'function') {
+        return new PropTypeError('Property `' + propFullName + '` of component `' + componentName + '` has invalid PropType notation inside objectOf.');
+      }
+      var propValue = props[propName];
+      var propType = getPropType(propValue);
+      if (propType !== 'object') {
+        return new PropTypeError('Invalid ' + location + ' `' + propFullName + '` of type ' + ('`' + propType + '` supplied to `' + componentName + '`, expected an object.'));
+      }
+      for (var key in propValue) {
+        if (propValue.hasOwnProperty(key)) {
+          var error = typeChecker(propValue, key, componentName, location, propFullName + '.' + key, ReactPropTypesSecret);
+          if (error instanceof Error) {
+            return error;
+          }
+        }
+      }
+      return null;
+    }
+    return createChainableTypeChecker(validate);
+  }
+
+  function createUnionTypeChecker(arrayOfTypeCheckers) {
+    if (!Array.isArray(arrayOfTypeCheckers)) {
+      process.env.NODE_ENV !== 'production' ? warning(false, 'Invalid argument supplied to oneOfType, expected an instance of array.') : void 0;
+      return emptyFunction.thatReturnsNull;
+    }
+
+    for (var i = 0; i < arrayOfTypeCheckers.length; i++) {
+      var checker = arrayOfTypeCheckers[i];
+      if (typeof checker !== 'function') {
+        warning(false, 'Invalid argument supplied to oneOfType. Expected an array of check functions, but ' + 'received %s at index %s.', getPostfixForTypeWarning(checker), i);
+        return emptyFunction.thatReturnsNull;
+      }
+    }
+
+    function validate(props, propName, componentName, location, propFullName) {
+      for (var i = 0; i < arrayOfTypeCheckers.length; i++) {
+        var checker = arrayOfTypeCheckers[i];
+        if (checker(props, propName, componentName, location, propFullName, ReactPropTypesSecret) == null) {
+          return null;
+        }
+      }
+
+      return new PropTypeError('Invalid ' + location + ' `' + propFullName + '` supplied to ' + ('`' + componentName + '`.'));
+    }
+    return createChainableTypeChecker(validate);
+  }
+
+  function createNodeChecker() {
+    function validate(props, propName, componentName, location, propFullName) {
+      if (!isNode(props[propName])) {
+        return new PropTypeError('Invalid ' + location + ' `' + propFullName + '` supplied to ' + ('`' + componentName + '`, expected a ReactNode.'));
+      }
+      return null;
+    }
+    return createChainableTypeChecker(validate);
+  }
+
+  function createShapeTypeChecker(shapeTypes) {
+    function validate(props, propName, componentName, location, propFullName) {
+      var propValue = props[propName];
+      var propType = getPropType(propValue);
+      if (propType !== 'object') {
+        return new PropTypeError('Invalid ' + location + ' `' + propFullName + '` of type `' + propType + '` ' + ('supplied to `' + componentName + '`, expected `object`.'));
+      }
+      for (var key in shapeTypes) {
+        var checker = shapeTypes[key];
+        if (!checker) {
+          continue;
+        }
+        var error = checker(propValue, key, componentName, location, propFullName + '.' + key, ReactPropTypesSecret);
+        if (error) {
+          return error;
+        }
+      }
+      return null;
+    }
+    return createChainableTypeChecker(validate);
+  }
+
+  function createStrictShapeTypeChecker(shapeTypes) {
+    function validate(props, propName, componentName, location, propFullName) {
+      var propValue = props[propName];
+      var propType = getPropType(propValue);
+      if (propType !== 'object') {
+        return new PropTypeError('Invalid ' + location + ' `' + propFullName + '` of type `' + propType + '` ' + ('supplied to `' + componentName + '`, expected `object`.'));
+      }
+      // We need to check all keys in case some are required but missing from
+      // props.
+      var allKeys = assign({}, props[propName], shapeTypes);
+      for (var key in allKeys) {
+        var checker = shapeTypes[key];
+        if (!checker) {
+          return new PropTypeError('Invalid ' + location + ' `' + propFullName + '` key `' + key + '` supplied to `' + componentName + '`.' + '\nBad object: ' + JSON.stringify(props[propName], null, '  ') + '\nValid keys: ' + JSON.stringify(Object.keys(shapeTypes), null, '  '));
+        }
+        var error = checker(propValue, key, componentName, location, propFullName + '.' + key, ReactPropTypesSecret);
+        if (error) {
+          return error;
+        }
+      }
+      return null;
+    }
+
+    return createChainableTypeChecker(validate);
+  }
+
+  function isNode(propValue) {
+    switch (typeof propValue === 'undefined' ? 'undefined' : _typeof(propValue)) {
+      case 'number':
+      case 'string':
+      case 'undefined':
+        return true;
+      case 'boolean':
+        return !propValue;
+      case 'object':
+        if (Array.isArray(propValue)) {
+          return propValue.every(isNode);
+        }
+        if (propValue === null || isValidElement(propValue)) {
+          return true;
+        }
+
+        var iteratorFn = getIteratorFn(propValue);
+        if (iteratorFn) {
+          var iterator = iteratorFn.call(propValue);
+          var step;
+          if (iteratorFn !== propValue.entries) {
+            while (!(step = iterator.next()).done) {
+              if (!isNode(step.value)) {
+                return false;
+              }
+            }
+          } else {
+            // Iterator will provide entry [k,v] tuples rather than values.
+            while (!(step = iterator.next()).done) {
+              var entry = step.value;
+              if (entry) {
+                if (!isNode(entry[1])) {
+                  return false;
+                }
+              }
+            }
+          }
+        } else {
+          return false;
+        }
+
+        return true;
+      default:
+        return false;
+    }
+  }
+
+  function isSymbol(propType, propValue) {
+    // Native Symbol.
+    if (propType === 'symbol') {
+      return true;
+    }
+
+    // 19.4.3.5 Symbol.prototype[@@toStringTag] === 'Symbol'
+    if (propValue['@@toStringTag'] === 'Symbol') {
+      return true;
+    }
+
+    // Fallback for non-spec compliant Symbols which are polyfilled.
+    if (typeof Symbol === 'function' && propValue instanceof Symbol) {
+      return true;
+    }
+
+    return false;
+  }
+
+  // Equivalent of `typeof` but with special handling for array and regexp.
+  function getPropType(propValue) {
+    var propType = typeof propValue === 'undefined' ? 'undefined' : _typeof(propValue);
+    if (Array.isArray(propValue)) {
+      return 'array';
+    }
+    if (propValue instanceof RegExp) {
+      // Old webkits (at least until Android 4.0) return 'function' rather than
+      // 'object' for typeof a RegExp. We'll normalize this here so that /bla/
+      // passes PropTypes.object.
+      return 'object';
+    }
+    if (isSymbol(propType, propValue)) {
+      return 'symbol';
+    }
+    return propType;
+  }
+
+  // This handles more types than `getPropType`. Only used for error messages.
+  // See `createPrimitiveTypeChecker`.
+  function getPreciseType(propValue) {
+    if (typeof propValue === 'undefined' || propValue === null) {
+      return '' + propValue;
+    }
+    var propType = getPropType(propValue);
+    if (propType === 'object') {
+      if (propValue instanceof Date) {
+        return 'date';
+      } else if (propValue instanceof RegExp) {
+        return 'regexp';
+      }
+    }
+    return propType;
+  }
+
+  // Returns a string that is postfixed to a warning about an invalid type.
+  // For example, "undefined" or "of type array"
+  function getPostfixForTypeWarning(value) {
+    var type = getPreciseType(value);
+    switch (type) {
+      case 'array':
+      case 'object':
+        return 'an ' + type;
+      case 'boolean':
+      case 'date':
+      case 'regexp':
+        return 'a ' + type;
+      default:
+        return type;
+    }
+  }
+
+  // Returns class name of the object, if any.
+  function getClassName(propValue) {
+    if (!propValue.constructor || !propValue.constructor.name) {
+      return ANONYMOUS;
+    }
+    return propValue.constructor.name;
+  }
+
+  ReactPropTypes.checkPropTypes = checkPropTypes;
+  ReactPropTypes.PropTypes = ReactPropTypes;
+
+  return ReactPropTypes;
+};
+;
+
+var _temp = function () {
+  if (typeof __REACT_HOT_LOADER__ === 'undefined') {
+    return;
+  }
+}();
+
+;
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
 /* 61 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
+/* WEBPACK VAR INJECTION */(function(process) {
+
+var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
+
 /**
- * Copyright 2013-present, Facebook, Inc.
- * All rights reserved.
+ * Copyright (c) 2013-present, Facebook, Inc.
  *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */
+
+if (process.env.NODE_ENV !== 'production') {
+  var REACT_ELEMENT_TYPE = typeof Symbol === 'function' && Symbol.for && Symbol.for('react.element') || 0xeac7;
+
+  var isValidElement = function isValidElement(object) {
+    return (typeof object === 'undefined' ? 'undefined' : _typeof(object)) === 'object' && object !== null && object.$$typeof === REACT_ELEMENT_TYPE;
+  };
+
+  // By explicitly using `prop-types` you are opting into new development behavior.
+  // http://fb.me/prop-types-in-prod
+  var throwOnDirectAccess = true;
+  module.exports = __webpack_require__(60)(isValidElement, throwOnDirectAccess);
+} else {
+  // By explicitly using `prop-types` you are opting into new production behavior.
+  // http://fb.me/prop-types-in-prod
+  module.exports = __webpack_require__(110)();
+}
+;
+
+var _temp = function () {
+  if (typeof __REACT_HOT_LOADER__ === 'undefined') {
+    return;
+  }
+
+  __REACT_HOT_LOADER__.register(REACT_ELEMENT_TYPE, 'REACT_ELEMENT_TYPE', 'd:/webStudy/React-Turntable/node_modules/._prop-types@15.6.0@prop-types/index.js');
+
+  __REACT_HOT_LOADER__.register(isValidElement, 'isValidElement', 'd:/webStudy/React-Turntable/node_modules/._prop-types@15.6.0@prop-types/index.js');
+
+  __REACT_HOT_LOADER__.register(throwOnDirectAccess, 'throwOnDirectAccess', 'd:/webStudy/React-Turntable/node_modules/._prop-types@15.6.0@prop-types/index.js');
+}();
+
+;
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
+
+/***/ }),
+/* 62 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+/**
+ * Copyright (c) 2013-present, Facebook, Inc.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
  *
  */
 
@@ -7281,6 +8827,7 @@ var isUnitlessNumber = {
   boxFlexGroup: true,
   boxOrdinalGroup: true,
   columnCount: true,
+  columns: true,
   flex: true,
   flexGrow: true,
   flexPositive: true,
@@ -7409,19 +8956,36 @@ var CSSProperty = {
 };
 
 module.exports = CSSProperty;
+;
+
+var _temp = function () {
+  if (typeof __REACT_HOT_LOADER__ === 'undefined') {
+    return;
+  }
+
+  __REACT_HOT_LOADER__.register(isUnitlessNumber, 'isUnitlessNumber', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/CSSProperty.js');
+
+  __REACT_HOT_LOADER__.register(prefixKey, 'prefixKey', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/CSSProperty.js');
+
+  __REACT_HOT_LOADER__.register(prefixes, 'prefixes', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/CSSProperty.js');
+
+  __REACT_HOT_LOADER__.register(shorthandPropertyExpansions, 'shorthandPropertyExpansions', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/CSSProperty.js');
+
+  __REACT_HOT_LOADER__.register(CSSProperty, 'CSSProperty', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/CSSProperty.js');
+}();
+
+;
 
 /***/ }),
-/* 62 */
+/* 63 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 /* WEBPACK VAR INJECTION */(function(process) {/**
- * Copyright 2013-present, Facebook, Inc.
- * All rights reserved.
+ * Copyright (c) 2013-present, Facebook, Inc.
  *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
  *
  * 
  */
@@ -7533,20 +9097,31 @@ var CallbackQueue = function () {
 }();
 
 module.exports = PooledClass.addPoolingTo(CallbackQueue);
+;
+
+var _temp = function () {
+  if (typeof __REACT_HOT_LOADER__ === 'undefined') {
+    return;
+  }
+
+  __REACT_HOT_LOADER__.register(_classCallCheck, '_classCallCheck', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/CallbackQueue.js');
+
+  __REACT_HOT_LOADER__.register(CallbackQueue, 'CallbackQueue', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/CallbackQueue.js');
+}();
+
+;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 63 */
+/* 64 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 /* WEBPACK VAR INJECTION */(function(process) {/**
- * Copyright 2013-present, Facebook, Inc.
- * All rights reserved.
+ * Copyright (c) 2013-present, Facebook, Inc.
  *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
  *
  */
 
@@ -7556,7 +9131,7 @@ var DOMProperty = __webpack_require__(14);
 var ReactDOMComponentTree = __webpack_require__(5);
 var ReactInstrumentation = __webpack_require__(9);
 
-var quoteAttributeValueForBrowser = __webpack_require__(182);
+var quoteAttributeValueForBrowser = __webpack_require__(180);
 var warning = __webpack_require__(2);
 
 var VALID_ATTRIBUTE_NAME_REGEX = new RegExp('^[' + DOMProperty.ATTRIBUTE_NAME_START_CHAR + '][' + DOMProperty.ATTRIBUTE_NAME_CHAR + ']*$');
@@ -7774,20 +9349,39 @@ var DOMPropertyOperations = {
 };
 
 module.exports = DOMPropertyOperations;
+;
+
+var _temp = function () {
+  if (typeof __REACT_HOT_LOADER__ === 'undefined') {
+    return;
+  }
+
+  __REACT_HOT_LOADER__.register(VALID_ATTRIBUTE_NAME_REGEX, 'VALID_ATTRIBUTE_NAME_REGEX', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/DOMPropertyOperations.js');
+
+  __REACT_HOT_LOADER__.register(illegalAttributeNameCache, 'illegalAttributeNameCache', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/DOMPropertyOperations.js');
+
+  __REACT_HOT_LOADER__.register(validatedAttributeNameCache, 'validatedAttributeNameCache', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/DOMPropertyOperations.js');
+
+  __REACT_HOT_LOADER__.register(isAttributeNameSafe, 'isAttributeNameSafe', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/DOMPropertyOperations.js');
+
+  __REACT_HOT_LOADER__.register(shouldIgnoreValue, 'shouldIgnoreValue', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/DOMPropertyOperations.js');
+
+  __REACT_HOT_LOADER__.register(DOMPropertyOperations, 'DOMPropertyOperations', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/DOMPropertyOperations.js');
+}();
+
+;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 64 */
+/* 65 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 /**
- * Copyright 2015-present, Facebook, Inc.
- * All rights reserved.
+ * Copyright (c) 2015-present, Facebook, Inc.
  *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
  *
  */
 
@@ -7798,19 +9392,28 @@ var ReactDOMComponentFlags = {
 };
 
 module.exports = ReactDOMComponentFlags;
+;
+
+var _temp = function () {
+  if (typeof __REACT_HOT_LOADER__ === 'undefined') {
+    return;
+  }
+
+  __REACT_HOT_LOADER__.register(ReactDOMComponentFlags, 'ReactDOMComponentFlags', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/ReactDOMComponentFlags.js');
+}();
+
+;
 
 /***/ }),
-/* 65 */
+/* 66 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 /* WEBPACK VAR INJECTION */(function(process) {/**
- * Copyright 2013-present, Facebook, Inc.
- * All rights reserved.
+ * Copyright (c) 2013-present, Facebook, Inc.
  *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
  *
  */
 
@@ -7818,7 +9421,7 @@ module.exports = ReactDOMComponentFlags;
 
 var _assign = __webpack_require__(4);
 
-var LinkedValueUtils = __webpack_require__(42);
+var LinkedValueUtils = __webpack_require__(43);
 var ReactDOMComponentTree = __webpack_require__(5);
 var ReactUpdates = __webpack_require__(11);
 
@@ -8003,20 +9606,45 @@ function _handleChange(event) {
 }
 
 module.exports = ReactDOMSelect;
+;
+
+var _temp = function () {
+  if (typeof __REACT_HOT_LOADER__ === 'undefined') {
+    return;
+  }
+
+  __REACT_HOT_LOADER__.register(didWarnValueLink, 'didWarnValueLink', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/ReactDOMSelect.js');
+
+  __REACT_HOT_LOADER__.register(didWarnValueDefaultValue, 'didWarnValueDefaultValue', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/ReactDOMSelect.js');
+
+  __REACT_HOT_LOADER__.register(updateOptionsIfPendingUpdateAndMounted, 'updateOptionsIfPendingUpdateAndMounted', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/ReactDOMSelect.js');
+
+  __REACT_HOT_LOADER__.register(getDeclarationErrorAddendum, 'getDeclarationErrorAddendum', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/ReactDOMSelect.js');
+
+  __REACT_HOT_LOADER__.register(valuePropNames, 'valuePropNames', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/ReactDOMSelect.js');
+
+  __REACT_HOT_LOADER__.register(checkSelectPropTypes, 'checkSelectPropTypes', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/ReactDOMSelect.js');
+
+  __REACT_HOT_LOADER__.register(updateOptions, 'updateOptions', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/ReactDOMSelect.js');
+
+  __REACT_HOT_LOADER__.register(ReactDOMSelect, 'ReactDOMSelect', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/ReactDOMSelect.js');
+
+  __REACT_HOT_LOADER__.register(_handleChange, '_handleChange', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/ReactDOMSelect.js');
+}();
+
+;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 66 */
+/* 67 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 /**
- * Copyright 2014-present, Facebook, Inc.
- * All rights reserved.
+ * Copyright (c) 2014-present, Facebook, Inc.
  *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
  *
  */
 
@@ -8039,19 +9667,32 @@ var ReactEmptyComponent = {
 ReactEmptyComponent.injection = ReactEmptyComponentInjection;
 
 module.exports = ReactEmptyComponent;
+;
+
+var _temp = function () {
+  if (typeof __REACT_HOT_LOADER__ === 'undefined') {
+    return;
+  }
+
+  __REACT_HOT_LOADER__.register(emptyComponentFactory, 'emptyComponentFactory', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/ReactEmptyComponent.js');
+
+  __REACT_HOT_LOADER__.register(ReactEmptyComponentInjection, 'ReactEmptyComponentInjection', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/ReactEmptyComponent.js');
+
+  __REACT_HOT_LOADER__.register(ReactEmptyComponent, 'ReactEmptyComponent', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/ReactEmptyComponent.js');
+}();
+
+;
 
 /***/ }),
-/* 67 */
+/* 68 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 /**
- * Copyright 2013-present, Facebook, Inc.
- * All rights reserved.
+ * Copyright (c) 2013-present, Facebook, Inc.
  *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
  *
  * 
  */
@@ -8066,19 +9707,28 @@ var ReactFeatureFlags = {
 };
 
 module.exports = ReactFeatureFlags;
+;
+
+var _temp = function () {
+  if (typeof __REACT_HOT_LOADER__ === 'undefined') {
+    return;
+  }
+
+  __REACT_HOT_LOADER__.register(ReactFeatureFlags, 'ReactFeatureFlags', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/ReactFeatureFlags.js');
+}();
+
+;
 
 /***/ }),
-/* 68 */
+/* 69 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 /* WEBPACK VAR INJECTION */(function(process) {/**
- * Copyright 2014-present, Facebook, Inc.
- * All rights reserved.
+ * Copyright (c) 2014-present, Facebook, Inc.
  *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
  *
  */
 
@@ -8139,30 +9789,51 @@ var ReactHostComponent = {
 };
 
 module.exports = ReactHostComponent;
+;
+
+var _temp = function () {
+  if (typeof __REACT_HOT_LOADER__ === 'undefined') {
+    return;
+  }
+
+  __REACT_HOT_LOADER__.register(genericComponentClass, 'genericComponentClass', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/ReactHostComponent.js');
+
+  __REACT_HOT_LOADER__.register(textComponentClass, 'textComponentClass', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/ReactHostComponent.js');
+
+  __REACT_HOT_LOADER__.register(ReactHostComponentInjection, 'ReactHostComponentInjection', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/ReactHostComponent.js');
+
+  __REACT_HOT_LOADER__.register(createInternalComponent, 'createInternalComponent', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/ReactHostComponent.js');
+
+  __REACT_HOT_LOADER__.register(createInstanceForText, 'createInstanceForText', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/ReactHostComponent.js');
+
+  __REACT_HOT_LOADER__.register(isTextComponent, 'isTextComponent', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/ReactHostComponent.js');
+
+  __REACT_HOT_LOADER__.register(ReactHostComponent, 'ReactHostComponent', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/ReactHostComponent.js');
+}();
+
+;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 69 */
+/* 70 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 /**
- * Copyright 2013-present, Facebook, Inc.
- * All rights reserved.
+ * Copyright (c) 2013-present, Facebook, Inc.
  *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
  *
  */
 
 
 
-var ReactDOMSelection = __webpack_require__(137);
+var ReactDOMSelection = __webpack_require__(135);
 
-var containsNode = __webpack_require__(95);
-var focusNode = __webpack_require__(56);
-var getActiveElement = __webpack_require__(57);
+var containsNode = __webpack_require__(97);
+var focusNode = __webpack_require__(57);
+var getActiveElement = __webpack_require__(58);
 
 function isInDocument(node) {
   return containsNode(document.documentElement, node);
@@ -8268,19 +9939,30 @@ var ReactInputSelection = {
 };
 
 module.exports = ReactInputSelection;
+;
+
+var _temp = function () {
+  if (typeof __REACT_HOT_LOADER__ === 'undefined') {
+    return;
+  }
+
+  __REACT_HOT_LOADER__.register(isInDocument, 'isInDocument', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/ReactInputSelection.js');
+
+  __REACT_HOT_LOADER__.register(ReactInputSelection, 'ReactInputSelection', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/ReactInputSelection.js');
+}();
+
+;
 
 /***/ }),
-/* 70 */
+/* 71 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 /* WEBPACK VAR INJECTION */(function(process) {/**
- * Copyright 2013-present, Facebook, Inc.
- * All rights reserved.
+ * Copyright (c) 2013-present, Facebook, Inc.
  *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
  *
  */
 
@@ -8294,21 +9976,21 @@ var React = __webpack_require__(19);
 var ReactBrowserEventEmitter = __webpack_require__(29);
 var ReactCurrentOwner = __webpack_require__(12);
 var ReactDOMComponentTree = __webpack_require__(5);
-var ReactDOMContainerInfo = __webpack_require__(129);
-var ReactDOMFeatureFlags = __webpack_require__(131);
-var ReactFeatureFlags = __webpack_require__(67);
+var ReactDOMContainerInfo = __webpack_require__(127);
+var ReactDOMFeatureFlags = __webpack_require__(129);
+var ReactFeatureFlags = __webpack_require__(68);
 var ReactInstanceMap = __webpack_require__(23);
 var ReactInstrumentation = __webpack_require__(9);
-var ReactMarkupChecksum = __webpack_require__(151);
+var ReactMarkupChecksum = __webpack_require__(149);
 var ReactReconciler = __webpack_require__(18);
-var ReactUpdateQueue = __webpack_require__(45);
+var ReactUpdateQueue = __webpack_require__(46);
 var ReactUpdates = __webpack_require__(11);
 
 var emptyObject = __webpack_require__(27);
-var instantiateReactComponent = __webpack_require__(79);
+var instantiateReactComponent = __webpack_require__(80);
 var invariant = __webpack_require__(1);
 var setInnerHTML = __webpack_require__(33);
-var shouldUpdateReactComponent = __webpack_require__(51);
+var shouldUpdateReactComponent = __webpack_require__(52);
 var warning = __webpack_require__(2);
 
 var ATTR_NAME = DOMProperty.ID_ATTRIBUTE_NAME;
@@ -8811,20 +10493,69 @@ var ReactMount = {
 };
 
 module.exports = ReactMount;
+;
+
+var _temp = function () {
+  if (typeof __REACT_HOT_LOADER__ === 'undefined') {
+    return;
+  }
+
+  __REACT_HOT_LOADER__.register(ATTR_NAME, 'ATTR_NAME', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/ReactMount.js');
+
+  __REACT_HOT_LOADER__.register(ROOT_ATTR_NAME, 'ROOT_ATTR_NAME', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/ReactMount.js');
+
+  __REACT_HOT_LOADER__.register(ELEMENT_NODE_TYPE, 'ELEMENT_NODE_TYPE', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/ReactMount.js');
+
+  __REACT_HOT_LOADER__.register(DOC_NODE_TYPE, 'DOC_NODE_TYPE', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/ReactMount.js');
+
+  __REACT_HOT_LOADER__.register(DOCUMENT_FRAGMENT_NODE_TYPE, 'DOCUMENT_FRAGMENT_NODE_TYPE', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/ReactMount.js');
+
+  __REACT_HOT_LOADER__.register(instancesByReactRootID, 'instancesByReactRootID', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/ReactMount.js');
+
+  __REACT_HOT_LOADER__.register(firstDifferenceIndex, 'firstDifferenceIndex', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/ReactMount.js');
+
+  __REACT_HOT_LOADER__.register(getReactRootElementInContainer, 'getReactRootElementInContainer', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/ReactMount.js');
+
+  __REACT_HOT_LOADER__.register(internalGetID, 'internalGetID', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/ReactMount.js');
+
+  __REACT_HOT_LOADER__.register(mountComponentIntoNode, 'mountComponentIntoNode', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/ReactMount.js');
+
+  __REACT_HOT_LOADER__.register(batchedMountComponentIntoNode, 'batchedMountComponentIntoNode', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/ReactMount.js');
+
+  __REACT_HOT_LOADER__.register(unmountComponentFromNode, 'unmountComponentFromNode', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/ReactMount.js');
+
+  __REACT_HOT_LOADER__.register(hasNonRootReactChild, 'hasNonRootReactChild', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/ReactMount.js');
+
+  __REACT_HOT_LOADER__.register(nodeIsRenderedByOtherInstance, 'nodeIsRenderedByOtherInstance', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/ReactMount.js');
+
+  __REACT_HOT_LOADER__.register(isValidContainer, 'isValidContainer', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/ReactMount.js');
+
+  __REACT_HOT_LOADER__.register(isReactNode, 'isReactNode', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/ReactMount.js');
+
+  __REACT_HOT_LOADER__.register(getHostRootInstanceInContainer, 'getHostRootInstanceInContainer', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/ReactMount.js');
+
+  __REACT_HOT_LOADER__.register(getTopLevelWrapperInContainer, 'getTopLevelWrapperInContainer', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/ReactMount.js');
+
+  __REACT_HOT_LOADER__.register(topLevelRootCounter, 'topLevelRootCounter', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/ReactMount.js');
+
+  __REACT_HOT_LOADER__.register(TopLevelWrapper, 'TopLevelWrapper', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/ReactMount.js');
+
+  __REACT_HOT_LOADER__.register(ReactMount, 'ReactMount', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/ReactMount.js');
+}();
+
+;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 71 */
+/* 72 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 /* WEBPACK VAR INJECTION */(function(process) {/**
- * Copyright 2013-present, Facebook, Inc.
- * All rights reserved.
+ * Copyright (c) 2013-present, Facebook, Inc.
  *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
  *
  * 
  */
@@ -8857,20 +10588,29 @@ var ReactNodeTypes = {
 };
 
 module.exports = ReactNodeTypes;
+;
+
+var _temp = function () {
+  if (typeof __REACT_HOT_LOADER__ === 'undefined') {
+    return;
+  }
+
+  __REACT_HOT_LOADER__.register(ReactNodeTypes, 'ReactNodeTypes', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/ReactNodeTypes.js');
+}();
+
+;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 72 */
+/* 73 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 /**
- * Copyright 2013-present, Facebook, Inc.
- * All rights reserved.
+ * Copyright (c) 2013-present, Facebook, Inc.
  *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
  *
  * 
  */
@@ -8880,19 +10620,28 @@ module.exports = ReactNodeTypes;
 var ReactPropTypesSecret = 'SECRET_DO_NOT_PASS_THIS_OR_YOU_WILL_BE_FIRED';
 
 module.exports = ReactPropTypesSecret;
+;
+
+var _temp = function () {
+  if (typeof __REACT_HOT_LOADER__ === 'undefined') {
+    return;
+  }
+
+  __REACT_HOT_LOADER__.register(ReactPropTypesSecret, 'ReactPropTypesSecret', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/ReactPropTypesSecret.js');
+}();
+
+;
 
 /***/ }),
-/* 73 */
+/* 74 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 /**
- * Copyright 2013-present, Facebook, Inc.
- * All rights reserved.
+ * Copyright (c) 2013-present, Facebook, Inc.
  *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
  *
  */
 
@@ -8910,19 +10659,28 @@ var ViewportMetrics = {
 };
 
 module.exports = ViewportMetrics;
+;
+
+var _temp = function () {
+  if (typeof __REACT_HOT_LOADER__ === 'undefined') {
+    return;
+  }
+
+  __REACT_HOT_LOADER__.register(ViewportMetrics, 'ViewportMetrics', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/ViewportMetrics.js');
+}();
+
+;
 
 /***/ }),
-/* 74 */
+/* 75 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 /* WEBPACK VAR INJECTION */(function(process) {/**
- * Copyright 2014-present, Facebook, Inc.
- * All rights reserved.
+ * Copyright (c) 2014-present, Facebook, Inc.
  *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
  *
  * 
  */
@@ -8973,20 +10731,29 @@ function accumulateInto(current, next) {
 }
 
 module.exports = accumulateInto;
+;
+
+var _temp = function () {
+  if (typeof __REACT_HOT_LOADER__ === 'undefined') {
+    return;
+  }
+
+  __REACT_HOT_LOADER__.register(accumulateInto, 'accumulateInto', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/accumulateInto.js');
+}();
+
+;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 75 */
+/* 76 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 /**
- * Copyright 2013-present, Facebook, Inc.
- * All rights reserved.
+ * Copyright (c) 2013-present, Facebook, Inc.
  *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
  *
  * 
  */
@@ -9010,25 +10777,34 @@ function forEachAccumulated(arr, cb, scope) {
 }
 
 module.exports = forEachAccumulated;
+;
+
+var _temp = function () {
+  if (typeof __REACT_HOT_LOADER__ === 'undefined') {
+    return;
+  }
+
+  __REACT_HOT_LOADER__.register(forEachAccumulated, 'forEachAccumulated', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/forEachAccumulated.js');
+}();
+
+;
 
 /***/ }),
-/* 76 */
+/* 77 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 /**
- * Copyright 2013-present, Facebook, Inc.
- * All rights reserved.
+ * Copyright (c) 2013-present, Facebook, Inc.
  *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
  *
  */
 
 
 
-var ReactNodeTypes = __webpack_require__(71);
+var ReactNodeTypes = __webpack_require__(72);
 
 function getHostComponentFromComposite(inst) {
   var type;
@@ -9045,19 +10821,28 @@ function getHostComponentFromComposite(inst) {
 }
 
 module.exports = getHostComponentFromComposite;
+;
+
+var _temp = function () {
+  if (typeof __REACT_HOT_LOADER__ === 'undefined') {
+    return;
+  }
+
+  __REACT_HOT_LOADER__.register(getHostComponentFromComposite, 'getHostComponentFromComposite', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/getHostComponentFromComposite.js');
+}();
+
+;
 
 /***/ }),
-/* 77 */
+/* 78 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 /**
- * Copyright 2013-present, Facebook, Inc.
- * All rights reserved.
+ * Copyright (c) 2013-present, Facebook, Inc.
  *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
  *
  */
 
@@ -9083,19 +10868,30 @@ function getTextContentAccessor() {
 }
 
 module.exports = getTextContentAccessor;
+;
+
+var _temp = function () {
+  if (typeof __REACT_HOT_LOADER__ === 'undefined') {
+    return;
+  }
+
+  __REACT_HOT_LOADER__.register(contentKey, 'contentKey', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/getTextContentAccessor.js');
+
+  __REACT_HOT_LOADER__.register(getTextContentAccessor, 'getTextContentAccessor', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/getTextContentAccessor.js');
+}();
+
+;
 
 /***/ }),
-/* 78 */
+/* 79 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 /**
- * Copyright 2013-present, Facebook, Inc.
- * All rights reserved.
+ * Copyright (c) 2013-present, Facebook, Inc.
  *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
  *
  */
 
@@ -9118,7 +10914,7 @@ function attachTracker(inst, tracker) {
 }
 
 function detachTracker(inst) {
-  delete inst._wrapperState.valueTracker;
+  inst._wrapperState.valueTracker = null;
 }
 
 function getValueFromNode(node) {
@@ -9210,19 +11006,38 @@ var inputValueTracking = {
 };
 
 module.exports = inputValueTracking;
+;
+
+var _temp = function () {
+  if (typeof __REACT_HOT_LOADER__ === 'undefined') {
+    return;
+  }
+
+  __REACT_HOT_LOADER__.register(isCheckable, 'isCheckable', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/inputValueTracking.js');
+
+  __REACT_HOT_LOADER__.register(getTracker, 'getTracker', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/inputValueTracking.js');
+
+  __REACT_HOT_LOADER__.register(attachTracker, 'attachTracker', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/inputValueTracking.js');
+
+  __REACT_HOT_LOADER__.register(detachTracker, 'detachTracker', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/inputValueTracking.js');
+
+  __REACT_HOT_LOADER__.register(getValueFromNode, 'getValueFromNode', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/inputValueTracking.js');
+
+  __REACT_HOT_LOADER__.register(inputValueTracking, 'inputValueTracking', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/inputValueTracking.js');
+}();
+
+;
 
 /***/ }),
-/* 79 */
+/* 80 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 /* WEBPACK VAR INJECTION */(function(process) {/**
- * Copyright 2013-present, Facebook, Inc.
- * All rights reserved.
+ * Copyright (c) 2013-present, Facebook, Inc.
  *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
  *
  */
 
@@ -9233,11 +11048,11 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
 var _prodInvariant = __webpack_require__(3),
     _assign = __webpack_require__(4);
 
-var ReactCompositeComponent = __webpack_require__(126);
-var ReactEmptyComponent = __webpack_require__(66);
-var ReactHostComponent = __webpack_require__(68);
+var ReactCompositeComponent = __webpack_require__(124);
+var ReactEmptyComponent = __webpack_require__(67);
+var ReactHostComponent = __webpack_require__(69);
 
-var getNextDebugID = __webpack_require__(199);
+var getNextDebugID = __webpack_require__(197);
 var invariant = __webpack_require__(1);
 var warning = __webpack_require__(2);
 
@@ -9346,20 +11161,35 @@ _assign(ReactCompositeComponentWrapper.prototype, ReactCompositeComponent, {
 });
 
 module.exports = instantiateReactComponent;
+;
+
+var _temp = function () {
+  if (typeof __REACT_HOT_LOADER__ === 'undefined') {
+    return;
+  }
+
+  __REACT_HOT_LOADER__.register(ReactCompositeComponentWrapper, 'ReactCompositeComponentWrapper', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/instantiateReactComponent.js');
+
+  __REACT_HOT_LOADER__.register(getDeclarationErrorAddendum, 'getDeclarationErrorAddendum', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/instantiateReactComponent.js');
+
+  __REACT_HOT_LOADER__.register(isInternalComponentType, 'isInternalComponentType', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/instantiateReactComponent.js');
+
+  __REACT_HOT_LOADER__.register(instantiateReactComponent, 'instantiateReactComponent', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/instantiateReactComponent.js');
+}();
+
+;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 80 */
+/* 81 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 /**
- * Copyright 2013-present, Facebook, Inc.
- * All rights reserved.
+ * Copyright (c) 2013-present, Facebook, Inc.
  *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
  *
  * 
  */
@@ -9403,19 +11233,30 @@ function isTextInputElement(elem) {
 }
 
 module.exports = isTextInputElement;
+;
+
+var _temp = function () {
+  if (typeof __REACT_HOT_LOADER__ === 'undefined') {
+    return;
+  }
+
+  __REACT_HOT_LOADER__.register(supportedInputTypes, 'supportedInputTypes', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/isTextInputElement.js');
+
+  __REACT_HOT_LOADER__.register(isTextInputElement, 'isTextInputElement', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/isTextInputElement.js');
+}();
+
+;
 
 /***/ }),
-/* 81 */
+/* 82 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 /**
- * Copyright 2013-present, Facebook, Inc.
- * All rights reserved.
+ * Copyright (c) 2013-present, Facebook, Inc.
  *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
  *
  */
 
@@ -9460,19 +11301,28 @@ if (ExecutionEnvironment.canUseDOM) {
 }
 
 module.exports = setTextContent;
+;
+
+var _temp = function () {
+  if (typeof __REACT_HOT_LOADER__ === 'undefined') {
+    return;
+  }
+
+  __REACT_HOT_LOADER__.register(setTextContent, 'setTextContent', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/setTextContent.js');
+}();
+
+;
 
 /***/ }),
-/* 82 */
+/* 83 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 /* WEBPACK VAR INJECTION */(function(process) {/**
- * Copyright 2013-present, Facebook, Inc.
- * All rights reserved.
+ * Copyright (c) 2013-present, Facebook, Inc.
  *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
  *
  */
 
@@ -9483,11 +11333,11 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
 var _prodInvariant = __webpack_require__(3);
 
 var ReactCurrentOwner = __webpack_require__(12);
-var REACT_ELEMENT_TYPE = __webpack_require__(145);
+var REACT_ELEMENT_TYPE = __webpack_require__(143);
 
-var getIteratorFn = __webpack_require__(179);
+var getIteratorFn = __webpack_require__(177);
 var invariant = __webpack_require__(1);
-var KeyEscapeUtils = __webpack_require__(41);
+var KeyEscapeUtils = __webpack_require__(42);
 var warning = __webpack_require__(2);
 
 var SEPARATOR = '.';
@@ -9643,20 +11493,39 @@ function traverseAllChildren(children, callback, traverseContext) {
 }
 
 module.exports = traverseAllChildren;
+;
+
+var _temp = function () {
+  if (typeof __REACT_HOT_LOADER__ === 'undefined') {
+    return;
+  }
+
+  __REACT_HOT_LOADER__.register(SEPARATOR, 'SEPARATOR', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/traverseAllChildren.js');
+
+  __REACT_HOT_LOADER__.register(SUBSEPARATOR, 'SUBSEPARATOR', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/traverseAllChildren.js');
+
+  __REACT_HOT_LOADER__.register(didWarnAboutMaps, 'didWarnAboutMaps', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/traverseAllChildren.js');
+
+  __REACT_HOT_LOADER__.register(getComponentKey, 'getComponentKey', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/traverseAllChildren.js');
+
+  __REACT_HOT_LOADER__.register(traverseAllChildrenImpl, 'traverseAllChildrenImpl', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/traverseAllChildren.js');
+
+  __REACT_HOT_LOADER__.register(traverseAllChildren, 'traverseAllChildren', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/traverseAllChildren.js');
+}();
+
+;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 83 */
+/* 84 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 /* WEBPACK VAR INJECTION */(function(process) {/**
- * Copyright 2013-present, Facebook, Inc.
- * All rights reserved.
+ * Copyright (c) 2013-present, Facebook, Inc.
  *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
  *
  */
 
@@ -9667,12 +11536,12 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
 var _prodInvariant = __webpack_require__(20),
     _assign = __webpack_require__(4);
 
-var ReactNoopUpdateQueue = __webpack_require__(86);
+var ReactNoopUpdateQueue = __webpack_require__(87);
 
 var canDefineProperty = __webpack_require__(34);
 var emptyObject = __webpack_require__(27);
 var invariant = __webpack_require__(1);
-var lowPriorityWarning = __webpack_require__(53);
+var lowPriorityWarning = __webpack_require__(54);
 
 /**
  * Base class helpers for the updating state of a component.
@@ -9794,20 +11663,39 @@ module.exports = {
   Component: ReactComponent,
   PureComponent: ReactPureComponent
 };
+;
+
+var _temp = function () {
+  if (typeof __REACT_HOT_LOADER__ === 'undefined') {
+    return;
+  }
+
+  __REACT_HOT_LOADER__.register(ReactComponent, 'ReactComponent', 'd:/webStudy/React-Turntable/node_modules/._react@15.6.2@react/lib/ReactBaseClasses.js');
+
+  __REACT_HOT_LOADER__.register(deprecatedAPIs, 'deprecatedAPIs', 'd:/webStudy/React-Turntable/node_modules/._react@15.6.2@react/lib/ReactBaseClasses.js');
+
+  __REACT_HOT_LOADER__.register(defineDeprecationWarning, 'defineDeprecationWarning', 'd:/webStudy/React-Turntable/node_modules/._react@15.6.2@react/lib/ReactBaseClasses.js');
+
+  __REACT_HOT_LOADER__.register(fnName, 'fnName', 'd:/webStudy/React-Turntable/node_modules/._react@15.6.2@react/lib/ReactBaseClasses.js');
+
+  __REACT_HOT_LOADER__.register(ReactPureComponent, 'ReactPureComponent', 'd:/webStudy/React-Turntable/node_modules/._react@15.6.2@react/lib/ReactBaseClasses.js');
+
+  __REACT_HOT_LOADER__.register(ComponentDummy, 'ComponentDummy', 'd:/webStudy/React-Turntable/node_modules/._react@15.6.2@react/lib/ReactBaseClasses.js');
+}();
+
+;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 84 */
+/* 85 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 /**
- * Copyright 2014-present, Facebook, Inc.
- * All rights reserved.
+ * Copyright (c) 2014-present, Facebook, Inc.
  *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
  *
  * 
  */
@@ -9820,19 +11708,28 @@ module.exports = {
 var REACT_ELEMENT_TYPE = typeof Symbol === 'function' && Symbol['for'] && Symbol['for']('react.element') || 0xeac7;
 
 module.exports = REACT_ELEMENT_TYPE;
+;
+
+var _temp = function () {
+  if (typeof __REACT_HOT_LOADER__ === 'undefined') {
+    return;
+  }
+
+  __REACT_HOT_LOADER__.register(REACT_ELEMENT_TYPE, 'REACT_ELEMENT_TYPE', 'd:/webStudy/React-Turntable/node_modules/._react@15.6.2@react/lib/ReactElementSymbol.js');
+}();
+
+;
 
 /***/ }),
-/* 85 */
+/* 86 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 /* WEBPACK VAR INJECTION */(function(process) {/**
- * Copyright 2014-present, Facebook, Inc.
- * All rights reserved.
+ * Copyright (c) 2014-present, Facebook, Inc.
  *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
  *
  */
 
@@ -9848,15 +11745,15 @@ module.exports = REACT_ELEMENT_TYPE;
 var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
 
 var ReactCurrentOwner = __webpack_require__(12);
-var ReactComponentTreeHook = __webpack_require__(8);
+var ReactComponentTreeHook = __webpack_require__(7);
 var ReactElement = __webpack_require__(16);
 
-var checkReactTypeSpec = __webpack_require__(197);
+var checkReactTypeSpec = __webpack_require__(195);
 
 var canDefineProperty = __webpack_require__(34);
-var getIteratorFn = __webpack_require__(87);
+var getIteratorFn = __webpack_require__(88);
 var warning = __webpack_require__(2);
-var lowPriorityWarning = __webpack_require__(53);
+var lowPriorityWarning = __webpack_require__(54);
 
 function getDeclarationErrorAddendum() {
   if (ReactCurrentOwner.current) {
@@ -10082,20 +11979,43 @@ var ReactElementValidator = {
 };
 
 module.exports = ReactElementValidator;
+;
+
+var _temp = function () {
+  if (typeof __REACT_HOT_LOADER__ === 'undefined') {
+    return;
+  }
+
+  __REACT_HOT_LOADER__.register(getDeclarationErrorAddendum, 'getDeclarationErrorAddendum', 'd:/webStudy/React-Turntable/node_modules/._react@15.6.2@react/lib/ReactElementValidator.js');
+
+  __REACT_HOT_LOADER__.register(getSourceInfoErrorAddendum, 'getSourceInfoErrorAddendum', 'd:/webStudy/React-Turntable/node_modules/._react@15.6.2@react/lib/ReactElementValidator.js');
+
+  __REACT_HOT_LOADER__.register(ownerHasKeyUseWarning, 'ownerHasKeyUseWarning', 'd:/webStudy/React-Turntable/node_modules/._react@15.6.2@react/lib/ReactElementValidator.js');
+
+  __REACT_HOT_LOADER__.register(getCurrentComponentErrorInfo, 'getCurrentComponentErrorInfo', 'd:/webStudy/React-Turntable/node_modules/._react@15.6.2@react/lib/ReactElementValidator.js');
+
+  __REACT_HOT_LOADER__.register(validateExplicitKey, 'validateExplicitKey', 'd:/webStudy/React-Turntable/node_modules/._react@15.6.2@react/lib/ReactElementValidator.js');
+
+  __REACT_HOT_LOADER__.register(validateChildKeys, 'validateChildKeys', 'd:/webStudy/React-Turntable/node_modules/._react@15.6.2@react/lib/ReactElementValidator.js');
+
+  __REACT_HOT_LOADER__.register(validatePropTypes, 'validatePropTypes', 'd:/webStudy/React-Turntable/node_modules/._react@15.6.2@react/lib/ReactElementValidator.js');
+
+  __REACT_HOT_LOADER__.register(ReactElementValidator, 'ReactElementValidator', 'd:/webStudy/React-Turntable/node_modules/._react@15.6.2@react/lib/ReactElementValidator.js');
+}();
+
+;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 86 */
+/* 87 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 /* WEBPACK VAR INJECTION */(function(process) {/**
- * Copyright 2015-present, Facebook, Inc.
- * All rights reserved.
+ * Copyright (c) 2015-present, Facebook, Inc.
  *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
  *
  */
 
@@ -10183,20 +12103,31 @@ var ReactNoopUpdateQueue = {
 };
 
 module.exports = ReactNoopUpdateQueue;
+;
+
+var _temp = function () {
+  if (typeof __REACT_HOT_LOADER__ === 'undefined') {
+    return;
+  }
+
+  __REACT_HOT_LOADER__.register(warnNoop, 'warnNoop', 'd:/webStudy/React-Turntable/node_modules/._react@15.6.2@react/lib/ReactNoopUpdateQueue.js');
+
+  __REACT_HOT_LOADER__.register(ReactNoopUpdateQueue, 'ReactNoopUpdateQueue', 'd:/webStudy/React-Turntable/node_modules/._react@15.6.2@react/lib/ReactNoopUpdateQueue.js');
+}();
+
+;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 87 */
+/* 88 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 /**
- * Copyright 2013-present, Facebook, Inc.
- * All rights reserved.
+ * Copyright (c) 2013-present, Facebook, Inc.
  *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
  *
  * 
  */
@@ -10230,9 +12161,24 @@ function getIteratorFn(maybeIterable) {
 }
 
 module.exports = getIteratorFn;
+;
+
+var _temp = function () {
+  if (typeof __REACT_HOT_LOADER__ === 'undefined') {
+    return;
+  }
+
+  __REACT_HOT_LOADER__.register(ITERATOR_SYMBOL, 'ITERATOR_SYMBOL', 'd:/webStudy/React-Turntable/node_modules/._react@15.6.2@react/lib/getIteratorFn.js');
+
+  __REACT_HOT_LOADER__.register(FAUX_ITERATOR_SYMBOL, 'FAUX_ITERATOR_SYMBOL', 'd:/webStudy/React-Turntable/node_modules/._react@15.6.2@react/lib/getIteratorFn.js');
+
+  __REACT_HOT_LOADER__.register(getIteratorFn, 'getIteratorFn', 'd:/webStudy/React-Turntable/node_modules/._react@15.6.2@react/lib/getIteratorFn.js');
+}();
+
+;
 
 /***/ }),
-/* 88 */
+/* 89 */
 /***/ (function(module, exports) {
 
 /* WEBPACK VAR INJECTION */(function(__webpack_amd_options__) {/* globals __webpack_amd_options__ */
@@ -10241,28 +12187,29 @@ module.exports = __webpack_amd_options__;
 /* WEBPACK VAR INJECTION */}.call(exports, {}))
 
 /***/ }),
-/* 89 */
+/* 90 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__(10);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_react_dom__ = __webpack_require__(26);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_react_dom___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_react_dom__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rc_button__ = __webpack_require__(113);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rc_button__ = __webpack_require__(111);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_classnames__ = __webpack_require__(35);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_classnames___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_classnames__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_react_icons_lib_fa_check_circle__ = __webpack_require__(184);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_react_icons_lib_fa_check_circle__ = __webpack_require__(182);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_react_icons_lib_fa_check_circle___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4_react_icons_lib_fa_check_circle__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_react_icons_lib_ti_delete__ = __webpack_require__(186);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_react_icons_lib_ti_delete__ = __webpack_require__(184);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_react_icons_lib_ti_delete___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_5_react_icons_lib_ti_delete__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_react_icons_lib_ti_warning__ = __webpack_require__(188);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_react_icons_lib_ti_warning__ = __webpack_require__(186);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_react_icons_lib_ti_warning___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_6_react_icons_lib_ti_warning__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7_react_icons_lib_ti_pin__ = __webpack_require__(187);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7_react_icons_lib_ti_pin__ = __webpack_require__(185);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7_react_icons_lib_ti_pin___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_7_react_icons_lib_ti_pin__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8_react_icons_lib_md_loop__ = __webpack_require__(185);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8_react_icons_lib_md_loop__ = __webpack_require__(183);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8_react_icons_lib_md_loop___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_8_react_icons_lib_md_loop__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__styles_less__ = __webpack_require__(206);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__styles_less__ = __webpack_require__(204);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__styles_less___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_9__styles_less__);
 var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
 
@@ -10508,40 +12455,59 @@ Message.renderElement = function (type, params) {
     _message._dom = dom;
 };
 
-/* harmony default export */ __webpack_exports__["a"] = (Message);
+/* harmony default export */ __webpack_exports__["default"] = (Message);
 
 /***/ }),
-/* 90 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/* 91 */
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__(10);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_react_dom__ = __webpack_require__(26);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_react_dom___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_react_dom__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_classnames__ = __webpack_require__(35);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_classnames___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_classnames__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__styles_less__ = __webpack_require__(207);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__styles_less___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3__styles_less__);
+
+
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+
 var _slicedToArray = function () { function sliceIterator(arr, i) { var _arr = []; var _n = true; var _d = false; var _e = undefined; try { for (var _i = arr[Symbol.iterator](), _s; !(_n = (_s = _i.next()).done); _n = true) { _arr.push(_s.value); if (i && _arr.length === i) break; } } catch (err) { _d = true; _e = err; } finally { try { if (!_n && _i["return"]) _i["return"](); } finally { if (_d) throw _e; } } return _arr; } return function (arr, i) { if (Array.isArray(arr)) { return arr; } else if (Symbol.iterator in Object(arr)) { return sliceIterator(arr, i); } else { throw new TypeError("Invalid attempt to destructure non-iterable instance"); } }; }();
 
 var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
+exports.easeOut = easeOut;
+
+var _react = __webpack_require__(10);
+
+var _react2 = _interopRequireDefault(_react);
+
+var _propTypes = __webpack_require__(61);
+
+var _propTypes2 = _interopRequireDefault(_propTypes);
+
+var _reactDom = __webpack_require__(26);
+
+var _reactDom2 = _interopRequireDefault(_reactDom);
+
+var _classnames = __webpack_require__(35);
+
+var _classnames2 = _interopRequireDefault(_classnames);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
 function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
 
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; } /**
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                * @author Jinke.Li
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                * @version 1.2.2
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                * @link //https://juejin.im/post/5992b6065188257dd3664dbc
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                */
 
-
-
-
-
-//https://juejin.im/post/5992b6065188257dd3664dbc
-
-
+function easeOut(t, b, c, d) {
+    if ((t /= d / 2) < 1) return c / 2 * t * t + b;
+    return -c / 2 * (--t * (t - 2) - 1) + b;
+}
 
 var ReactTurntable = function (_PureComponent) {
     _inherits(ReactTurntable, _PureComponent);
@@ -10556,49 +12522,16 @@ var ReactTurntable = function (_PureComponent) {
             startRotate: 0
         };
 
-        _this.easeOut = function (t, b, c, d) {
-            if ((t /= d / 2) < 1) return c / 2 * t * t + b;
-            return -c / 2 * (--t * (t - 2) - 1) + b;
-        };
-
         _this.rotateTurntable = function () {
-            _this.rotateTime += 20;
-            if (_this.rotateTime >= _this.rotateAllTime) {
-                var prize = _this.getSelectedPrize();
-                _this.setState({ isRotate: false });
-                _this.props.onComplete && _this.props.onComplete(prize);
-                return;
-            }
-            var _rotateChange = (_this.rotateChange - _this.easeOut(_this.rotateTime, 0, _this.rotateChange, _this.rotateAllTime)) * (Math.PI / 180);
-            _this.startRotate += _rotateChange;
-            _this.drawTurntable();
-
-            _this.animateId = requestAnimationFrame(_this.rotateTurntable);
+            return _this.__rotateTurntable__REACT_HOT_LOADER__.apply(_this, arguments);
         };
 
         _this.getSelectedPrize = function () {
-            var startAngle = _this.startRotate * 180 / Math.PI,
-                awardAngle = _this.awardRotate * 180 / Math.PI,
-                pointerAngle = 90,
-                overAngle = (startAngle + pointerAngle) % 360,
-                restAngle = 360 - overAngle,
-                index = Math.floor(restAngle / awardAngle);
-
-            return _this.prizes[index];
+            return _this.__getSelectedPrize__REACT_HOT_LOADER__.apply(_this, arguments);
         };
 
         _this.onStartRotate = function () {
-            var _this$props = _this.props,
-                speed = _this$props.speed,
-                duration = _this$props.duration;
-
-            if (_this.state.isRotate) return;
-            _this.setState({ isRotate: true }, function () {
-                _this.rotateTime = 0;
-                _this.rotateAllTime = Math.random() * 5 + duration;
-                _this.rotateChange = Math.random() * 10 + speed / 100;
-                _this.rotateTurntable();
-            });
+            return _this.__onStartRotate__REACT_HOT_LOADER__.apply(_this, arguments);
         };
 
         _this.canvas = null;
@@ -10608,27 +12541,72 @@ var ReactTurntable = function (_PureComponent) {
     }
 
     _createClass(ReactTurntable, [{
-        key: "render",
-        value: function render() {
+        key: "__onStartRotate__REACT_HOT_LOADER__",
+        value: function __onStartRotate__REACT_HOT_LOADER__() {
             var _this2 = this;
 
             var _props = this.props,
-                clickText = _props.clickText,
-                width = _props.width,
-                height = _props.height;
+                speed = _props.speed,
+                duration = _props.duration;
+
+            if (this.state.isRotate) return;
+            this.setState({ isRotate: true }, function () {
+                _this2.rotateTime = 0;
+                _this2.rotateAllTime = Math.random() * 5 + duration;
+                _this2.rotateChange = Math.random() * 10 + speed / 100;
+                _this2.rotateTurntable();
+            });
+        }
+    }, {
+        key: "__getSelectedPrize__REACT_HOT_LOADER__",
+        value: function __getSelectedPrize__REACT_HOT_LOADER__() {
+            var startAngle = this.startRotate * 180 / Math.PI,
+                awardAngle = this.awardRotate * 180 / Math.PI,
+                pointerAngle = 90,
+                overAngle = (startAngle + pointerAngle) % 360,
+                restAngle = 360 - overAngle,
+                index = Math.floor(restAngle / awardAngle);
+
+            return this.prizes[index];
+        }
+    }, {
+        key: "__rotateTurntable__REACT_HOT_LOADER__",
+        value: function __rotateTurntable__REACT_HOT_LOADER__() {
+            this.rotateTime += 20;
+            if (this.rotateTime >= this.rotateAllTime) {
+                var prize = this.getSelectedPrize();
+                this.setState({ isRotate: false });
+                this.props.onComplete && this.props.onComplete(prize);
+                return;
+            }
+            var _rotateChange = (this.rotateChange - easeOut(this.rotateTime, 0, this.rotateChange, this.rotateAllTime)) * (Math.PI / 180);
+            this.startRotate += _rotateChange;
+            this.drawTurntable();
+
+            this.animateId = requestAnimationFrame(this.rotateTurntable);
+        }
+    }, {
+        key: "render",
+        value: function render() {
+            var _this3 = this;
+
+            var _props2 = this.props,
+                clickText = _props2.clickText,
+                width = _props2.width,
+                height = _props2.height;
 
             var styles = { width: width, height: height };
-            return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+            return _react2.default.createElement(
                 "div",
                 { className: "react-turntable-section", key: "react-turntable-section", style: styles },
-                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("canvas", { id: "react-turntable-section-canvas", ref: function ref(node) {
-                        return _this2.canvas = node;
+                _react2.default.createElement("canvas", { id: "react-turntable-section-canvas", ref: function ref(node) {
+                        return _this3.canvas = node;
                     } }),
-                Object.is(typeof clickText === "undefined" ? "undefined" : _typeof(clickText), 'object') ? __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                Object.is(typeof clickText === "undefined" ? "undefined" : _typeof(clickText), 'object') ? _react2.default.createElement(
                     "div",
                     { onClick: this.onStartRotate },
                     clickText
-                ) : __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                ) : _react2.default.createElement(
                     "div",
                     { className: "react-turntable-section-btn", onClick: this.onStartRotate },
                     clickText
@@ -10640,15 +12618,15 @@ var ReactTurntable = function (_PureComponent) {
         value: function drawTurntable() {
             var ctx = this.ctx;
             ctx.clearRect(0, 0, this.canvas.width, this.canvas.height);
-            var _props2 = this.props,
-                primaryColor = _props2.primaryColor,
-                secondaryColor = _props2.secondaryColor,
-                _props2$fontStyle = _props2.fontStyle,
-                fontVertical = _props2$fontStyle.fontVertical,
-                fontWeight = _props2$fontStyle.fontWeight,
-                fontFamily = _props2$fontStyle.fontFamily,
-                size = _props2$fontStyle.size,
-                color = _props2$fontStyle.color;
+            var _props3 = this.props,
+                primaryColor = _props3.primaryColor,
+                secondaryColor = _props3.secondaryColor,
+                _props3$fontStyle = _props3.fontStyle,
+                fontVertical = _props3$fontStyle.fontVertical,
+                fontWeight = _props3$fontStyle.fontWeight,
+                fontFamily = _props3$fontStyle.fontFamily,
+                size = _props3$fontStyle.size,
+                color = _props3$fontStyle.color;
             var _iteratorNormalCompletion = true;
             var _didIteratorError = false;
             var _iteratorError = undefined;
@@ -10759,13 +12737,13 @@ var ReactTurntable = function (_PureComponent) {
         key: "componentDidMount",
         value: function componentDidMount() {
             this.compatibilityFrame();
-            var _props3 = this.props,
-                width = _props3.width,
-                height = _props3.height,
-                speed = _props3.speed,
-                duration = _props3.duration,
-                prizes = _props3.prizes,
-                clickText = _props3.clickText;
+            var _props4 = this.props,
+                width = _props4.width,
+                height = _props4.height,
+                speed = _props4.speed,
+                duration = _props4.duration,
+                prizes = _props4.prizes,
+                clickText = _props4.clickText;
 
             this.prizes = prizes;
             this.startRotate = 0;
@@ -10789,7 +12767,7 @@ var ReactTurntable = function (_PureComponent) {
     }]);
 
     return ReactTurntable;
-}(__WEBPACK_IMPORTED_MODULE_0_react__["PureComponent"]);
+}(_react.PureComponent);
 
 ReactTurntable.defaultProps = {
     width: 500,
@@ -10810,37 +12788,88 @@ ReactTurntable.defaultProps = {
     }
 };
 ReactTurntable.propTypes = {
-    width: __WEBPACK_IMPORTED_MODULE_0_react__["PropTypes"].number.isRequired,
-    height: __WEBPACK_IMPORTED_MODULE_0_react__["PropTypes"].number.isRequired,
-    prizes: __WEBPACK_IMPORTED_MODULE_0_react__["PropTypes"].array.isRequired,
-    clickText: __WEBPACK_IMPORTED_MODULE_0_react__["PropTypes"].oneOfType([__WEBPACK_IMPORTED_MODULE_0_react__["PropTypes"].string, __WEBPACK_IMPORTED_MODULE_0_react__["PropTypes"].object]),
-    primaryColor: __WEBPACK_IMPORTED_MODULE_0_react__["PropTypes"].string,
-    secondaryColor: __WEBPACK_IMPORTED_MODULE_0_react__["PropTypes"].string,
-    speed: __WEBPACK_IMPORTED_MODULE_0_react__["PropTypes"].number,
-    duration: __WEBPACK_IMPORTED_MODULE_0_react__["PropTypes"].number,
-    onComplete: __WEBPACK_IMPORTED_MODULE_0_react__["PropTypes"].func,
-    fontVertical: __WEBPACK_IMPORTED_MODULE_0_react__["PropTypes"].bool,
-    fontStyle: __WEBPACK_IMPORTED_MODULE_0_react__["PropTypes"].object
+    width: _propTypes2.default.number.isRequired,
+    height: _propTypes2.default.number.isRequired,
+    prizes: _propTypes2.default.array.isRequired,
+    clickText: _propTypes2.default.oneOfType([_propTypes2.default.string, _propTypes2.default.object]),
+    primaryColor: _propTypes2.default.string,
+    secondaryColor: _propTypes2.default.string,
+    speed: _propTypes2.default.number,
+    duration: _propTypes2.default.number,
+    onComplete: _propTypes2.default.func,
+    fontVertical: _propTypes2.default.bool,
+    fontStyle: _propTypes2.default.object
 };
-/* harmony default export */ __webpack_exports__["a"] = (ReactTurntable);
+var _default = ReactTurntable;
+exports.default = _default;
+;
+
+var _temp = function () {
+    if (typeof __REACT_HOT_LOADER__ === 'undefined') {
+        return;
+    }
+
+    __REACT_HOT_LOADER__.register(easeOut, "easeOut", "d:/webStudy/React-Turntable/src/index.js");
+
+    __REACT_HOT_LOADER__.register(ReactTurntable, "ReactTurntable", "d:/webStudy/React-Turntable/src/index.js");
+
+    __REACT_HOT_LOADER__.register(_default, "default", "d:/webStudy/React-Turntable/src/index.js");
+}();
+
+;
 
 /***/ }),
-/* 91 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/* 92 */
+/***/ (function(module, exports, __webpack_require__) {
+
+// style-loader: Adds some css to the DOM by adding a <style> tag
+
+// load the styles
+var content = __webpack_require__(202);
+if(typeof content === 'string') content = [[module.i, content, '']];
+// add the styles to the DOM
+var update = __webpack_require__(55)(content, {});
+if(content.locals) module.exports = content.locals;
+// Hot Module Replacement
+if(false) {
+	// When the styles change, update the <style> tags
+	if(!content.locals) {
+		module.hot.accept("!!../node_modules/._css-loader@0.23.1@css-loader/index.js??ref--2-1!../node_modules/._less-loader@2.2.3@less-loader/index.js??ref--2-2!./index.less", function() {
+			var newContent = require("!!../node_modules/._css-loader@0.23.1@css-loader/index.js??ref--2-1!../node_modules/._less-loader@2.2.3@less-loader/index.js??ref--2-2!./index.less");
+			if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+			update(newContent);
+		});
+	}
+	// When the module is disposed, remove the <style> tags
+	module.hot.dispose(function() { update(); });
+}
+
+/***/ }),
+/* 93 */
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__(10);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_react_dom__ = __webpack_require__(26);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_react_dom___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_react_dom__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rc_message__ = __webpack_require__(89);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_react_turntable__ = __webpack_require__(90);
 
 
+var _react = __webpack_require__(10);
 
+var _react2 = _interopRequireDefault(_react);
 
+var _reactDom = __webpack_require__(26);
 
+var _reactDom2 = _interopRequireDefault(_reactDom);
+
+var _rcMessage = __webpack_require__(90);
+
+var _rcMessage2 = _interopRequireDefault(_rcMessage);
+
+var _src = __webpack_require__(91);
+
+var _src2 = _interopRequireDefault(_src);
+
+__webpack_require__(92);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 var styles = {
     justifyContent: "center",
@@ -10866,32 +12895,47 @@ var options = {
     duration: 6000,
     clickText: "Start",
     onComplete: function onComplete(prize) {
-        __WEBPACK_IMPORTED_MODULE_2_rc_message__["a" /* default */].success({
+        _rcMessage2.default.success({
             content: prize
         });
     }
 };
 var Demo = function Demo() {
-    return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+    return _react2.default.createElement(
         "div",
         { style: styles },
-        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_3_react_turntable__["a" /* default */], options)
+        _react2.default.createElement(_src2.default, options)
     );
 };
-__WEBPACK_IMPORTED_MODULE_1_react_dom___default.a.render(__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(Demo, null), document.getElementById('root'));
+_reactDom2.default.render(_react2.default.createElement(Demo, null), document.getElementById('root'));
+;
+
+var _temp = function () {
+    if (typeof __REACT_HOT_LOADER__ === 'undefined') {
+        return;
+    }
+
+    __REACT_HOT_LOADER__.register(styles, "styles", "d:/webStudy/React-Turntable/example/example.js");
+
+    __REACT_HOT_LOADER__.register(prizes, "prizes", "d:/webStudy/React-Turntable/example/example.js");
+
+    __REACT_HOT_LOADER__.register(options, "options", "d:/webStudy/React-Turntable/example/example.js");
+
+    __REACT_HOT_LOADER__.register(Demo, "Demo", "d:/webStudy/React-Turntable/example/example.js");
+}();
+
+;
 
 /***/ }),
-/* 92 */
+/* 94 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 /* WEBPACK VAR INJECTION */(function(process) {/**
- * Copyright 2013-present, Facebook, Inc.
- * All rights reserved.
+ * Copyright (c) 2013-present, Facebook, Inc.
  *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
  *
  */
 
@@ -11619,10 +13663,27 @@ function factory(ReactComponent, isValidElement, ReactNoopUpdateQueue) {
 }
 
 module.exports = factory;
+;
+
+var _temp = function () {
+  if (typeof __REACT_HOT_LOADER__ === 'undefined') {
+    return;
+  }
+
+  __REACT_HOT_LOADER__.register(MIXINS_KEY, 'MIXINS_KEY', 'd:/webStudy/React-Turntable/node_modules/._create-react-class@15.6.2@create-react-class/factory.js');
+
+  __REACT_HOT_LOADER__.register(identity, 'identity', 'd:/webStudy/React-Turntable/node_modules/._create-react-class@15.6.2@create-react-class/factory.js');
+
+  __REACT_HOT_LOADER__.register(ReactPropTypeLocationNames, 'ReactPropTypeLocationNames', 'd:/webStudy/React-Turntable/node_modules/._create-react-class@15.6.2@create-react-class/factory.js');
+
+  __REACT_HOT_LOADER__.register(factory, 'factory', 'd:/webStudy/React-Turntable/node_modules/._create-react-class@15.6.2@create-react-class/factory.js');
+}();
+
+;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 93 */
+/* 95 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -11630,11 +13691,9 @@ module.exports = factory;
 
 /**
  * Copyright (c) 2013-present, Facebook, Inc.
- * All rights reserved.
  *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
  *
  * @typechecks
  */
@@ -11657,26 +13716,37 @@ function camelize(string) {
 }
 
 module.exports = camelize;
+;
+
+var _temp = function () {
+  if (typeof __REACT_HOT_LOADER__ === 'undefined') {
+    return;
+  }
+
+  __REACT_HOT_LOADER__.register(_hyphenPattern, "_hyphenPattern", "d:/webStudy/React-Turntable/node_modules/._fbjs@0.8.16@fbjs/lib/camelize.js");
+
+  __REACT_HOT_LOADER__.register(camelize, "camelize", "d:/webStudy/React-Turntable/node_modules/._fbjs@0.8.16@fbjs/lib/camelize.js");
+}();
+
+;
 
 /***/ }),
-/* 94 */
+/* 96 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 /**
  * Copyright (c) 2013-present, Facebook, Inc.
- * All rights reserved.
  *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
  *
  * @typechecks
  */
 
 
 
-var camelize = __webpack_require__(93);
+var camelize = __webpack_require__(95);
 
 var msPattern = /^-ms-/;
 
@@ -11702,9 +13772,22 @@ function camelizeStyleName(string) {
 }
 
 module.exports = camelizeStyleName;
+;
+
+var _temp = function () {
+  if (typeof __REACT_HOT_LOADER__ === 'undefined') {
+    return;
+  }
+
+  __REACT_HOT_LOADER__.register(msPattern, 'msPattern', 'd:/webStudy/React-Turntable/node_modules/._fbjs@0.8.16@fbjs/lib/camelizeStyleName.js');
+
+  __REACT_HOT_LOADER__.register(camelizeStyleName, 'camelizeStyleName', 'd:/webStudy/React-Turntable/node_modules/._fbjs@0.8.16@fbjs/lib/camelizeStyleName.js');
+}();
+
+;
 
 /***/ }),
-/* 95 */
+/* 97 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -11712,16 +13795,14 @@ module.exports = camelizeStyleName;
 
 /**
  * Copyright (c) 2013-present, Facebook, Inc.
- * All rights reserved.
  *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
  *
  * 
  */
 
-var isTextNode = __webpack_require__(103);
+var isTextNode = __webpack_require__(105);
 
 /*eslint-disable no-bitwise */
 
@@ -11747,9 +13828,20 @@ function containsNode(outerNode, innerNode) {
 }
 
 module.exports = containsNode;
+;
+
+var _temp = function () {
+  if (typeof __REACT_HOT_LOADER__ === 'undefined') {
+    return;
+  }
+
+  __REACT_HOT_LOADER__.register(containsNode, 'containsNode', 'd:/webStudy/React-Turntable/node_modules/._fbjs@0.8.16@fbjs/lib/containsNode.js');
+}();
+
+;
 
 /***/ }),
-/* 96 */
+/* 98 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -11757,11 +13849,9 @@ module.exports = containsNode;
 
 /**
  * Copyright (c) 2013-present, Facebook, Inc.
- * All rights reserved.
  *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
  *
  * @typechecks
  */
@@ -11881,10 +13971,25 @@ function createArrayFromMixed(obj) {
 }
 
 module.exports = createArrayFromMixed;
+;
+
+var _temp = function () {
+  if (typeof __REACT_HOT_LOADER__ === 'undefined') {
+    return;
+  }
+
+  __REACT_HOT_LOADER__.register(toArray, 'toArray', 'd:/webStudy/React-Turntable/node_modules/._fbjs@0.8.16@fbjs/lib/createArrayFromMixed.js');
+
+  __REACT_HOT_LOADER__.register(hasArrayNature, 'hasArrayNature', 'd:/webStudy/React-Turntable/node_modules/._fbjs@0.8.16@fbjs/lib/createArrayFromMixed.js');
+
+  __REACT_HOT_LOADER__.register(createArrayFromMixed, 'createArrayFromMixed', 'd:/webStudy/React-Turntable/node_modules/._fbjs@0.8.16@fbjs/lib/createArrayFromMixed.js');
+}();
+
+;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 97 */
+/* 99 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -11892,11 +13997,9 @@ module.exports = createArrayFromMixed;
 
 /**
  * Copyright (c) 2013-present, Facebook, Inc.
- * All rights reserved.
  *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
  *
  * @typechecks
  */
@@ -11905,8 +14008,8 @@ module.exports = createArrayFromMixed;
 
 var ExecutionEnvironment = __webpack_require__(6);
 
-var createArrayFromMixed = __webpack_require__(96);
-var getMarkupWrap = __webpack_require__(98);
+var createArrayFromMixed = __webpack_require__(98);
+var getMarkupWrap = __webpack_require__(100);
 var invariant = __webpack_require__(1);
 
 /**
@@ -11971,10 +14074,27 @@ function createNodesFromMarkup(markup, handleScript) {
 }
 
 module.exports = createNodesFromMarkup;
+;
+
+var _temp = function () {
+  if (typeof __REACT_HOT_LOADER__ === 'undefined') {
+    return;
+  }
+
+  __REACT_HOT_LOADER__.register(dummyNode, 'dummyNode', 'd:/webStudy/React-Turntable/node_modules/._fbjs@0.8.16@fbjs/lib/createNodesFromMarkup.js');
+
+  __REACT_HOT_LOADER__.register(nodeNamePattern, 'nodeNamePattern', 'd:/webStudy/React-Turntable/node_modules/._fbjs@0.8.16@fbjs/lib/createNodesFromMarkup.js');
+
+  __REACT_HOT_LOADER__.register(getNodeName, 'getNodeName', 'd:/webStudy/React-Turntable/node_modules/._fbjs@0.8.16@fbjs/lib/createNodesFromMarkup.js');
+
+  __REACT_HOT_LOADER__.register(createNodesFromMarkup, 'createNodesFromMarkup', 'd:/webStudy/React-Turntable/node_modules/._fbjs@0.8.16@fbjs/lib/createNodesFromMarkup.js');
+}();
+
+;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 98 */
+/* 100 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -11982,11 +14102,9 @@ module.exports = createNodesFromMarkup;
 
 /**
  * Copyright (c) 2013-present, Facebook, Inc.
- * All rights reserved.
  *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
  *
  */
 
@@ -12072,20 +14190,45 @@ function getMarkupWrap(nodeName) {
 }
 
 module.exports = getMarkupWrap;
+;
+
+var _temp = function () {
+  if (typeof __REACT_HOT_LOADER__ === 'undefined') {
+    return;
+  }
+
+  __REACT_HOT_LOADER__.register(dummyNode, 'dummyNode', 'd:/webStudy/React-Turntable/node_modules/._fbjs@0.8.16@fbjs/lib/getMarkupWrap.js');
+
+  __REACT_HOT_LOADER__.register(shouldWrap, 'shouldWrap', 'd:/webStudy/React-Turntable/node_modules/._fbjs@0.8.16@fbjs/lib/getMarkupWrap.js');
+
+  __REACT_HOT_LOADER__.register(selectWrap, 'selectWrap', 'd:/webStudy/React-Turntable/node_modules/._fbjs@0.8.16@fbjs/lib/getMarkupWrap.js');
+
+  __REACT_HOT_LOADER__.register(tableWrap, 'tableWrap', 'd:/webStudy/React-Turntable/node_modules/._fbjs@0.8.16@fbjs/lib/getMarkupWrap.js');
+
+  __REACT_HOT_LOADER__.register(trWrap, 'trWrap', 'd:/webStudy/React-Turntable/node_modules/._fbjs@0.8.16@fbjs/lib/getMarkupWrap.js');
+
+  __REACT_HOT_LOADER__.register(svgWrap, 'svgWrap', 'd:/webStudy/React-Turntable/node_modules/._fbjs@0.8.16@fbjs/lib/getMarkupWrap.js');
+
+  __REACT_HOT_LOADER__.register(markupWrap, 'markupWrap', 'd:/webStudy/React-Turntable/node_modules/._fbjs@0.8.16@fbjs/lib/getMarkupWrap.js');
+
+  __REACT_HOT_LOADER__.register(svgElements, 'svgElements', 'd:/webStudy/React-Turntable/node_modules/._fbjs@0.8.16@fbjs/lib/getMarkupWrap.js');
+
+  __REACT_HOT_LOADER__.register(getMarkupWrap, 'getMarkupWrap', 'd:/webStudy/React-Turntable/node_modules/._fbjs@0.8.16@fbjs/lib/getMarkupWrap.js');
+}();
+
+;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 99 */
+/* 101 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 /**
  * Copyright (c) 2013-present, Facebook, Inc.
- * All rights reserved.
  *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
  *
  * @typechecks
  */
@@ -12117,9 +14260,20 @@ function getUnboundedScrollPosition(scrollable) {
 }
 
 module.exports = getUnboundedScrollPosition;
+;
+
+var _temp = function () {
+  if (typeof __REACT_HOT_LOADER__ === 'undefined') {
+    return;
+  }
+
+  __REACT_HOT_LOADER__.register(getUnboundedScrollPosition, 'getUnboundedScrollPosition', 'd:/webStudy/React-Turntable/node_modules/._fbjs@0.8.16@fbjs/lib/getUnboundedScrollPosition.js');
+}();
+
+;
 
 /***/ }),
-/* 100 */
+/* 102 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -12127,11 +14281,9 @@ module.exports = getUnboundedScrollPosition;
 
 /**
  * Copyright (c) 2013-present, Facebook, Inc.
- * All rights reserved.
  *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
  *
  * @typechecks
  */
@@ -12155,26 +14307,37 @@ function hyphenate(string) {
 }
 
 module.exports = hyphenate;
+;
+
+var _temp = function () {
+  if (typeof __REACT_HOT_LOADER__ === 'undefined') {
+    return;
+  }
+
+  __REACT_HOT_LOADER__.register(_uppercasePattern, '_uppercasePattern', 'd:/webStudy/React-Turntable/node_modules/._fbjs@0.8.16@fbjs/lib/hyphenate.js');
+
+  __REACT_HOT_LOADER__.register(hyphenate, 'hyphenate', 'd:/webStudy/React-Turntable/node_modules/._fbjs@0.8.16@fbjs/lib/hyphenate.js');
+}();
+
+;
 
 /***/ }),
-/* 101 */
+/* 103 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 /**
  * Copyright (c) 2013-present, Facebook, Inc.
- * All rights reserved.
  *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
  *
  * @typechecks
  */
 
 
 
-var hyphenate = __webpack_require__(100);
+var hyphenate = __webpack_require__(102);
 
 var msPattern = /^ms-/;
 
@@ -12199,9 +14362,22 @@ function hyphenateStyleName(string) {
 }
 
 module.exports = hyphenateStyleName;
+;
+
+var _temp = function () {
+  if (typeof __REACT_HOT_LOADER__ === 'undefined') {
+    return;
+  }
+
+  __REACT_HOT_LOADER__.register(msPattern, 'msPattern', 'd:/webStudy/React-Turntable/node_modules/._fbjs@0.8.16@fbjs/lib/hyphenateStyleName.js');
+
+  __REACT_HOT_LOADER__.register(hyphenateStyleName, 'hyphenateStyleName', 'd:/webStudy/React-Turntable/node_modules/._fbjs@0.8.16@fbjs/lib/hyphenateStyleName.js');
+}();
+
+;
 
 /***/ }),
-/* 102 */
+/* 104 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -12209,11 +14385,9 @@ module.exports = hyphenateStyleName;
 
 /**
  * Copyright (c) 2013-present, Facebook, Inc.
- * All rights reserved.
  *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
  *
  * @typechecks
  */
@@ -12232,9 +14406,20 @@ function isNode(object) {
 }
 
 module.exports = isNode;
+;
+
+var _temp = function () {
+  if (typeof __REACT_HOT_LOADER__ === 'undefined') {
+    return;
+  }
+
+  __REACT_HOT_LOADER__.register(isNode, 'isNode', 'd:/webStudy/React-Turntable/node_modules/._fbjs@0.8.16@fbjs/lib/isNode.js');
+}();
+
+;
 
 /***/ }),
-/* 103 */
+/* 105 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -12242,16 +14427,14 @@ module.exports = isNode;
 
 /**
  * Copyright (c) 2013-present, Facebook, Inc.
- * All rights reserved.
  *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
  *
  * @typechecks
  */
 
-var isNode = __webpack_require__(102);
+var isNode = __webpack_require__(104);
 
 /**
  * @param {*} object The object to check.
@@ -12262,19 +14445,28 @@ function isTextNode(object) {
 }
 
 module.exports = isTextNode;
+;
+
+var _temp = function () {
+  if (typeof __REACT_HOT_LOADER__ === 'undefined') {
+    return;
+  }
+
+  __REACT_HOT_LOADER__.register(isTextNode, 'isTextNode', 'd:/webStudy/React-Turntable/node_modules/._fbjs@0.8.16@fbjs/lib/isTextNode.js');
+}();
+
+;
 
 /***/ }),
-/* 104 */
+/* 106 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 /**
  * Copyright (c) 2013-present, Facebook, Inc.
- * All rights reserved.
  *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
  *
  * 
  * @typechecks static-only
@@ -12297,19 +14489,28 @@ function memoizeStringOnly(callback) {
 }
 
 module.exports = memoizeStringOnly;
+;
+
+var _temp = function () {
+  if (typeof __REACT_HOT_LOADER__ === 'undefined') {
+    return;
+  }
+
+  __REACT_HOT_LOADER__.register(memoizeStringOnly, 'memoizeStringOnly', 'd:/webStudy/React-Turntable/node_modules/._fbjs@0.8.16@fbjs/lib/memoizeStringOnly.js');
+}();
+
+;
 
 /***/ }),
-/* 105 */
+/* 107 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 /**
  * Copyright (c) 2013-present, Facebook, Inc.
- * All rights reserved.
  *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
  *
  * @typechecks
  */
@@ -12325,9 +14526,20 @@ if (ExecutionEnvironment.canUseDOM) {
 }
 
 module.exports = performance || {};
+;
+
+var _temp = function () {
+  if (typeof __REACT_HOT_LOADER__ === 'undefined') {
+    return;
+  }
+
+  __REACT_HOT_LOADER__.register(performance, 'performance', 'd:/webStudy/React-Turntable/node_modules/._fbjs@0.8.16@fbjs/lib/performance.js');
+}();
+
+;
 
 /***/ }),
-/* 106 */
+/* 108 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -12335,16 +14547,14 @@ module.exports = performance || {};
 
 /**
  * Copyright (c) 2013-present, Facebook, Inc.
- * All rights reserved.
  *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
  *
  * @typechecks
  */
 
-var performance = __webpack_require__(105);
+var performance = __webpack_require__(107);
 
 var performanceNow;
 
@@ -12364,575 +14574,17 @@ if (performance.now) {
 }
 
 module.exports = performanceNow;
+;
 
-/***/ }),
-/* 107 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-/* WEBPACK VAR INJECTION */(function(process) {/**
- * Copyright 2013-present, Facebook, Inc.
- * All rights reserved.
- *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
- */
-
-
-
-var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
-
-if (process.env.NODE_ENV !== 'production') {
-  var invariant = __webpack_require__(1);
-  var warning = __webpack_require__(2);
-  var ReactPropTypesSecret = __webpack_require__(59);
-  var loggedTypeFailures = {};
-}
-
-/**
- * Assert that the values match with the type specs.
- * Error messages are memorized and will only be shown once.
- *
- * @param {object} typeSpecs Map of name to a ReactPropType
- * @param {object} values Runtime values that need to be type-checked
- * @param {string} location e.g. "prop", "context", "child context"
- * @param {string} componentName Name of the component for error messages.
- * @param {?Function} getStack Returns the component stack.
- * @private
- */
-function checkPropTypes(typeSpecs, values, location, componentName, getStack) {
-  if (process.env.NODE_ENV !== 'production') {
-    for (var typeSpecName in typeSpecs) {
-      if (typeSpecs.hasOwnProperty(typeSpecName)) {
-        var error;
-        // Prop type validation may throw. In case they do, we don't want to
-        // fail the render phase where it didn't fail before. So we log it.
-        // After these have been cleaned up, we'll let them throw.
-        try {
-          // This is intentionally an invariant that gets caught. It's the same
-          // behavior as without this statement except with a better message.
-          invariant(typeof typeSpecs[typeSpecName] === 'function', '%s: %s type `%s` is invalid; it must be a function, usually from ' + 'React.PropTypes.', componentName || 'React class', location, typeSpecName);
-          error = typeSpecs[typeSpecName](values, typeSpecName, componentName, location, null, ReactPropTypesSecret);
-        } catch (ex) {
-          error = ex;
-        }
-        warning(!error || error instanceof Error, '%s: type specification of %s `%s` is invalid; the type checker ' + 'function must return `null` or an `Error` but returned a %s. ' + 'You may have forgotten to pass an argument to the type checker ' + 'creator (arrayOf, instanceOf, objectOf, oneOf, oneOfType, and ' + 'shape all require an argument).', componentName || 'React class', location, typeSpecName, typeof error === 'undefined' ? 'undefined' : _typeof(error));
-        if (error instanceof Error && !(error.message in loggedTypeFailures)) {
-          // Only monitor this failure once because there tends to be a lot of the
-          // same error.
-          loggedTypeFailures[error.message] = true;
-
-          var stack = getStack ? getStack() : '';
-
-          warning(false, 'Failed %s type: %s%s', location, error.message, stack != null ? stack : '');
-        }
-      }
-    }
-  }
-}
-
-module.exports = checkPropTypes;
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
-
-/***/ }),
-/* 108 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-/* WEBPACK VAR INJECTION */(function(process) {/**
- * Copyright 2013-present, Facebook, Inc.
- * All rights reserved.
- *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
- */
-
-
-
-var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
-
-var emptyFunction = __webpack_require__(7);
-var invariant = __webpack_require__(1);
-var warning = __webpack_require__(2);
-
-var ReactPropTypesSecret = __webpack_require__(59);
-var checkPropTypes = __webpack_require__(107);
-
-module.exports = function (isValidElement, throwOnDirectAccess) {
-  /* global Symbol */
-  var ITERATOR_SYMBOL = typeof Symbol === 'function' && Symbol.iterator;
-  var FAUX_ITERATOR_SYMBOL = '@@iterator'; // Before Symbol spec.
-
-  /**
-   * Returns the iterator method function contained on the iterable object.
-   *
-   * Be sure to invoke the function with the iterable as context:
-   *
-   *     var iteratorFn = getIteratorFn(myIterable);
-   *     if (iteratorFn) {
-   *       var iterator = iteratorFn.call(myIterable);
-   *       ...
-   *     }
-   *
-   * @param {?object} maybeIterable
-   * @return {?function}
-   */
-  function getIteratorFn(maybeIterable) {
-    var iteratorFn = maybeIterable && (ITERATOR_SYMBOL && maybeIterable[ITERATOR_SYMBOL] || maybeIterable[FAUX_ITERATOR_SYMBOL]);
-    if (typeof iteratorFn === 'function') {
-      return iteratorFn;
-    }
+var _temp = function () {
+  if (typeof __REACT_HOT_LOADER__ === 'undefined') {
+    return;
   }
 
-  /**
-   * Collection of methods that allow declaration and validation of props that are
-   * supplied to React components. Example usage:
-   *
-   *   var Props = require('ReactPropTypes');
-   *   var MyArticle = React.createClass({
-   *     propTypes: {
-   *       // An optional string prop named "description".
-   *       description: Props.string,
-   *
-   *       // A required enum prop named "category".
-   *       category: Props.oneOf(['News','Photos']).isRequired,
-   *
-   *       // A prop named "dialog" that requires an instance of Dialog.
-   *       dialog: Props.instanceOf(Dialog).isRequired
-   *     },
-   *     render: function() { ... }
-   *   });
-   *
-   * A more formal specification of how these methods are used:
-   *
-   *   type := array|bool|func|object|number|string|oneOf([...])|instanceOf(...)
-   *   decl := ReactPropTypes.{type}(.isRequired)?
-   *
-   * Each and every declaration produces a function with the same signature. This
-   * allows the creation of custom validation functions. For example:
-   *
-   *  var MyLink = React.createClass({
-   *    propTypes: {
-   *      // An optional string or URI prop named "href".
-   *      href: function(props, propName, componentName) {
-   *        var propValue = props[propName];
-   *        if (propValue != null && typeof propValue !== 'string' &&
-   *            !(propValue instanceof URI)) {
-   *          return new Error(
-   *            'Expected a string or an URI for ' + propName + ' in ' +
-   *            componentName
-   *          );
-   *        }
-   *      }
-   *    },
-   *    render: function() {...}
-   *  });
-   *
-   * @internal
-   */
+  __REACT_HOT_LOADER__.register(performanceNow, 'performanceNow', 'd:/webStudy/React-Turntable/node_modules/._fbjs@0.8.16@fbjs/lib/performanceNow.js');
+}();
 
-  var ANONYMOUS = '<<anonymous>>';
-
-  // Important!
-  // Keep this list in sync with production version in `./factoryWithThrowingShims.js`.
-  var ReactPropTypes = {
-    array: createPrimitiveTypeChecker('array'),
-    bool: createPrimitiveTypeChecker('boolean'),
-    func: createPrimitiveTypeChecker('function'),
-    number: createPrimitiveTypeChecker('number'),
-    object: createPrimitiveTypeChecker('object'),
-    string: createPrimitiveTypeChecker('string'),
-    symbol: createPrimitiveTypeChecker('symbol'),
-
-    any: createAnyTypeChecker(),
-    arrayOf: createArrayOfTypeChecker,
-    element: createElementTypeChecker(),
-    instanceOf: createInstanceTypeChecker,
-    node: createNodeChecker(),
-    objectOf: createObjectOfTypeChecker,
-    oneOf: createEnumTypeChecker,
-    oneOfType: createUnionTypeChecker,
-    shape: createShapeTypeChecker
-  };
-
-  /**
-   * inlined Object.is polyfill to avoid requiring consumers ship their own
-   * https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/is
-   */
-  /*eslint-disable no-self-compare*/
-  function is(x, y) {
-    // SameValue algorithm
-    if (x === y) {
-      // Steps 1-5, 7-10
-      // Steps 6.b-6.e: +0 != -0
-      return x !== 0 || 1 / x === 1 / y;
-    } else {
-      // Step 6.a: NaN == NaN
-      return x !== x && y !== y;
-    }
-  }
-  /*eslint-enable no-self-compare*/
-
-  /**
-   * We use an Error-like object for backward compatibility as people may call
-   * PropTypes directly and inspect their output. However, we don't use real
-   * Errors anymore. We don't inspect their stack anyway, and creating them
-   * is prohibitively expensive if they are created too often, such as what
-   * happens in oneOfType() for any type before the one that matched.
-   */
-  function PropTypeError(message) {
-    this.message = message;
-    this.stack = '';
-  }
-  // Make `instanceof Error` still work for returned errors.
-  PropTypeError.prototype = Error.prototype;
-
-  function createChainableTypeChecker(validate) {
-    if (process.env.NODE_ENV !== 'production') {
-      var manualPropTypeCallCache = {};
-      var manualPropTypeWarningCount = 0;
-    }
-    function checkType(isRequired, props, propName, componentName, location, propFullName, secret) {
-      componentName = componentName || ANONYMOUS;
-      propFullName = propFullName || propName;
-
-      if (secret !== ReactPropTypesSecret) {
-        if (throwOnDirectAccess) {
-          // New behavior only for users of `prop-types` package
-          invariant(false, 'Calling PropTypes validators directly is not supported by the `prop-types` package. ' + 'Use `PropTypes.checkPropTypes()` to call them. ' + 'Read more at http://fb.me/use-check-prop-types');
-        } else if (process.env.NODE_ENV !== 'production' && typeof console !== 'undefined') {
-          // Old behavior for people using React.PropTypes
-          var cacheKey = componentName + ':' + propName;
-          if (!manualPropTypeCallCache[cacheKey] &&
-          // Avoid spamming the console because they are often not actionable except for lib authors
-          manualPropTypeWarningCount < 3) {
-            warning(false, 'You are manually calling a React.PropTypes validation ' + 'function for the `%s` prop on `%s`. This is deprecated ' + 'and will throw in the standalone `prop-types` package. ' + 'You may be seeing this warning due to a third-party PropTypes ' + 'library. See https://fb.me/react-warning-dont-call-proptypes ' + 'for details.', propFullName, componentName);
-            manualPropTypeCallCache[cacheKey] = true;
-            manualPropTypeWarningCount++;
-          }
-        }
-      }
-      if (props[propName] == null) {
-        if (isRequired) {
-          if (props[propName] === null) {
-            return new PropTypeError('The ' + location + ' `' + propFullName + '` is marked as required ' + ('in `' + componentName + '`, but its value is `null`.'));
-          }
-          return new PropTypeError('The ' + location + ' `' + propFullName + '` is marked as required in ' + ('`' + componentName + '`, but its value is `undefined`.'));
-        }
-        return null;
-      } else {
-        return validate(props, propName, componentName, location, propFullName);
-      }
-    }
-
-    var chainedCheckType = checkType.bind(null, false);
-    chainedCheckType.isRequired = checkType.bind(null, true);
-
-    return chainedCheckType;
-  }
-
-  function createPrimitiveTypeChecker(expectedType) {
-    function validate(props, propName, componentName, location, propFullName, secret) {
-      var propValue = props[propName];
-      var propType = getPropType(propValue);
-      if (propType !== expectedType) {
-        // `propValue` being instance of, say, date/regexp, pass the 'object'
-        // check, but we can offer a more precise error message here rather than
-        // 'of type `object`'.
-        var preciseType = getPreciseType(propValue);
-
-        return new PropTypeError('Invalid ' + location + ' `' + propFullName + '` of type ' + ('`' + preciseType + '` supplied to `' + componentName + '`, expected ') + ('`' + expectedType + '`.'));
-      }
-      return null;
-    }
-    return createChainableTypeChecker(validate);
-  }
-
-  function createAnyTypeChecker() {
-    return createChainableTypeChecker(emptyFunction.thatReturnsNull);
-  }
-
-  function createArrayOfTypeChecker(typeChecker) {
-    function validate(props, propName, componentName, location, propFullName) {
-      if (typeof typeChecker !== 'function') {
-        return new PropTypeError('Property `' + propFullName + '` of component `' + componentName + '` has invalid PropType notation inside arrayOf.');
-      }
-      var propValue = props[propName];
-      if (!Array.isArray(propValue)) {
-        var propType = getPropType(propValue);
-        return new PropTypeError('Invalid ' + location + ' `' + propFullName + '` of type ' + ('`' + propType + '` supplied to `' + componentName + '`, expected an array.'));
-      }
-      for (var i = 0; i < propValue.length; i++) {
-        var error = typeChecker(propValue, i, componentName, location, propFullName + '[' + i + ']', ReactPropTypesSecret);
-        if (error instanceof Error) {
-          return error;
-        }
-      }
-      return null;
-    }
-    return createChainableTypeChecker(validate);
-  }
-
-  function createElementTypeChecker() {
-    function validate(props, propName, componentName, location, propFullName) {
-      var propValue = props[propName];
-      if (!isValidElement(propValue)) {
-        var propType = getPropType(propValue);
-        return new PropTypeError('Invalid ' + location + ' `' + propFullName + '` of type ' + ('`' + propType + '` supplied to `' + componentName + '`, expected a single ReactElement.'));
-      }
-      return null;
-    }
-    return createChainableTypeChecker(validate);
-  }
-
-  function createInstanceTypeChecker(expectedClass) {
-    function validate(props, propName, componentName, location, propFullName) {
-      if (!(props[propName] instanceof expectedClass)) {
-        var expectedClassName = expectedClass.name || ANONYMOUS;
-        var actualClassName = getClassName(props[propName]);
-        return new PropTypeError('Invalid ' + location + ' `' + propFullName + '` of type ' + ('`' + actualClassName + '` supplied to `' + componentName + '`, expected ') + ('instance of `' + expectedClassName + '`.'));
-      }
-      return null;
-    }
-    return createChainableTypeChecker(validate);
-  }
-
-  function createEnumTypeChecker(expectedValues) {
-    if (!Array.isArray(expectedValues)) {
-      process.env.NODE_ENV !== 'production' ? warning(false, 'Invalid argument supplied to oneOf, expected an instance of array.') : void 0;
-      return emptyFunction.thatReturnsNull;
-    }
-
-    function validate(props, propName, componentName, location, propFullName) {
-      var propValue = props[propName];
-      for (var i = 0; i < expectedValues.length; i++) {
-        if (is(propValue, expectedValues[i])) {
-          return null;
-        }
-      }
-
-      var valuesString = JSON.stringify(expectedValues);
-      return new PropTypeError('Invalid ' + location + ' `' + propFullName + '` of value `' + propValue + '` ' + ('supplied to `' + componentName + '`, expected one of ' + valuesString + '.'));
-    }
-    return createChainableTypeChecker(validate);
-  }
-
-  function createObjectOfTypeChecker(typeChecker) {
-    function validate(props, propName, componentName, location, propFullName) {
-      if (typeof typeChecker !== 'function') {
-        return new PropTypeError('Property `' + propFullName + '` of component `' + componentName + '` has invalid PropType notation inside objectOf.');
-      }
-      var propValue = props[propName];
-      var propType = getPropType(propValue);
-      if (propType !== 'object') {
-        return new PropTypeError('Invalid ' + location + ' `' + propFullName + '` of type ' + ('`' + propType + '` supplied to `' + componentName + '`, expected an object.'));
-      }
-      for (var key in propValue) {
-        if (propValue.hasOwnProperty(key)) {
-          var error = typeChecker(propValue, key, componentName, location, propFullName + '.' + key, ReactPropTypesSecret);
-          if (error instanceof Error) {
-            return error;
-          }
-        }
-      }
-      return null;
-    }
-    return createChainableTypeChecker(validate);
-  }
-
-  function createUnionTypeChecker(arrayOfTypeCheckers) {
-    if (!Array.isArray(arrayOfTypeCheckers)) {
-      process.env.NODE_ENV !== 'production' ? warning(false, 'Invalid argument supplied to oneOfType, expected an instance of array.') : void 0;
-      return emptyFunction.thatReturnsNull;
-    }
-
-    for (var i = 0; i < arrayOfTypeCheckers.length; i++) {
-      var checker = arrayOfTypeCheckers[i];
-      if (typeof checker !== 'function') {
-        warning(false, 'Invalid argument supplid to oneOfType. Expected an array of check functions, but ' + 'received %s at index %s.', getPostfixForTypeWarning(checker), i);
-        return emptyFunction.thatReturnsNull;
-      }
-    }
-
-    function validate(props, propName, componentName, location, propFullName) {
-      for (var i = 0; i < arrayOfTypeCheckers.length; i++) {
-        var checker = arrayOfTypeCheckers[i];
-        if (checker(props, propName, componentName, location, propFullName, ReactPropTypesSecret) == null) {
-          return null;
-        }
-      }
-
-      return new PropTypeError('Invalid ' + location + ' `' + propFullName + '` supplied to ' + ('`' + componentName + '`.'));
-    }
-    return createChainableTypeChecker(validate);
-  }
-
-  function createNodeChecker() {
-    function validate(props, propName, componentName, location, propFullName) {
-      if (!isNode(props[propName])) {
-        return new PropTypeError('Invalid ' + location + ' `' + propFullName + '` supplied to ' + ('`' + componentName + '`, expected a ReactNode.'));
-      }
-      return null;
-    }
-    return createChainableTypeChecker(validate);
-  }
-
-  function createShapeTypeChecker(shapeTypes) {
-    function validate(props, propName, componentName, location, propFullName) {
-      var propValue = props[propName];
-      var propType = getPropType(propValue);
-      if (propType !== 'object') {
-        return new PropTypeError('Invalid ' + location + ' `' + propFullName + '` of type `' + propType + '` ' + ('supplied to `' + componentName + '`, expected `object`.'));
-      }
-      for (var key in shapeTypes) {
-        var checker = shapeTypes[key];
-        if (!checker) {
-          continue;
-        }
-        var error = checker(propValue, key, componentName, location, propFullName + '.' + key, ReactPropTypesSecret);
-        if (error) {
-          return error;
-        }
-      }
-      return null;
-    }
-    return createChainableTypeChecker(validate);
-  }
-
-  function isNode(propValue) {
-    switch (typeof propValue === 'undefined' ? 'undefined' : _typeof(propValue)) {
-      case 'number':
-      case 'string':
-      case 'undefined':
-        return true;
-      case 'boolean':
-        return !propValue;
-      case 'object':
-        if (Array.isArray(propValue)) {
-          return propValue.every(isNode);
-        }
-        if (propValue === null || isValidElement(propValue)) {
-          return true;
-        }
-
-        var iteratorFn = getIteratorFn(propValue);
-        if (iteratorFn) {
-          var iterator = iteratorFn.call(propValue);
-          var step;
-          if (iteratorFn !== propValue.entries) {
-            while (!(step = iterator.next()).done) {
-              if (!isNode(step.value)) {
-                return false;
-              }
-            }
-          } else {
-            // Iterator will provide entry [k,v] tuples rather than values.
-            while (!(step = iterator.next()).done) {
-              var entry = step.value;
-              if (entry) {
-                if (!isNode(entry[1])) {
-                  return false;
-                }
-              }
-            }
-          }
-        } else {
-          return false;
-        }
-
-        return true;
-      default:
-        return false;
-    }
-  }
-
-  function isSymbol(propType, propValue) {
-    // Native Symbol.
-    if (propType === 'symbol') {
-      return true;
-    }
-
-    // 19.4.3.5 Symbol.prototype[@@toStringTag] === 'Symbol'
-    if (propValue['@@toStringTag'] === 'Symbol') {
-      return true;
-    }
-
-    // Fallback for non-spec compliant Symbols which are polyfilled.
-    if (typeof Symbol === 'function' && propValue instanceof Symbol) {
-      return true;
-    }
-
-    return false;
-  }
-
-  // Equivalent of `typeof` but with special handling for array and regexp.
-  function getPropType(propValue) {
-    var propType = typeof propValue === 'undefined' ? 'undefined' : _typeof(propValue);
-    if (Array.isArray(propValue)) {
-      return 'array';
-    }
-    if (propValue instanceof RegExp) {
-      // Old webkits (at least until Android 4.0) return 'function' rather than
-      // 'object' for typeof a RegExp. We'll normalize this here so that /bla/
-      // passes PropTypes.object.
-      return 'object';
-    }
-    if (isSymbol(propType, propValue)) {
-      return 'symbol';
-    }
-    return propType;
-  }
-
-  // This handles more types than `getPropType`. Only used for error messages.
-  // See `createPrimitiveTypeChecker`.
-  function getPreciseType(propValue) {
-    if (typeof propValue === 'undefined' || propValue === null) {
-      return '' + propValue;
-    }
-    var propType = getPropType(propValue);
-    if (propType === 'object') {
-      if (propValue instanceof Date) {
-        return 'date';
-      } else if (propValue instanceof RegExp) {
-        return 'regexp';
-      }
-    }
-    return propType;
-  }
-
-  // Returns a string that is postfixed to a warning about an invalid type.
-  // For example, "undefined" or "of type array"
-  function getPostfixForTypeWarning(value) {
-    var type = getPreciseType(value);
-    switch (type) {
-      case 'array':
-      case 'object':
-        return 'an ' + type;
-      case 'boolean':
-      case 'date':
-      case 'regexp':
-        return 'a ' + type;
-      default:
-        return type;
-    }
-  }
-
-  // Returns class name of the object, if any.
-  function getClassName(propValue) {
-    if (!propValue.constructor || !propValue.constructor.name) {
-      return ANONYMOUS;
-    }
-    return propValue.constructor.name;
-  }
-
-  ReactPropTypes.checkPropTypes = checkPropTypes;
-  ReactPropTypes.PropTypes = ReactPropTypes;
-
-  return ReactPropTypes;
-};
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
+;
 
 /***/ }),
 /* 109 */
@@ -12940,12 +14592,10 @@ module.exports = function (isValidElement, throwOnDirectAccess) {
 
 "use strict";
 /* WEBPACK VAR INJECTION */(function(process) {/**
- * Copyright 2013-present, Facebook, Inc.
- * All rights reserved.
+ * Copyright (c) 2013-present, Facebook, Inc.
  *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
  */
 
 
@@ -12955,7 +14605,7 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
 if (process.env.NODE_ENV !== 'production') {
   var invariant = __webpack_require__(1);
   var warning = __webpack_require__(2);
-  var ReactPropTypesSecret = __webpack_require__(60);
+  var ReactPropTypesSecret = __webpack_require__(38);
   var loggedTypeFailures = {};
 }
 
@@ -12981,7 +14631,7 @@ function checkPropTypes(typeSpecs, values, location, componentName, getStack) {
         try {
           // This is intentionally an invariant that gets caught. It's the same
           // behavior as without this statement except with a better message.
-          invariant(typeof typeSpecs[typeSpecName] === 'function', '%s: %s type `%s` is invalid; it must be a function, usually from ' + 'React.PropTypes.', componentName || 'React class', location, typeSpecName);
+          invariant(typeof typeSpecs[typeSpecName] === 'function', '%s: %s type `%s` is invalid; it must be a function, usually from ' + 'the `prop-types` package, but received `%s`.', componentName || 'React class', location, typeSpecName, _typeof(typeSpecs[typeSpecName]));
           error = typeSpecs[typeSpecName](values, typeSpecName, componentName, location, null, ReactPropTypesSecret);
         } catch (ex) {
           error = ex;
@@ -13002,6 +14652,19 @@ function checkPropTypes(typeSpecs, values, location, componentName, getStack) {
 }
 
 module.exports = checkPropTypes;
+;
+
+var _temp = function () {
+  if (typeof __REACT_HOT_LOADER__ === 'undefined') {
+    return;
+  }
+
+  __REACT_HOT_LOADER__.register(loggedTypeFailures, 'loggedTypeFailures', 'd:/webStudy/React-Turntable/node_modules/._prop-types@15.6.0@prop-types/checkPropTypes.js');
+
+  __REACT_HOT_LOADER__.register(checkPropTypes, 'checkPropTypes', 'd:/webStudy/React-Turntable/node_modules/._prop-types@15.6.0@prop-types/checkPropTypes.js');
+}();
+
+;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
@@ -13010,29 +14673,32 @@ module.exports = checkPropTypes;
 
 "use strict";
 /**
- * Copyright 2013-present, Facebook, Inc.
- * All rights reserved.
+ * Copyright (c) 2013-present, Facebook, Inc.
  *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
  */
 
 
 
-var emptyFunction = __webpack_require__(7);
+var emptyFunction = __webpack_require__(8);
 var invariant = __webpack_require__(1);
+var ReactPropTypesSecret = __webpack_require__(38);
 
 module.exports = function () {
-  // Important!
-  // Keep this list in sync with production version in `./factoryWithTypeCheckers.js`.
-  function shim() {
+  function shim(props, propName, componentName, location, propFullName, secret) {
+    if (secret === ReactPropTypesSecret) {
+      // It is still safe when called from React.
+      return;
+    }
     invariant(false, 'Calling PropTypes validators directly is not supported by the `prop-types` package. ' + 'Use PropTypes.checkPropTypes() to call them. ' + 'Read more at http://fb.me/use-check-prop-types');
   };
   shim.isRequired = shim;
   function getShim() {
     return shim;
   };
+  // Important!
+  // Keep this list in sync with production version in `./factoryWithTypeCheckers.js`.
   var ReactPropTypes = {
     array: shim,
     bool: shim,
@@ -13050,7 +14716,8 @@ module.exports = function () {
     objectOf: getShim,
     oneOf: getShim,
     oneOfType: getShim,
-    shape: getShim
+    shape: getShim,
+    exact: getShim
   };
 
   ReactPropTypes.checkPropTypes = emptyFunction;
@@ -13058,513 +14725,18 @@ module.exports = function () {
 
   return ReactPropTypes;
 };
+;
+
+var _temp = function () {
+  if (typeof __REACT_HOT_LOADER__ === 'undefined') {
+    return;
+  }
+}();
+
+;
 
 /***/ }),
 /* 111 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-/* WEBPACK VAR INJECTION */(function(process) {/**
- * Copyright 2013-present, Facebook, Inc.
- * All rights reserved.
- *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
- */
-
-
-
-var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
-
-var emptyFunction = __webpack_require__(7);
-var invariant = __webpack_require__(1);
-var warning = __webpack_require__(2);
-
-var ReactPropTypesSecret = __webpack_require__(60);
-var checkPropTypes = __webpack_require__(109);
-
-module.exports = function (isValidElement, throwOnDirectAccess) {
-  /* global Symbol */
-  var ITERATOR_SYMBOL = typeof Symbol === 'function' && Symbol.iterator;
-  var FAUX_ITERATOR_SYMBOL = '@@iterator'; // Before Symbol spec.
-
-  /**
-   * Returns the iterator method function contained on the iterable object.
-   *
-   * Be sure to invoke the function with the iterable as context:
-   *
-   *     var iteratorFn = getIteratorFn(myIterable);
-   *     if (iteratorFn) {
-   *       var iterator = iteratorFn.call(myIterable);
-   *       ...
-   *     }
-   *
-   * @param {?object} maybeIterable
-   * @return {?function}
-   */
-  function getIteratorFn(maybeIterable) {
-    var iteratorFn = maybeIterable && (ITERATOR_SYMBOL && maybeIterable[ITERATOR_SYMBOL] || maybeIterable[FAUX_ITERATOR_SYMBOL]);
-    if (typeof iteratorFn === 'function') {
-      return iteratorFn;
-    }
-  }
-
-  /**
-   * Collection of methods that allow declaration and validation of props that are
-   * supplied to React components. Example usage:
-   *
-   *   var Props = require('ReactPropTypes');
-   *   var MyArticle = React.createClass({
-   *     propTypes: {
-   *       // An optional string prop named "description".
-   *       description: Props.string,
-   *
-   *       // A required enum prop named "category".
-   *       category: Props.oneOf(['News','Photos']).isRequired,
-   *
-   *       // A prop named "dialog" that requires an instance of Dialog.
-   *       dialog: Props.instanceOf(Dialog).isRequired
-   *     },
-   *     render: function() { ... }
-   *   });
-   *
-   * A more formal specification of how these methods are used:
-   *
-   *   type := array|bool|func|object|number|string|oneOf([...])|instanceOf(...)
-   *   decl := ReactPropTypes.{type}(.isRequired)?
-   *
-   * Each and every declaration produces a function with the same signature. This
-   * allows the creation of custom validation functions. For example:
-   *
-   *  var MyLink = React.createClass({
-   *    propTypes: {
-   *      // An optional string or URI prop named "href".
-   *      href: function(props, propName, componentName) {
-   *        var propValue = props[propName];
-   *        if (propValue != null && typeof propValue !== 'string' &&
-   *            !(propValue instanceof URI)) {
-   *          return new Error(
-   *            'Expected a string or an URI for ' + propName + ' in ' +
-   *            componentName
-   *          );
-   *        }
-   *      }
-   *    },
-   *    render: function() {...}
-   *  });
-   *
-   * @internal
-   */
-
-  var ANONYMOUS = '<<anonymous>>';
-
-  // Important!
-  // Keep this list in sync with production version in `./factoryWithThrowingShims.js`.
-  var ReactPropTypes = {
-    array: createPrimitiveTypeChecker('array'),
-    bool: createPrimitiveTypeChecker('boolean'),
-    func: createPrimitiveTypeChecker('function'),
-    number: createPrimitiveTypeChecker('number'),
-    object: createPrimitiveTypeChecker('object'),
-    string: createPrimitiveTypeChecker('string'),
-    symbol: createPrimitiveTypeChecker('symbol'),
-
-    any: createAnyTypeChecker(),
-    arrayOf: createArrayOfTypeChecker,
-    element: createElementTypeChecker(),
-    instanceOf: createInstanceTypeChecker,
-    node: createNodeChecker(),
-    objectOf: createObjectOfTypeChecker,
-    oneOf: createEnumTypeChecker,
-    oneOfType: createUnionTypeChecker,
-    shape: createShapeTypeChecker
-  };
-
-  /**
-   * inlined Object.is polyfill to avoid requiring consumers ship their own
-   * https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/is
-   */
-  /*eslint-disable no-self-compare*/
-  function is(x, y) {
-    // SameValue algorithm
-    if (x === y) {
-      // Steps 1-5, 7-10
-      // Steps 6.b-6.e: +0 != -0
-      return x !== 0 || 1 / x === 1 / y;
-    } else {
-      // Step 6.a: NaN == NaN
-      return x !== x && y !== y;
-    }
-  }
-  /*eslint-enable no-self-compare*/
-
-  /**
-   * We use an Error-like object for backward compatibility as people may call
-   * PropTypes directly and inspect their output. However, we don't use real
-   * Errors anymore. We don't inspect their stack anyway, and creating them
-   * is prohibitively expensive if they are created too often, such as what
-   * happens in oneOfType() for any type before the one that matched.
-   */
-  function PropTypeError(message) {
-    this.message = message;
-    this.stack = '';
-  }
-  // Make `instanceof Error` still work for returned errors.
-  PropTypeError.prototype = Error.prototype;
-
-  function createChainableTypeChecker(validate) {
-    if (process.env.NODE_ENV !== 'production') {
-      var manualPropTypeCallCache = {};
-      var manualPropTypeWarningCount = 0;
-    }
-    function checkType(isRequired, props, propName, componentName, location, propFullName, secret) {
-      componentName = componentName || ANONYMOUS;
-      propFullName = propFullName || propName;
-
-      if (secret !== ReactPropTypesSecret) {
-        if (throwOnDirectAccess) {
-          // New behavior only for users of `prop-types` package
-          invariant(false, 'Calling PropTypes validators directly is not supported by the `prop-types` package. ' + 'Use `PropTypes.checkPropTypes()` to call them. ' + 'Read more at http://fb.me/use-check-prop-types');
-        } else if (process.env.NODE_ENV !== 'production' && typeof console !== 'undefined') {
-          // Old behavior for people using React.PropTypes
-          var cacheKey = componentName + ':' + propName;
-          if (!manualPropTypeCallCache[cacheKey] &&
-          // Avoid spamming the console because they are often not actionable except for lib authors
-          manualPropTypeWarningCount < 3) {
-            warning(false, 'You are manually calling a React.PropTypes validation ' + 'function for the `%s` prop on `%s`. This is deprecated ' + 'and will throw in the standalone `prop-types` package. ' + 'You may be seeing this warning due to a third-party PropTypes ' + 'library. See https://fb.me/react-warning-dont-call-proptypes ' + 'for details.', propFullName, componentName);
-            manualPropTypeCallCache[cacheKey] = true;
-            manualPropTypeWarningCount++;
-          }
-        }
-      }
-      if (props[propName] == null) {
-        if (isRequired) {
-          if (props[propName] === null) {
-            return new PropTypeError('The ' + location + ' `' + propFullName + '` is marked as required ' + ('in `' + componentName + '`, but its value is `null`.'));
-          }
-          return new PropTypeError('The ' + location + ' `' + propFullName + '` is marked as required in ' + ('`' + componentName + '`, but its value is `undefined`.'));
-        }
-        return null;
-      } else {
-        return validate(props, propName, componentName, location, propFullName);
-      }
-    }
-
-    var chainedCheckType = checkType.bind(null, false);
-    chainedCheckType.isRequired = checkType.bind(null, true);
-
-    return chainedCheckType;
-  }
-
-  function createPrimitiveTypeChecker(expectedType) {
-    function validate(props, propName, componentName, location, propFullName, secret) {
-      var propValue = props[propName];
-      var propType = getPropType(propValue);
-      if (propType !== expectedType) {
-        // `propValue` being instance of, say, date/regexp, pass the 'object'
-        // check, but we can offer a more precise error message here rather than
-        // 'of type `object`'.
-        var preciseType = getPreciseType(propValue);
-
-        return new PropTypeError('Invalid ' + location + ' `' + propFullName + '` of type ' + ('`' + preciseType + '` supplied to `' + componentName + '`, expected ') + ('`' + expectedType + '`.'));
-      }
-      return null;
-    }
-    return createChainableTypeChecker(validate);
-  }
-
-  function createAnyTypeChecker() {
-    return createChainableTypeChecker(emptyFunction.thatReturnsNull);
-  }
-
-  function createArrayOfTypeChecker(typeChecker) {
-    function validate(props, propName, componentName, location, propFullName) {
-      if (typeof typeChecker !== 'function') {
-        return new PropTypeError('Property `' + propFullName + '` of component `' + componentName + '` has invalid PropType notation inside arrayOf.');
-      }
-      var propValue = props[propName];
-      if (!Array.isArray(propValue)) {
-        var propType = getPropType(propValue);
-        return new PropTypeError('Invalid ' + location + ' `' + propFullName + '` of type ' + ('`' + propType + '` supplied to `' + componentName + '`, expected an array.'));
-      }
-      for (var i = 0; i < propValue.length; i++) {
-        var error = typeChecker(propValue, i, componentName, location, propFullName + '[' + i + ']', ReactPropTypesSecret);
-        if (error instanceof Error) {
-          return error;
-        }
-      }
-      return null;
-    }
-    return createChainableTypeChecker(validate);
-  }
-
-  function createElementTypeChecker() {
-    function validate(props, propName, componentName, location, propFullName) {
-      var propValue = props[propName];
-      if (!isValidElement(propValue)) {
-        var propType = getPropType(propValue);
-        return new PropTypeError('Invalid ' + location + ' `' + propFullName + '` of type ' + ('`' + propType + '` supplied to `' + componentName + '`, expected a single ReactElement.'));
-      }
-      return null;
-    }
-    return createChainableTypeChecker(validate);
-  }
-
-  function createInstanceTypeChecker(expectedClass) {
-    function validate(props, propName, componentName, location, propFullName) {
-      if (!(props[propName] instanceof expectedClass)) {
-        var expectedClassName = expectedClass.name || ANONYMOUS;
-        var actualClassName = getClassName(props[propName]);
-        return new PropTypeError('Invalid ' + location + ' `' + propFullName + '` of type ' + ('`' + actualClassName + '` supplied to `' + componentName + '`, expected ') + ('instance of `' + expectedClassName + '`.'));
-      }
-      return null;
-    }
-    return createChainableTypeChecker(validate);
-  }
-
-  function createEnumTypeChecker(expectedValues) {
-    if (!Array.isArray(expectedValues)) {
-      process.env.NODE_ENV !== 'production' ? warning(false, 'Invalid argument supplied to oneOf, expected an instance of array.') : void 0;
-      return emptyFunction.thatReturnsNull;
-    }
-
-    function validate(props, propName, componentName, location, propFullName) {
-      var propValue = props[propName];
-      for (var i = 0; i < expectedValues.length; i++) {
-        if (is(propValue, expectedValues[i])) {
-          return null;
-        }
-      }
-
-      var valuesString = JSON.stringify(expectedValues);
-      return new PropTypeError('Invalid ' + location + ' `' + propFullName + '` of value `' + propValue + '` ' + ('supplied to `' + componentName + '`, expected one of ' + valuesString + '.'));
-    }
-    return createChainableTypeChecker(validate);
-  }
-
-  function createObjectOfTypeChecker(typeChecker) {
-    function validate(props, propName, componentName, location, propFullName) {
-      if (typeof typeChecker !== 'function') {
-        return new PropTypeError('Property `' + propFullName + '` of component `' + componentName + '` has invalid PropType notation inside objectOf.');
-      }
-      var propValue = props[propName];
-      var propType = getPropType(propValue);
-      if (propType !== 'object') {
-        return new PropTypeError('Invalid ' + location + ' `' + propFullName + '` of type ' + ('`' + propType + '` supplied to `' + componentName + '`, expected an object.'));
-      }
-      for (var key in propValue) {
-        if (propValue.hasOwnProperty(key)) {
-          var error = typeChecker(propValue, key, componentName, location, propFullName + '.' + key, ReactPropTypesSecret);
-          if (error instanceof Error) {
-            return error;
-          }
-        }
-      }
-      return null;
-    }
-    return createChainableTypeChecker(validate);
-  }
-
-  function createUnionTypeChecker(arrayOfTypeCheckers) {
-    if (!Array.isArray(arrayOfTypeCheckers)) {
-      process.env.NODE_ENV !== 'production' ? warning(false, 'Invalid argument supplied to oneOfType, expected an instance of array.') : void 0;
-      return emptyFunction.thatReturnsNull;
-    }
-
-    function validate(props, propName, componentName, location, propFullName) {
-      for (var i = 0; i < arrayOfTypeCheckers.length; i++) {
-        var checker = arrayOfTypeCheckers[i];
-        if (checker(props, propName, componentName, location, propFullName, ReactPropTypesSecret) == null) {
-          return null;
-        }
-      }
-
-      return new PropTypeError('Invalid ' + location + ' `' + propFullName + '` supplied to ' + ('`' + componentName + '`.'));
-    }
-    return createChainableTypeChecker(validate);
-  }
-
-  function createNodeChecker() {
-    function validate(props, propName, componentName, location, propFullName) {
-      if (!isNode(props[propName])) {
-        return new PropTypeError('Invalid ' + location + ' `' + propFullName + '` supplied to ' + ('`' + componentName + '`, expected a ReactNode.'));
-      }
-      return null;
-    }
-    return createChainableTypeChecker(validate);
-  }
-
-  function createShapeTypeChecker(shapeTypes) {
-    function validate(props, propName, componentName, location, propFullName) {
-      var propValue = props[propName];
-      var propType = getPropType(propValue);
-      if (propType !== 'object') {
-        return new PropTypeError('Invalid ' + location + ' `' + propFullName + '` of type `' + propType + '` ' + ('supplied to `' + componentName + '`, expected `object`.'));
-      }
-      for (var key in shapeTypes) {
-        var checker = shapeTypes[key];
-        if (!checker) {
-          continue;
-        }
-        var error = checker(propValue, key, componentName, location, propFullName + '.' + key, ReactPropTypesSecret);
-        if (error) {
-          return error;
-        }
-      }
-      return null;
-    }
-    return createChainableTypeChecker(validate);
-  }
-
-  function isNode(propValue) {
-    switch (typeof propValue === 'undefined' ? 'undefined' : _typeof(propValue)) {
-      case 'number':
-      case 'string':
-      case 'undefined':
-        return true;
-      case 'boolean':
-        return !propValue;
-      case 'object':
-        if (Array.isArray(propValue)) {
-          return propValue.every(isNode);
-        }
-        if (propValue === null || isValidElement(propValue)) {
-          return true;
-        }
-
-        var iteratorFn = getIteratorFn(propValue);
-        if (iteratorFn) {
-          var iterator = iteratorFn.call(propValue);
-          var step;
-          if (iteratorFn !== propValue.entries) {
-            while (!(step = iterator.next()).done) {
-              if (!isNode(step.value)) {
-                return false;
-              }
-            }
-          } else {
-            // Iterator will provide entry [k,v] tuples rather than values.
-            while (!(step = iterator.next()).done) {
-              var entry = step.value;
-              if (entry) {
-                if (!isNode(entry[1])) {
-                  return false;
-                }
-              }
-            }
-          }
-        } else {
-          return false;
-        }
-
-        return true;
-      default:
-        return false;
-    }
-  }
-
-  function isSymbol(propType, propValue) {
-    // Native Symbol.
-    if (propType === 'symbol') {
-      return true;
-    }
-
-    // 19.4.3.5 Symbol.prototype[@@toStringTag] === 'Symbol'
-    if (propValue['@@toStringTag'] === 'Symbol') {
-      return true;
-    }
-
-    // Fallback for non-spec compliant Symbols which are polyfilled.
-    if (typeof Symbol === 'function' && propValue instanceof Symbol) {
-      return true;
-    }
-
-    return false;
-  }
-
-  // Equivalent of `typeof` but with special handling for array and regexp.
-  function getPropType(propValue) {
-    var propType = typeof propValue === 'undefined' ? 'undefined' : _typeof(propValue);
-    if (Array.isArray(propValue)) {
-      return 'array';
-    }
-    if (propValue instanceof RegExp) {
-      // Old webkits (at least until Android 4.0) return 'function' rather than
-      // 'object' for typeof a RegExp. We'll normalize this here so that /bla/
-      // passes PropTypes.object.
-      return 'object';
-    }
-    if (isSymbol(propType, propValue)) {
-      return 'symbol';
-    }
-    return propType;
-  }
-
-  // This handles more types than `getPropType`. Only used for error messages.
-  // See `createPrimitiveTypeChecker`.
-  function getPreciseType(propValue) {
-    var propType = getPropType(propValue);
-    if (propType === 'object') {
-      if (propValue instanceof Date) {
-        return 'date';
-      } else if (propValue instanceof RegExp) {
-        return 'regexp';
-      }
-    }
-    return propType;
-  }
-
-  // Returns class name of the object, if any.
-  function getClassName(propValue) {
-    if (!propValue.constructor || !propValue.constructor.name) {
-      return ANONYMOUS;
-    }
-    return propValue.constructor.name;
-  }
-
-  ReactPropTypes.checkPropTypes = checkPropTypes;
-  ReactPropTypes.PropTypes = ReactPropTypes;
-
-  return ReactPropTypes;
-};
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
-
-/***/ }),
-/* 112 */
-/***/ (function(module, exports, __webpack_require__) {
-
-/* WEBPACK VAR INJECTION */(function(process) {var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
-
-/**
- * Copyright 2013-present, Facebook, Inc.
- * All rights reserved.
- *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
- */
-
-if (process.env.NODE_ENV !== 'production') {
-  var REACT_ELEMENT_TYPE = typeof Symbol === 'function' && Symbol.for && Symbol.for('react.element') || 0xeac7;
-
-  var isValidElement = function isValidElement(object) {
-    return (typeof object === 'undefined' ? 'undefined' : _typeof(object)) === 'object' && object !== null && object.$$typeof === REACT_ELEMENT_TYPE;
-  };
-
-  // By explicitly using `prop-types` you are opting into new development behavior.
-  // http://fb.me/prop-types-in-prod
-  var throwOnDirectAccess = true;
-  module.exports = __webpack_require__(111)(isValidElement, throwOnDirectAccess);
-} else {
-  // By explicitly using `prop-types` you are opting into new production behavior.
-  // http://fb.me/prop-types-in-prod
-  module.exports = __webpack_require__(110)();
-}
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
-
-/***/ }),
-/* 113 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -13574,7 +14746,7 @@ if (process.env.NODE_ENV !== 'production') {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_react_dom___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_react_dom__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_classnames__ = __webpack_require__(35);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_classnames___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_classnames__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__styles_less__ = __webpack_require__(205);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__styles_less__ = __webpack_require__(203);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__styles_less___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3__styles_less__);
 var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
 
@@ -13646,17 +14818,15 @@ Button.PropTypes = {
 /* harmony default export */ __webpack_exports__["a"] = (Button);
 
 /***/ }),
-/* 114 */
+/* 112 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 /**
- * Copyright 2013-present, Facebook, Inc.
- * All rights reserved.
+ * Copyright (c) 2013-present, Facebook, Inc.
  *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
  *
  */
 
@@ -13723,19 +14893,28 @@ var ARIADOMPropertyConfig = {
 };
 
 module.exports = ARIADOMPropertyConfig;
+;
+
+var _temp = function () {
+  if (typeof __REACT_HOT_LOADER__ === 'undefined') {
+    return;
+  }
+
+  __REACT_HOT_LOADER__.register(ARIADOMPropertyConfig, 'ARIADOMPropertyConfig', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/ARIADOMPropertyConfig.js');
+}();
+
+;
 
 /***/ }),
-/* 115 */
+/* 113 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 /**
- * Copyright 2013-present, Facebook, Inc.
- * All rights reserved.
+ * Copyright (c) 2013-present, Facebook, Inc.
  *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
  *
  */
 
@@ -13743,7 +14922,7 @@ module.exports = ARIADOMPropertyConfig;
 
 var ReactDOMComponentTree = __webpack_require__(5);
 
-var focusNode = __webpack_require__(56);
+var focusNode = __webpack_require__(57);
 
 var AutoFocusUtils = {
   focusDOMComponent: function focusDOMComponent() {
@@ -13752,19 +14931,28 @@ var AutoFocusUtils = {
 };
 
 module.exports = AutoFocusUtils;
+;
+
+var _temp = function () {
+  if (typeof __REACT_HOT_LOADER__ === 'undefined') {
+    return;
+  }
+
+  __REACT_HOT_LOADER__.register(AutoFocusUtils, 'AutoFocusUtils', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/AutoFocusUtils.js');
+}();
+
+;
 
 /***/ }),
-/* 116 */
+/* 114 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 /**
- * Copyright 2013-present Facebook, Inc.
- * All rights reserved.
+ * Copyright (c) 2013-present, Facebook, Inc.
  *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
  *
  */
 
@@ -13774,9 +14962,9 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
 
 var EventPropagators = __webpack_require__(22);
 var ExecutionEnvironment = __webpack_require__(6);
-var FallbackCompositionState = __webpack_require__(122);
-var SyntheticCompositionEvent = __webpack_require__(165);
-var SyntheticInputEvent = __webpack_require__(168);
+var FallbackCompositionState = __webpack_require__(120);
+var SyntheticCompositionEvent = __webpack_require__(163);
+var SyntheticInputEvent = __webpack_require__(166);
 
 var END_KEYCODES = [9, 13, 27, 32]; // Tab, Return, Esc, Space
 var START_KEYCODE = 229;
@@ -14143,32 +15331,83 @@ var BeforeInputEventPlugin = {
 };
 
 module.exports = BeforeInputEventPlugin;
+;
+
+var _temp = function () {
+  if (typeof __REACT_HOT_LOADER__ === 'undefined') {
+    return;
+  }
+
+  __REACT_HOT_LOADER__.register(END_KEYCODES, 'END_KEYCODES', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/BeforeInputEventPlugin.js');
+
+  __REACT_HOT_LOADER__.register(START_KEYCODE, 'START_KEYCODE', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/BeforeInputEventPlugin.js');
+
+  __REACT_HOT_LOADER__.register(canUseCompositionEvent, 'canUseCompositionEvent', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/BeforeInputEventPlugin.js');
+
+  __REACT_HOT_LOADER__.register(documentMode, 'documentMode', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/BeforeInputEventPlugin.js');
+
+  __REACT_HOT_LOADER__.register(canUseTextInputEvent, 'canUseTextInputEvent', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/BeforeInputEventPlugin.js');
+
+  __REACT_HOT_LOADER__.register(useFallbackCompositionData, 'useFallbackCompositionData', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/BeforeInputEventPlugin.js');
+
+  __REACT_HOT_LOADER__.register(isPresto, 'isPresto', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/BeforeInputEventPlugin.js');
+
+  __REACT_HOT_LOADER__.register(SPACEBAR_CODE, 'SPACEBAR_CODE', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/BeforeInputEventPlugin.js');
+
+  __REACT_HOT_LOADER__.register(SPACEBAR_CHAR, 'SPACEBAR_CHAR', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/BeforeInputEventPlugin.js');
+
+  __REACT_HOT_LOADER__.register(eventTypes, 'eventTypes', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/BeforeInputEventPlugin.js');
+
+  __REACT_HOT_LOADER__.register(hasSpaceKeypress, 'hasSpaceKeypress', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/BeforeInputEventPlugin.js');
+
+  __REACT_HOT_LOADER__.register(isKeypressCommand, 'isKeypressCommand', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/BeforeInputEventPlugin.js');
+
+  __REACT_HOT_LOADER__.register(getCompositionEventType, 'getCompositionEventType', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/BeforeInputEventPlugin.js');
+
+  __REACT_HOT_LOADER__.register(isFallbackCompositionStart, 'isFallbackCompositionStart', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/BeforeInputEventPlugin.js');
+
+  __REACT_HOT_LOADER__.register(isFallbackCompositionEnd, 'isFallbackCompositionEnd', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/BeforeInputEventPlugin.js');
+
+  __REACT_HOT_LOADER__.register(getDataFromCustomEvent, 'getDataFromCustomEvent', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/BeforeInputEventPlugin.js');
+
+  __REACT_HOT_LOADER__.register(currentComposition, 'currentComposition', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/BeforeInputEventPlugin.js');
+
+  __REACT_HOT_LOADER__.register(extractCompositionEvent, 'extractCompositionEvent', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/BeforeInputEventPlugin.js');
+
+  __REACT_HOT_LOADER__.register(getNativeBeforeInputChars, 'getNativeBeforeInputChars', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/BeforeInputEventPlugin.js');
+
+  __REACT_HOT_LOADER__.register(getFallbackBeforeInputChars, 'getFallbackBeforeInputChars', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/BeforeInputEventPlugin.js');
+
+  __REACT_HOT_LOADER__.register(extractBeforeInputEvent, 'extractBeforeInputEvent', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/BeforeInputEventPlugin.js');
+
+  __REACT_HOT_LOADER__.register(BeforeInputEventPlugin, 'BeforeInputEventPlugin', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/BeforeInputEventPlugin.js');
+}();
+
+;
 
 /***/ }),
-/* 117 */
+/* 115 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 /* WEBPACK VAR INJECTION */(function(process) {/**
- * Copyright 2013-present, Facebook, Inc.
- * All rights reserved.
+ * Copyright (c) 2013-present, Facebook, Inc.
  *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
  *
  */
 
 
 
-var CSSProperty = __webpack_require__(61);
+var CSSProperty = __webpack_require__(62);
 var ExecutionEnvironment = __webpack_require__(6);
 var ReactInstrumentation = __webpack_require__(9);
 
-var camelizeStyleName = __webpack_require__(94);
-var dangerousStyleValue = __webpack_require__(175);
-var hyphenateStyleName = __webpack_require__(101);
-var memoizeStringOnly = __webpack_require__(104);
+var camelizeStyleName = __webpack_require__(96);
+var dangerousStyleValue = __webpack_require__(173);
+var hyphenateStyleName = __webpack_require__(103);
+var memoizeStringOnly = __webpack_require__(106);
 var warning = __webpack_require__(2);
 
 var processStyleName = memoizeStringOnly(function (styleName) {
@@ -14363,20 +15602,59 @@ var CSSPropertyOperations = {
 };
 
 module.exports = CSSPropertyOperations;
+;
+
+var _temp = function () {
+  if (typeof __REACT_HOT_LOADER__ === 'undefined') {
+    return;
+  }
+
+  __REACT_HOT_LOADER__.register(processStyleName, 'processStyleName', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/CSSPropertyOperations.js');
+
+  __REACT_HOT_LOADER__.register(hasShorthandPropertyBug, 'hasShorthandPropertyBug', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/CSSPropertyOperations.js');
+
+  __REACT_HOT_LOADER__.register(styleFloatAccessor, 'styleFloatAccessor', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/CSSPropertyOperations.js');
+
+  __REACT_HOT_LOADER__.register(tempStyle, 'tempStyle', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/CSSPropertyOperations.js');
+
+  __REACT_HOT_LOADER__.register(badVendoredStyleNamePattern, 'badVendoredStyleNamePattern', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/CSSPropertyOperations.js');
+
+  __REACT_HOT_LOADER__.register(badStyleValueWithSemicolonPattern, 'badStyleValueWithSemicolonPattern', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/CSSPropertyOperations.js');
+
+  __REACT_HOT_LOADER__.register(warnedStyleNames, 'warnedStyleNames', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/CSSPropertyOperations.js');
+
+  __REACT_HOT_LOADER__.register(warnedStyleValues, 'warnedStyleValues', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/CSSPropertyOperations.js');
+
+  __REACT_HOT_LOADER__.register(warnedForNaNValue, 'warnedForNaNValue', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/CSSPropertyOperations.js');
+
+  __REACT_HOT_LOADER__.register(warnHyphenatedStyleName, 'warnHyphenatedStyleName', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/CSSPropertyOperations.js');
+
+  __REACT_HOT_LOADER__.register(warnBadVendoredStyleName, 'warnBadVendoredStyleName', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/CSSPropertyOperations.js');
+
+  __REACT_HOT_LOADER__.register(warnStyleValueWithSemicolon, 'warnStyleValueWithSemicolon', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/CSSPropertyOperations.js');
+
+  __REACT_HOT_LOADER__.register(warnStyleValueIsNaN, 'warnStyleValueIsNaN', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/CSSPropertyOperations.js');
+
+  __REACT_HOT_LOADER__.register(checkRenderMessage, 'checkRenderMessage', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/CSSPropertyOperations.js');
+
+  __REACT_HOT_LOADER__.register(warnValidStyle, 'warnValidStyle', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/CSSPropertyOperations.js');
+
+  __REACT_HOT_LOADER__.register(CSSPropertyOperations, 'CSSPropertyOperations', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/CSSPropertyOperations.js');
+}();
+
+;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 118 */
+/* 116 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 /**
- * Copyright 2013-present, Facebook, Inc.
- * All rights reserved.
+ * Copyright (c) 2013-present, Facebook, Inc.
  *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
  *
  */
 
@@ -14389,10 +15667,10 @@ var ReactDOMComponentTree = __webpack_require__(5);
 var ReactUpdates = __webpack_require__(11);
 var SyntheticEvent = __webpack_require__(13);
 
-var inputValueTracking = __webpack_require__(78);
-var getEventTarget = __webpack_require__(49);
-var isEventSupported = __webpack_require__(50);
-var isTextInputElement = __webpack_require__(80);
+var inputValueTracking = __webpack_require__(79);
+var getEventTarget = __webpack_require__(50);
+var isEventSupported = __webpack_require__(51);
+var isTextInputElement = __webpack_require__(81);
 
 var eventTypes = {
   change: {
@@ -14501,7 +15779,7 @@ if (ExecutionEnvironment.canUseDOM) {
   // IE9 claims to support the input event but fails to trigger it when
   // deleting text, so we ignore its input events.
 
-  isInputEventSupported = isEventSupported('input') && (!('documentMode' in document) || document.documentMode > 9);
+  isInputEventSupported = isEventSupported('input') && (!document.documentMode || document.documentMode > 9);
 }
 
 /**
@@ -14681,19 +15959,74 @@ var ChangeEventPlugin = {
 };
 
 module.exports = ChangeEventPlugin;
+;
+
+var _temp = function () {
+  if (typeof __REACT_HOT_LOADER__ === 'undefined') {
+    return;
+  }
+
+  __REACT_HOT_LOADER__.register(eventTypes, 'eventTypes', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/ChangeEventPlugin.js');
+
+  __REACT_HOT_LOADER__.register(createAndAccumulateChangeEvent, 'createAndAccumulateChangeEvent', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/ChangeEventPlugin.js');
+
+  __REACT_HOT_LOADER__.register(activeElement, 'activeElement', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/ChangeEventPlugin.js');
+
+  __REACT_HOT_LOADER__.register(activeElementInst, 'activeElementInst', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/ChangeEventPlugin.js');
+
+  __REACT_HOT_LOADER__.register(shouldUseChangeEvent, 'shouldUseChangeEvent', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/ChangeEventPlugin.js');
+
+  __REACT_HOT_LOADER__.register(doesChangeEventBubble, 'doesChangeEventBubble', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/ChangeEventPlugin.js');
+
+  __REACT_HOT_LOADER__.register(manualDispatchChangeEvent, 'manualDispatchChangeEvent', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/ChangeEventPlugin.js');
+
+  __REACT_HOT_LOADER__.register(runEventInBatch, 'runEventInBatch', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/ChangeEventPlugin.js');
+
+  __REACT_HOT_LOADER__.register(startWatchingForChangeEventIE8, 'startWatchingForChangeEventIE8', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/ChangeEventPlugin.js');
+
+  __REACT_HOT_LOADER__.register(stopWatchingForChangeEventIE8, 'stopWatchingForChangeEventIE8', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/ChangeEventPlugin.js');
+
+  __REACT_HOT_LOADER__.register(getInstIfValueChanged, 'getInstIfValueChanged', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/ChangeEventPlugin.js');
+
+  __REACT_HOT_LOADER__.register(getTargetInstForChangeEvent, 'getTargetInstForChangeEvent', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/ChangeEventPlugin.js');
+
+  __REACT_HOT_LOADER__.register(handleEventsForChangeEventIE8, 'handleEventsForChangeEventIE8', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/ChangeEventPlugin.js');
+
+  __REACT_HOT_LOADER__.register(isInputEventSupported, 'isInputEventSupported', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/ChangeEventPlugin.js');
+
+  __REACT_HOT_LOADER__.register(startWatchingForValueChange, 'startWatchingForValueChange', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/ChangeEventPlugin.js');
+
+  __REACT_HOT_LOADER__.register(stopWatchingForValueChange, 'stopWatchingForValueChange', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/ChangeEventPlugin.js');
+
+  __REACT_HOT_LOADER__.register(handlePropertyChange, 'handlePropertyChange', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/ChangeEventPlugin.js');
+
+  __REACT_HOT_LOADER__.register(handleEventsForInputEventPolyfill, 'handleEventsForInputEventPolyfill', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/ChangeEventPlugin.js');
+
+  __REACT_HOT_LOADER__.register(getTargetInstForInputEventPolyfill, 'getTargetInstForInputEventPolyfill', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/ChangeEventPlugin.js');
+
+  __REACT_HOT_LOADER__.register(shouldUseClickEvent, 'shouldUseClickEvent', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/ChangeEventPlugin.js');
+
+  __REACT_HOT_LOADER__.register(getTargetInstForClickEvent, 'getTargetInstForClickEvent', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/ChangeEventPlugin.js');
+
+  __REACT_HOT_LOADER__.register(getTargetInstForInputOrChangeEvent, 'getTargetInstForInputOrChangeEvent', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/ChangeEventPlugin.js');
+
+  __REACT_HOT_LOADER__.register(handleControlledInputBlur, 'handleControlledInputBlur', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/ChangeEventPlugin.js');
+
+  __REACT_HOT_LOADER__.register(ChangeEventPlugin, 'ChangeEventPlugin', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/ChangeEventPlugin.js');
+}();
+
+;
 
 /***/ }),
-/* 119 */
+/* 117 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 /* WEBPACK VAR INJECTION */(function(process) {/**
- * Copyright 2013-present, Facebook, Inc.
- * All rights reserved.
+ * Copyright (c) 2013-present, Facebook, Inc.
  *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
  *
  */
 
@@ -14704,8 +16037,8 @@ var _prodInvariant = __webpack_require__(3);
 var DOMLazyTree = __webpack_require__(17);
 var ExecutionEnvironment = __webpack_require__(6);
 
-var createNodesFromMarkup = __webpack_require__(97);
-var emptyFunction = __webpack_require__(7);
+var createNodesFromMarkup = __webpack_require__(99);
+var emptyFunction = __webpack_require__(8);
 var invariant = __webpack_require__(1);
 
 var Danger = {
@@ -14732,20 +16065,29 @@ var Danger = {
 };
 
 module.exports = Danger;
+;
+
+var _temp = function () {
+  if (typeof __REACT_HOT_LOADER__ === 'undefined') {
+    return;
+  }
+
+  __REACT_HOT_LOADER__.register(Danger, 'Danger', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/Danger.js');
+}();
+
+;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 120 */
+/* 118 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 /**
- * Copyright 2013-present, Facebook, Inc.
- * All rights reserved.
+ * Copyright (c) 2013-present, Facebook, Inc.
  *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
  *
  */
 
@@ -14764,19 +16106,28 @@ module.exports = Danger;
 var DefaultEventPluginOrder = ['ResponderEventPlugin', 'SimpleEventPlugin', 'TapEventPlugin', 'EnterLeaveEventPlugin', 'ChangeEventPlugin', 'SelectEventPlugin', 'BeforeInputEventPlugin'];
 
 module.exports = DefaultEventPluginOrder;
+;
+
+var _temp = function () {
+  if (typeof __REACT_HOT_LOADER__ === 'undefined') {
+    return;
+  }
+
+  __REACT_HOT_LOADER__.register(DefaultEventPluginOrder, 'DefaultEventPluginOrder', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/DefaultEventPluginOrder.js');
+}();
+
+;
 
 /***/ }),
-/* 121 */
+/* 119 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 /**
- * Copyright 2013-present, Facebook, Inc.
- * All rights reserved.
+ * Copyright (c) 2013-present, Facebook, Inc.
  *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
  *
  */
 
@@ -14867,19 +16218,30 @@ var EnterLeaveEventPlugin = {
 };
 
 module.exports = EnterLeaveEventPlugin;
+;
+
+var _temp = function () {
+  if (typeof __REACT_HOT_LOADER__ === 'undefined') {
+    return;
+  }
+
+  __REACT_HOT_LOADER__.register(eventTypes, 'eventTypes', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/EnterLeaveEventPlugin.js');
+
+  __REACT_HOT_LOADER__.register(EnterLeaveEventPlugin, 'EnterLeaveEventPlugin', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/EnterLeaveEventPlugin.js');
+}();
+
+;
 
 /***/ }),
-/* 122 */
+/* 120 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 /**
- * Copyright 2013-present, Facebook, Inc.
- * All rights reserved.
+ * Copyright (c) 2013-present, Facebook, Inc.
  *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
  *
  */
 
@@ -14889,7 +16251,7 @@ var _assign = __webpack_require__(4);
 
 var PooledClass = __webpack_require__(15);
 
-var getTextContentAccessor = __webpack_require__(77);
+var getTextContentAccessor = __webpack_require__(78);
 
 /**
  * This helper class stores information about text content of a target node,
@@ -14967,19 +16329,28 @@ _assign(FallbackCompositionState.prototype, {
 PooledClass.addPoolingTo(FallbackCompositionState);
 
 module.exports = FallbackCompositionState;
+;
+
+var _temp = function () {
+  if (typeof __REACT_HOT_LOADER__ === 'undefined') {
+    return;
+  }
+
+  __REACT_HOT_LOADER__.register(FallbackCompositionState, 'FallbackCompositionState', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/FallbackCompositionState.js');
+}();
+
+;
 
 /***/ }),
-/* 123 */
+/* 121 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 /**
- * Copyright 2013-present, Facebook, Inc.
- * All rights reserved.
+ * Copyright (c) 2013-present, Facebook, Inc.
  *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
  *
  */
 
@@ -15028,6 +16399,7 @@ var HTMLDOMPropertyConfig = {
     contentEditable: 0,
     contextMenu: 0,
     controls: HAS_BOOLEAN_VALUE,
+    controlsList: 0,
     coords: 0,
     crossOrigin: 0,
     data: 0, // For `<object />` acts as `src`.
@@ -15208,19 +16580,38 @@ var HTMLDOMPropertyConfig = {
 };
 
 module.exports = HTMLDOMPropertyConfig;
+;
+
+var _temp = function () {
+  if (typeof __REACT_HOT_LOADER__ === 'undefined') {
+    return;
+  }
+
+  __REACT_HOT_LOADER__.register(MUST_USE_PROPERTY, 'MUST_USE_PROPERTY', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/HTMLDOMPropertyConfig.js');
+
+  __REACT_HOT_LOADER__.register(HAS_BOOLEAN_VALUE, 'HAS_BOOLEAN_VALUE', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/HTMLDOMPropertyConfig.js');
+
+  __REACT_HOT_LOADER__.register(HAS_NUMERIC_VALUE, 'HAS_NUMERIC_VALUE', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/HTMLDOMPropertyConfig.js');
+
+  __REACT_HOT_LOADER__.register(HAS_POSITIVE_NUMERIC_VALUE, 'HAS_POSITIVE_NUMERIC_VALUE', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/HTMLDOMPropertyConfig.js');
+
+  __REACT_HOT_LOADER__.register(HAS_OVERLOADED_BOOLEAN_VALUE, 'HAS_OVERLOADED_BOOLEAN_VALUE', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/HTMLDOMPropertyConfig.js');
+
+  __REACT_HOT_LOADER__.register(HTMLDOMPropertyConfig, 'HTMLDOMPropertyConfig', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/HTMLDOMPropertyConfig.js');
+}();
+
+;
 
 /***/ }),
-/* 124 */
+/* 122 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 /* WEBPACK VAR INJECTION */(function(process) {/**
- * Copyright 2014-present, Facebook, Inc.
- * All rights reserved.
+ * Copyright (c) 2014-present, Facebook, Inc.
  *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
  *
  */
 
@@ -15228,10 +16619,10 @@ module.exports = HTMLDOMPropertyConfig;
 
 var ReactReconciler = __webpack_require__(18);
 
-var instantiateReactComponent = __webpack_require__(79);
-var KeyEscapeUtils = __webpack_require__(41);
-var shouldUpdateReactComponent = __webpack_require__(51);
-var traverseAllChildren = __webpack_require__(82);
+var instantiateReactComponent = __webpack_require__(80);
+var KeyEscapeUtils = __webpack_require__(42);
+var shouldUpdateReactComponent = __webpack_require__(52);
+var traverseAllChildren = __webpack_require__(83);
 var warning = __webpack_require__(2);
 
 var ReactComponentTreeHook;
@@ -15242,7 +16633,7 @@ if (typeof process !== 'undefined' && process.env && process.env.NODE_ENV === 't
   // https://github.com/facebook/react/issues/7240
   // Remove the inline requires when we don't need them anymore:
   // https://github.com/facebook/react/pull/7178
-  ReactComponentTreeHook = __webpack_require__(8);
+  ReactComponentTreeHook = __webpack_require__(7);
 }
 
 function instantiateChild(childInstances, child, name, selfDebugID) {
@@ -15250,7 +16641,7 @@ function instantiateChild(childInstances, child, name, selfDebugID) {
   var keyUnique = childInstances[name] === undefined;
   if (process.env.NODE_ENV !== 'production') {
     if (!ReactComponentTreeHook) {
-      ReactComponentTreeHook = __webpack_require__(8);
+      ReactComponentTreeHook = __webpack_require__(7);
     }
     if (!keyUnique) {
       process.env.NODE_ENV !== 'production' ? warning(false, 'flattenChildren(...): Encountered two children with the same key, ' + '`%s`. Child keys must be unique; when two children share a key, only ' + 'the first child will be used.%s', KeyEscapeUtils.unescape(name), ReactComponentTreeHook.getStackAddendumByID(selfDebugID)) : void 0;
@@ -15366,27 +16757,40 @@ var ReactChildReconciler = {
 };
 
 module.exports = ReactChildReconciler;
+;
+
+var _temp = function () {
+  if (typeof __REACT_HOT_LOADER__ === 'undefined') {
+    return;
+  }
+
+  __REACT_HOT_LOADER__.register(ReactComponentTreeHook, 'ReactComponentTreeHook', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/ReactChildReconciler.js');
+
+  __REACT_HOT_LOADER__.register(instantiateChild, 'instantiateChild', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/ReactChildReconciler.js');
+
+  __REACT_HOT_LOADER__.register(ReactChildReconciler, 'ReactChildReconciler', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/ReactChildReconciler.js');
+}();
+
+;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 125 */
+/* 123 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 /**
- * Copyright 2013-present, Facebook, Inc.
- * All rights reserved.
+ * Copyright (c) 2013-present, Facebook, Inc.
  *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
  *
  */
 
 
 
-var DOMChildrenOperations = __webpack_require__(38);
-var ReactDOMIDOperations = __webpack_require__(132);
+var DOMChildrenOperations = __webpack_require__(39);
+var ReactDOMIDOperations = __webpack_require__(130);
 
 /**
  * Abstracts away all functionality of the reconciler that requires knowledge of
@@ -15400,19 +16804,28 @@ var ReactComponentBrowserEnvironment = {
 };
 
 module.exports = ReactComponentBrowserEnvironment;
+;
+
+var _temp = function () {
+  if (typeof __REACT_HOT_LOADER__ === 'undefined') {
+    return;
+  }
+
+  __REACT_HOT_LOADER__.register(ReactComponentBrowserEnvironment, 'ReactComponentBrowserEnvironment', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/ReactComponentBrowserEnvironment.js');
+}();
+
+;
 
 /***/ }),
-/* 126 */
+/* 124 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 /* WEBPACK VAR INJECTION */(function(process) {/**
- * Copyright 2013-present, Facebook, Inc.
- * All rights reserved.
+ * Copyright (c) 2013-present, Facebook, Inc.
  *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
  *
  */
 
@@ -15424,22 +16837,22 @@ var _prodInvariant = __webpack_require__(3),
     _assign = __webpack_require__(4);
 
 var React = __webpack_require__(19);
-var ReactComponentEnvironment = __webpack_require__(43);
+var ReactComponentEnvironment = __webpack_require__(44);
 var ReactCurrentOwner = __webpack_require__(12);
-var ReactErrorUtils = __webpack_require__(44);
+var ReactErrorUtils = __webpack_require__(45);
 var ReactInstanceMap = __webpack_require__(23);
 var ReactInstrumentation = __webpack_require__(9);
-var ReactNodeTypes = __webpack_require__(71);
+var ReactNodeTypes = __webpack_require__(72);
 var ReactReconciler = __webpack_require__(18);
 
 if (process.env.NODE_ENV !== 'production') {
-  var checkReactTypeSpec = __webpack_require__(174);
+  var checkReactTypeSpec = __webpack_require__(172);
 }
 
 var emptyObject = __webpack_require__(27);
 var invariant = __webpack_require__(1);
 var shallowEqual = __webpack_require__(37);
-var shouldUpdateReactComponent = __webpack_require__(51);
+var shouldUpdateReactComponent = __webpack_require__(52);
 var warning = __webpack_require__(2);
 
 var CompositeTypes = {
@@ -15683,7 +17096,7 @@ var ReactCompositeComponent = {
   },
 
   _constructComponent: function _constructComponent(doConstruct, publicProps, publicContext, updateQueue) {
-    if (process.env.NODE_ENV !== 'production') {
+    if (process.env.NODE_ENV !== 'production' && !doConstruct) {
       ReactCurrentOwner.current = this;
       try {
         return this._constructComponentWithoutOwner(doConstruct, publicProps, publicContext, updateQueue);
@@ -16307,20 +17720,43 @@ var ReactCompositeComponent = {
 };
 
 module.exports = ReactCompositeComponent;
+;
+
+var _temp = function () {
+  if (typeof __REACT_HOT_LOADER__ === 'undefined') {
+    return;
+  }
+
+  __REACT_HOT_LOADER__.register(CompositeTypes, 'CompositeTypes', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/ReactCompositeComponent.js');
+
+  __REACT_HOT_LOADER__.register(StatelessComponent, 'StatelessComponent', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/ReactCompositeComponent.js');
+
+  __REACT_HOT_LOADER__.register(warnIfInvalidElement, 'warnIfInvalidElement', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/ReactCompositeComponent.js');
+
+  __REACT_HOT_LOADER__.register(shouldConstruct, 'shouldConstruct', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/ReactCompositeComponent.js');
+
+  __REACT_HOT_LOADER__.register(isPureComponent, 'isPureComponent', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/ReactCompositeComponent.js');
+
+  __REACT_HOT_LOADER__.register(measureLifeCyclePerf, 'measureLifeCyclePerf', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/ReactCompositeComponent.js');
+
+  __REACT_HOT_LOADER__.register(nextMountID, 'nextMountID', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/ReactCompositeComponent.js');
+
+  __REACT_HOT_LOADER__.register(ReactCompositeComponent, 'ReactCompositeComponent', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/ReactCompositeComponent.js');
+}();
+
+;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 127 */
+/* 125 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 /* WEBPACK VAR INJECTION */(function(process) {/**
- * Copyright 2013-present, Facebook, Inc.
- * All rights reserved.
+ * Copyright (c) 2013-present, Facebook, Inc.
  *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
  *
  */
 
@@ -16329,15 +17765,15 @@ module.exports = ReactCompositeComponent;
 
 
 var ReactDOMComponentTree = __webpack_require__(5);
-var ReactDefaultInjection = __webpack_require__(144);
-var ReactMount = __webpack_require__(70);
+var ReactDefaultInjection = __webpack_require__(142);
+var ReactMount = __webpack_require__(71);
 var ReactReconciler = __webpack_require__(18);
 var ReactUpdates = __webpack_require__(11);
-var ReactVersion = __webpack_require__(159);
+var ReactVersion = __webpack_require__(157);
 
-var findDOMNode = __webpack_require__(176);
-var getHostComponentFromComposite = __webpack_require__(76);
-var renderSubtreeIntoContainer = __webpack_require__(183);
+var findDOMNode = __webpack_require__(174);
+var getHostComponentFromComposite = __webpack_require__(77);
+var renderSubtreeIntoContainer = __webpack_require__(181);
 var warning = __webpack_require__(2);
 
 ReactDefaultInjection.inject();
@@ -16414,9 +17850,9 @@ if (process.env.NODE_ENV !== 'production') {
 
 if (process.env.NODE_ENV !== 'production') {
   var ReactInstrumentation = __webpack_require__(9);
-  var ReactDOMUnknownPropertyHook = __webpack_require__(141);
-  var ReactDOMNullInputValuePropHook = __webpack_require__(135);
-  var ReactDOMInvalidARIAHook = __webpack_require__(134);
+  var ReactDOMUnknownPropertyHook = __webpack_require__(139);
+  var ReactDOMNullInputValuePropHook = __webpack_require__(133);
+  var ReactDOMInvalidARIAHook = __webpack_require__(132);
 
   ReactInstrumentation.debugTool.addHook(ReactDOMUnknownPropertyHook);
   ReactInstrumentation.debugTool.addHook(ReactDOMNullInputValuePropHook);
@@ -16424,20 +17860,39 @@ if (process.env.NODE_ENV !== 'production') {
 }
 
 module.exports = ReactDOM;
+;
+
+var _temp = function () {
+  if (typeof __REACT_HOT_LOADER__ === 'undefined') {
+    return;
+  }
+
+  __REACT_HOT_LOADER__.register(ReactDOM, 'ReactDOM', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/ReactDOM.js');
+
+  __REACT_HOT_LOADER__.register(showFileUrlMessage, 'showFileUrlMessage', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/ReactDOM.js');
+
+  __REACT_HOT_LOADER__.register(testFunc, 'testFunc', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/ReactDOM.js');
+
+  __REACT_HOT_LOADER__.register(ieCompatibilityMode, 'ieCompatibilityMode', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/ReactDOM.js');
+
+  __REACT_HOT_LOADER__.register(expectedFeatures, 'expectedFeatures', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/ReactDOM.js');
+
+  __REACT_HOT_LOADER__.register(i, 'i', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/ReactDOM.js');
+}();
+
+;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 128 */
+/* 126 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 /* WEBPACK VAR INJECTION */(function(process) {/**
- * Copyright 2013-present, Facebook, Inc.
- * All rights reserved.
+ * Copyright (c) 2013-present, Facebook, Inc.
  *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
  *
  */
 
@@ -16450,32 +17905,32 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
 var _prodInvariant = __webpack_require__(3),
     _assign = __webpack_require__(4);
 
-var AutoFocusUtils = __webpack_require__(115);
-var CSSPropertyOperations = __webpack_require__(117);
+var AutoFocusUtils = __webpack_require__(113);
+var CSSPropertyOperations = __webpack_require__(115);
 var DOMLazyTree = __webpack_require__(17);
-var DOMNamespaces = __webpack_require__(39);
+var DOMNamespaces = __webpack_require__(40);
 var DOMProperty = __webpack_require__(14);
-var DOMPropertyOperations = __webpack_require__(63);
+var DOMPropertyOperations = __webpack_require__(64);
 var EventPluginHub = __webpack_require__(21);
 var EventPluginRegistry = __webpack_require__(28);
 var ReactBrowserEventEmitter = __webpack_require__(29);
-var ReactDOMComponentFlags = __webpack_require__(64);
+var ReactDOMComponentFlags = __webpack_require__(65);
 var ReactDOMComponentTree = __webpack_require__(5);
-var ReactDOMInput = __webpack_require__(133);
-var ReactDOMOption = __webpack_require__(136);
-var ReactDOMSelect = __webpack_require__(65);
-var ReactDOMTextarea = __webpack_require__(139);
+var ReactDOMInput = __webpack_require__(131);
+var ReactDOMOption = __webpack_require__(134);
+var ReactDOMSelect = __webpack_require__(66);
+var ReactDOMTextarea = __webpack_require__(137);
 var ReactInstrumentation = __webpack_require__(9);
-var ReactMultiChild = __webpack_require__(152);
-var ReactServerRenderingTransaction = __webpack_require__(157);
+var ReactMultiChild = __webpack_require__(150);
+var ReactServerRenderingTransaction = __webpack_require__(155);
 
-var emptyFunction = __webpack_require__(7);
+var emptyFunction = __webpack_require__(8);
 var escapeTextContentForBrowser = __webpack_require__(32);
 var invariant = __webpack_require__(1);
-var isEventSupported = __webpack_require__(50);
+var isEventSupported = __webpack_require__(51);
 var shallowEqual = __webpack_require__(37);
-var inputValueTracking = __webpack_require__(78);
-var validateDOMNesting = __webpack_require__(52);
+var inputValueTracking = __webpack_require__(79);
+var validateDOMNesting = __webpack_require__(53);
 var warning = __webpack_require__(2);
 
 var Flags = ReactDOMComponentFlags;
@@ -17200,6 +18655,10 @@ ReactDOMComponent.Mixin = {
         // happen after `_updateDOMProperties`. Otherwise HTML5 input validations
         // raise warnings and prevent the new value from being assigned.
         ReactDOMInput.updateWrapper(this);
+
+        // We also check that we haven't missed a value update, such as a
+        // Radio group shifting the checked value to another named radio input.
+        inputValueTracking.updateValueIfChanged(this);
         break;
       case 'textarea':
         ReactDOMTextarea.updateWrapper(this);
@@ -17442,26 +18901,103 @@ ReactDOMComponent.Mixin = {
 _assign(ReactDOMComponent.prototype, ReactDOMComponent.Mixin, ReactMultiChild.Mixin);
 
 module.exports = ReactDOMComponent;
+;
+
+var _temp = function () {
+  if (typeof __REACT_HOT_LOADER__ === 'undefined') {
+    return;
+  }
+
+  __REACT_HOT_LOADER__.register(Flags, 'Flags', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/ReactDOMComponent.js');
+
+  __REACT_HOT_LOADER__.register(deleteListener, 'deleteListener', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/ReactDOMComponent.js');
+
+  __REACT_HOT_LOADER__.register(getNode, 'getNode', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/ReactDOMComponent.js');
+
+  __REACT_HOT_LOADER__.register(listenTo, 'listenTo', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/ReactDOMComponent.js');
+
+  __REACT_HOT_LOADER__.register(registrationNameModules, 'registrationNameModules', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/ReactDOMComponent.js');
+
+  __REACT_HOT_LOADER__.register(CONTENT_TYPES, 'CONTENT_TYPES', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/ReactDOMComponent.js');
+
+  __REACT_HOT_LOADER__.register(STYLE, 'STYLE', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/ReactDOMComponent.js');
+
+  __REACT_HOT_LOADER__.register(HTML, 'HTML', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/ReactDOMComponent.js');
+
+  __REACT_HOT_LOADER__.register(RESERVED_PROPS, 'RESERVED_PROPS', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/ReactDOMComponent.js');
+
+  __REACT_HOT_LOADER__.register(DOC_FRAGMENT_TYPE, 'DOC_FRAGMENT_TYPE', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/ReactDOMComponent.js');
+
+  __REACT_HOT_LOADER__.register(getDeclarationErrorAddendum, 'getDeclarationErrorAddendum', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/ReactDOMComponent.js');
+
+  __REACT_HOT_LOADER__.register(friendlyStringify, 'friendlyStringify', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/ReactDOMComponent.js');
+
+  __REACT_HOT_LOADER__.register(styleMutationWarning, 'styleMutationWarning', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/ReactDOMComponent.js');
+
+  __REACT_HOT_LOADER__.register(checkAndWarnForMutatedStyle, 'checkAndWarnForMutatedStyle', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/ReactDOMComponent.js');
+
+  __REACT_HOT_LOADER__.register(assertValidProps, 'assertValidProps', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/ReactDOMComponent.js');
+
+  __REACT_HOT_LOADER__.register(enqueuePutListener, 'enqueuePutListener', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/ReactDOMComponent.js');
+
+  __REACT_HOT_LOADER__.register(putListener, 'putListener', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/ReactDOMComponent.js');
+
+  __REACT_HOT_LOADER__.register(inputPostMount, 'inputPostMount', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/ReactDOMComponent.js');
+
+  __REACT_HOT_LOADER__.register(textareaPostMount, 'textareaPostMount', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/ReactDOMComponent.js');
+
+  __REACT_HOT_LOADER__.register(optionPostMount, 'optionPostMount', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/ReactDOMComponent.js');
+
+  __REACT_HOT_LOADER__.register(setAndValidateContentChildDev, 'setAndValidateContentChildDev', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/ReactDOMComponent.js');
+
+  __REACT_HOT_LOADER__.register(mediaEvents, 'mediaEvents', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/ReactDOMComponent.js');
+
+  __REACT_HOT_LOADER__.register(trackInputValue, 'trackInputValue', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/ReactDOMComponent.js');
+
+  __REACT_HOT_LOADER__.register(trapBubbledEventsLocal, 'trapBubbledEventsLocal', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/ReactDOMComponent.js');
+
+  __REACT_HOT_LOADER__.register(postUpdateSelectWrapper, 'postUpdateSelectWrapper', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/ReactDOMComponent.js');
+
+  __REACT_HOT_LOADER__.register(omittedCloseTags, 'omittedCloseTags', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/ReactDOMComponent.js');
+
+  __REACT_HOT_LOADER__.register(newlineEatingTags, 'newlineEatingTags', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/ReactDOMComponent.js');
+
+  __REACT_HOT_LOADER__.register(voidElementTags, 'voidElementTags', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/ReactDOMComponent.js');
+
+  __REACT_HOT_LOADER__.register(VALID_TAG_REGEX, 'VALID_TAG_REGEX', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/ReactDOMComponent.js');
+
+  __REACT_HOT_LOADER__.register(validatedTagCache, 'validatedTagCache', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/ReactDOMComponent.js');
+
+  __REACT_HOT_LOADER__.register(hasOwnProperty, 'hasOwnProperty', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/ReactDOMComponent.js');
+
+  __REACT_HOT_LOADER__.register(validateDangerousTag, 'validateDangerousTag', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/ReactDOMComponent.js');
+
+  __REACT_HOT_LOADER__.register(isCustomComponent, 'isCustomComponent', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/ReactDOMComponent.js');
+
+  __REACT_HOT_LOADER__.register(globalIdCounter, 'globalIdCounter', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/ReactDOMComponent.js');
+
+  __REACT_HOT_LOADER__.register(ReactDOMComponent, 'ReactDOMComponent', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/ReactDOMComponent.js');
+}();
+
+;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 129 */
+/* 127 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 /* WEBPACK VAR INJECTION */(function(process) {/**
- * Copyright 2013-present, Facebook, Inc.
- * All rights reserved.
+ * Copyright (c) 2013-present, Facebook, Inc.
  *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
  *
  */
 
 
 
-var validateDOMNesting = __webpack_require__(52);
+var validateDOMNesting = __webpack_require__(53);
 
 var DOC_NODE_TYPE = 9;
 
@@ -17481,20 +19017,31 @@ function ReactDOMContainerInfo(topLevelWrapper, node) {
 }
 
 module.exports = ReactDOMContainerInfo;
+;
+
+var _temp = function () {
+  if (typeof __REACT_HOT_LOADER__ === 'undefined') {
+    return;
+  }
+
+  __REACT_HOT_LOADER__.register(DOC_NODE_TYPE, 'DOC_NODE_TYPE', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/ReactDOMContainerInfo.js');
+
+  __REACT_HOT_LOADER__.register(ReactDOMContainerInfo, 'ReactDOMContainerInfo', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/ReactDOMContainerInfo.js');
+}();
+
+;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 130 */
+/* 128 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 /**
- * Copyright 2014-present, Facebook, Inc.
- * All rights reserved.
+ * Copyright (c) 2014-present, Facebook, Inc.
  *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
  *
  */
 
@@ -17547,19 +19094,28 @@ _assign(ReactDOMEmptyComponent.prototype, {
 });
 
 module.exports = ReactDOMEmptyComponent;
+;
+
+var _temp = function () {
+  if (typeof __REACT_HOT_LOADER__ === 'undefined') {
+    return;
+  }
+
+  __REACT_HOT_LOADER__.register(ReactDOMEmptyComponent, 'ReactDOMEmptyComponent', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/ReactDOMEmptyComponent.js');
+}();
+
+;
 
 /***/ }),
-/* 131 */
+/* 129 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 /**
- * Copyright 2013-present, Facebook, Inc.
- * All rights reserved.
+ * Copyright (c) 2013-present, Facebook, Inc.
  *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
  *
  */
 
@@ -17571,25 +19127,34 @@ var ReactDOMFeatureFlags = {
 };
 
 module.exports = ReactDOMFeatureFlags;
+;
+
+var _temp = function () {
+  if (typeof __REACT_HOT_LOADER__ === 'undefined') {
+    return;
+  }
+
+  __REACT_HOT_LOADER__.register(ReactDOMFeatureFlags, 'ReactDOMFeatureFlags', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/ReactDOMFeatureFlags.js');
+}();
+
+;
 
 /***/ }),
-/* 132 */
+/* 130 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 /**
- * Copyright 2013-present, Facebook, Inc.
- * All rights reserved.
+ * Copyright (c) 2013-present, Facebook, Inc.
  *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
  *
  */
 
 
 
-var DOMChildrenOperations = __webpack_require__(38);
+var DOMChildrenOperations = __webpack_require__(39);
 var ReactDOMComponentTree = __webpack_require__(5);
 
 /**
@@ -17609,19 +19174,28 @@ var ReactDOMIDOperations = {
 };
 
 module.exports = ReactDOMIDOperations;
+;
+
+var _temp = function () {
+  if (typeof __REACT_HOT_LOADER__ === 'undefined') {
+    return;
+  }
+
+  __REACT_HOT_LOADER__.register(ReactDOMIDOperations, 'ReactDOMIDOperations', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/ReactDOMIDOperations.js');
+}();
+
+;
 
 /***/ }),
-/* 133 */
+/* 131 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 /* WEBPACK VAR INJECTION */(function(process) {/**
- * Copyright 2013-present, Facebook, Inc.
- * All rights reserved.
+ * Copyright (c) 2013-present, Facebook, Inc.
  *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
  *
  */
 
@@ -17630,8 +19204,8 @@ module.exports = ReactDOMIDOperations;
 var _prodInvariant = __webpack_require__(3),
     _assign = __webpack_require__(4);
 
-var DOMPropertyOperations = __webpack_require__(63);
-var LinkedValueUtils = __webpack_require__(42);
+var DOMPropertyOperations = __webpack_require__(64);
+var LinkedValueUtils = __webpack_require__(43);
 var ReactDOMComponentTree = __webpack_require__(5);
 var ReactUpdates = __webpack_require__(11);
 
@@ -17901,27 +19475,54 @@ function _handleChange(event) {
 }
 
 module.exports = ReactDOMInput;
+;
+
+var _temp = function () {
+  if (typeof __REACT_HOT_LOADER__ === 'undefined') {
+    return;
+  }
+
+  __REACT_HOT_LOADER__.register(didWarnValueLink, 'didWarnValueLink', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/ReactDOMInput.js');
+
+  __REACT_HOT_LOADER__.register(didWarnCheckedLink, 'didWarnCheckedLink', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/ReactDOMInput.js');
+
+  __REACT_HOT_LOADER__.register(didWarnValueDefaultValue, 'didWarnValueDefaultValue', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/ReactDOMInput.js');
+
+  __REACT_HOT_LOADER__.register(didWarnCheckedDefaultChecked, 'didWarnCheckedDefaultChecked', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/ReactDOMInput.js');
+
+  __REACT_HOT_LOADER__.register(didWarnControlledToUncontrolled, 'didWarnControlledToUncontrolled', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/ReactDOMInput.js');
+
+  __REACT_HOT_LOADER__.register(didWarnUncontrolledToControlled, 'didWarnUncontrolledToControlled', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/ReactDOMInput.js');
+
+  __REACT_HOT_LOADER__.register(forceUpdateIfMounted, 'forceUpdateIfMounted', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/ReactDOMInput.js');
+
+  __REACT_HOT_LOADER__.register(isControlled, 'isControlled', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/ReactDOMInput.js');
+
+  __REACT_HOT_LOADER__.register(ReactDOMInput, 'ReactDOMInput', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/ReactDOMInput.js');
+
+  __REACT_HOT_LOADER__.register(_handleChange, '_handleChange', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/ReactDOMInput.js');
+}();
+
+;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 134 */
+/* 132 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 /* WEBPACK VAR INJECTION */(function(process) {/**
- * Copyright 2013-present, Facebook, Inc.
- * All rights reserved.
+ * Copyright (c) 2013-present, Facebook, Inc.
  *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
  *
  */
 
 
 
 var DOMProperty = __webpack_require__(14);
-var ReactComponentTreeHook = __webpack_require__(8);
+var ReactComponentTreeHook = __webpack_require__(7);
 
 var warning = __webpack_require__(2);
 
@@ -18000,26 +19601,45 @@ var ReactDOMInvalidARIAHook = {
 };
 
 module.exports = ReactDOMInvalidARIAHook;
+;
+
+var _temp = function () {
+  if (typeof __REACT_HOT_LOADER__ === 'undefined') {
+    return;
+  }
+
+  __REACT_HOT_LOADER__.register(warnedProperties, 'warnedProperties', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/ReactDOMInvalidARIAHook.js');
+
+  __REACT_HOT_LOADER__.register(rARIA, 'rARIA', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/ReactDOMInvalidARIAHook.js');
+
+  __REACT_HOT_LOADER__.register(validateProperty, 'validateProperty', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/ReactDOMInvalidARIAHook.js');
+
+  __REACT_HOT_LOADER__.register(warnInvalidARIAProps, 'warnInvalidARIAProps', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/ReactDOMInvalidARIAHook.js');
+
+  __REACT_HOT_LOADER__.register(handleElement, 'handleElement', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/ReactDOMInvalidARIAHook.js');
+
+  __REACT_HOT_LOADER__.register(ReactDOMInvalidARIAHook, 'ReactDOMInvalidARIAHook', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/ReactDOMInvalidARIAHook.js');
+}();
+
+;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 135 */
+/* 133 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 /* WEBPACK VAR INJECTION */(function(process) {/**
- * Copyright 2013-present, Facebook, Inc.
- * All rights reserved.
+ * Copyright (c) 2013-present, Facebook, Inc.
  *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
  *
  */
 
 
 
-var ReactComponentTreeHook = __webpack_require__(8);
+var ReactComponentTreeHook = __webpack_require__(7);
 
 var warning = __webpack_require__(2);
 
@@ -18049,20 +19669,33 @@ var ReactDOMNullInputValuePropHook = {
 };
 
 module.exports = ReactDOMNullInputValuePropHook;
+;
+
+var _temp = function () {
+  if (typeof __REACT_HOT_LOADER__ === 'undefined') {
+    return;
+  }
+
+  __REACT_HOT_LOADER__.register(didWarnValueNull, 'didWarnValueNull', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/ReactDOMNullInputValuePropHook.js');
+
+  __REACT_HOT_LOADER__.register(handleElement, 'handleElement', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/ReactDOMNullInputValuePropHook.js');
+
+  __REACT_HOT_LOADER__.register(ReactDOMNullInputValuePropHook, 'ReactDOMNullInputValuePropHook', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/ReactDOMNullInputValuePropHook.js');
+}();
+
+;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 136 */
+/* 134 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 /* WEBPACK VAR INJECTION */(function(process) {/**
- * Copyright 2013-present, Facebook, Inc.
- * All rights reserved.
+ * Copyright (c) 2013-present, Facebook, Inc.
  *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
  *
  */
 
@@ -18072,7 +19705,7 @@ var _assign = __webpack_require__(4);
 
 var React = __webpack_require__(19);
 var ReactDOMComponentTree = __webpack_require__(5);
-var ReactDOMSelect = __webpack_require__(65);
+var ReactDOMSelect = __webpack_require__(66);
 
 var warning = __webpack_require__(2);
 var didWarnInvalidOptionChildren = false;
@@ -18177,20 +19810,33 @@ var ReactDOMOption = {
 };
 
 module.exports = ReactDOMOption;
+;
+
+var _temp = function () {
+  if (typeof __REACT_HOT_LOADER__ === 'undefined') {
+    return;
+  }
+
+  __REACT_HOT_LOADER__.register(didWarnInvalidOptionChildren, 'didWarnInvalidOptionChildren', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/ReactDOMOption.js');
+
+  __REACT_HOT_LOADER__.register(flattenChildren, 'flattenChildren', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/ReactDOMOption.js');
+
+  __REACT_HOT_LOADER__.register(ReactDOMOption, 'ReactDOMOption', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/ReactDOMOption.js');
+}();
+
+;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 137 */
+/* 135 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 /**
- * Copyright 2013-present, Facebook, Inc.
- * All rights reserved.
+ * Copyright (c) 2013-present, Facebook, Inc.
  *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
  *
  */
 
@@ -18198,8 +19844,8 @@ module.exports = ReactDOMOption;
 
 var ExecutionEnvironment = __webpack_require__(6);
 
-var getNodeForCharacterOffset = __webpack_require__(180);
-var getTextContentAccessor = __webpack_require__(77);
+var getNodeForCharacterOffset = __webpack_require__(178);
+var getTextContentAccessor = __webpack_require__(78);
 
 /**
  * While `isCollapsed` is available on the Selection object and `collapsed`
@@ -18395,19 +20041,40 @@ var ReactDOMSelection = {
 };
 
 module.exports = ReactDOMSelection;
+;
+
+var _temp = function () {
+  if (typeof __REACT_HOT_LOADER__ === 'undefined') {
+    return;
+  }
+
+  __REACT_HOT_LOADER__.register(isCollapsed, 'isCollapsed', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/ReactDOMSelection.js');
+
+  __REACT_HOT_LOADER__.register(getIEOffsets, 'getIEOffsets', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/ReactDOMSelection.js');
+
+  __REACT_HOT_LOADER__.register(getModernOffsets, 'getModernOffsets', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/ReactDOMSelection.js');
+
+  __REACT_HOT_LOADER__.register(setIEOffsets, 'setIEOffsets', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/ReactDOMSelection.js');
+
+  __REACT_HOT_LOADER__.register(setModernOffsets, 'setModernOffsets', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/ReactDOMSelection.js');
+
+  __REACT_HOT_LOADER__.register(useIEOffsets, 'useIEOffsets', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/ReactDOMSelection.js');
+
+  __REACT_HOT_LOADER__.register(ReactDOMSelection, 'ReactDOMSelection', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/ReactDOMSelection.js');
+}();
+
+;
 
 /***/ }),
-/* 138 */
+/* 136 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 /* WEBPACK VAR INJECTION */(function(process) {/**
- * Copyright 2013-present, Facebook, Inc.
- * All rights reserved.
+ * Copyright (c) 2013-present, Facebook, Inc.
  *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
  *
  */
 
@@ -18416,13 +20083,13 @@ module.exports = ReactDOMSelection;
 var _prodInvariant = __webpack_require__(3),
     _assign = __webpack_require__(4);
 
-var DOMChildrenOperations = __webpack_require__(38);
+var DOMChildrenOperations = __webpack_require__(39);
 var DOMLazyTree = __webpack_require__(17);
 var ReactDOMComponentTree = __webpack_require__(5);
 
 var escapeTextContentForBrowser = __webpack_require__(32);
 var invariant = __webpack_require__(1);
-var validateDOMNesting = __webpack_require__(52);
+var validateDOMNesting = __webpack_require__(53);
 
 /**
  * Text nodes violate a couple assumptions that React makes about components:
@@ -18562,20 +20229,29 @@ _assign(ReactDOMTextComponent.prototype, {
 });
 
 module.exports = ReactDOMTextComponent;
+;
+
+var _temp = function () {
+  if (typeof __REACT_HOT_LOADER__ === 'undefined') {
+    return;
+  }
+
+  __REACT_HOT_LOADER__.register(ReactDOMTextComponent, 'ReactDOMTextComponent', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/ReactDOMTextComponent.js');
+}();
+
+;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 139 */
+/* 137 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 /* WEBPACK VAR INJECTION */(function(process) {/**
- * Copyright 2013-present, Facebook, Inc.
- * All rights reserved.
+ * Copyright (c) 2013-present, Facebook, Inc.
  *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
  *
  */
 
@@ -18584,7 +20260,7 @@ module.exports = ReactDOMTextComponent;
 var _prodInvariant = __webpack_require__(3),
     _assign = __webpack_require__(4);
 
-var LinkedValueUtils = __webpack_require__(42);
+var LinkedValueUtils = __webpack_require__(43);
 var ReactDOMComponentTree = __webpack_require__(5);
 var ReactUpdates = __webpack_require__(11);
 
@@ -18728,20 +20404,37 @@ function _handleChange(event) {
 }
 
 module.exports = ReactDOMTextarea;
+;
+
+var _temp = function () {
+  if (typeof __REACT_HOT_LOADER__ === 'undefined') {
+    return;
+  }
+
+  __REACT_HOT_LOADER__.register(didWarnValueLink, 'didWarnValueLink', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/ReactDOMTextarea.js');
+
+  __REACT_HOT_LOADER__.register(didWarnValDefaultVal, 'didWarnValDefaultVal', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/ReactDOMTextarea.js');
+
+  __REACT_HOT_LOADER__.register(forceUpdateIfMounted, 'forceUpdateIfMounted', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/ReactDOMTextarea.js');
+
+  __REACT_HOT_LOADER__.register(ReactDOMTextarea, 'ReactDOMTextarea', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/ReactDOMTextarea.js');
+
+  __REACT_HOT_LOADER__.register(_handleChange, '_handleChange', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/ReactDOMTextarea.js');
+}();
+
+;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 140 */
+/* 138 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 /* WEBPACK VAR INJECTION */(function(process) {/**
- * Copyright 2015-present, Facebook, Inc.
- * All rights reserved.
+ * Copyright (c) 2015-present, Facebook, Inc.
  *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
  *
  */
 
@@ -18870,20 +20563,37 @@ module.exports = {
   traverseTwoPhase: traverseTwoPhase,
   traverseEnterLeave: traverseEnterLeave
 };
+;
+
+var _temp = function () {
+  if (typeof __REACT_HOT_LOADER__ === 'undefined') {
+    return;
+  }
+
+  __REACT_HOT_LOADER__.register(getLowestCommonAncestor, 'getLowestCommonAncestor', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/ReactDOMTreeTraversal.js');
+
+  __REACT_HOT_LOADER__.register(isAncestor, 'isAncestor', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/ReactDOMTreeTraversal.js');
+
+  __REACT_HOT_LOADER__.register(getParentInstance, 'getParentInstance', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/ReactDOMTreeTraversal.js');
+
+  __REACT_HOT_LOADER__.register(traverseTwoPhase, 'traverseTwoPhase', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/ReactDOMTreeTraversal.js');
+
+  __REACT_HOT_LOADER__.register(traverseEnterLeave, 'traverseEnterLeave', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/ReactDOMTreeTraversal.js');
+}();
+
+;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 141 */
+/* 139 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 /* WEBPACK VAR INJECTION */(function(process) {/**
- * Copyright 2013-present, Facebook, Inc.
- * All rights reserved.
+ * Copyright (c) 2013-present, Facebook, Inc.
  *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
  *
  */
 
@@ -18891,7 +20601,7 @@ module.exports = {
 
 var DOMProperty = __webpack_require__(14);
 var EventPluginRegistry = __webpack_require__(28);
-var ReactComponentTreeHook = __webpack_require__(8);
+var ReactComponentTreeHook = __webpack_require__(7);
 
 var warning = __webpack_require__(2);
 
@@ -18988,20 +20698,39 @@ var ReactDOMUnknownPropertyHook = {
 };
 
 module.exports = ReactDOMUnknownPropertyHook;
+;
+
+var _temp = function () {
+  if (typeof __REACT_HOT_LOADER__ === 'undefined') {
+    return;
+  }
+
+  __REACT_HOT_LOADER__.register(reactProps, 'reactProps', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/ReactDOMUnknownPropertyHook.js');
+
+  __REACT_HOT_LOADER__.register(warnedProperties, 'warnedProperties', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/ReactDOMUnknownPropertyHook.js');
+
+  __REACT_HOT_LOADER__.register(validateProperty, 'validateProperty', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/ReactDOMUnknownPropertyHook.js');
+
+  __REACT_HOT_LOADER__.register(warnUnknownProperties, 'warnUnknownProperties', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/ReactDOMUnknownPropertyHook.js');
+
+  __REACT_HOT_LOADER__.register(handleElement, 'handleElement', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/ReactDOMUnknownPropertyHook.js');
+
+  __REACT_HOT_LOADER__.register(ReactDOMUnknownPropertyHook, 'ReactDOMUnknownPropertyHook', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/ReactDOMUnknownPropertyHook.js');
+}();
+
+;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 142 */
+/* 140 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 /* WEBPACK VAR INJECTION */(function(process) {/**
- * Copyright 2016-present, Facebook, Inc.
- * All rights reserved.
+ * Copyright (c) 2016-present, Facebook, Inc.
  *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
  *
  * 
  */
@@ -19010,12 +20739,12 @@ module.exports = ReactDOMUnknownPropertyHook;
 
 var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
 
-var ReactInvalidSetStateWarningHook = __webpack_require__(150);
-var ReactHostOperationHistoryHook = __webpack_require__(148);
-var ReactComponentTreeHook = __webpack_require__(8);
+var ReactInvalidSetStateWarningHook = __webpack_require__(148);
+var ReactHostOperationHistoryHook = __webpack_require__(146);
+var ReactComponentTreeHook = __webpack_require__(7);
 var ExecutionEnvironment = __webpack_require__(6);
 
-var performanceNow = __webpack_require__(106);
+var performanceNow = __webpack_require__(108);
 var warning = __webpack_require__(2);
 
 var hooks = [];
@@ -19357,20 +21086,87 @@ if (/[?&]react_perf\b/.test(url)) {
 }
 
 module.exports = ReactDebugTool;
+;
+
+var _temp = function () {
+  if (typeof __REACT_HOT_LOADER__ === 'undefined') {
+    return;
+  }
+
+  __REACT_HOT_LOADER__.register(hooks, 'hooks', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/ReactDebugTool.js');
+
+  __REACT_HOT_LOADER__.register(didHookThrowForEvent, 'didHookThrowForEvent', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/ReactDebugTool.js');
+
+  __REACT_HOT_LOADER__.register(callHook, 'callHook', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/ReactDebugTool.js');
+
+  __REACT_HOT_LOADER__.register(emitEvent, 'emitEvent', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/ReactDebugTool.js');
+
+  __REACT_HOT_LOADER__.register(_isProfiling, 'isProfiling', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/ReactDebugTool.js');
+
+  __REACT_HOT_LOADER__.register(flushHistory, 'flushHistory', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/ReactDebugTool.js');
+
+  __REACT_HOT_LOADER__.register(lifeCycleTimerStack, 'lifeCycleTimerStack', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/ReactDebugTool.js');
+
+  __REACT_HOT_LOADER__.register(currentFlushNesting, 'currentFlushNesting', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/ReactDebugTool.js');
+
+  __REACT_HOT_LOADER__.register(currentFlushMeasurements, 'currentFlushMeasurements', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/ReactDebugTool.js');
+
+  __REACT_HOT_LOADER__.register(currentFlushStartTime, 'currentFlushStartTime', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/ReactDebugTool.js');
+
+  __REACT_HOT_LOADER__.register(currentTimerDebugID, 'currentTimerDebugID', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/ReactDebugTool.js');
+
+  __REACT_HOT_LOADER__.register(currentTimerStartTime, 'currentTimerStartTime', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/ReactDebugTool.js');
+
+  __REACT_HOT_LOADER__.register(currentTimerNestedFlushDuration, 'currentTimerNestedFlushDuration', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/ReactDebugTool.js');
+
+  __REACT_HOT_LOADER__.register(currentTimerType, 'currentTimerType', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/ReactDebugTool.js');
+
+  __REACT_HOT_LOADER__.register(lifeCycleTimerHasWarned, 'lifeCycleTimerHasWarned', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/ReactDebugTool.js');
+
+  __REACT_HOT_LOADER__.register(clearHistory, 'clearHistory', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/ReactDebugTool.js');
+
+  __REACT_HOT_LOADER__.register(getTreeSnapshot, 'getTreeSnapshot', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/ReactDebugTool.js');
+
+  __REACT_HOT_LOADER__.register(resetMeasurements, 'resetMeasurements', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/ReactDebugTool.js');
+
+  __REACT_HOT_LOADER__.register(checkDebugID, 'checkDebugID', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/ReactDebugTool.js');
+
+  __REACT_HOT_LOADER__.register(beginLifeCycleTimer, 'beginLifeCycleTimer', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/ReactDebugTool.js');
+
+  __REACT_HOT_LOADER__.register(endLifeCycleTimer, 'endLifeCycleTimer', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/ReactDebugTool.js');
+
+  __REACT_HOT_LOADER__.register(pauseCurrentLifeCycleTimer, 'pauseCurrentLifeCycleTimer', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/ReactDebugTool.js');
+
+  __REACT_HOT_LOADER__.register(resumeCurrentLifeCycleTimer, 'resumeCurrentLifeCycleTimer', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/ReactDebugTool.js');
+
+  __REACT_HOT_LOADER__.register(lastMarkTimeStamp, 'lastMarkTimeStamp', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/ReactDebugTool.js');
+
+  __REACT_HOT_LOADER__.register(canUsePerformanceMeasure, 'canUsePerformanceMeasure', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/ReactDebugTool.js');
+
+  __REACT_HOT_LOADER__.register(shouldMark, 'shouldMark', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/ReactDebugTool.js');
+
+  __REACT_HOT_LOADER__.register(markBegin, 'markBegin', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/ReactDebugTool.js');
+
+  __REACT_HOT_LOADER__.register(markEnd, 'markEnd', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/ReactDebugTool.js');
+
+  __REACT_HOT_LOADER__.register(ReactDebugTool, 'ReactDebugTool', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/ReactDebugTool.js');
+
+  __REACT_HOT_LOADER__.register(url, 'url', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/ReactDebugTool.js');
+}();
+
+;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 143 */
+/* 141 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 /**
- * Copyright 2013-present, Facebook, Inc.
- * All rights reserved.
+ * Copyright (c) 2013-present, Facebook, Inc.
  *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
  *
  */
 
@@ -19381,7 +21177,7 @@ var _assign = __webpack_require__(4);
 var ReactUpdates = __webpack_require__(11);
 var Transaction = __webpack_require__(31);
 
-var emptyFunction = __webpack_require__(7);
+var emptyFunction = __webpack_require__(8);
 
 var RESET_BATCHED_UPDATES = {
   initialize: emptyFunction,
@@ -19431,43 +21227,62 @@ var ReactDefaultBatchingStrategy = {
 };
 
 module.exports = ReactDefaultBatchingStrategy;
+;
+
+var _temp = function () {
+  if (typeof __REACT_HOT_LOADER__ === 'undefined') {
+    return;
+  }
+
+  __REACT_HOT_LOADER__.register(RESET_BATCHED_UPDATES, 'RESET_BATCHED_UPDATES', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/ReactDefaultBatchingStrategy.js');
+
+  __REACT_HOT_LOADER__.register(FLUSH_BATCHED_UPDATES, 'FLUSH_BATCHED_UPDATES', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/ReactDefaultBatchingStrategy.js');
+
+  __REACT_HOT_LOADER__.register(TRANSACTION_WRAPPERS, 'TRANSACTION_WRAPPERS', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/ReactDefaultBatchingStrategy.js');
+
+  __REACT_HOT_LOADER__.register(ReactDefaultBatchingStrategyTransaction, 'ReactDefaultBatchingStrategyTransaction', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/ReactDefaultBatchingStrategy.js');
+
+  __REACT_HOT_LOADER__.register(transaction, 'transaction', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/ReactDefaultBatchingStrategy.js');
+
+  __REACT_HOT_LOADER__.register(ReactDefaultBatchingStrategy, 'ReactDefaultBatchingStrategy', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/ReactDefaultBatchingStrategy.js');
+}();
+
+;
 
 /***/ }),
-/* 144 */
+/* 142 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 /**
- * Copyright 2013-present, Facebook, Inc.
- * All rights reserved.
+ * Copyright (c) 2013-present, Facebook, Inc.
  *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
  *
  */
 
 
 
-var ARIADOMPropertyConfig = __webpack_require__(114);
-var BeforeInputEventPlugin = __webpack_require__(116);
-var ChangeEventPlugin = __webpack_require__(118);
-var DefaultEventPluginOrder = __webpack_require__(120);
-var EnterLeaveEventPlugin = __webpack_require__(121);
-var HTMLDOMPropertyConfig = __webpack_require__(123);
-var ReactComponentBrowserEnvironment = __webpack_require__(125);
-var ReactDOMComponent = __webpack_require__(128);
+var ARIADOMPropertyConfig = __webpack_require__(112);
+var BeforeInputEventPlugin = __webpack_require__(114);
+var ChangeEventPlugin = __webpack_require__(116);
+var DefaultEventPluginOrder = __webpack_require__(118);
+var EnterLeaveEventPlugin = __webpack_require__(119);
+var HTMLDOMPropertyConfig = __webpack_require__(121);
+var ReactComponentBrowserEnvironment = __webpack_require__(123);
+var ReactDOMComponent = __webpack_require__(126);
 var ReactDOMComponentTree = __webpack_require__(5);
-var ReactDOMEmptyComponent = __webpack_require__(130);
-var ReactDOMTreeTraversal = __webpack_require__(140);
-var ReactDOMTextComponent = __webpack_require__(138);
-var ReactDefaultBatchingStrategy = __webpack_require__(143);
-var ReactEventListener = __webpack_require__(147);
-var ReactInjection = __webpack_require__(149);
-var ReactReconcileTransaction = __webpack_require__(155);
-var SVGDOMPropertyConfig = __webpack_require__(160);
-var SelectEventPlugin = __webpack_require__(161);
-var SimpleEventPlugin = __webpack_require__(162);
+var ReactDOMEmptyComponent = __webpack_require__(128);
+var ReactDOMTreeTraversal = __webpack_require__(138);
+var ReactDOMTextComponent = __webpack_require__(136);
+var ReactDefaultBatchingStrategy = __webpack_require__(141);
+var ReactEventListener = __webpack_require__(145);
+var ReactInjection = __webpack_require__(147);
+var ReactReconcileTransaction = __webpack_require__(153);
+var SVGDOMPropertyConfig = __webpack_require__(158);
+var SelectEventPlugin = __webpack_require__(159);
+var SimpleEventPlugin = __webpack_require__(160);
 
 var alreadyInjected = false;
 
@@ -19522,19 +21337,30 @@ function inject() {
 module.exports = {
   inject: inject
 };
+;
+
+var _temp = function () {
+  if (typeof __REACT_HOT_LOADER__ === 'undefined') {
+    return;
+  }
+
+  __REACT_HOT_LOADER__.register(alreadyInjected, 'alreadyInjected', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/ReactDefaultInjection.js');
+
+  __REACT_HOT_LOADER__.register(inject, 'inject', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/ReactDefaultInjection.js');
+}();
+
+;
 
 /***/ }),
-/* 145 */
+/* 143 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 /**
- * Copyright 2014-present, Facebook, Inc.
- * All rights reserved.
+ * Copyright (c) 2014-present, Facebook, Inc.
  *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
  *
  * 
  */
@@ -19547,19 +21373,28 @@ module.exports = {
 var REACT_ELEMENT_TYPE = typeof Symbol === 'function' && Symbol['for'] && Symbol['for']('react.element') || 0xeac7;
 
 module.exports = REACT_ELEMENT_TYPE;
+;
+
+var _temp = function () {
+  if (typeof __REACT_HOT_LOADER__ === 'undefined') {
+    return;
+  }
+
+  __REACT_HOT_LOADER__.register(REACT_ELEMENT_TYPE, 'REACT_ELEMENT_TYPE', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/ReactElementSymbol.js');
+}();
+
+;
 
 /***/ }),
-/* 146 */
+/* 144 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 /**
- * Copyright 2013-present, Facebook, Inc.
- * All rights reserved.
+ * Copyright (c) 2013-present, Facebook, Inc.
  *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
  *
  */
 
@@ -19584,19 +21419,30 @@ var ReactEventEmitterMixin = {
 };
 
 module.exports = ReactEventEmitterMixin;
+;
+
+var _temp = function () {
+  if (typeof __REACT_HOT_LOADER__ === 'undefined') {
+    return;
+  }
+
+  __REACT_HOT_LOADER__.register(runEventQueueInBatch, 'runEventQueueInBatch', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/ReactEventEmitterMixin.js');
+
+  __REACT_HOT_LOADER__.register(ReactEventEmitterMixin, 'ReactEventEmitterMixin', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/ReactEventEmitterMixin.js');
+}();
+
+;
 
 /***/ }),
-/* 147 */
+/* 145 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 /**
- * Copyright 2013-present, Facebook, Inc.
- * All rights reserved.
+ * Copyright (c) 2013-present, Facebook, Inc.
  *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
  *
  */
 
@@ -19604,14 +21450,14 @@ module.exports = ReactEventEmitterMixin;
 
 var _assign = __webpack_require__(4);
 
-var EventListener = __webpack_require__(55);
+var EventListener = __webpack_require__(56);
 var ExecutionEnvironment = __webpack_require__(6);
 var PooledClass = __webpack_require__(15);
 var ReactDOMComponentTree = __webpack_require__(5);
 var ReactUpdates = __webpack_require__(11);
 
-var getEventTarget = __webpack_require__(49);
-var getUnboundedScrollPosition = __webpack_require__(99);
+var getEventTarget = __webpack_require__(50);
+var getUnboundedScrollPosition = __webpack_require__(101);
 
 /**
  * Find the deepest React component completely containing the root of the
@@ -19744,19 +21590,36 @@ var ReactEventListener = {
 };
 
 module.exports = ReactEventListener;
+;
+
+var _temp = function () {
+  if (typeof __REACT_HOT_LOADER__ === 'undefined') {
+    return;
+  }
+
+  __REACT_HOT_LOADER__.register(findParent, 'findParent', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/ReactEventListener.js');
+
+  __REACT_HOT_LOADER__.register(TopLevelCallbackBookKeeping, 'TopLevelCallbackBookKeeping', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/ReactEventListener.js');
+
+  __REACT_HOT_LOADER__.register(handleTopLevelImpl, 'handleTopLevelImpl', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/ReactEventListener.js');
+
+  __REACT_HOT_LOADER__.register(scrollValueMonitor, 'scrollValueMonitor', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/ReactEventListener.js');
+
+  __REACT_HOT_LOADER__.register(ReactEventListener, 'ReactEventListener', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/ReactEventListener.js');
+}();
+
+;
 
 /***/ }),
-/* 148 */
+/* 146 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 /**
- * Copyright 2016-present, Facebook, Inc.
- * All rights reserved.
+ * Copyright (c) 2016-present, Facebook, Inc.
  *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
  *
  * 
  */
@@ -19783,19 +21646,30 @@ var ReactHostOperationHistoryHook = {
 };
 
 module.exports = ReactHostOperationHistoryHook;
+;
+
+var _temp = function () {
+  if (typeof __REACT_HOT_LOADER__ === 'undefined') {
+    return;
+  }
+
+  __REACT_HOT_LOADER__.register(history, 'history', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/ReactHostOperationHistoryHook.js');
+
+  __REACT_HOT_LOADER__.register(ReactHostOperationHistoryHook, 'ReactHostOperationHistoryHook', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/ReactHostOperationHistoryHook.js');
+}();
+
+;
 
 /***/ }),
-/* 149 */
+/* 147 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 /**
- * Copyright 2013-present, Facebook, Inc.
- * All rights reserved.
+ * Copyright (c) 2013-present, Facebook, Inc.
  *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
  *
  */
 
@@ -19803,11 +21677,11 @@ module.exports = ReactHostOperationHistoryHook;
 
 var DOMProperty = __webpack_require__(14);
 var EventPluginHub = __webpack_require__(21);
-var EventPluginUtils = __webpack_require__(40);
-var ReactComponentEnvironment = __webpack_require__(43);
-var ReactEmptyComponent = __webpack_require__(66);
+var EventPluginUtils = __webpack_require__(41);
+var ReactComponentEnvironment = __webpack_require__(44);
+var ReactEmptyComponent = __webpack_require__(67);
 var ReactBrowserEventEmitter = __webpack_require__(29);
-var ReactHostComponent = __webpack_require__(68);
+var ReactHostComponent = __webpack_require__(69);
 var ReactUpdates = __webpack_require__(11);
 
 var ReactInjection = {
@@ -19822,19 +21696,28 @@ var ReactInjection = {
 };
 
 module.exports = ReactInjection;
+;
+
+var _temp = function () {
+  if (typeof __REACT_HOT_LOADER__ === 'undefined') {
+    return;
+  }
+
+  __REACT_HOT_LOADER__.register(ReactInjection, 'ReactInjection', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/ReactInjection.js');
+}();
+
+;
 
 /***/ }),
-/* 150 */
+/* 148 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 /* WEBPACK VAR INJECTION */(function(process) {/**
- * Copyright 2016-present, Facebook, Inc.
- * All rights reserved.
+ * Copyright (c) 2016-present, Facebook, Inc.
  *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
  *
  * 
  */
@@ -19864,26 +21747,39 @@ var ReactInvalidSetStateWarningHook = {
 };
 
 module.exports = ReactInvalidSetStateWarningHook;
+;
+
+var _temp = function () {
+  if (typeof __REACT_HOT_LOADER__ === 'undefined') {
+    return;
+  }
+
+  __REACT_HOT_LOADER__.register(processingChildContext, 'processingChildContext', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/ReactInvalidSetStateWarningHook.js');
+
+  __REACT_HOT_LOADER__.register(warnInvalidSetState, 'warnInvalidSetState', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/ReactInvalidSetStateWarningHook.js');
+
+  __REACT_HOT_LOADER__.register(ReactInvalidSetStateWarningHook, 'ReactInvalidSetStateWarningHook', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/ReactInvalidSetStateWarningHook.js');
+}();
+
+;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 151 */
+/* 149 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 /**
- * Copyright 2013-present, Facebook, Inc.
- * All rights reserved.
+ * Copyright (c) 2013-present, Facebook, Inc.
  *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
  *
  */
 
 
 
-var adler32 = __webpack_require__(173);
+var adler32 = __webpack_require__(171);
 
 var TAG_END = /\/?>/;
 var COMMENT_START = /^<\!\-\-/;
@@ -19920,19 +21816,32 @@ var ReactMarkupChecksum = {
 };
 
 module.exports = ReactMarkupChecksum;
+;
+
+var _temp = function () {
+  if (typeof __REACT_HOT_LOADER__ === 'undefined') {
+    return;
+  }
+
+  __REACT_HOT_LOADER__.register(TAG_END, 'TAG_END', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/ReactMarkupChecksum.js');
+
+  __REACT_HOT_LOADER__.register(COMMENT_START, 'COMMENT_START', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/ReactMarkupChecksum.js');
+
+  __REACT_HOT_LOADER__.register(ReactMarkupChecksum, 'ReactMarkupChecksum', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/ReactMarkupChecksum.js');
+}();
+
+;
 
 /***/ }),
-/* 152 */
+/* 150 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 /* WEBPACK VAR INJECTION */(function(process) {/**
- * Copyright 2013-present, Facebook, Inc.
- * All rights reserved.
+ * Copyright (c) 2013-present, Facebook, Inc.
  *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
  *
  */
 
@@ -19940,16 +21849,16 @@ module.exports = ReactMarkupChecksum;
 
 var _prodInvariant = __webpack_require__(3);
 
-var ReactComponentEnvironment = __webpack_require__(43);
+var ReactComponentEnvironment = __webpack_require__(44);
 var ReactInstanceMap = __webpack_require__(23);
 var ReactInstrumentation = __webpack_require__(9);
 
 var ReactCurrentOwner = __webpack_require__(12);
 var ReactReconciler = __webpack_require__(18);
-var ReactChildReconciler = __webpack_require__(124);
+var ReactChildReconciler = __webpack_require__(122);
 
-var emptyFunction = __webpack_require__(7);
-var flattenChildren = __webpack_require__(177);
+var emptyFunction = __webpack_require__(8);
+var flattenChildren = __webpack_require__(175);
 var invariant = __webpack_require__(1);
 
 /**
@@ -20371,20 +22280,47 @@ var ReactMultiChild = {
 };
 
 module.exports = ReactMultiChild;
+;
+
+var _temp = function () {
+  if (typeof __REACT_HOT_LOADER__ === 'undefined') {
+    return;
+  }
+
+  __REACT_HOT_LOADER__.register(makeInsertMarkup, 'makeInsertMarkup', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/ReactMultiChild.js');
+
+  __REACT_HOT_LOADER__.register(makeMove, 'makeMove', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/ReactMultiChild.js');
+
+  __REACT_HOT_LOADER__.register(makeRemove, 'makeRemove', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/ReactMultiChild.js');
+
+  __REACT_HOT_LOADER__.register(makeSetMarkup, 'makeSetMarkup', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/ReactMultiChild.js');
+
+  __REACT_HOT_LOADER__.register(makeTextContent, 'makeTextContent', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/ReactMultiChild.js');
+
+  __REACT_HOT_LOADER__.register(enqueue, 'enqueue', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/ReactMultiChild.js');
+
+  __REACT_HOT_LOADER__.register(processQueue, 'processQueue', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/ReactMultiChild.js');
+
+  __REACT_HOT_LOADER__.register(setChildrenForInstrumentation, 'setChildrenForInstrumentation', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/ReactMultiChild.js');
+
+  __REACT_HOT_LOADER__.register(getDebugID, 'getDebugID', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/ReactMultiChild.js');
+
+  __REACT_HOT_LOADER__.register(ReactMultiChild, 'ReactMultiChild', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/ReactMultiChild.js');
+}();
+
+;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 153 */
+/* 151 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 /* WEBPACK VAR INJECTION */(function(process) {/**
- * Copyright 2013-present, Facebook, Inc.
- * All rights reserved.
+ * Copyright (c) 2013-present, Facebook, Inc.
  *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
  *
  * 
  */
@@ -20470,20 +22406,31 @@ var ReactOwner = {
 };
 
 module.exports = ReactOwner;
+;
+
+var _temp = function () {
+  if (typeof __REACT_HOT_LOADER__ === 'undefined') {
+    return;
+  }
+
+  __REACT_HOT_LOADER__.register(isValidOwner, 'isValidOwner', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/ReactOwner.js');
+
+  __REACT_HOT_LOADER__.register(ReactOwner, 'ReactOwner', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/ReactOwner.js');
+}();
+
+;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 154 */
+/* 152 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 /* WEBPACK VAR INJECTION */(function(process) {/**
- * Copyright 2013-present, Facebook, Inc.
- * All rights reserved.
+ * Copyright (c) 2013-present, Facebook, Inc.
  *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
  *
  * 
  */
@@ -20501,20 +22448,29 @@ if (process.env.NODE_ENV !== 'production') {
 }
 
 module.exports = ReactPropTypeLocationNames;
+;
+
+var _temp = function () {
+  if (typeof __REACT_HOT_LOADER__ === 'undefined') {
+    return;
+  }
+
+  __REACT_HOT_LOADER__.register(ReactPropTypeLocationNames, 'ReactPropTypeLocationNames', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/ReactPropTypeLocationNames.js');
+}();
+
+;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 155 */
+/* 153 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 /* WEBPACK VAR INJECTION */(function(process) {/**
- * Copyright 2013-present, Facebook, Inc.
- * All rights reserved.
+ * Copyright (c) 2013-present, Facebook, Inc.
  *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
  *
  */
 
@@ -20522,13 +22478,13 @@ module.exports = ReactPropTypeLocationNames;
 
 var _assign = __webpack_require__(4);
 
-var CallbackQueue = __webpack_require__(62);
+var CallbackQueue = __webpack_require__(63);
 var PooledClass = __webpack_require__(15);
 var ReactBrowserEventEmitter = __webpack_require__(29);
-var ReactInputSelection = __webpack_require__(69);
+var ReactInputSelection = __webpack_require__(70);
 var ReactInstrumentation = __webpack_require__(9);
 var Transaction = __webpack_require__(31);
-var ReactUpdateQueue = __webpack_require__(45);
+var ReactUpdateQueue = __webpack_require__(46);
 
 /**
  * Ensures that, when possible, the selection range (currently selected text
@@ -20685,20 +22641,39 @@ _assign(ReactReconcileTransaction.prototype, Transaction, Mixin);
 PooledClass.addPoolingTo(ReactReconcileTransaction);
 
 module.exports = ReactReconcileTransaction;
+;
+
+var _temp = function () {
+  if (typeof __REACT_HOT_LOADER__ === 'undefined') {
+    return;
+  }
+
+  __REACT_HOT_LOADER__.register(SELECTION_RESTORATION, 'SELECTION_RESTORATION', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/ReactReconcileTransaction.js');
+
+  __REACT_HOT_LOADER__.register(EVENT_SUPPRESSION, 'EVENT_SUPPRESSION', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/ReactReconcileTransaction.js');
+
+  __REACT_HOT_LOADER__.register(ON_DOM_READY_QUEUEING, 'ON_DOM_READY_QUEUEING', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/ReactReconcileTransaction.js');
+
+  __REACT_HOT_LOADER__.register(TRANSACTION_WRAPPERS, 'TRANSACTION_WRAPPERS', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/ReactReconcileTransaction.js');
+
+  __REACT_HOT_LOADER__.register(ReactReconcileTransaction, 'ReactReconcileTransaction', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/ReactReconcileTransaction.js');
+
+  __REACT_HOT_LOADER__.register(Mixin, 'Mixin', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/ReactReconcileTransaction.js');
+}();
+
+;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 156 */
+/* 154 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 /**
- * Copyright 2013-present, Facebook, Inc.
- * All rights reserved.
+ * Copyright (c) 2013-present, Facebook, Inc.
  *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
  *
  * 
  */
@@ -20707,7 +22682,7 @@ module.exports = ReactReconcileTransaction;
 
 var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
 
-var ReactOwner = __webpack_require__(153);
+var ReactOwner = __webpack_require__(151);
 
 var ReactRef = {};
 
@@ -20782,19 +22757,32 @@ ReactRef.detachRefs = function (instance, element) {
 };
 
 module.exports = ReactRef;
+;
+
+var _temp = function () {
+  if (typeof __REACT_HOT_LOADER__ === 'undefined') {
+    return;
+  }
+
+  __REACT_HOT_LOADER__.register(ReactRef, 'ReactRef', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/ReactRef.js');
+
+  __REACT_HOT_LOADER__.register(attachRef, 'attachRef', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/ReactRef.js');
+
+  __REACT_HOT_LOADER__.register(detachRef, 'detachRef', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/ReactRef.js');
+}();
+
+;
 
 /***/ }),
-/* 157 */
+/* 155 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 /* WEBPACK VAR INJECTION */(function(process) {/**
- * Copyright 2014-present, Facebook, Inc.
- * All rights reserved.
+ * Copyright (c) 2014-present, Facebook, Inc.
  *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
  *
  */
 
@@ -20805,7 +22793,7 @@ var _assign = __webpack_require__(4);
 var PooledClass = __webpack_require__(15);
 var Transaction = __webpack_require__(31);
 var ReactInstrumentation = __webpack_require__(9);
-var ReactServerUpdateQueue = __webpack_require__(158);
+var ReactServerUpdateQueue = __webpack_require__(156);
 
 /**
  * Executed within the scope of the `Transaction` instance. Consider these as
@@ -20877,20 +22865,35 @@ _assign(ReactServerRenderingTransaction.prototype, Transaction, Mixin);
 PooledClass.addPoolingTo(ReactServerRenderingTransaction);
 
 module.exports = ReactServerRenderingTransaction;
+;
+
+var _temp = function () {
+  if (typeof __REACT_HOT_LOADER__ === 'undefined') {
+    return;
+  }
+
+  __REACT_HOT_LOADER__.register(TRANSACTION_WRAPPERS, 'TRANSACTION_WRAPPERS', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/ReactServerRenderingTransaction.js');
+
+  __REACT_HOT_LOADER__.register(noopCallbackQueue, 'noopCallbackQueue', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/ReactServerRenderingTransaction.js');
+
+  __REACT_HOT_LOADER__.register(ReactServerRenderingTransaction, 'ReactServerRenderingTransaction', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/ReactServerRenderingTransaction.js');
+
+  __REACT_HOT_LOADER__.register(Mixin, 'Mixin', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/ReactServerRenderingTransaction.js');
+}();
+
+;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 158 */
+/* 156 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 /* WEBPACK VAR INJECTION */(function(process) {/**
- * Copyright 2015-present, Facebook, Inc.
- * All rights reserved.
+ * Copyright (c) 2015-present, Facebook, Inc.
  *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
  *
  * 
  */
@@ -20903,7 +22906,7 @@ function _classCallCheck(instance, Constructor) {
   }
 }
 
-var ReactUpdateQueue = __webpack_require__(45);
+var ReactUpdateQueue = __webpack_require__(46);
 
 var warning = __webpack_require__(2);
 
@@ -21021,39 +23024,59 @@ var ReactServerUpdateQueue = function () {
 }();
 
 module.exports = ReactServerUpdateQueue;
+;
+
+var _temp = function () {
+  if (typeof __REACT_HOT_LOADER__ === 'undefined') {
+    return;
+  }
+
+  __REACT_HOT_LOADER__.register(_classCallCheck, '_classCallCheck', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/ReactServerUpdateQueue.js');
+
+  __REACT_HOT_LOADER__.register(warnNoop, 'warnNoop', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/ReactServerUpdateQueue.js');
+
+  __REACT_HOT_LOADER__.register(ReactServerUpdateQueue, 'ReactServerUpdateQueue', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/ReactServerUpdateQueue.js');
+}();
+
+;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 159 */
+/* 157 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 /**
- * Copyright 2013-present, Facebook, Inc.
- * All rights reserved.
+ * Copyright (c) 2013-present, Facebook, Inc.
  *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
  *
  */
 
 
 
-module.exports = '15.6.1';
+module.exports = '15.6.2';
+;
+
+var _temp = function () {
+  if (typeof __REACT_HOT_LOADER__ === 'undefined') {
+    return;
+  }
+}();
+
+;
 
 /***/ }),
-/* 160 */
+/* 158 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 /**
- * Copyright 2013-present, Facebook, Inc.
- * All rights reserved.
+ * Copyright (c) 2013-present, Facebook, Inc.
  *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
  *
  */
 
@@ -21348,19 +23371,32 @@ Object.keys(ATTRS).forEach(function (key) {
 });
 
 module.exports = SVGDOMPropertyConfig;
+;
+
+var _temp = function () {
+  if (typeof __REACT_HOT_LOADER__ === 'undefined') {
+    return;
+  }
+
+  __REACT_HOT_LOADER__.register(NS, 'NS', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/SVGDOMPropertyConfig.js');
+
+  __REACT_HOT_LOADER__.register(ATTRS, 'ATTRS', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/SVGDOMPropertyConfig.js');
+
+  __REACT_HOT_LOADER__.register(SVGDOMPropertyConfig, 'SVGDOMPropertyConfig', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/SVGDOMPropertyConfig.js');
+}();
+
+;
 
 /***/ }),
-/* 161 */
+/* 159 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 /**
- * Copyright 2013-present, Facebook, Inc.
- * All rights reserved.
+ * Copyright (c) 2013-present, Facebook, Inc.
  *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
  *
  */
 
@@ -21369,11 +23405,11 @@ module.exports = SVGDOMPropertyConfig;
 var EventPropagators = __webpack_require__(22);
 var ExecutionEnvironment = __webpack_require__(6);
 var ReactDOMComponentTree = __webpack_require__(5);
-var ReactInputSelection = __webpack_require__(69);
+var ReactInputSelection = __webpack_require__(70);
 var SyntheticEvent = __webpack_require__(13);
 
-var getActiveElement = __webpack_require__(57);
-var isTextInputElement = __webpack_require__(80);
+var getActiveElement = __webpack_require__(58);
+var isTextInputElement = __webpack_require__(81);
 var shallowEqual = __webpack_require__(37);
 
 var skipSelectionChangeEvent = ExecutionEnvironment.canUseDOM && 'documentMode' in document && document.documentMode <= 11;
@@ -21541,19 +23577,46 @@ var SelectEventPlugin = {
 };
 
 module.exports = SelectEventPlugin;
+;
+
+var _temp = function () {
+  if (typeof __REACT_HOT_LOADER__ === 'undefined') {
+    return;
+  }
+
+  __REACT_HOT_LOADER__.register(skipSelectionChangeEvent, 'skipSelectionChangeEvent', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/SelectEventPlugin.js');
+
+  __REACT_HOT_LOADER__.register(eventTypes, 'eventTypes', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/SelectEventPlugin.js');
+
+  __REACT_HOT_LOADER__.register(activeElement, 'activeElement', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/SelectEventPlugin.js');
+
+  __REACT_HOT_LOADER__.register(activeElementInst, 'activeElementInst', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/SelectEventPlugin.js');
+
+  __REACT_HOT_LOADER__.register(lastSelection, 'lastSelection', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/SelectEventPlugin.js');
+
+  __REACT_HOT_LOADER__.register(mouseDown, 'mouseDown', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/SelectEventPlugin.js');
+
+  __REACT_HOT_LOADER__.register(hasListener, 'hasListener', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/SelectEventPlugin.js');
+
+  __REACT_HOT_LOADER__.register(getSelection, 'getSelection', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/SelectEventPlugin.js');
+
+  __REACT_HOT_LOADER__.register(constructSelectEvent, 'constructSelectEvent', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/SelectEventPlugin.js');
+
+  __REACT_HOT_LOADER__.register(SelectEventPlugin, 'SelectEventPlugin', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/SelectEventPlugin.js');
+}();
+
+;
 
 /***/ }),
-/* 162 */
+/* 160 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 /* WEBPACK VAR INJECTION */(function(process) {/**
- * Copyright 2013-present, Facebook, Inc.
- * All rights reserved.
+ * Copyright (c) 2013-present, Facebook, Inc.
  *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
  *
  * 
  */
@@ -21562,23 +23625,23 @@ module.exports = SelectEventPlugin;
 
 var _prodInvariant = __webpack_require__(3);
 
-var EventListener = __webpack_require__(55);
+var EventListener = __webpack_require__(56);
 var EventPropagators = __webpack_require__(22);
 var ReactDOMComponentTree = __webpack_require__(5);
-var SyntheticAnimationEvent = __webpack_require__(163);
-var SyntheticClipboardEvent = __webpack_require__(164);
+var SyntheticAnimationEvent = __webpack_require__(161);
+var SyntheticClipboardEvent = __webpack_require__(162);
 var SyntheticEvent = __webpack_require__(13);
-var SyntheticFocusEvent = __webpack_require__(167);
-var SyntheticKeyboardEvent = __webpack_require__(169);
+var SyntheticFocusEvent = __webpack_require__(165);
+var SyntheticKeyboardEvent = __webpack_require__(167);
 var SyntheticMouseEvent = __webpack_require__(30);
-var SyntheticDragEvent = __webpack_require__(166);
-var SyntheticTouchEvent = __webpack_require__(170);
-var SyntheticTransitionEvent = __webpack_require__(171);
+var SyntheticDragEvent = __webpack_require__(164);
+var SyntheticTouchEvent = __webpack_require__(168);
+var SyntheticTransitionEvent = __webpack_require__(169);
 var SyntheticUIEvent = __webpack_require__(24);
-var SyntheticWheelEvent = __webpack_require__(172);
+var SyntheticWheelEvent = __webpack_require__(170);
 
-var emptyFunction = __webpack_require__(7);
-var getEventCharCode = __webpack_require__(47);
+var emptyFunction = __webpack_require__(8);
+var getEventCharCode = __webpack_require__(48);
 var invariant = __webpack_require__(1);
 
 /**
@@ -21772,20 +23835,39 @@ var SimpleEventPlugin = {
 };
 
 module.exports = SimpleEventPlugin;
+;
+
+var _temp = function () {
+  if (typeof __REACT_HOT_LOADER__ === 'undefined') {
+    return;
+  }
+
+  __REACT_HOT_LOADER__.register(eventTypes, 'eventTypes', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/SimpleEventPlugin.js');
+
+  __REACT_HOT_LOADER__.register(topLevelEventsToDispatchConfig, 'topLevelEventsToDispatchConfig', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/SimpleEventPlugin.js');
+
+  __REACT_HOT_LOADER__.register(onClickListeners, 'onClickListeners', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/SimpleEventPlugin.js');
+
+  __REACT_HOT_LOADER__.register(getDictionaryKey, 'getDictionaryKey', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/SimpleEventPlugin.js');
+
+  __REACT_HOT_LOADER__.register(isInteractive, 'isInteractive', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/SimpleEventPlugin.js');
+
+  __REACT_HOT_LOADER__.register(SimpleEventPlugin, 'SimpleEventPlugin', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/SimpleEventPlugin.js');
+}();
+
+;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 163 */
+/* 161 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 /**
- * Copyright 2013-present, Facebook, Inc.
- * All rights reserved.
+ * Copyright (c) 2013-present, Facebook, Inc.
  *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
  *
  */
 
@@ -21817,19 +23899,30 @@ function SyntheticAnimationEvent(dispatchConfig, dispatchMarker, nativeEvent, na
 SyntheticEvent.augmentClass(SyntheticAnimationEvent, AnimationEventInterface);
 
 module.exports = SyntheticAnimationEvent;
+;
+
+var _temp = function () {
+  if (typeof __REACT_HOT_LOADER__ === 'undefined') {
+    return;
+  }
+
+  __REACT_HOT_LOADER__.register(AnimationEventInterface, 'AnimationEventInterface', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/SyntheticAnimationEvent.js');
+
+  __REACT_HOT_LOADER__.register(SyntheticAnimationEvent, 'SyntheticAnimationEvent', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/SyntheticAnimationEvent.js');
+}();
+
+;
 
 /***/ }),
-/* 164 */
+/* 162 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 /**
- * Copyright 2013-present, Facebook, Inc.
- * All rights reserved.
+ * Copyright (c) 2013-present, Facebook, Inc.
  *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
  *
  */
 
@@ -21860,19 +23953,30 @@ function SyntheticClipboardEvent(dispatchConfig, dispatchMarker, nativeEvent, na
 SyntheticEvent.augmentClass(SyntheticClipboardEvent, ClipboardEventInterface);
 
 module.exports = SyntheticClipboardEvent;
+;
+
+var _temp = function () {
+  if (typeof __REACT_HOT_LOADER__ === 'undefined') {
+    return;
+  }
+
+  __REACT_HOT_LOADER__.register(ClipboardEventInterface, 'ClipboardEventInterface', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/SyntheticClipboardEvent.js');
+
+  __REACT_HOT_LOADER__.register(SyntheticClipboardEvent, 'SyntheticClipboardEvent', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/SyntheticClipboardEvent.js');
+}();
+
+;
 
 /***/ }),
-/* 165 */
+/* 163 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 /**
- * Copyright 2013-present, Facebook, Inc.
- * All rights reserved.
+ * Copyright (c) 2013-present, Facebook, Inc.
  *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
  *
  */
 
@@ -21901,19 +24005,30 @@ function SyntheticCompositionEvent(dispatchConfig, dispatchMarker, nativeEvent, 
 SyntheticEvent.augmentClass(SyntheticCompositionEvent, CompositionEventInterface);
 
 module.exports = SyntheticCompositionEvent;
+;
+
+var _temp = function () {
+  if (typeof __REACT_HOT_LOADER__ === 'undefined') {
+    return;
+  }
+
+  __REACT_HOT_LOADER__.register(CompositionEventInterface, 'CompositionEventInterface', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/SyntheticCompositionEvent.js');
+
+  __REACT_HOT_LOADER__.register(SyntheticCompositionEvent, 'SyntheticCompositionEvent', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/SyntheticCompositionEvent.js');
+}();
+
+;
 
 /***/ }),
-/* 166 */
+/* 164 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 /**
- * Copyright 2013-present, Facebook, Inc.
- * All rights reserved.
+ * Copyright (c) 2013-present, Facebook, Inc.
  *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
  *
  */
 
@@ -21942,19 +24057,30 @@ function SyntheticDragEvent(dispatchConfig, dispatchMarker, nativeEvent, nativeE
 SyntheticMouseEvent.augmentClass(SyntheticDragEvent, DragEventInterface);
 
 module.exports = SyntheticDragEvent;
+;
+
+var _temp = function () {
+  if (typeof __REACT_HOT_LOADER__ === 'undefined') {
+    return;
+  }
+
+  __REACT_HOT_LOADER__.register(DragEventInterface, 'DragEventInterface', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/SyntheticDragEvent.js');
+
+  __REACT_HOT_LOADER__.register(SyntheticDragEvent, 'SyntheticDragEvent', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/SyntheticDragEvent.js');
+}();
+
+;
 
 /***/ }),
-/* 167 */
+/* 165 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 /**
- * Copyright 2013-present, Facebook, Inc.
- * All rights reserved.
+ * Copyright (c) 2013-present, Facebook, Inc.
  *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
  *
  */
 
@@ -21983,19 +24109,30 @@ function SyntheticFocusEvent(dispatchConfig, dispatchMarker, nativeEvent, native
 SyntheticUIEvent.augmentClass(SyntheticFocusEvent, FocusEventInterface);
 
 module.exports = SyntheticFocusEvent;
+;
+
+var _temp = function () {
+  if (typeof __REACT_HOT_LOADER__ === 'undefined') {
+    return;
+  }
+
+  __REACT_HOT_LOADER__.register(FocusEventInterface, 'FocusEventInterface', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/SyntheticFocusEvent.js');
+
+  __REACT_HOT_LOADER__.register(SyntheticFocusEvent, 'SyntheticFocusEvent', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/SyntheticFocusEvent.js');
+}();
+
+;
 
 /***/ }),
-/* 168 */
+/* 166 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 /**
- * Copyright 2013-present, Facebook, Inc.
- * All rights reserved.
+ * Copyright (c) 2013-present, Facebook, Inc.
  *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
  *
  */
 
@@ -22025,19 +24162,30 @@ function SyntheticInputEvent(dispatchConfig, dispatchMarker, nativeEvent, native
 SyntheticEvent.augmentClass(SyntheticInputEvent, InputEventInterface);
 
 module.exports = SyntheticInputEvent;
+;
+
+var _temp = function () {
+  if (typeof __REACT_HOT_LOADER__ === 'undefined') {
+    return;
+  }
+
+  __REACT_HOT_LOADER__.register(InputEventInterface, 'InputEventInterface', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/SyntheticInputEvent.js');
+
+  __REACT_HOT_LOADER__.register(SyntheticInputEvent, 'SyntheticInputEvent', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/SyntheticInputEvent.js');
+}();
+
+;
 
 /***/ }),
-/* 169 */
+/* 167 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 /**
- * Copyright 2013-present, Facebook, Inc.
- * All rights reserved.
+ * Copyright (c) 2013-present, Facebook, Inc.
  *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
  *
  */
 
@@ -22045,9 +24193,9 @@ module.exports = SyntheticInputEvent;
 
 var SyntheticUIEvent = __webpack_require__(24);
 
-var getEventCharCode = __webpack_require__(47);
-var getEventKey = __webpack_require__(178);
-var getEventModifierState = __webpack_require__(48);
+var getEventCharCode = __webpack_require__(48);
+var getEventKey = __webpack_require__(176);
+var getEventModifierState = __webpack_require__(49);
 
 /**
  * @interface KeyboardEvent
@@ -22114,19 +24262,30 @@ function SyntheticKeyboardEvent(dispatchConfig, dispatchMarker, nativeEvent, nat
 SyntheticUIEvent.augmentClass(SyntheticKeyboardEvent, KeyboardEventInterface);
 
 module.exports = SyntheticKeyboardEvent;
+;
+
+var _temp = function () {
+  if (typeof __REACT_HOT_LOADER__ === 'undefined') {
+    return;
+  }
+
+  __REACT_HOT_LOADER__.register(KeyboardEventInterface, 'KeyboardEventInterface', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/SyntheticKeyboardEvent.js');
+
+  __REACT_HOT_LOADER__.register(SyntheticKeyboardEvent, 'SyntheticKeyboardEvent', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/SyntheticKeyboardEvent.js');
+}();
+
+;
 
 /***/ }),
-/* 170 */
+/* 168 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 /**
- * Copyright 2013-present, Facebook, Inc.
- * All rights reserved.
+ * Copyright (c) 2013-present, Facebook, Inc.
  *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
  *
  */
 
@@ -22134,7 +24293,7 @@ module.exports = SyntheticKeyboardEvent;
 
 var SyntheticUIEvent = __webpack_require__(24);
 
-var getEventModifierState = __webpack_require__(48);
+var getEventModifierState = __webpack_require__(49);
 
 /**
  * @interface TouchEvent
@@ -22164,19 +24323,30 @@ function SyntheticTouchEvent(dispatchConfig, dispatchMarker, nativeEvent, native
 SyntheticUIEvent.augmentClass(SyntheticTouchEvent, TouchEventInterface);
 
 module.exports = SyntheticTouchEvent;
+;
+
+var _temp = function () {
+  if (typeof __REACT_HOT_LOADER__ === 'undefined') {
+    return;
+  }
+
+  __REACT_HOT_LOADER__.register(TouchEventInterface, 'TouchEventInterface', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/SyntheticTouchEvent.js');
+
+  __REACT_HOT_LOADER__.register(SyntheticTouchEvent, 'SyntheticTouchEvent', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/SyntheticTouchEvent.js');
+}();
+
+;
 
 /***/ }),
-/* 171 */
+/* 169 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 /**
- * Copyright 2013-present, Facebook, Inc.
- * All rights reserved.
+ * Copyright (c) 2013-present, Facebook, Inc.
  *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
  *
  */
 
@@ -22208,19 +24378,30 @@ function SyntheticTransitionEvent(dispatchConfig, dispatchMarker, nativeEvent, n
 SyntheticEvent.augmentClass(SyntheticTransitionEvent, TransitionEventInterface);
 
 module.exports = SyntheticTransitionEvent;
+;
+
+var _temp = function () {
+  if (typeof __REACT_HOT_LOADER__ === 'undefined') {
+    return;
+  }
+
+  __REACT_HOT_LOADER__.register(TransitionEventInterface, 'TransitionEventInterface', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/SyntheticTransitionEvent.js');
+
+  __REACT_HOT_LOADER__.register(SyntheticTransitionEvent, 'SyntheticTransitionEvent', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/SyntheticTransitionEvent.js');
+}();
+
+;
 
 /***/ }),
-/* 172 */
+/* 170 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 /**
- * Copyright 2013-present, Facebook, Inc.
- * All rights reserved.
+ * Copyright (c) 2013-present, Facebook, Inc.
  *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
  *
  */
 
@@ -22264,19 +24445,30 @@ function SyntheticWheelEvent(dispatchConfig, dispatchMarker, nativeEvent, native
 SyntheticMouseEvent.augmentClass(SyntheticWheelEvent, WheelEventInterface);
 
 module.exports = SyntheticWheelEvent;
+;
+
+var _temp = function () {
+  if (typeof __REACT_HOT_LOADER__ === 'undefined') {
+    return;
+  }
+
+  __REACT_HOT_LOADER__.register(WheelEventInterface, 'WheelEventInterface', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/SyntheticWheelEvent.js');
+
+  __REACT_HOT_LOADER__.register(SyntheticWheelEvent, 'SyntheticWheelEvent', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/SyntheticWheelEvent.js');
+}();
+
+;
 
 /***/ }),
-/* 173 */
+/* 171 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 /**
- * Copyright 2013-present, Facebook, Inc.
- * All rights reserved.
+ * Copyright (c) 2013-present, Facebook, Inc.
  *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
  *
  * 
  */
@@ -22313,19 +24505,30 @@ function adler32(data) {
 }
 
 module.exports = adler32;
+;
+
+var _temp = function () {
+  if (typeof __REACT_HOT_LOADER__ === 'undefined') {
+    return;
+  }
+
+  __REACT_HOT_LOADER__.register(MOD, 'MOD', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/adler32.js');
+
+  __REACT_HOT_LOADER__.register(adler32, 'adler32', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/adler32.js');
+}();
+
+;
 
 /***/ }),
-/* 174 */
+/* 172 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 /* WEBPACK VAR INJECTION */(function(process) {/**
- * Copyright 2013-present, Facebook, Inc.
- * All rights reserved.
+ * Copyright (c) 2013-present, Facebook, Inc.
  *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
  *
  */
 
@@ -22335,8 +24538,8 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
 
 var _prodInvariant = __webpack_require__(3);
 
-var ReactPropTypeLocationNames = __webpack_require__(154);
-var ReactPropTypesSecret = __webpack_require__(72);
+var ReactPropTypeLocationNames = __webpack_require__(152);
+var ReactPropTypesSecret = __webpack_require__(73);
 
 var invariant = __webpack_require__(1);
 var warning = __webpack_require__(2);
@@ -22349,7 +24552,7 @@ if (typeof process !== 'undefined' && process.env && process.env.NODE_ENV === 't
   // https://github.com/facebook/react/issues/7240
   // Remove the inline requires when we don't need them anymore:
   // https://github.com/facebook/react/pull/7178
-  ReactComponentTreeHook = __webpack_require__(8);
+  ReactComponentTreeHook = __webpack_require__(7);
 }
 
 var loggedTypeFailures = {};
@@ -22391,7 +24594,7 @@ function checkReactTypeSpec(typeSpecs, values, location, componentName, element,
 
         if (process.env.NODE_ENV !== 'production') {
           if (!ReactComponentTreeHook) {
-            ReactComponentTreeHook = __webpack_require__(8);
+            ReactComponentTreeHook = __webpack_require__(7);
           }
           if (debugID !== null) {
             componentStackInfo = ReactComponentTreeHook.getStackAddendumByID(debugID);
@@ -22407,26 +24610,39 @@ function checkReactTypeSpec(typeSpecs, values, location, componentName, element,
 }
 
 module.exports = checkReactTypeSpec;
+;
+
+var _temp = function () {
+  if (typeof __REACT_HOT_LOADER__ === 'undefined') {
+    return;
+  }
+
+  __REACT_HOT_LOADER__.register(ReactComponentTreeHook, 'ReactComponentTreeHook', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/checkReactTypeSpec.js');
+
+  __REACT_HOT_LOADER__.register(loggedTypeFailures, 'loggedTypeFailures', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/checkReactTypeSpec.js');
+
+  __REACT_HOT_LOADER__.register(checkReactTypeSpec, 'checkReactTypeSpec', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/checkReactTypeSpec.js');
+}();
+
+;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 175 */
+/* 173 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 /* WEBPACK VAR INJECTION */(function(process) {/**
- * Copyright 2013-present, Facebook, Inc.
- * All rights reserved.
+ * Copyright (c) 2013-present, Facebook, Inc.
  *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
  *
  */
 
 
 
-var CSSProperty = __webpack_require__(61);
+var CSSProperty = __webpack_require__(62);
 var warning = __webpack_require__(2);
 
 var isUnitlessNumber = CSSProperty.isUnitlessNumber;
@@ -22492,20 +24708,33 @@ function dangerousStyleValue(name, value, component, isCustomProperty) {
 }
 
 module.exports = dangerousStyleValue;
+;
+
+var _temp = function () {
+  if (typeof __REACT_HOT_LOADER__ === 'undefined') {
+    return;
+  }
+
+  __REACT_HOT_LOADER__.register(isUnitlessNumber, 'isUnitlessNumber', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/dangerousStyleValue.js');
+
+  __REACT_HOT_LOADER__.register(styleWarnings, 'styleWarnings', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/dangerousStyleValue.js');
+
+  __REACT_HOT_LOADER__.register(dangerousStyleValue, 'dangerousStyleValue', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/dangerousStyleValue.js');
+}();
+
+;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 176 */
+/* 174 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 /* WEBPACK VAR INJECTION */(function(process) {/**
- * Copyright 2013-present, Facebook, Inc.
- * All rights reserved.
+ * Copyright (c) 2013-present, Facebook, Inc.
  *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
  *
  */
 
@@ -22517,7 +24746,7 @@ var ReactCurrentOwner = __webpack_require__(12);
 var ReactDOMComponentTree = __webpack_require__(5);
 var ReactInstanceMap = __webpack_require__(23);
 
-var getHostComponentFromComposite = __webpack_require__(76);
+var getHostComponentFromComposite = __webpack_require__(77);
 var invariant = __webpack_require__(1);
 var warning = __webpack_require__(2);
 
@@ -22558,20 +24787,29 @@ function findDOMNode(componentOrElement) {
 }
 
 module.exports = findDOMNode;
+;
+
+var _temp = function () {
+  if (typeof __REACT_HOT_LOADER__ === 'undefined') {
+    return;
+  }
+
+  __REACT_HOT_LOADER__.register(findDOMNode, 'findDOMNode', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/findDOMNode.js');
+}();
+
+;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 177 */
+/* 175 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 /* WEBPACK VAR INJECTION */(function(process) {/**
- * Copyright 2013-present, Facebook, Inc.
- * All rights reserved.
+ * Copyright (c) 2013-present, Facebook, Inc.
  *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
  *
  * 
  */
@@ -22580,8 +24818,8 @@ module.exports = findDOMNode;
 
 var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
 
-var KeyEscapeUtils = __webpack_require__(41);
-var traverseAllChildren = __webpack_require__(82);
+var KeyEscapeUtils = __webpack_require__(42);
+var traverseAllChildren = __webpack_require__(83);
 var warning = __webpack_require__(2);
 
 var ReactComponentTreeHook;
@@ -22592,7 +24830,7 @@ if (typeof process !== 'undefined' && process.env && process.env.NODE_ENV === 't
   // https://github.com/facebook/react/issues/7240
   // Remove the inline requires when we don't need them anymore:
   // https://github.com/facebook/react/pull/7178
-  ReactComponentTreeHook = __webpack_require__(8);
+  ReactComponentTreeHook = __webpack_require__(7);
 }
 
 /**
@@ -22608,7 +24846,7 @@ function flattenSingleChildIntoContext(traverseContext, child, name, selfDebugID
     var keyUnique = result[name] === undefined;
     if (process.env.NODE_ENV !== 'production') {
       if (!ReactComponentTreeHook) {
-        ReactComponentTreeHook = __webpack_require__(8);
+        ReactComponentTreeHook = __webpack_require__(7);
       }
       if (!keyUnique) {
         process.env.NODE_ENV !== 'production' ? warning(false, 'flattenChildren(...): Encountered two children with the same key, ' + '`%s`. Child keys must be unique; when two children share a key, only ' + 'the first child will be used.%s', KeyEscapeUtils.unescape(name), ReactComponentTreeHook.getStackAddendumByID(selfDebugID)) : void 0;
@@ -22642,26 +24880,39 @@ function flattenChildren(children, selfDebugID) {
 }
 
 module.exports = flattenChildren;
+;
+
+var _temp = function () {
+  if (typeof __REACT_HOT_LOADER__ === 'undefined') {
+    return;
+  }
+
+  __REACT_HOT_LOADER__.register(ReactComponentTreeHook, 'ReactComponentTreeHook', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/flattenChildren.js');
+
+  __REACT_HOT_LOADER__.register(flattenSingleChildIntoContext, 'flattenSingleChildIntoContext', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/flattenChildren.js');
+
+  __REACT_HOT_LOADER__.register(flattenChildren, 'flattenChildren', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/flattenChildren.js');
+}();
+
+;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 178 */
+/* 176 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 /**
- * Copyright 2013-present, Facebook, Inc.
- * All rights reserved.
+ * Copyright (c) 2013-present, Facebook, Inc.
  *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
  *
  */
 
 
 
-var getEventCharCode = __webpack_require__(47);
+var getEventCharCode = __webpack_require__(48);
 
 /**
  * Normalization of deprecated HTML5 `key` values
@@ -22760,19 +25011,32 @@ function getEventKey(nativeEvent) {
 }
 
 module.exports = getEventKey;
+;
+
+var _temp = function () {
+  if (typeof __REACT_HOT_LOADER__ === 'undefined') {
+    return;
+  }
+
+  __REACT_HOT_LOADER__.register(normalizeKey, 'normalizeKey', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/getEventKey.js');
+
+  __REACT_HOT_LOADER__.register(translateToKey, 'translateToKey', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/getEventKey.js');
+
+  __REACT_HOT_LOADER__.register(getEventKey, 'getEventKey', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/getEventKey.js');
+}();
+
+;
 
 /***/ }),
-/* 179 */
+/* 177 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 /**
- * Copyright 2013-present, Facebook, Inc.
- * All rights reserved.
+ * Copyright (c) 2013-present, Facebook, Inc.
  *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
  *
  * 
  */
@@ -22806,19 +25070,32 @@ function getIteratorFn(maybeIterable) {
 }
 
 module.exports = getIteratorFn;
+;
+
+var _temp = function () {
+  if (typeof __REACT_HOT_LOADER__ === 'undefined') {
+    return;
+  }
+
+  __REACT_HOT_LOADER__.register(ITERATOR_SYMBOL, 'ITERATOR_SYMBOL', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/getIteratorFn.js');
+
+  __REACT_HOT_LOADER__.register(FAUX_ITERATOR_SYMBOL, 'FAUX_ITERATOR_SYMBOL', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/getIteratorFn.js');
+
+  __REACT_HOT_LOADER__.register(getIteratorFn, 'getIteratorFn', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/getIteratorFn.js');
+}();
+
+;
 
 /***/ }),
-/* 180 */
+/* 178 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 /**
- * Copyright 2013-present, Facebook, Inc.
- * All rights reserved.
+ * Copyright (c) 2013-present, Facebook, Inc.
  *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
  *
  */
 
@@ -22885,19 +25162,32 @@ function getNodeForCharacterOffset(root, offset) {
 }
 
 module.exports = getNodeForCharacterOffset;
+;
+
+var _temp = function () {
+  if (typeof __REACT_HOT_LOADER__ === 'undefined') {
+    return;
+  }
+
+  __REACT_HOT_LOADER__.register(getLeafNode, 'getLeafNode', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/getNodeForCharacterOffset.js');
+
+  __REACT_HOT_LOADER__.register(getSiblingNode, 'getSiblingNode', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/getNodeForCharacterOffset.js');
+
+  __REACT_HOT_LOADER__.register(getNodeForCharacterOffset, 'getNodeForCharacterOffset', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/getNodeForCharacterOffset.js');
+}();
+
+;
 
 /***/ }),
-/* 181 */
+/* 179 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 /**
- * Copyright 2013-present, Facebook, Inc.
- * All rights reserved.
+ * Copyright (c) 2013-present, Facebook, Inc.
  *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
  *
  */
 
@@ -22991,19 +25281,36 @@ function getVendorPrefixedEventName(eventName) {
 }
 
 module.exports = getVendorPrefixedEventName;
+;
+
+var _temp = function () {
+  if (typeof __REACT_HOT_LOADER__ === 'undefined') {
+    return;
+  }
+
+  __REACT_HOT_LOADER__.register(makePrefixMap, 'makePrefixMap', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/getVendorPrefixedEventName.js');
+
+  __REACT_HOT_LOADER__.register(vendorPrefixes, 'vendorPrefixes', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/getVendorPrefixedEventName.js');
+
+  __REACT_HOT_LOADER__.register(prefixedEventNames, 'prefixedEventNames', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/getVendorPrefixedEventName.js');
+
+  __REACT_HOT_LOADER__.register(style, 'style', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/getVendorPrefixedEventName.js');
+
+  __REACT_HOT_LOADER__.register(getVendorPrefixedEventName, 'getVendorPrefixedEventName', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/getVendorPrefixedEventName.js');
+}();
+
+;
 
 /***/ }),
-/* 182 */
+/* 180 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 /**
- * Copyright 2013-present, Facebook, Inc.
- * All rights reserved.
+ * Copyright (c) 2013-present, Facebook, Inc.
  *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
  *
  */
 
@@ -23022,30 +25329,48 @@ function quoteAttributeValueForBrowser(value) {
 }
 
 module.exports = quoteAttributeValueForBrowser;
+;
+
+var _temp = function () {
+  if (typeof __REACT_HOT_LOADER__ === 'undefined') {
+    return;
+  }
+
+  __REACT_HOT_LOADER__.register(quoteAttributeValueForBrowser, 'quoteAttributeValueForBrowser', 'd:/webStudy/React-Turntable/node_modules/._react-dom@15.6.2@react-dom/lib/quoteAttributeValueForBrowser.js');
+}();
+
+;
 
 /***/ }),
-/* 183 */
+/* 181 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 /**
- * Copyright 2013-present, Facebook, Inc.
- * All rights reserved.
+ * Copyright (c) 2013-present, Facebook, Inc.
  *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
  *
  */
 
 
 
-var ReactMount = __webpack_require__(70);
+var ReactMount = __webpack_require__(71);
 
 module.exports = ReactMount.renderSubtreeIntoContainer;
+;
+
+var _temp = function () {
+  if (typeof __REACT_HOT_LOADER__ === 'undefined') {
+    return;
+  }
+}();
+
+;
 
 /***/ }),
-/* 184 */
+/* 182 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -23083,9 +25408,28 @@ var FaCheckCircle = function FaCheckCircle(props) {
 
 exports.default = FaCheckCircle;
 module.exports = exports['default'];
+;
+
+var _temp = function () {
+    if (typeof __REACT_HOT_LOADER__ === 'undefined') {
+        return;
+    }
+
+    __REACT_HOT_LOADER__.register(_extends, '_extends', 'd:/webStudy/React-Turntable/node_modules/._react-icons@2.2.7@react-icons/lib/fa/check-circle.js');
+
+    __REACT_HOT_LOADER__.register(_react2, '_react2', 'd:/webStudy/React-Turntable/node_modules/._react-icons@2.2.7@react-icons/lib/fa/check-circle.js');
+
+    __REACT_HOT_LOADER__.register(_reactIconBase2, '_reactIconBase2', 'd:/webStudy/React-Turntable/node_modules/._react-icons@2.2.7@react-icons/lib/fa/check-circle.js');
+
+    __REACT_HOT_LOADER__.register(_interopRequireDefault, '_interopRequireDefault', 'd:/webStudy/React-Turntable/node_modules/._react-icons@2.2.7@react-icons/lib/fa/check-circle.js');
+
+    __REACT_HOT_LOADER__.register(FaCheckCircle, 'FaCheckCircle', 'd:/webStudy/React-Turntable/node_modules/._react-icons@2.2.7@react-icons/lib/fa/check-circle.js');
+}();
+
+;
 
 /***/ }),
-/* 185 */
+/* 183 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -23123,9 +25467,28 @@ var MdLoop = function MdLoop(props) {
 
 exports.default = MdLoop;
 module.exports = exports['default'];
+;
+
+var _temp = function () {
+    if (typeof __REACT_HOT_LOADER__ === 'undefined') {
+        return;
+    }
+
+    __REACT_HOT_LOADER__.register(_extends, '_extends', 'd:/webStudy/React-Turntable/node_modules/._react-icons@2.2.7@react-icons/lib/md/loop.js');
+
+    __REACT_HOT_LOADER__.register(_react2, '_react2', 'd:/webStudy/React-Turntable/node_modules/._react-icons@2.2.7@react-icons/lib/md/loop.js');
+
+    __REACT_HOT_LOADER__.register(_reactIconBase2, '_reactIconBase2', 'd:/webStudy/React-Turntable/node_modules/._react-icons@2.2.7@react-icons/lib/md/loop.js');
+
+    __REACT_HOT_LOADER__.register(_interopRequireDefault, '_interopRequireDefault', 'd:/webStudy/React-Turntable/node_modules/._react-icons@2.2.7@react-icons/lib/md/loop.js');
+
+    __REACT_HOT_LOADER__.register(MdLoop, 'MdLoop', 'd:/webStudy/React-Turntable/node_modules/._react-icons@2.2.7@react-icons/lib/md/loop.js');
+}();
+
+;
 
 /***/ }),
-/* 186 */
+/* 184 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -23163,9 +25526,28 @@ var TiDelete = function TiDelete(props) {
 
 exports.default = TiDelete;
 module.exports = exports['default'];
+;
+
+var _temp = function () {
+    if (typeof __REACT_HOT_LOADER__ === 'undefined') {
+        return;
+    }
+
+    __REACT_HOT_LOADER__.register(_extends, '_extends', 'd:/webStudy/React-Turntable/node_modules/._react-icons@2.2.7@react-icons/lib/ti/delete.js');
+
+    __REACT_HOT_LOADER__.register(_react2, '_react2', 'd:/webStudy/React-Turntable/node_modules/._react-icons@2.2.7@react-icons/lib/ti/delete.js');
+
+    __REACT_HOT_LOADER__.register(_reactIconBase2, '_reactIconBase2', 'd:/webStudy/React-Turntable/node_modules/._react-icons@2.2.7@react-icons/lib/ti/delete.js');
+
+    __REACT_HOT_LOADER__.register(_interopRequireDefault, '_interopRequireDefault', 'd:/webStudy/React-Turntable/node_modules/._react-icons@2.2.7@react-icons/lib/ti/delete.js');
+
+    __REACT_HOT_LOADER__.register(TiDelete, 'TiDelete', 'd:/webStudy/React-Turntable/node_modules/._react-icons@2.2.7@react-icons/lib/ti/delete.js');
+}();
+
+;
 
 /***/ }),
-/* 187 */
+/* 185 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -23203,9 +25585,28 @@ var TiPin = function TiPin(props) {
 
 exports.default = TiPin;
 module.exports = exports['default'];
+;
+
+var _temp = function () {
+    if (typeof __REACT_HOT_LOADER__ === 'undefined') {
+        return;
+    }
+
+    __REACT_HOT_LOADER__.register(_extends, '_extends', 'd:/webStudy/React-Turntable/node_modules/._react-icons@2.2.7@react-icons/lib/ti/pin.js');
+
+    __REACT_HOT_LOADER__.register(_react2, '_react2', 'd:/webStudy/React-Turntable/node_modules/._react-icons@2.2.7@react-icons/lib/ti/pin.js');
+
+    __REACT_HOT_LOADER__.register(_reactIconBase2, '_reactIconBase2', 'd:/webStudy/React-Turntable/node_modules/._react-icons@2.2.7@react-icons/lib/ti/pin.js');
+
+    __REACT_HOT_LOADER__.register(_interopRequireDefault, '_interopRequireDefault', 'd:/webStudy/React-Turntable/node_modules/._react-icons@2.2.7@react-icons/lib/ti/pin.js');
+
+    __REACT_HOT_LOADER__.register(TiPin, 'TiPin', 'd:/webStudy/React-Turntable/node_modules/._react-icons@2.2.7@react-icons/lib/ti/pin.js');
+}();
+
+;
 
 /***/ }),
-/* 188 */
+/* 186 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -23243,19 +25644,36 @@ var TiWarning = function TiWarning(props) {
 
 exports.default = TiWarning;
 module.exports = exports['default'];
+;
+
+var _temp = function () {
+    if (typeof __REACT_HOT_LOADER__ === 'undefined') {
+        return;
+    }
+
+    __REACT_HOT_LOADER__.register(_extends, '_extends', 'd:/webStudy/React-Turntable/node_modules/._react-icons@2.2.7@react-icons/lib/ti/warning.js');
+
+    __REACT_HOT_LOADER__.register(_react2, '_react2', 'd:/webStudy/React-Turntable/node_modules/._react-icons@2.2.7@react-icons/lib/ti/warning.js');
+
+    __REACT_HOT_LOADER__.register(_reactIconBase2, '_reactIconBase2', 'd:/webStudy/React-Turntable/node_modules/._react-icons@2.2.7@react-icons/lib/ti/warning.js');
+
+    __REACT_HOT_LOADER__.register(_interopRequireDefault, '_interopRequireDefault', 'd:/webStudy/React-Turntable/node_modules/._react-icons@2.2.7@react-icons/lib/ti/warning.js');
+
+    __REACT_HOT_LOADER__.register(TiWarning, 'TiWarning', 'd:/webStudy/React-Turntable/node_modules/._react-icons@2.2.7@react-icons/lib/ti/warning.js');
+}();
+
+;
 
 /***/ }),
-/* 189 */
+/* 187 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 /**
- * Copyright 2013-present, Facebook, Inc.
- * All rights reserved.
+ * Copyright (c) 2013-present, Facebook, Inc.
  *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
  *
  * 
  */
@@ -23307,19 +25725,32 @@ var KeyEscapeUtils = {
 };
 
 module.exports = KeyEscapeUtils;
+;
+
+var _temp = function () {
+  if (typeof __REACT_HOT_LOADER__ === 'undefined') {
+    return;
+  }
+
+  __REACT_HOT_LOADER__.register(escape, 'escape', 'd:/webStudy/React-Turntable/node_modules/._react@15.6.2@react/lib/KeyEscapeUtils.js');
+
+  __REACT_HOT_LOADER__.register(unescape, 'unescape', 'd:/webStudy/React-Turntable/node_modules/._react@15.6.2@react/lib/KeyEscapeUtils.js');
+
+  __REACT_HOT_LOADER__.register(KeyEscapeUtils, 'KeyEscapeUtils', 'd:/webStudy/React-Turntable/node_modules/._react@15.6.2@react/lib/KeyEscapeUtils.js');
+}();
+
+;
 
 /***/ }),
-/* 190 */
+/* 188 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 /* WEBPACK VAR INJECTION */(function(process) {/**
- * Copyright 2013-present, Facebook, Inc.
- * All rights reserved.
+ * Copyright (c) 2013-present, Facebook, Inc.
  *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
  *
  * 
  */
@@ -23424,30 +25855,55 @@ var PooledClass = {
 };
 
 module.exports = PooledClass;
+;
+
+var _temp = function () {
+  if (typeof __REACT_HOT_LOADER__ === 'undefined') {
+    return;
+  }
+
+  __REACT_HOT_LOADER__.register(oneArgumentPooler, 'oneArgumentPooler', 'd:/webStudy/React-Turntable/node_modules/._react@15.6.2@react/lib/PooledClass.js');
+
+  __REACT_HOT_LOADER__.register(twoArgumentPooler, 'twoArgumentPooler', 'd:/webStudy/React-Turntable/node_modules/._react@15.6.2@react/lib/PooledClass.js');
+
+  __REACT_HOT_LOADER__.register(threeArgumentPooler, 'threeArgumentPooler', 'd:/webStudy/React-Turntable/node_modules/._react@15.6.2@react/lib/PooledClass.js');
+
+  __REACT_HOT_LOADER__.register(fourArgumentPooler, 'fourArgumentPooler', 'd:/webStudy/React-Turntable/node_modules/._react@15.6.2@react/lib/PooledClass.js');
+
+  __REACT_HOT_LOADER__.register(standardReleaser, 'standardReleaser', 'd:/webStudy/React-Turntable/node_modules/._react@15.6.2@react/lib/PooledClass.js');
+
+  __REACT_HOT_LOADER__.register(DEFAULT_POOL_SIZE, 'DEFAULT_POOL_SIZE', 'd:/webStudy/React-Turntable/node_modules/._react@15.6.2@react/lib/PooledClass.js');
+
+  __REACT_HOT_LOADER__.register(DEFAULT_POOLER, 'DEFAULT_POOLER', 'd:/webStudy/React-Turntable/node_modules/._react@15.6.2@react/lib/PooledClass.js');
+
+  __REACT_HOT_LOADER__.register(addPoolingTo, 'addPoolingTo', 'd:/webStudy/React-Turntable/node_modules/._react@15.6.2@react/lib/PooledClass.js');
+
+  __REACT_HOT_LOADER__.register(PooledClass, 'PooledClass', 'd:/webStudy/React-Turntable/node_modules/._react@15.6.2@react/lib/PooledClass.js');
+}();
+
+;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 191 */
+/* 189 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 /**
- * Copyright 2013-present, Facebook, Inc.
- * All rights reserved.
+ * Copyright (c) 2013-present, Facebook, Inc.
  *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
  *
  */
 
 
 
-var PooledClass = __webpack_require__(190);
+var PooledClass = __webpack_require__(188);
 var ReactElement = __webpack_require__(16);
 
-var emptyFunction = __webpack_require__(7);
-var traverseAllChildren = __webpack_require__(201);
+var emptyFunction = __webpack_require__(8);
+var traverseAllChildren = __webpack_require__(199);
 
 var twoArgumentPooler = PooledClass.twoArgumentPooler;
 var fourArgumentPooler = PooledClass.fourArgumentPooler;
@@ -23620,19 +26076,56 @@ var ReactChildren = {
 };
 
 module.exports = ReactChildren;
+;
+
+var _temp = function () {
+  if (typeof __REACT_HOT_LOADER__ === 'undefined') {
+    return;
+  }
+
+  __REACT_HOT_LOADER__.register(twoArgumentPooler, 'twoArgumentPooler', 'd:/webStudy/React-Turntable/node_modules/._react@15.6.2@react/lib/ReactChildren.js');
+
+  __REACT_HOT_LOADER__.register(fourArgumentPooler, 'fourArgumentPooler', 'd:/webStudy/React-Turntable/node_modules/._react@15.6.2@react/lib/ReactChildren.js');
+
+  __REACT_HOT_LOADER__.register(userProvidedKeyEscapeRegex, 'userProvidedKeyEscapeRegex', 'd:/webStudy/React-Turntable/node_modules/._react@15.6.2@react/lib/ReactChildren.js');
+
+  __REACT_HOT_LOADER__.register(escapeUserProvidedKey, 'escapeUserProvidedKey', 'd:/webStudy/React-Turntable/node_modules/._react@15.6.2@react/lib/ReactChildren.js');
+
+  __REACT_HOT_LOADER__.register(ForEachBookKeeping, 'ForEachBookKeeping', 'd:/webStudy/React-Turntable/node_modules/._react@15.6.2@react/lib/ReactChildren.js');
+
+  __REACT_HOT_LOADER__.register(forEachSingleChild, 'forEachSingleChild', 'd:/webStudy/React-Turntable/node_modules/._react@15.6.2@react/lib/ReactChildren.js');
+
+  __REACT_HOT_LOADER__.register(forEachChildren, 'forEachChildren', 'd:/webStudy/React-Turntable/node_modules/._react@15.6.2@react/lib/ReactChildren.js');
+
+  __REACT_HOT_LOADER__.register(MapBookKeeping, 'MapBookKeeping', 'd:/webStudy/React-Turntable/node_modules/._react@15.6.2@react/lib/ReactChildren.js');
+
+  __REACT_HOT_LOADER__.register(mapSingleChildIntoContext, 'mapSingleChildIntoContext', 'd:/webStudy/React-Turntable/node_modules/._react@15.6.2@react/lib/ReactChildren.js');
+
+  __REACT_HOT_LOADER__.register(mapIntoWithKeyPrefixInternal, 'mapIntoWithKeyPrefixInternal', 'd:/webStudy/React-Turntable/node_modules/._react@15.6.2@react/lib/ReactChildren.js');
+
+  __REACT_HOT_LOADER__.register(mapChildren, 'mapChildren', 'd:/webStudy/React-Turntable/node_modules/._react@15.6.2@react/lib/ReactChildren.js');
+
+  __REACT_HOT_LOADER__.register(forEachSingleChildDummy, 'forEachSingleChildDummy', 'd:/webStudy/React-Turntable/node_modules/._react@15.6.2@react/lib/ReactChildren.js');
+
+  __REACT_HOT_LOADER__.register(countChildren, 'countChildren', 'd:/webStudy/React-Turntable/node_modules/._react@15.6.2@react/lib/ReactChildren.js');
+
+  __REACT_HOT_LOADER__.register(toArray, 'toArray', 'd:/webStudy/React-Turntable/node_modules/._react@15.6.2@react/lib/ReactChildren.js');
+
+  __REACT_HOT_LOADER__.register(ReactChildren, 'ReactChildren', 'd:/webStudy/React-Turntable/node_modules/._react@15.6.2@react/lib/ReactChildren.js');
+}();
+
+;
 
 /***/ }),
-/* 192 */
+/* 190 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 /* WEBPACK VAR INJECTION */(function(process) {/**
- * Copyright 2013-present, Facebook, Inc.
- * All rights reserved.
+ * Copyright (c) 2013-present, Facebook, Inc.
  *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
  *
  */
 
@@ -23647,7 +26140,7 @@ var ReactElement = __webpack_require__(16);
  */
 var createDOMFactory = ReactElement.createFactory;
 if (process.env.NODE_ENV !== 'production') {
-  var ReactElementValidator = __webpack_require__(85);
+  var ReactElementValidator = __webpack_require__(86);
   createDOMFactory = ReactElementValidator.createFactory;
 }
 
@@ -23794,20 +26287,31 @@ var ReactDOMFactories = {
 };
 
 module.exports = ReactDOMFactories;
+;
+
+var _temp = function () {
+  if (typeof __REACT_HOT_LOADER__ === 'undefined') {
+    return;
+  }
+
+  __REACT_HOT_LOADER__.register(createDOMFactory, 'createDOMFactory', 'd:/webStudy/React-Turntable/node_modules/._react@15.6.2@react/lib/ReactDOMFactories.js');
+
+  __REACT_HOT_LOADER__.register(ReactDOMFactories, 'ReactDOMFactories', 'd:/webStudy/React-Turntable/node_modules/._react@15.6.2@react/lib/ReactDOMFactories.js');
+}();
+
+;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 193 */
+/* 191 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 /* WEBPACK VAR INJECTION */(function(process) {/**
- * Copyright 2013-present, Facebook, Inc.
- * All rights reserved.
+ * Copyright (c) 2013-present, Facebook, Inc.
  *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
  *
  * 
  */
@@ -23825,20 +26329,29 @@ if (process.env.NODE_ENV !== 'production') {
 }
 
 module.exports = ReactPropTypeLocationNames;
+;
+
+var _temp = function () {
+  if (typeof __REACT_HOT_LOADER__ === 'undefined') {
+    return;
+  }
+
+  __REACT_HOT_LOADER__.register(ReactPropTypeLocationNames, 'ReactPropTypeLocationNames', 'd:/webStudy/React-Turntable/node_modules/._react@15.6.2@react/lib/ReactPropTypeLocationNames.js');
+}();
+
+;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 194 */
+/* 192 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 /**
- * Copyright 2013-present, Facebook, Inc.
- * All rights reserved.
+ * Copyright (c) 2013-present, Facebook, Inc.
  *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
  *
  */
 
@@ -23847,22 +26360,31 @@ module.exports = ReactPropTypeLocationNames;
 var _require = __webpack_require__(16),
     isValidElement = _require.isValidElement;
 
-var factory = __webpack_require__(58);
+var factory = __webpack_require__(59);
 
 module.exports = factory(isValidElement);
+;
+
+var _temp = function () {
+  if (typeof __REACT_HOT_LOADER__ === 'undefined') {
+    return;
+  }
+
+  __REACT_HOT_LOADER__.register(isValidElement, 'isValidElement', 'd:/webStudy/React-Turntable/node_modules/._react@15.6.2@react/lib/ReactPropTypes.js');
+}();
+
+;
 
 /***/ }),
-/* 195 */
+/* 193 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 /**
- * Copyright 2013-present, Facebook, Inc.
- * All rights reserved.
+ * Copyright (c) 2013-present, Facebook, Inc.
  *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
  *
  * 
  */
@@ -23872,38 +26394,54 @@ module.exports = factory(isValidElement);
 var ReactPropTypesSecret = 'SECRET_DO_NOT_PASS_THIS_OR_YOU_WILL_BE_FIRED';
 
 module.exports = ReactPropTypesSecret;
+;
+
+var _temp = function () {
+  if (typeof __REACT_HOT_LOADER__ === 'undefined') {
+    return;
+  }
+
+  __REACT_HOT_LOADER__.register(ReactPropTypesSecret, 'ReactPropTypesSecret', 'd:/webStudy/React-Turntable/node_modules/._react@15.6.2@react/lib/ReactPropTypesSecret.js');
+}();
+
+;
 
 /***/ }),
-/* 196 */
+/* 194 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 /**
- * Copyright 2013-present, Facebook, Inc.
- * All rights reserved.
+ * Copyright (c) 2013-present, Facebook, Inc.
  *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
  *
  */
 
 
 
-module.exports = '15.6.1';
+module.exports = '15.6.2';
+;
+
+var _temp = function () {
+  if (typeof __REACT_HOT_LOADER__ === 'undefined') {
+    return;
+  }
+}();
+
+;
 
 /***/ }),
-/* 197 */
+/* 195 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 /* WEBPACK VAR INJECTION */(function(process) {/**
- * Copyright 2013-present, Facebook, Inc.
- * All rights reserved.
+ * Copyright (c) 2013-present, Facebook, Inc.
  *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
  *
  */
 
@@ -23913,8 +26451,8 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
 
 var _prodInvariant = __webpack_require__(20);
 
-var ReactPropTypeLocationNames = __webpack_require__(193);
-var ReactPropTypesSecret = __webpack_require__(195);
+var ReactPropTypeLocationNames = __webpack_require__(191);
+var ReactPropTypesSecret = __webpack_require__(193);
 
 var invariant = __webpack_require__(1);
 var warning = __webpack_require__(2);
@@ -23927,7 +26465,7 @@ if (typeof process !== 'undefined' && process.env && process.env.NODE_ENV === 't
   // https://github.com/facebook/react/issues/7240
   // Remove the inline requires when we don't need them anymore:
   // https://github.com/facebook/react/pull/7178
-  ReactComponentTreeHook = __webpack_require__(8);
+  ReactComponentTreeHook = __webpack_require__(7);
 }
 
 var loggedTypeFailures = {};
@@ -23969,7 +26507,7 @@ function checkReactTypeSpec(typeSpecs, values, location, componentName, element,
 
         if (process.env.NODE_ENV !== 'production') {
           if (!ReactComponentTreeHook) {
-            ReactComponentTreeHook = __webpack_require__(8);
+            ReactComponentTreeHook = __webpack_require__(7);
           }
           if (debugID !== null) {
             componentStackInfo = ReactComponentTreeHook.getStackAddendumByID(debugID);
@@ -23985,48 +26523,72 @@ function checkReactTypeSpec(typeSpecs, values, location, componentName, element,
 }
 
 module.exports = checkReactTypeSpec;
+;
+
+var _temp = function () {
+  if (typeof __REACT_HOT_LOADER__ === 'undefined') {
+    return;
+  }
+
+  __REACT_HOT_LOADER__.register(ReactComponentTreeHook, 'ReactComponentTreeHook', 'd:/webStudy/React-Turntable/node_modules/._react@15.6.2@react/lib/checkReactTypeSpec.js');
+
+  __REACT_HOT_LOADER__.register(loggedTypeFailures, 'loggedTypeFailures', 'd:/webStudy/React-Turntable/node_modules/._react@15.6.2@react/lib/checkReactTypeSpec.js');
+
+  __REACT_HOT_LOADER__.register(checkReactTypeSpec, 'checkReactTypeSpec', 'd:/webStudy/React-Turntable/node_modules/._react@15.6.2@react/lib/checkReactTypeSpec.js');
+}();
+
+;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 198 */
+/* 196 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 /**
- * Copyright 2013-present, Facebook, Inc.
- * All rights reserved.
+ * Copyright (c) 2013-present, Facebook, Inc.
  *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
  *
  */
 
 
 
-var _require = __webpack_require__(83),
+var _require = __webpack_require__(84),
     Component = _require.Component;
 
 var _require2 = __webpack_require__(16),
     isValidElement = _require2.isValidElement;
 
-var ReactNoopUpdateQueue = __webpack_require__(86);
-var factory = __webpack_require__(92);
+var ReactNoopUpdateQueue = __webpack_require__(87);
+var factory = __webpack_require__(94);
 
 module.exports = factory(Component, isValidElement, ReactNoopUpdateQueue);
+;
+
+var _temp = function () {
+    if (typeof __REACT_HOT_LOADER__ === 'undefined') {
+        return;
+    }
+
+    __REACT_HOT_LOADER__.register(Component, 'Component', 'd:/webStudy/React-Turntable/node_modules/._react@15.6.2@react/lib/createClass.js');
+
+    __REACT_HOT_LOADER__.register(isValidElement, 'isValidElement', 'd:/webStudy/React-Turntable/node_modules/._react@15.6.2@react/lib/createClass.js');
+}();
+
+;
 
 /***/ }),
-/* 199 */
+/* 197 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 /**
- * Copyright 2013-present, Facebook, Inc.
- * All rights reserved.
+ * Copyright (c) 2013-present, Facebook, Inc.
  *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
  *
  * 
  */
@@ -24040,19 +26602,30 @@ function getNextDebugID() {
 }
 
 module.exports = getNextDebugID;
+;
+
+var _temp = function () {
+  if (typeof __REACT_HOT_LOADER__ === 'undefined') {
+    return;
+  }
+
+  __REACT_HOT_LOADER__.register(nextDebugID, 'nextDebugID', 'd:/webStudy/React-Turntable/node_modules/._react@15.6.2@react/lib/getNextDebugID.js');
+
+  __REACT_HOT_LOADER__.register(getNextDebugID, 'getNextDebugID', 'd:/webStudy/React-Turntable/node_modules/._react@15.6.2@react/lib/getNextDebugID.js');
+}();
+
+;
 
 /***/ }),
-/* 200 */
+/* 198 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 /* WEBPACK VAR INJECTION */(function(process) {/**
- * Copyright 2013-present, Facebook, Inc.
- * All rights reserved.
+ * Copyright (c) 2013-present, Facebook, Inc.
  *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
  *
  */
 
@@ -24083,20 +26656,29 @@ function onlyChild(children) {
 }
 
 module.exports = onlyChild;
+;
+
+var _temp = function () {
+  if (typeof __REACT_HOT_LOADER__ === 'undefined') {
+    return;
+  }
+
+  __REACT_HOT_LOADER__.register(onlyChild, 'onlyChild', 'd:/webStudy/React-Turntable/node_modules/._react@15.6.2@react/lib/onlyChild.js');
+}();
+
+;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 201 */
+/* 199 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 /* WEBPACK VAR INJECTION */(function(process) {/**
- * Copyright 2013-present, Facebook, Inc.
- * All rights reserved.
+ * Copyright (c) 2013-present, Facebook, Inc.
  *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
  *
  */
 
@@ -24107,11 +26689,11 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
 var _prodInvariant = __webpack_require__(20);
 
 var ReactCurrentOwner = __webpack_require__(12);
-var REACT_ELEMENT_TYPE = __webpack_require__(84);
+var REACT_ELEMENT_TYPE = __webpack_require__(85);
 
-var getIteratorFn = __webpack_require__(87);
+var getIteratorFn = __webpack_require__(88);
 var invariant = __webpack_require__(1);
-var KeyEscapeUtils = __webpack_require__(189);
+var KeyEscapeUtils = __webpack_require__(187);
 var warning = __webpack_require__(2);
 
 var SEPARATOR = '.';
@@ -24267,10 +26849,31 @@ function traverseAllChildren(children, callback, traverseContext) {
 }
 
 module.exports = traverseAllChildren;
+;
+
+var _temp = function () {
+  if (typeof __REACT_HOT_LOADER__ === 'undefined') {
+    return;
+  }
+
+  __REACT_HOT_LOADER__.register(SEPARATOR, 'SEPARATOR', 'd:/webStudy/React-Turntable/node_modules/._react@15.6.2@react/lib/traverseAllChildren.js');
+
+  __REACT_HOT_LOADER__.register(SUBSEPARATOR, 'SUBSEPARATOR', 'd:/webStudy/React-Turntable/node_modules/._react@15.6.2@react/lib/traverseAllChildren.js');
+
+  __REACT_HOT_LOADER__.register(didWarnAboutMaps, 'didWarnAboutMaps', 'd:/webStudy/React-Turntable/node_modules/._react@15.6.2@react/lib/traverseAllChildren.js');
+
+  __REACT_HOT_LOADER__.register(getComponentKey, 'getComponentKey', 'd:/webStudy/React-Turntable/node_modules/._react@15.6.2@react/lib/traverseAllChildren.js');
+
+  __REACT_HOT_LOADER__.register(traverseAllChildrenImpl, 'traverseAllChildrenImpl', 'd:/webStudy/React-Turntable/node_modules/._react@15.6.2@react/lib/traverseAllChildren.js');
+
+  __REACT_HOT_LOADER__.register(traverseAllChildren, 'traverseAllChildren', 'd:/webStudy/React-Turntable/node_modules/._react@15.6.2@react/lib/traverseAllChildren.js');
+}();
+
+;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 202 */
+/* 200 */
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(36)();
@@ -24284,7 +26887,7 @@ exports.push([module.i, ".btn {\n  display: inline-block;\n  margin-bottom: 0;\n
 
 
 /***/ }),
-/* 203 */
+/* 201 */
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(36)();
@@ -24298,7 +26901,7 @@ exports.push([module.i, ".rc-message {\n  position: fixed;\n  z-index: 999;\n  p
 
 
 /***/ }),
-/* 204 */
+/* 202 */
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(36)();
@@ -24306,29 +26909,29 @@ exports = module.exports = __webpack_require__(36)();
 
 
 // module
-exports.push([module.i, ".react-turntable-section {\n  position: relative;\n}\n.react-turntable-section::before,\n.react-turntable-section::after {\n  clear: both;\n  content: \"\";\n  display: table;\n  zoom: 1;\n}\n.react-turntable-section-canvas {\n  display: block;\n  pointer-events: none;\n}\n.react-turntable-section-btn {\n  width: 70px;\n  height: 70px;\n  line-height: 70px;\n  border-radius: 50%;\n  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);\n  border: 2px solid #fff;\n  color: #fff;\n  background: #F9CDAD;\n  text-align: center;\n  font-size: 16px;\n  font-weight: bold;\n  position: absolute;\n  left: 0;\n  right: 0;\n  top: 0;\n  bottom: 0;\n  margin: auto;\n  cursor: pointer;\n  z-index: 2;\n}\n.react-turntable-section-btn::before {\n  content: \"\";\n  position: absolute;\n  border: 20px solid transparent;\n  border-bottom-color: #F9CDAD;\n  left: 50%;\n  margin-left: -20px;\n  top: -30px;\n  z-index: 1;\n}\n", "", {"version":3,"sources":["/./node_modules/._react-turntable@1.1.0@react-turntable/src/d:/webStudy/React-Turntable/node_modules/._react-turntable@1.1.0@react-turntable/src/styles.less","/./node_modules/._react-turntable@1.1.0@react-turntable/src/styles.less"],"names":[],"mappings":"AASA;EAGI,mBAAA;CCVH;ADAC;;EACE,YAAA;EACA,YAAA;EACA,eAAA;EACA,QAAA;CCGH;ADKG;EACI,eAAA;EACA,qBAAA;CCHP;ADKG;EACI,YAAA;EACA,aAAA;EACA,kBAAA;EACA,mBAAA;EACA,uCAAA;EACA,uBAAA;EACA,YAAA;EACA,oBAAA;EACA,mBAAA;EACA,gBAAA;EACA,kBAAA;EACA,mBAAA;EACA,QAAA;EACA,SAAA;EACA,OAAA;EACA,UAAA;EACA,aAAA;EACA,gBAAA;EACA,WAAA;CCHP;ADIO;EACI,YAAA;EACA,mBAAA;EACA,+BAAA;EACA,6BAAA;EACA,UAAA;EACA,mBAAA;EACA,WAAA;EACA,WAAA;CCFX","file":"styles.less","sourcesContent":["@click-btn-color: #F9CDAD; \n.clearfix(){\n  &::before,&::after{\n    clear:both;\n    content:\"\";\n    display: table;\n    zoom: 1;\n  }\n}\n.react-turntable-section{\n    @btn-width:70px;\n    @btn-height:@btn-width;\n    position: relative;\n    .clearfix();\n    &-canvas{\n        display: block;\n        pointer-events: none;\n    }\n    &-btn{\n        width:@btn-width;\n        height:@btn-height;\n        line-height: @btn-height;\n        border-radius: 50%;\n        box-shadow: 0 0 5px rgba(0,0,0,.1);\n        border:2px solid #fff;\n        color:#fff;\n        background: @click-btn-color;\n        text-align: center;\n        font-size:16px;\n        font-weight: bold;\n        position: absolute;\n        left:0;\n        right:0;\n        top:0;\n        bottom:0;\n        margin:auto;\n        cursor: pointer;\n        z-index: 2;\n        &::before{\n            content:\"\";\n            position: absolute;\n            border:20px solid transparent;\n            border-bottom-color:@click-btn-color;\n            left:50%;\n            margin-left:-20px;\n            top:-30px;\n            z-index: 1;\n        }\n    }\n}",".react-turntable-section {\n  position: relative;\n}\n.react-turntable-section::before,\n.react-turntable-section::after {\n  clear: both;\n  content: \"\";\n  display: table;\n  zoom: 1;\n}\n.react-turntable-section-canvas {\n  display: block;\n  pointer-events: none;\n}\n.react-turntable-section-btn {\n  width: 70px;\n  height: 70px;\n  line-height: 70px;\n  border-radius: 50%;\n  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);\n  border: 2px solid #fff;\n  color: #fff;\n  background: #F9CDAD;\n  text-align: center;\n  font-size: 16px;\n  font-weight: bold;\n  position: absolute;\n  left: 0;\n  right: 0;\n  top: 0;\n  bottom: 0;\n  margin: auto;\n  cursor: pointer;\n  z-index: 2;\n}\n.react-turntable-section-btn::before {\n  content: \"\";\n  position: absolute;\n  border: 20px solid transparent;\n  border-bottom-color: #F9CDAD;\n  left: 50%;\n  margin-left: -20px;\n  top: -30px;\n  z-index: 1;\n}\n"],"sourceRoot":"webpack://"}]);
+exports.push([module.i, ".react-turntable-section {\n  position: relative;\n}\n.react-turntable-section::before,\n.react-turntable-section::after {\n  clear: both;\n  content: \"\";\n  display: table;\n  zoom: 1;\n}\n.react-turntable-section-canvas {\n  display: block;\n  pointer-events: none;\n}\n.react-turntable-section-btn {\n  width: 80px;\n  height: 80px;\n  line-height: 80px;\n  border-radius: 50%;\n  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);\n  border: 2px solid #fff;\n  color: #fff;\n  background: #F9CDAD;\n  text-align: center;\n  font-size: 16px;\n  font-weight: bold;\n  position: absolute;\n  left: 0;\n  right: 0;\n  top: 0;\n  bottom: 0;\n  margin: auto;\n  cursor: pointer;\n  z-index: 2;\n}\n.react-turntable-section-btn::before {\n  content: \"\";\n  position: absolute;\n  border: 20px solid transparent;\n  border-bottom-color: #F9CDAD;\n  left: 50%;\n  margin-left: -20px;\n  top: -30px;\n  z-index: 1;\n}\n", "", {"version":3,"sources":["/./src/d:/webStudy/React-Turntable/src/index.less","/./src/index.less"],"names":[],"mappings":"AASA;EAII,mBAAA;CCXH;ADAC;;EACE,YAAA;EACA,YAAA;EACA,eAAA;EACA,QAAA;CCGH;ADMG;EACI,eAAA;EACA,qBAAA;CCJP;ADMG;EACI,YAAA;EACA,aAAA;EACA,kBAAA;EACA,mBAAA;EACA,uCAAA;EACA,uBAAA;EACA,YAAA;EACA,oBAAA;EACA,mBAAA;EACA,gBAAA;EACA,kBAAA;EACA,mBAAA;EACA,QAAA;EACA,SAAA;EACA,OAAA;EACA,UAAA;EACA,aAAA;EACA,gBAAA;EACA,WAAA;CCJP;ADKO;EACI,YAAA;EACA,mBAAA;EACA,+BAAA;EACA,6BAAA;EACA,UAAA;EACA,mBAAA;EACA,WAAA;EACA,WAAA;CCHX","file":"index.less","sourcesContent":["\n.clearfix(){\n  &::before,&::after{\n    clear:both;\n    content:\"\";\n    display: table;\n    zoom: 1;\n  }\n}\n.react-turntable-section{\n    @click-btn-color: #F9CDAD; \n    @btn-width:80px;\n    @btn-height:@btn-width;\n    position: relative;\n    .clearfix();\n    &-canvas{\n        display: block;\n        pointer-events: none;\n    }\n    &-btn{\n        width:@btn-width;\n        height:@btn-height;\n        line-height: @btn-height;\n        border-radius: 50%;\n        box-shadow: 0 0 5px rgba(0,0,0,.1);\n        border:2px solid #fff;\n        color:#fff;\n        background: @click-btn-color;\n        text-align: center;\n        font-size:16px;\n        font-weight: bold;\n        position: absolute;\n        left:0;\n        right:0;\n        top:0;\n        bottom:0;\n        margin:auto;\n        cursor: pointer;\n        z-index: 2;\n        &::before{\n            content:\"\";\n            position: absolute;\n            border:20px solid transparent;\n            border-bottom-color:@click-btn-color;\n            left:50%;\n            margin-left:-20px;\n            top:-30px;\n            z-index: 1;\n        }\n    }\n}",".react-turntable-section {\n  position: relative;\n}\n.react-turntable-section::before,\n.react-turntable-section::after {\n  clear: both;\n  content: \"\";\n  display: table;\n  zoom: 1;\n}\n.react-turntable-section-canvas {\n  display: block;\n  pointer-events: none;\n}\n.react-turntable-section-btn {\n  width: 80px;\n  height: 80px;\n  line-height: 80px;\n  border-radius: 50%;\n  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);\n  border: 2px solid #fff;\n  color: #fff;\n  background: #F9CDAD;\n  text-align: center;\n  font-size: 16px;\n  font-weight: bold;\n  position: absolute;\n  left: 0;\n  right: 0;\n  top: 0;\n  bottom: 0;\n  margin: auto;\n  cursor: pointer;\n  z-index: 2;\n}\n.react-turntable-section-btn::before {\n  content: \"\";\n  position: absolute;\n  border: 20px solid transparent;\n  border-bottom-color: #F9CDAD;\n  left: 50%;\n  margin-left: -20px;\n  top: -30px;\n  z-index: 1;\n}\n"],"sourceRoot":"webpack://"}]);
 
 // exports
 
 
 /***/ }),
-/* 205 */
+/* 203 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(202);
+var content = __webpack_require__(200);
 if(typeof content === 'string') content = [[module.i, content, '']];
 // add the styles to the DOM
-var update = __webpack_require__(54)(content, {});
+var update = __webpack_require__(55)(content, {});
 if(content.locals) module.exports = content.locals;
 // Hot Module Replacement
 if(false) {
 	// When the styles change, update the <style> tags
 	if(!content.locals) {
-		module.hot.accept("!!../../._css-loader@0.23.1@css-loader/index.js??ref--1-1!../../._less-loader@2.2.3@less-loader/index.js??ref--1-2!./styles.less", function() {
-			var newContent = require("!!../../._css-loader@0.23.1@css-loader/index.js??ref--1-1!../../._less-loader@2.2.3@less-loader/index.js??ref--1-2!./styles.less");
+		module.hot.accept("!!../../._css-loader@0.23.1@css-loader/index.js??ref--2-1!../../._less-loader@2.2.3@less-loader/index.js??ref--2-2!./styles.less", function() {
+			var newContent = require("!!../../._css-loader@0.23.1@css-loader/index.js??ref--2-1!../../._less-loader@2.2.3@less-loader/index.js??ref--2-2!./styles.less");
 			if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
 			update(newContent);
 		});
@@ -24338,49 +26941,23 @@ if(false) {
 }
 
 /***/ }),
-/* 206 */
+/* 204 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(203);
+var content = __webpack_require__(201);
 if(typeof content === 'string') content = [[module.i, content, '']];
 // add the styles to the DOM
-var update = __webpack_require__(54)(content, {});
+var update = __webpack_require__(55)(content, {});
 if(content.locals) module.exports = content.locals;
 // Hot Module Replacement
 if(false) {
 	// When the styles change, update the <style> tags
 	if(!content.locals) {
-		module.hot.accept("!!../../._css-loader@0.23.1@css-loader/index.js??ref--1-1!../../._less-loader@2.2.3@less-loader/index.js??ref--1-2!./styles.less", function() {
-			var newContent = require("!!../../._css-loader@0.23.1@css-loader/index.js??ref--1-1!../../._less-loader@2.2.3@less-loader/index.js??ref--1-2!./styles.less");
-			if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
-			update(newContent);
-		});
-	}
-	// When the module is disposed, remove the <style> tags
-	module.hot.dispose(function() { update(); });
-}
-
-/***/ }),
-/* 207 */
-/***/ (function(module, exports, __webpack_require__) {
-
-// style-loader: Adds some css to the DOM by adding a <style> tag
-
-// load the styles
-var content = __webpack_require__(204);
-if(typeof content === 'string') content = [[module.i, content, '']];
-// add the styles to the DOM
-var update = __webpack_require__(54)(content, {});
-if(content.locals) module.exports = content.locals;
-// Hot Module Replacement
-if(false) {
-	// When the styles change, update the <style> tags
-	if(!content.locals) {
-		module.hot.accept("!!../../._css-loader@0.23.1@css-loader/index.js??ref--1-1!../../._less-loader@2.2.3@less-loader/index.js??ref--1-2!./styles.less", function() {
-			var newContent = require("!!../../._css-loader@0.23.1@css-loader/index.js??ref--1-1!../../._less-loader@2.2.3@less-loader/index.js??ref--1-2!./styles.less");
+		module.hot.accept("!!../../._css-loader@0.23.1@css-loader/index.js??ref--2-1!../../._less-loader@2.2.3@less-loader/index.js??ref--2-2!./styles.less", function() {
+			var newContent = require("!!../../._css-loader@0.23.1@css-loader/index.js??ref--2-1!../../._less-loader@2.2.3@less-loader/index.js??ref--2-2!./styles.less");
 			if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
 			update(newContent);
 		});

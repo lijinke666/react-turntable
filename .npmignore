@@ -2,5 +2,8 @@ node_modules
 npm-debug.log
 .DS_Store
 dist
-example.png
-example/dist
+example
+src
+.history
+assetsImg
+index.html

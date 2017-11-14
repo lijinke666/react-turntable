@@ -1,10 +1,18 @@
-import React, { PropTypes, PureComponent } from "react"
+/**
+ * @author Jinke.Li
+ * @version 1.2.2
+ * @link //https://juejin.im/post/5992b6065188257dd3664dbc
+ */
+
+import React, { PureComponent } from "react"
+import PropTypes from "prop-types"
 import ReactDOM from "react-dom"
 import classnames from "classnames"
 
-//https://juejin.im/post/5992b6065188257dd3664dbc
-
-import "./styles.less"
+export function easeOut(t, b, c, d) {
+    if ((t /= d / 2) < 1) return c / 2 * t * t + b;
+    return -c / 2 * ((--t) * (t - 2) - 1) + b;
+}
 
 export default class ReactTurntable extends PureComponent {
     state = {
@@ -66,10 +74,6 @@ export default class ReactTurntable extends PureComponent {
             </div>
         )
     }
-    easeOut = (t, b, c, d) => {
-        if ((t /= d / 2) < 1) return c / 2 * t * t + b;
-        return -c / 2 * ((--t) * (t - 2) - 1) + b;
-    };
     rotateTurntable = () => {
         this.rotateTime += 20
         if (this.rotateTime >= this.rotateAllTime) {
@@ -79,7 +83,7 @@ export default class ReactTurntable extends PureComponent {
             return
         }
         let _rotateChange = (
-            this.rotateChange - this.easeOut(this.rotateTime, 0, this.rotateChange, this.rotateAllTime)
+            this.rotateChange - easeOut(this.rotateTime, 0, this.rotateChange, this.rotateAllTime)
         ) * (Math.PI / 180)
         this.startRotate += _rotateChange
         this.drawTurntable()
@@ -190,7 +194,7 @@ export default class ReactTurntable extends PureComponent {
         this.destroyContext()
     }
     onStartRotate = () => {
-        const {           
+        const {
             speed,
             duration,
         } = this.props

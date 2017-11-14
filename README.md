@@ -1,8 +1,11 @@
 # react-turntable
-A React HTML5 Turntable component 
+[![Github All Releases](https://img.shields.io/github/downloads/atom/atom/total.svg?style=flat-square)](https://www.npmjs.com/package/react-turntable)
+[![Packagist](https://img.shields.io/packagist/l/doctrine/orm.svg?style=flat-square)](https://www.npmjs.com/package/react-turntable)
+[![Travis](https://img.shields.io/travis/rust-lang/rust.svg?style=flat-square)](https://www.npmjs.com/package/react-turntable)
+> A HTML5 Turntable component for React
 
 ## Screenshots
-![example](https://github.com/lijinke666/react-turntable/blob/master/example.png)
+![example](https://github.com/lijinke666/react-turntable/blob/master/assetsImg/example.png)
 
 ## Installation
 ```
@@ -20,12 +23,11 @@ git clone https://github.com/lijinke666/react-turnatable
 
 
 ## Usage
-```javascript
+```jsx
 import React from "react"
 import ReactDOM from "react-dom"
-import Message from "rc-message"
-
 import ReactTurntable from "react-turntable"
+import "react-truntable/assets/index.css"
 
 const styles = {
     justifyContent:"center",
@@ -55,9 +57,7 @@ const options = {
     duration:5000,               
     clickText:"Click",
     onComplete(prize){
-        Message.success({
-            content:prize
-        })
+      console.log('prize:',prize)
     }
 }
 const Demo = () => (

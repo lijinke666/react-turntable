@@ -1,0 +1,45 @@
+.react-turntable-section {
+  position: relative;
+}
+.react-turntable-section::before,
+.react-turntable-section::after {
+  clear: both;
+  content: "";
+  display: table;
+  zoom: 1;
+}
+.react-turntable-section-canvas {
+  display: block;
+  pointer-events: none;
+}
+.react-turntable-section-btn {
+  width: 80px;
+  height: 80px;
+  line-height: 80px;
+  border-radius: 50%;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  border: 2px solid #fff;
+  color: #fff;
+  background: #F9CDAD;
+  text-align: center;
+  font-size: 16px;
+  font-weight: bold;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  cursor: pointer;
+  z-index: 2;
+}
+.react-turntable-section-btn::before {
+  content: "";
+  position: absolute;
+  border: 20px solid transparent;
+  border-bottom-color: #F9CDAD;
+  left: 50%;
+  margin-left: -20px;
+  top: -30px;
+  z-index: 1;
+}
