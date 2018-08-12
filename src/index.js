@@ -1,13 +1,11 @@
 /**
  * @author Jinke.Li
- * @version 1.2.2
+ * @version 1.2.4
  * @link //https://juejin.im/post/5992b6065188257dd3664dbc
  */
 
 import React, { PureComponent } from "react"
 import PropTypes from "prop-types"
-import ReactDOM from "react-dom"
-import classnames from "classnames"
 
 export function easeOut(t, b, c, d) {
     if ((t /= d / 2) < 1) return c / 2 * t * t + b;

@@ -1,6 +1,6 @@
 {
   "name": "react-turntable",
-  "version": "1.2.3",
+  "version": "1.2.4",
   "main": "lib/index.js",
   "description": "A HTML5 Turntable component for React",
   "scripts": {
@@ -37,7 +37,6 @@
     "component"
   ],
   "dependencies": {
-    "classnames": "^2.2.5",
     "prop-types": "^15.6.0"
   },
   "devDependencies": {
