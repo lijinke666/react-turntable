@@ -1,7 +1,6 @@
 # react-turntable
-[![Github All Releases](https://img.shields.io/github/downloads/atom/atom/total.svg?style=flat-square)](https://www.npmjs.com/package/react-turntable)
-[![Packagist](https://img.shields.io/packagist/l/doctrine/orm.svg?style=flat-square)](https://www.npmjs.com/package/react-turntable)
-[![Travis](https://img.shields.io/travis/rust-lang/rust.svg?style=flat-square)](https://www.npmjs.com/package/react-turntable)
+[![npm](https://img.shields.io/npm/dm/react-turntable.svg?style=flat-square)](https://www.npmjs.com/package/react-turntable)
+[![npm](https://img.shields.io/npm/l/react-turntable.svg?style=flat-square)](https://www.npmjs.com/package/react-turntable)
 > A HTML5 Turntable component for React
 
 ## Screenshots
@@ -30,7 +29,7 @@ npm start
 import React from "react"
 import ReactDOM from "react-dom"
 import ReactTurntable from "react-turntable"
-import "react-truntable/assets/index.css"
+import "react-turntable/assets/index.css"
 
 const styles = {
     justifyContent:"center",
