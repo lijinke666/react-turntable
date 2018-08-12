@@ -9,3 +9,4 @@ assetsImg
 index.html
 __tests__
 yarn.lock
+.babelrc
