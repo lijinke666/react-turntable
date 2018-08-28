@@ -58,6 +58,12 @@ const options = {
     speed : 1000,                  
     duration:5000,               
     clickText:"Click",
+    onStart(){
+      //If you want before the rotate do some...
+      console.log('start...');
+      //If you want stop rotate you can return false
+      return true
+    },
     onComplete(prize){
       console.log('prize:',prize)
     }

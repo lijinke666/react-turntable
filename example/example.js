@@ -32,6 +32,10 @@ const options = {
     speed : 1000,                  
     duration:6000,               
     clickText:"Start",
+    onStart(){
+        console.log('start...');
+        return true
+    },
     onComplete(prize){
         Message.success({
             content:prize
