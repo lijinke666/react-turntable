@@ -20,7 +20,7 @@
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
   border: 2px solid #fff;
   color: #fff;
-  background: #F9CDAD;
+  background: #31c27c;
   text-align: center;
   font-size: 16px;
   font-weight: bold;
@@ -37,7 +37,7 @@
   content: "";
   position: absolute;
   border: 20px solid transparent;
-  border-bottom-color: #F9CDAD;
+  border-bottom-color: #31c27c;
   left: 50%;
   margin-left: -20px;
   top: -30px;

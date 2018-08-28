@@ -1,6 +1,6 @@
 /**
  * @author Jinke.Li
- * @version 1.2.6
+ * @version 1.2.7
  * @description https://juejin.im/post/5992b6065188257dd3664dbc
  */
 
@@ -32,7 +32,6 @@ export default class ReactTurntable extends PureComponent {
     speed: 1000, //旋转速度
     duration: 5000, //旋转时间
     prizes: [],
-    clickEle: '',
     clickText: 'Click',
     primaryColor: '#83AF9B',
     secondaryColor: '#C8C8A9',
