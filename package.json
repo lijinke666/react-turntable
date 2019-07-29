@@ -1,6 +1,6 @@
 {
   "name": "react-turntable",
-  "version": "1.3.0",
+  "version": "1.3.1",
   "main": "lib/index.js",
   "description": "A HTML5 Turntable component for React",
   "scripts": {
