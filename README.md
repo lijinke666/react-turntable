@@ -37,7 +37,7 @@ const styles = {
     display:"flex"
 }
 const prizes = [
-    'Durex', 'MI', 'Meizu', 
+    'Durex', 'MI', 'Meizu',
     'iphone 6s', 'iphone 6s plus', 'Chafingdish',
     'WeiLong','masturbation cup'
 ]
@@ -55,8 +55,8 @@ const options = {
         fontWeight:"bold",
         fontFamily:"Microsoft YaHei"
     },
-    speed : 1000,                  
-    duration:5000,               
+    speed : 1000,
+    duration:5000,
     clickText:"Click",
     onStart(){
       //If you want before the rotate do some...
@@ -80,79 +80,87 @@ ReactDOM.render(
 ```
 
 
-## Options 
+## Options
 - options.prizes
   - `Desc` : `prizes of the turntable prizes length >=2`
   - `Type` : `array`
   - `Default` : `-`
 
-- options.width 
+- options.width
   - `Desc` : `width of the turntable`
   - `Type` : `number`
   - `Default` : `500`
 
-- options.height 
+- options.height
   - `Desc` : `height of the turntable`
   - `Type` : `number`
   - `Default` : `500`
 
-- options.primaryColor 
+- options.primaryColor
   - `Desc` : `primary color of the turntable`
   - `Type` : `string`
   - `Default` : `#83AF9B`
 
-- options.secondaryColor 
+- options.secondaryColor
   - `Desc` : `secondaryColor color of the turntable`
   - `Type` : `string`
   - `Default` : `#C8C8A9`
 
-- options.speed 
+- options.speed
   - `Desc` : `rotate speed  of the turntable`
   - `Type` : `number`
   - `Default` : `1000 (ms)`
 
-- options.duration 
+- options.duration
   - `Desc` : `rotate total time  of the turntable`
   - `Type` : `number`
   - `Default` : `5000 (ms)`
 
-- options.clickText 
+- options.clickText
   - `Desc` : ` click text  of the  turntable start game btn ( Supports custom buttons )`
   - `Type` : `string || reactNode`
   - `Default` : `Start`
 
-- options.fontStyle 
+- options.fontStyle
   - `Desc` : `prize text style of the turntable`
   - `Type` : `Object`
-    - fontStyle.color 
+    - fontStyle.color
        - `Desc` : `text color`
        - `Type` : `string`
        - `Default` : `#fff`
 
-    - fontStyle.size 
+    - fontStyle.size
        - `Desc` : `text font size`
        - `Type` : `number`
        - `Default` : `14`
 
-    - fontStyle.fontVertical 
+    - fontStyle.fontVertical
        - `Desc` : `The text is arranged vertically of the turntable (If the text is very long, you can set the options 'true')`
        - `Type` : `boolean`
        - `Default` : `false`
 
-    - fontStyle.fontWeight 
+    - fontStyle.fontWeight
        - `Desc` : `text font weight`
        - `Type` : `string`
        - `Default` : `bold`
 
-    - fontStyle.fontFamily 
+    - fontStyle.fontFamily
        - `Desc` : `prize text font`
        - `Type` : `string`
        - `Default` : `Microsoft YaHei`
 
-- options.onComplete 
+- options.onComplete
   - `Desc` : `game complete callback of the  turntable (return current seleted prize)`
   - `Type` : `Function`
   - `Default` : `-`
-  
-  
-  
+
+- options.hiddenButton
+  - `Desc` : `hidden action button`
+  - `Type` : `boolean`
+  - `Default` : `false`
+
+- options.getTurntable
+  - `Desc` : `getTurntable={turntable => turntable.start() turntable.stop()}`
+  - `Type` : `Function`
+  - `Default` : `-`
+
