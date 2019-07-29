@@ -2132,8 +2132,6 @@ var _propTypes2 = _interopRequireDefault(_propTypes);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-function _objectWithoutProperties(obj, keys) { var target = {}; for (var i in obj) { if (keys.indexOf(i) >= 0) continue; if (!Object.prototype.hasOwnProperty.call(obj, i)) continue; target[i] = obj[i]; } return target; }
-
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
 function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
@@ -2164,6 +2162,10 @@ var ReactTurntable = function (_PureComponent) {
       startRotate: 0
     };
 
+    _this.noticePrize = function () {
+      return _this.__noticePrize__REACT_HOT_LOADER__.apply(_this, arguments);
+    };
+
     _this.rotateTurntable = function () {
       return _this.__rotateTurntable__REACT_HOT_LOADER__.apply(_this, arguments);
     };
@@ -2176,6 +2178,18 @@ var ReactTurntable = function (_PureComponent) {
       return _this.__onStartRotate__REACT_HOT_LOADER__.apply(_this, arguments);
     };
 
+    _this.stopRotate = function () {
+      return _this.__stopRotate__REACT_HOT_LOADER__.apply(_this, arguments);
+    };
+
+    _this.initTurntable = function () {
+      return _this.__initTurntable__REACT_HOT_LOADER__.apply(_this, arguments);
+    };
+
+    _this.getTurntable = function () {
+      return _this.__getTurntable__REACT_HOT_LOADER__.apply(_this, arguments);
+    };
+
     _this.canvas = null;
     _this.ctx = null;
     _this.animateId = null;
@@ -2183,14 +2197,58 @@ var ReactTurntable = function (_PureComponent) {
   }
 
   _createClass(ReactTurntable, [{
+    key: '__getTurntable__REACT_HOT_LOADER__',
+    value: function __getTurntable__REACT_HOT_LOADER__() {
+      if (this.props.getTurntable) {
+        this.props.getTurntable({
+          start: this.onStartRotate,
+          stop: this.stopRotate
+        });
+      }
+    }
+  }, {
+    key: '__initTurntable__REACT_HOT_LOADER__',
+    value: function __initTurntable__REACT_HOT_LOADER__() {
+      var _props = this.props,
+          width = _props.width,
+          height = _props.height,
+          prizes = _props.prizes;
+
+      this.prizes = prizes;
+      this.startRotate = 0;
+      this.rotateTime = 0;
+      this.rotateAllTime = 0;
+      this.rotateChange = 0;
+
+      this.ctx = this.canvas.getContext('2d');
+      this.canvas.width = width;
+      this.canvas.height = height;
+
+      this.awardRotate = Math.PI * 2 / prizes.length;
+
+      this.centerX = this.canvas.width / 2;
+      this.centerY = this.canvas.height / 2;
+      this.R = this.canvas.width / 2 - 20;
+      this.TEXT_R = this.R - 50;
+      this.INSERT_R = 0;
+      this.drawTurntable();
+    }
+  }, {
+    key: '__stopRotate__REACT_HOT_LOADER__',
+    value: function __stopRotate__REACT_HOT_LOADER__() {
+      this.setState({ isRotate: false });
+      window.cancelAnimationFrame(this.animateId);
+      this.noticePrize();
+    }
+  }, {
     key: '__onStartRotate__REACT_HOT_LOADER__',
     value: function __onStartRotate__REACT_HOT_LOADER__() {
       var _this2 = this;
 
-      var _props = this.props,
-          speed = _props.speed,
-          duration = _props.duration,
-          onStart = _props.onStart;
+      var _props2 = this.props,
+          speed = _props2.speed,
+          duration = _props2.duration,
+          onStart = _props2.onStart;
 
       if (this.state.isRotate) return;
       if (onStart && !onStart()) return;
@@ -2218,9 +2276,8 @@ var ReactTurntable = function (_PureComponent) {
     value: function __rotateTurntable__REACT_HOT_LOADER__() {
       this.rotateTime += 20;
       if (this.rotateTime >= this.rotateAllTime) {
-        var prize = this.getSelectedPrize();
         this.setState({ isRotate: false });
-        this.props.onComplete && this.props.onComplete(prize);
+        this.noticePrize();
         return;
       }
       var _rotateChange = (this.rotateChange - easeOut(this.rotateTime, 0, this.rotateChange, this.rotateAllTime)) * (Math.PI / 180);
@@ -2230,52 +2287,49 @@ var ReactTurntable = function (_PureComponent) {
       this.animateId = requestAnimationFrame(this.rotateTurntable);
     }
   }, {
+    key: '__noticePrize__REACT_HOT_LOADER__',
+    value: function __noticePrize__REACT_HOT_LOADER__() {
+      var prize = this.getSelectedPrize();
+      this.props.onComplete && this.props.onComplete(prize);
+    }
+  }, {
     key: 'render',
     value: function render() {
       var _this3 = this;
 
-      var _props2 = this.props,
-          clickText = _props2.clickText,
-          width = _props2.width,
-          height = _props2.height,
-          prizes = _props2.prizes,
-          primaryColor = _props2.primaryColor,
-          secondaryColor = _props2.secondaryColor,
-          speed = _props2.speed,
-          duration = _props2.duration,
-          fontVertical = _props2.fontVertical,
-          fontStyle = _props2.fontStyle,
-          style = _props2.style,
-          className = _props2.className,
-          onStart = _props2.onStart,
-          onComplete = _props2.onComplete,
-          attr = _objectWithoutProperties(_props2, ['clickText', 'width', 'height', 'prizes', 'primaryColor', 'secondaryColor', 'speed', 'duration', 'fontVertical', 'fontStyle', 'style', 'className', 'onStart', 'onComplete']);
+      var _props3 = this.props,
+          clickText = _props3.clickText,
+          style = _props3.style,
+          className = _props3.className,
+          width = _props3.width,
+          height = _props3.height,
+          hiddenButton = _props3.hiddenButton;
 
       var styles = _extends({}, style, { width: width, height: height });
       return _react2.default.createElement(
         'div',
-        _extends({
+        {
           className: (0, _classnames2.default)(prefix, prefix + '-section', className),
           style: styles
-        }, attr),
+        },
         _react2.default.createElement('canvas', {
           id: 'react-turntable-section-canvas',
           ref: function ref(node) {
             return _this3.canvas = node;
           }
         }),
-        Object.is(typeof clickText === 'undefined' ? 'undefined' : _typeof(clickText), 'object') ? _react2.default.createElement(
-          'div',
-          { onClick: this.onStartRotate },
-          clickText
-        ) : _react2.default.createElement(
+        !hiddenButton && (Object.is(typeof clickText === 'undefined' ? 'undefined' : _typeof(clickText), 'string') ? _react2.default.createElement(
           'div',
           {
             className: 'react-turntable-section-btn',
             onClick: this.onStartRotate
           },
           clickText
-        )
+        ) : _react2.default.createElement(
+          'div',
+          { onClick: this.onStartRotate },
+          clickText
+        ))
       );
     }
   }, {
@@ -2283,15 +2337,15 @@ var ReactTurntable = function (_PureComponent) {
     value: function drawTurntable() {
       var ctx = this.ctx;
       ctx.clearRect(0, 0, this.canvas.width, this.canvas.height);
-      var _props3 = this.props,
-          primaryColor = _props3.primaryColor,
-          secondaryColor = _props3.secondaryColor,
-          _props3$fontStyle = _props3.fontStyle,
-          fontVertical = _props3$fontStyle.fontVertical,
-          fontWeight = _props3$fontStyle.fontWeight,
-          fontFamily = _props3$fontStyle.fontFamily,
-          size = _props3$fontStyle.size,
-          color = _props3$fontStyle.color;
+      var _props4 = this.props,
+          primaryColor = _props4.primaryColor,
+          secondaryColor = _props4.secondaryColor,
+          _props4$fontStyle = _props4.fontStyle,
+          fontVertical = _props4$fontStyle.fontVertical,
+          fontWeight = _props4$fontStyle.fontWeight,
+          fontFamily = _props4$fontStyle.fontFamily,
+          size = _props4$fontStyle.size,
+          color = _props4$fontStyle.color;
       var _iteratorNormalCompletion = true;
       var _didIteratorError = false;
       var _iteratorError = undefined;
@@ -2324,8 +2378,6 @@ var ReactTurntable = function (_PureComponent) {
 
           ctx.translate(this.centerX + currentX, this.centerY + currentY);
           ctx.rotate(_currentStartRotate + this.awardRotate / 2 + Math.PI / 2);
-
-          var maxFontWidth = currentY / (this.TEXT_R / 2);
 
           var _ctx$measureText = ctx.measureText(prize),
               fontWidth = _ctx$measureText.width;
@@ -2361,17 +2413,6 @@ var ReactTurntable = function (_PureComponent) {
       window.cancelAnimationFrame(this.animateId);
       delete this.canvas;
       delete this.ctx;
-      delete this.prizes;
-      delete this.startRotate;
-      delete this.rotateTime;
-      delete this.rotateAllTime;
-      delete this.rotateChange;
-      delete this.awardRotate;
-      delete this.centerX;
-      delete this.centerY;
-      delete this.R;
-      delete this.TEXT_R;
-      delete this.INSERT_R;
     }
   }, {
     key: 'compatibilityFrame',
@@ -2397,29 +2438,8 @@ var ReactTurntable = function (_PureComponent) {
     key: 'componentDidMount',
     value: function componentDidMount() {
       this.compatibilityFrame();
-      var _props4 = this.props,
-          width = _props4.width,
-          height = _props4.height,
-          prizes = _props4.prizes;
-
-      this.prizes = prizes;
-      this.startRotate = 0;
-      this.rotateTime = 0;
-      this.rotateAllTime = 0;
-      this.rotateChange = 0;
-
-      this.ctx = this.canvas.getContext('2d');
-      this.canvas.width = width;
-      this.canvas.height = height;
-
-      this.awardRotate = Math.PI * 2 / prizes.length;
-
-      this.centerX = this.canvas.width / 2;
-      this.centerY = this.canvas.height / 2;
-      this.R = this.canvas.width / 2 - 20;
-      this.TEXT_R = this.R - 50;
-      this.INSERT_R = 0;
-      this.drawTurntable();
+      this.initTurntable();
+      this.getTurntable();
     }
   }]);
 
@@ -2444,7 +2464,8 @@ ReactTurntable.defaultProps = {
   },
   onStart: function onStart() {
     return true;
-  }
+  },
+  hiddenButton: false
 };
 ReactTurntable.propTypes = {
   width: _propTypes2.default.number.isRequired,
@@ -2458,7 +2479,8 @@ ReactTurntable.propTypes = {
   onComplete: _propTypes2.default.func,
   onStart: _propTypes2.default.func,
   fontVertical: _propTypes2.default.bool,
-  fontStyle: _propTypes2.default.object
+  fontStyle: _propTypes2.default.object,
+  hiddenButton: _propTypes2.default.bool
 };
 var _default = ReactTurntable;
 exports.default = _default;
@@ -2513,6 +2535,10 @@ if(false) {
 "use strict";
 
 
+var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
 var _react = __webpack_require__(0);
 
 var _react2 = _interopRequireDefault(_react);
@@ -2533,61 +2559,145 @@ __webpack_require__(22);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
 var styles = {
-    justifyContent: "center",
-    alignContent: "center",
-    display: "flex"
+  container: {
+    padding: 30
+  }
 };
-var prizes = ['Durex', 'MI', 'Meizu', 'iphone 6s', 'iphone 6s plus', 'Chafingdish', 'WeiLong', 'masturbation cup'];
+var prizes = Array(8).fill('Prize').map(function (prize, i) {
+  return '' + prize + (i + 1);
+});
 
 var options = {
-    prizes: prizes,
-    width: 500,
-    height: 500,
-    primaryColor: "#83AF9B",
-    secondaryColor: "#C8C8A9",
-    fontStyle: {
-        color: "#fff",
-        size: "14px",
-        fontVertical: false,
-        fontWeight: "bold",
-        fontFamily: "Microsoft YaHei"
-    },
-    speed: 1000,
-    duration: 6000,
-    clickText: "Start",
-    onStart: function onStart() {
-        console.log('start...');
-        return true;
-    },
-    onComplete: function onComplete(prize) {
-        _rcMessage2.default.success({
-            content: prize
-        });
+  prizes: prizes,
+  width: 500,
+  height: 500,
+  primaryColor: '#83AF9B',
+  secondaryColor: '#C8C8A9',
+  fontStyle: {
+    color: '#fff',
+    size: '14px',
+    fontVertical: false,
+    fontWeight: 'bold',
+    fontFamily: 'Microsoft YaHei'
+  },
+  speed: 1000,
+  duration: 6000,
+  clickText: 'Start',
+  onStart: function onStart() {
+    console.log('start...');
+    return true;
+  },
+  onComplete: function onComplete(prize) {
+    console.log(prize);
+    _rcMessage2.default.success({
+      content: prize
+    });
+  }
+};
+
+var Demo = function (_React$Component) {
+  _inherits(Demo, _React$Component);
+
+  function Demo() {
+    var _ref;
+
+    var _temp, _this, _ret;
+
+    _classCallCheck(this, Demo);
+
+    for (var _len = arguments.length, args = Array(_len), _key = 0; _key < _len; _key++) {
+      args[_key] = arguments[_key];
     }
-};
-var Demo = function Demo() {
-    return _react2.default.createElement(
-        "div",
-        { style: styles },
-        _react2.default.createElement(_src2.default, options)
-    );
-};
+
+    return _ret = (_temp = (_this = _possibleConstructorReturn(this, (_ref = Demo.__proto__ || Object.getPrototypeOf(Demo)).call.apply(_ref, [this].concat(args))), _this), _this.turntable = null, _temp), _possibleConstructorReturn(_this, _ret);
+  }
+
+  _createClass(Demo, [{
+    key: 'render',
+    value: function render() {
+      var _this2 = this;
+
+      return _react2.default.createElement(
+        'div',
+        { style: styles.container },
+        _react2.default.createElement(
+          'section',
+          null,
+          _react2.default.createElement(
+            'h2',
+            null,
+            'Default'
+          ),
+          _react2.default.createElement(_src2.default, options)
+        ),
+        _react2.default.createElement(
+          'section',
+          null,
+          _react2.default.createElement(
+            'h2',
+            null,
+            'Custom Size'
+          ),
+          _react2.default.createElement(_src2.default, _extends({}, options, { width: 300, height: 300 }))
+        ),
+        _react2.default.createElement(
+          'section',
+          null,
+          _react2.default.createElement(
+            'h2',
+            null,
+            'custom start action'
+          ),
+          _react2.default.createElement(_src2.default, _extends({}, options, {
+            hiddenButton: true,
+            getTurntable: function getTurntable(turntable) {
+              return _this2.turntable = turntable;
+            }
+          })),
+          _react2.default.createElement(
+            'button',
+            { onClick: function onClick() {
+                return _this2.turntable.start();
+              } },
+            'start'
+          ),
+          _react2.default.createElement(
+            'button',
+            { onClick: function onClick() {
+                return _this2.turntable.stop();
+              } },
+            'stop'
+          )
+        )
+      );
+    }
+  }]);
+
+  return Demo;
+}(_react2.default.Component);
+
 _reactDom2.default.render(_react2.default.createElement(Demo, null), document.getElementById('root'));
 ;
 
-var _temp = function () {
-    if (typeof __REACT_HOT_LOADER__ === 'undefined') {
-        return;
-    }
+var _temp2 = function () {
+  if (typeof __REACT_HOT_LOADER__ === 'undefined') {
+    return;
+  }
 
-    __REACT_HOT_LOADER__.register(styles, "styles", "/Users/xyzhang/webstudy/react-turntable/example/example.js");
+  __REACT_HOT_LOADER__.register(styles, 'styles', '/Users/xyzhang/webstudy/react-turntable/example/example.js');
 
-    __REACT_HOT_LOADER__.register(prizes, "prizes", "/Users/xyzhang/webstudy/react-turntable/example/example.js");
+  __REACT_HOT_LOADER__.register(prizes, 'prizes', '/Users/xyzhang/webstudy/react-turntable/example/example.js');
 
-    __REACT_HOT_LOADER__.register(options, "options", "/Users/xyzhang/webstudy/react-turntable/example/example.js");
+  __REACT_HOT_LOADER__.register(options, 'options', '/Users/xyzhang/webstudy/react-turntable/example/example.js');
 
-    __REACT_HOT_LOADER__.register(Demo, "Demo", "/Users/xyzhang/webstudy/react-turntable/example/example.js");
+  __REACT_HOT_LOADER__.register(Demo, 'Demo', '/Users/xyzhang/webstudy/react-turntable/example/example.js');
 }();
 
 ;
